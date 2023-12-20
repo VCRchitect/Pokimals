@@ -1,0 +1,1 @@
+INCLUDE "data/events/lettah_walls.asm"
