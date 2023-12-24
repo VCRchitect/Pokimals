@@ -50,4 +50,5 @@ Tilesets::
 	tileset TilesetShoe_CrabWordRoom
 	tileset TilesetNautilusWordRoom
 	tileset TilesetPteranodonWordRoom
+	tileset TilesetRuinCave
 	assert_table_length NUM_TILESETS + 1
