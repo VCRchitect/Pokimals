@@ -66,4 +66,8 @@ ENDM
 	map_const HALL_OF_FAME,                                 5,  7 ;  7
 	endgroup
 
+	newgroup RUINS
+	map_const 001												5, 11 ; 1
+	endgroup
+
 DEF NUM_MAP_GROUPS EQU const_value ; 4
