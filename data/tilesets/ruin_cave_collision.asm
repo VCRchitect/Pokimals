@@ -98,3 +98,31 @@
 	tilecoll WALL, WALL, WALL, WALL ; 61
 	tilecoll WALL, WALL, WALL, WALL ; 62
 	tilecoll WALL, WALL, WALL, WALL ; 63
+	tilecoll FLOOR, FLOOR, FLOOR, WALL ; 64
+	tilecoll FLOOR, FLOOR, WALL, FLOOR ; 65
+	tilecoll WALL, WALL, FLOOR, WALL ; 66
+	tilecoll , , ,  ; 67
+	tilecoll WALL, WALL, WALL, WALL ; 68
+	tilecoll WALL, WALL, WALL, WALL ; 69
+	tilecoll WALL, WALL, WALL, FLOOR ; 6a
+	tilecoll WALL, WALL, FLOOR, WALL ; 6b
+	tilecoll WALL, WALL, WALL, WALL ; 6c
+	tilecoll WALL, WALL, WALL, WALL ; 6d
+	tilecoll WALL, FLOOR, WALL, WALL ; 6e
+	tilecoll FLOOR, WALL, WALL, WALL ; 6f
+	tilecoll , , ,  ; 70
+	tilecoll , , ,  ; 71
+	tilecoll , , ,  ; 72
+	tilecoll , , ,  ; 73
+	tilecoll , , ,  ; 74
+	tilecoll , , ,  ; 75
+	tilecoll , , ,  ; 76
+	tilecoll , , ,  ; 77
+	tilecoll , , ,  ; 78
+	tilecoll , , ,  ; 79
+	tilecoll , , ,  ; 7a
+	tilecoll , , ,  ; 7b
+	tilecoll , , ,  ; 7c
+	tilecoll , , ,  ; 7d
+	tilecoll , , ,  ; 7e
+	tilecoll , , ,  ; 7f
