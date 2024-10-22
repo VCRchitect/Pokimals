@@ -60,3 +60,25 @@ LancesRoom_Blocks:
 
 HallOfFame_Blocks:
 	INCBIN "maps/HallOfFame.blk"
+	
+SECTION "Map Blocks 4", ROMX
+A1_Blocks:
+	INCBIN "maps/A1.blk"
+A2_Blocks:
+	INCBIN "maps/A2.blk"
+A3_Blocks:
+	INCBIN "maps/A3.blk"
+A4_Blocks:
+	INCBIN "maps/A4.blk"
+A5_Blocks:
+	INCBIN "maps/A5.blk"
+A6_Blocks:
+	INCBIN "maps/A6.blk"
+A7_Blocks:
+	INCBIN "maps/A7.blk"
+A8_Blocks:
+	INCBIN "maps/A8.blk"
+A9_Blocks:
+	INCBIN "maps/A9.blk"
+A10_Blocks:
+	INCBIN "maps/A10.blk"

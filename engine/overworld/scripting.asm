@@ -2445,8 +2445,8 @@ Script_closetrainpic:
 
 Script_roomcounter:
 	ld a, [wRoomCount]
-	cp $32
-	jr c, .hop
+	cp $20
+	jr nc, .hop
 	inc a
 	ld [wRoomCount], a
 .hop

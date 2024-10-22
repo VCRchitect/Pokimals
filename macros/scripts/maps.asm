@@ -178,10 +178,56 @@ ENDM
 
 warper: MACRO
 .loop
-	random 1
-	ifequal 0, .HolyGhost
+	random 9
+	ifequal 0, .10
+	ifequal 1, .2
+	ifequal 2, .3
+	ifequal 3, .4
+	ifequal 4, .5
+	ifequal 5, .6
+	ifequal 6, .7
+	ifequal 7, .8
+	ifequal 8, .9
 
-.HolyGhost
-	warpfacing DOWN, NEW_BARK_TOWN, 7, 11
+.2
+	warp A2, 4, 4
+	lockdoor
 	end
+.3
+	warp A3, 4, 4
+	end
+.4
+	warp A4, 4, 4
+	end
+.5
+	warp A5, 4, 4
+	end
+.6
+	warp A6, 4, 4
+	end
+.7
+	warp A7, 4, 4
+	end
+.8
+	warp A8, 4, 4
+	end
+.9
+	warp A9, 4, 4
+	end
+.10
+	warp A10, 4, 4
+	end
+ENDM
+
+lockdoor: MACRO
+	changeblock 2, 0, $73 ; wall
+	changeblock 7, 0, $73 ; wall
+	reloadmappart
+ENDM
+
+opendoor: MACRO
+	playsound SFX_ENTER_DOOR
+	changeblock 2, 0, $0B ; open door
+	changeblock 7, 0, $0B ; open door
+	reloadmappart
 ENDM

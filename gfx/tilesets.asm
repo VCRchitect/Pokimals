@@ -340,5 +340,9 @@ INCBIN "data/tilesets/nautilus_word_room_metatiles.bin"
 TilesetPteranodonWordRoomMeta::
 INCBIN "data/tilesets/pteranodon_word_room_metatiles.bin"
 
-TilesetRuinCaveRoomMeta::
+TilesetRuinCaveMeta::
 INCBIN "data/tilesets/ruin_cave_metatiles.bin"
+
+TilesetRuinCaveGFX::
+INCBIN "gfx/tilesets/ruin_cave.2bpp.lz"
+

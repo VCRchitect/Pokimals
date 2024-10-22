@@ -1,9 +1,9 @@
 	db "VEHICLE@" ; species name
 	dw 607, 1320 ; height, weight
 
-	db   "A sweet car, it"
+	db   "A sweet car,"
 	next "It is said to get"
-	next "yout so much ass,"
+	next "you so much ass,"
 
 	page "but only if you"
 	next "lived back in the"

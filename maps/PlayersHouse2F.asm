@@ -79,17 +79,18 @@ PlayersHouseRadioScript:
 	closetext
 	end
 
-RandomStairWarp:
+RandomStairWarp0:
+	roomcounter
+	roomcounter
+	roomcounter
 	warper
+	
 
 PlayersHouseBookshelfScript:
 	roomcounter
 	roomcounter
-	roomcounter
 	refreshscreen
 	givepoke WOLF, 20
-	opentext
-	randomtext NPCKTextTable
 	waitbutton
 	closetext
 	end
@@ -148,7 +149,7 @@ PlayersHouse2F_MapEvents:
 	warp_event  7,  5, PLAYERS_HOUSE_1F, 4
 
 	def_coord_events
-	coord_event  7,  0, SCENE_RANDOMSTAIRS, RandomStairWarp
+	coord_event  7,  0, SCENE_RANDOMSTAIRS, RandomStairWarp0
 
 	def_bg_events
 	bg_event  2,  1, BGEVENT_UP, PlayersHousePCScript

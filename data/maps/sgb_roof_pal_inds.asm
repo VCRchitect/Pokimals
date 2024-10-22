@@ -8,4 +8,5 @@ MapGroupRoofSGBPalInds:
 	db PREDEFPAL_CIANWOOD
 	db PREDEFPAL_NEW_BARK
 	db PREDEFPAL_INDIGO
+	db -1
 	assert_table_length NUM_MAP_GROUPS + 1

@@ -1906,7 +1906,7 @@ GetEighthMaxHP:
 GetRoomCount:
 	ld a, [wRoomCount]
 	ld c, a
-	ld b, $00
+	ld b, a
 	ret
 
 GetQuarterMaxHP:

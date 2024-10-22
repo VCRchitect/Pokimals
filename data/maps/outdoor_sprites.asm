@@ -8,6 +8,7 @@ OutdoorSprites:
 	dw BattleTowerGroupSprites
 	dw NewBarkGroupSprites
 	dw IndigoGroupSprites
+	dw -1
 	assert_table_length NUM_MAP_GROUPS
 
 CableClubGroupSprites:

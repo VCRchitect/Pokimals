@@ -34,6 +34,16 @@ INCLUDE "maps/HallOfFame.asm"
 
 
 SECTION "Map Scripts 5", ROMX
+INCLUDE "maps/A1.asm"
+INCLUDE "maps/A2.asm"
+INCLUDE "maps/A3.asm"
+INCLUDE "maps/A4.asm"
+INCLUDE "maps/A5.asm"
+INCLUDE "maps/A6.asm"
+INCLUDE "maps/A7.asm"
+INCLUDE "maps/A8.asm"
+INCLUDE "maps/A9.asm"
+INCLUDE "maps/A10.asm"
 
 
 SECTION "Map Scripts 6", ROMX

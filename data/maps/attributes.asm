@@ -120,3 +120,14 @@ ENDM
 	map_attributes KarensRoom, KARENS_ROOM, $00, 0
 	map_attributes LancesRoom, LANCES_ROOM, $00, 0
 	map_attributes HallOfFame, HALL_OF_FAME, $00, 0
+	
+	map_attributes A1, A1, $00, 0
+	map_attributes A2, A2, $00, 0
+	map_attributes A3, A3, $00, 0
+	map_attributes A4, A4, $00, 0
+	map_attributes A5, A5, $00, 0
+	map_attributes A6, A6, $00, 0
+	map_attributes A7, A7, $00, 0
+	map_attributes A8, A8, $00, 0
+	map_attributes A9, A9, $00, 0
+	map_attributes A10, A10, $00, 0

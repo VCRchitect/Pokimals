@@ -151,6 +151,7 @@ NPCKTextTable::
 	dw .149
 	dw .150
 	dw .151
+	dw .152
 
   ; and so on, add as many as you want
 .end
@@ -466,7 +467,7 @@ NPCKTextTable::
 
 .040
 	text "You ought not to"
-	line "beat BUGSY like"
+	line "beat TPAIN like"
 	para "that. He's just"
 	line "a boy."
 	done
@@ -969,9 +970,9 @@ NPCKTextTable::
 .102
 	text "PROTIP: If you are"
 	line "thirsty at a"
-	para "doctor visit, hand"
-	line "sanitizer has some"
-	cont "liquid in it."
+	para "doctor visit, pee"
+	line "in your hand and"
+	cont "drink it."
 	done
 
 .103
@@ -1376,5 +1377,13 @@ NPCKTextTable::
 	text "Slenderman and"
 	line "Longfellow are the"
 	cont "same name."
+	done
+	
+.152
+	text "I couldn't imagine"
+	line "somebody like"
+	para "Osama Bin Laden"
+	line "understanding the"
+	cont "joy of Hanukkah."
 	done
 	

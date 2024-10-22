@@ -275,6 +275,7 @@ TilesetPhoenixWordRoomAnim:
 TilesetShoe_CrabWordRoomAnim:
 TilesetNautilusWordRoomAnim:
 TilesetPteranodonWordRoomAnim:
+TilesetRuinCaveAnim:
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
