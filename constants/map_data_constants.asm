@@ -5,6 +5,9 @@ MAPGROUP_NONE EQU 0
 GROUP_NONE    EQU 0
 MAP_NONE      EQU 0
 
+ROOM_TARGET_DEFEATS EQU 3
+
+
 ; map struct members (see data/maps/maps.asm)
 rsreset
 MAP_MAPATTRIBUTES_BANK rb ; 0

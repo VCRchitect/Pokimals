@@ -263,7 +263,8 @@ ScriptCommandTable:
 	dw Script_randomtext		     ; aa
 	dw Script_trainerpic		     ; ab
 	dw Script_closetrainpic		     ; ac
-	dw Script_roomcounter		; ad
+	dw Script_roomcounter		; ae
+	dw Script_AnimalFighter ; ad
 
 	assert_table_length NUM_EVENT_COMMANDS
 
@@ -2452,6 +2453,13 @@ Script_roomcounter:
 .hop
 	ret
 
+Script_AnimalFighter:
+	ld hl, wAnimalsBeatenNumber
+	ld a, [hl]
+	inc a
+	ld [hl], a
+	ret
+	
 Script_checkver_duplicate: ; unreferenced
 	ld a, [.gs_version]
 	ld [wScriptVar], a

@@ -9,7 +9,7 @@ A1_MapScripts:
 	end
 
 RandomStairWarp1:
-	warper
+	warp A2, 4, 4
 	
 
 A1_MapEvents:

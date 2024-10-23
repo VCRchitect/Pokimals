@@ -1593,7 +1593,7 @@ wStatsScreenFlags:: db
 NEXTU
 ; battle tower
 wNrOfBeatenBattleTowerTrainers:: db
-	ds 1
+wAnimalsBeatenNumber:: db
 wBattleTowerRoomMenuJumptableIndex:: db
 
 NEXTU
@@ -2423,7 +2423,8 @@ wTilesetBlocksAddress:: dw
 wTilesetCollisionBank:: db
 wTilesetCollisionAddress:: dw
 wTilesetAnim:: dw ; bank 3f
-	ds 2 ; unused
+wRoomDefeatedCount:: ds 1
+	ds 1 ; unused
 wTilesetPalettes:: dw ; bank 3f
 wTilesetEnd::
 	assert wTilesetEnd - wTileset == TILESET_LENGTH

@@ -1089,4 +1089,9 @@ roomcounter: macro
 ENDM
 
 
+	const animalfighter_command ; $ad
+animalfighter: MACRO
+	db animalfighter_command
+ENDM
+
 NUM_EVENT_COMMANDS EQU const_value

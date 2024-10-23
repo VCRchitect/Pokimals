@@ -191,7 +191,6 @@ warper: MACRO
 
 .2
 	warp A2, 4, 4
-	lockdoor
 	end
 .3
 	warp A3, 4, 4
@@ -219,15 +218,9 @@ warper: MACRO
 	end
 ENDM
 
-lockdoor: MACRO
-	changeblock 2, 0, $73 ; wall
-	changeblock 7, 0, $73 ; wall
-	reloadmappart
-ENDM
-
-opendoor: MACRO
+changedoor: MACRO
+	refreshscreen $86
 	playsound SFX_ENTER_DOOR
-	changeblock 2, 0, $0B ; open door
-	changeblock 7, 0, $0B ; open door
+	changeblock \1, \2, \3
 	reloadmappart
 ENDM

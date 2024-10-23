@@ -80,15 +80,13 @@ PlayersHouseRadioScript:
 	end
 
 RandomStairWarp0:
-	roomcounter
-	roomcounter
-	roomcounter
-	warper
+	warp A2, 4, 4
+   loadmem wRoomDefeatedCount, 0
+   writemem wRoomDefeatedCount
+	end
 	
 
 PlayersHouseBookshelfScript:
-	roomcounter
-	roomcounter
 	refreshscreen
 	givepoke WOLF, 20
 	waitbutton
