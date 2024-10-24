@@ -263,8 +263,8 @@ ScriptCommandTable:
 	dw Script_randomtext		     ; aa
 	dw Script_trainerpic		     ; ab
 	dw Script_closetrainpic		     ; ac
-	dw Script_roomcounter		; ae
-	dw Script_AnimalFighter ; ad
+	dw Script_loadrandomlevelmon		; ad
+	dw Script_countroom				;b0
 
 	assert_table_length NUM_EVENT_COMMANDS
 
@@ -2444,22 +2444,57 @@ Script_closetrainpic:
 	farcall CloseTrainpic
 	ret
 
-Script_roomcounter:
-	ld a, [wRoomCount]
-	cp $20
-	jr nc, .hop
-	inc a
-	ld [wRoomCount], a
-.hop
-	ret
 
-Script_AnimalFighter:
-	ld hl, wAnimalsBeatenNumber
-	ld a, [hl]
-	inc a
-	ld [hl], a
-	ret
+Script_loadrandomlevelmon:
+    ; Read the species from the script
+    call GetScriptByte
+    ld [wTempWildMonSpecies], a
+
+    ; Read the minimum level from the script
+    call GetScriptByte
+    ld b, a ; Store min level in register B
+
+    ; Read the maximum level from the script
+    call GetScriptByte
+    ld c, a ; Store max level in register C
+
+    ; Calculate (max - min + 1) for the random range
+    ld a, c
+    sub b
+    inc a   ; Now A = (max - min + 1)
+    ld e, a ; Store the range in E
+
+    ; Generate a random number between 0 and (max - min)
+    call Random
+    ld a, e ; Get the random number
+    ; Add the minimum level to get a value between min and max
+    add b
+    ld [wCurPartyLevel], a ; Store the randomized level
+    ret
 	
+Script_countroom:
+		; Assume wRoomDefeatedCount is in WRAM bank 1
+; Save current WRAM bank
+; Save current WRAM bank
+ld a, [$FF70]     ; Load current bank number
+push af           ; Save it on the stack
+
+; Switch to WRAM bank 1
+ld a, $01         ; Bank 1
+ld [$FF70], a     ; Set WRAM bank to 1
+
+; Increment wRoomDefeatedCount
+ld hl, wRoomDefeatedCount
+ld a, [hl]
+inc a
+ld [hl], a
+
+; Restore previous WRAM bank
+pop af            ; Retrieve original bank number
+ld [$FF70], a     ; Restore WRAM bank
+ret
+	
+
 Script_checkver_duplicate: ; unreferenced
 	ld a, [.gs_version]
 	ld [wScriptVar], a

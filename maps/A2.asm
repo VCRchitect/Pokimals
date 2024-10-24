@@ -13,19 +13,14 @@ A2_MapScripts:
 	callback MAPCALLBACK_OBJECTS, .LoadBaddies
 
 .DummyScene:
+	
 	end
 
 .LoadBaddies
-	disappear ARUINS_MONSTER1
-	disappear ARUINS_MONSTER2
-	disappear ARUINS_MONSTER3
 	disappear ARUINS_MONSTER4
 	disappear ARUINS_MONSTER5
-	random 2
+	random 23
 	ifnotequal 0, .NoSpawn
-	appear ARUINS_MONSTER1
-	appear ARUINS_MONSTER2
-	appear ARUINS_MONSTER3
 	appear ARUINS_MONSTER4
 	appear ARUINS_MONSTER5
 .NoSpawn
@@ -38,19 +33,13 @@ RandomStairWarp2:
 	
 Monster1:	
 	faceplayer
-	refreshscreen
-	opentext
-	trainerpic OLDMAN
-	randomtext OldmanTextTable
-	waitbutton
-	closetrainpic
-	closetext
-    readmem wRoomDefeatedCount
-	ifequal 3, .StatueButton
-	loadmem wRoomDefeatedCount, 3
+	RuinMonsterA
+	disappear ARUINS_MONSTER1
+	readmem wRoomDefeatedCount
+	ifequal 2, .UnlockDoors
 	end
-
-.StatueButton:
+	
+.UnlockDoors:
 	opentext
 	writetext ButtonText
 	promptbutton
@@ -62,58 +51,79 @@ Monster1:
 
 Monster2:	
 	faceplayer
-	refreshscreen
-	opentext
-	trainerpic OLDMAN
-	randomtext OldmanTextTable
-	waitbutton
-	closetrainpic
-	closetext
+	RuinMonsterA
+	readmem wRoomDefeatedCount
+	disappear ARUINS_MONSTER2
+	ifequal RUINA_TARGET_DEFEATS, .UnlockDoors
 	end
+
+.UnlockDoors:
+	opentext
+	writetext ButtonText
+	promptbutton
+	closetext
+	changedoor 2, 0, $72
+	changedoor 7, 0, $72
+	end
+
 
 Monster3:	
 	faceplayer
-	refreshscreen
-	opentext
-	trainerpic OLDMAN
-	randomtext OldmanTextTable
-	waitbutton
-	closetrainpic
-	closetext
+	RuinMonsterA
+	disappear ARUINS_MONSTER3
+	readmem wRoomDefeatedCount
+	ifequal RUINA_TARGET_DEFEATS, .UnlockDoors
 	end
+
+.UnlockDoors:
+	opentext
+	writetext ButtonText
+	promptbutton
+	closetext
+	changedoor 2, 0, $72
+	changedoor 7, 0, $72
+	end
+
 
 Monster4:	
 	faceplayer
-	refreshscreen
-	opentext
-	trainerpic OLDMAN
-	randomtext OldmanTextTable
-	waitbutton
-	closetrainpic
-	closetext
+	RuinMonsterA
+	disappear ARUINS_MONSTER4
+	readmem wRoomDefeatedCount
+	ifequal RUINA_TARGET_DEFEATS, .UnlockDoors
 	end
+
+.UnlockDoors:
+	opentext
+	writetext ButtonText
+	promptbutton
+	closetext
+	changedoor 2, 0, $72
+	changedoor 7, 0, $72
+	end
+
 
 Monster5:	
 	faceplayer
-	refreshscreen
-	opentext
-	trainerpic OLDMAN
-	randomtext OldmanTextTable
-	waitbutton
-	closetrainpic
-	closetext
+	RuinMonsterA
+	disappear ARUINS_MONSTER5	
+	readmem wRoomDefeatedCount
+	ifequal RUINA_TARGET_DEFEATS, .UnlockDoors
 	end
 
+.UnlockDoors:
+	opentext
+	writetext ButtonText
+	promptbutton
+	closetext
+	changedoor 2, 0, $72
+	changedoor 7, 0, $72
+	end
 
 	
 ButtonText:
-	text "A not so secret"
-	line "button!"
-
-	para "Hopefully the game"
-	line "doesn't crash now."
+	text "Room Clear!"
 	done
-
 
 A2_MapEvents:
 	db 0, 0 ; filler

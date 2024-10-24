@@ -1083,15 +1083,18 @@ closetrainpic: MACRO
 	db closetrainpic_command
 ENDM
 
-	const roomcounter_command ; $b0
-roomcounter: macro
-	db roomcounter
+
+	const loadrandomlevelmon_command
+loadrandomlevelmon: MACRO
+    db loadrandomlevelmon_command
+    db \1 ; Pokémon species
+    db \2 ; Minimum level
+    db \3 ; Maximum level
 ENDM
 
-
-	const animalfighter_command ; $ad
-animalfighter: MACRO
-	db animalfighter_command
+	const countroom_command
+countroom: MACRO
+	db countroom_command
 ENDM
 
 NUM_EVENT_COMMANDS EQU const_value

@@ -224,3 +224,36 @@ changedoor: MACRO
 	changeblock \1, \2, \3
 	reloadmappart
 ENDM
+
+RuinMonsterA: MACRO
+	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
+	RuinMonsterTableA
+	startbattle
+	reloadmapafterbattle
+	countroom
+	writemem wRoomDefeatedCount
+ENDM
+
+RuinMonsterTableA: MACRO
+	random 3
+	ifequal 0, .Rocky
+	ifequal 1, .Bat
+	ifequal 2, .Rat
+	ifequal 3, .Shrew
+	ifequal 4, .Mole
+	
+.Rocky
+	loadwildmon ROCKY, 3
+	
+.Bat
+	loadwildmon BAT, 3
+
+.Rat
+	loadwildmon RAT, 3
+
+.Shrew
+	loadwildmon SHREW, 3
+
+.Mole
+	loadwildmon MOLE, 3
+ENDM

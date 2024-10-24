@@ -88,8 +88,16 @@ RandomStairWarp0:
 
 PlayersHouseBookshelfScript:
 	refreshscreen
-	givepoke WOLF, 20
+	pokepic BRAIN
+	cry BRAIN
 	waitbutton
+	closepokepic
+	refreshscreen
+	getmonname STRING_BUFFER_3, BRAIN
+	playsound SFX_CAUGHT_MON
+	waitsfx
+	promptbutton
+	givepoke BRAIN, 100, BERRY
 	closetext
 	end
 	

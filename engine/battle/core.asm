@@ -8255,6 +8255,7 @@ CleanUpBattleRAM:
 	ld [wBallsPocketScrollPosition], a
 	ld hl, wPlayerSubStatus1
 	ld b, wEnemyFuryCutterCount - wPlayerSubStatus1
+
 .loop
 	ld [hli], a
 	dec b
