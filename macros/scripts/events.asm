@@ -1092,9 +1092,9 @@ loadrandomlevelmon: MACRO
     db \3 ; Maximum level
 ENDM
 
-	const countroom_command
-countroom: MACRO
-	db countroom_command
+	const RuinARandom_command
+RuinARandom: MACRO
+	db RuinARandom_command
 ENDM
 
 NUM_EVENT_COMMANDS EQU const_value

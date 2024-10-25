@@ -264,7 +264,7 @@ ScriptCommandTable:
 	dw Script_trainerpic		     ; ab
 	dw Script_closetrainpic		     ; ac
 	dw Script_loadrandomlevelmon		; ad
-	dw Script_countroom				;b0
+	dw Script_RuinARandom				; b0
 
 	assert_table_length NUM_EVENT_COMMANDS
 
@@ -2471,30 +2471,11 @@ Script_loadrandomlevelmon:
     add b
     ld [wCurPartyLevel], a ; Store the randomized level
     ret
-	
-Script_countroom:
-		; Assume wRoomDefeatedCount is in WRAM bank 1
-; Save current WRAM bank
-; Save current WRAM bank
-ld a, [$FF70]     ; Load current bank number
-push af           ; Save it on the stack
-
-; Switch to WRAM bank 1
-ld a, $01         ; Bank 1
-ld [$FF70], a     ; Set WRAM bank to 1
-
-; Increment wRoomDefeatedCount
-ld hl, wRoomDefeatedCount
-ld a, [hl]
-inc a
-ld [hl], a
-
-; Restore previous WRAM bank
-pop af            ; Retrieve original bank number
-ld [$FF70], a     ; Restore WRAM bank
-ret
-	
-
+		
+Script_RuinARandom:
+	farcall ChooseWildEncounter_RuinA
+	ret
+		
 Script_checkver_duplicate: ; unreferenced
 	ld a, [.gs_version]
 	ld [wScriptVar], a

@@ -1239,3 +1239,59 @@ DoBikeStep::
 	ret
 
 INCLUDE "engine/overworld/cmd_queue.asm"
+
+ChooseWildEncounter_RuinA::
+; Pick a random mon out of RuinAMons.
+
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+
+	ld hl, RuinAMons
+	ld de, 4
+.CheckMon:
+	sub [hl]
+	jr c, .GotMon
+	add hl, de
+	jr .CheckMon
+
+.GotMon:
+	inc hl
+
+; Species
+	ld a, [hli]
+	ld [wTempWildMonSpecies], a
+
+; Min level
+	ld a, [hli]
+	ld d, a
+
+; Max level
+	ld a, [hl]
+
+	sub d
+	jr nz, .RandomLevel
+
+; If min and max are the same.
+	ld a, d
+	jr .GotLevel
+
+.RandomLevel:
+; Get a random level between the min and max.
+	ld c, a
+	inc c
+	call Random
+	ldh a, [hRandomAdd]
+	call SimpleDivide
+	add d
+
+.GotLevel:
+	ld [wCurPartyLevel], a
+
+	xor a
+	ret
+
+INCLUDE "data/wild/ruinamons.asm"
+

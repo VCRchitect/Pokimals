@@ -226,34 +226,52 @@ changedoor: MACRO
 ENDM
 
 RuinMonsterA: MACRO
-	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	RuinMonsterTableA
-	startbattle
-	reloadmapafterbattle
-	countroom
-	writemem wRoomDefeatedCount
-ENDM
-
-RuinMonsterTableA: MACRO
-	random 3
+	random 4
 	ifequal 0, .Rocky
 	ifequal 1, .Bat
 	ifequal 2, .Rat
 	ifequal 3, .Shrew
 	ifequal 4, .Mole
 	
-.Rocky
+.Rocky:
+	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
 	loadwildmon ROCKY, 3
+	startbattle
+	reloadmapafterbattle
+	ret
 	
-.Bat
+.Bat:
+	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
 	loadwildmon BAT, 3
+	startbattle
+	reloadmapafterbattle
+	ret
 
-.Rat
+.Rat:
+	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
 	loadwildmon RAT, 3
-
-.Shrew
+	startbattle
+	reloadmapafterbattle
+	ret
+	
+.Shrew:
+	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
 	loadwildmon SHREW, 3
-
-.Mole
+	startbattle
+	reloadmapafterbattle
+	ret
+	 
+.Mole:
+	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
 	loadwildmon MOLE, 3
+	startbattle
+	reloadmapafterbattle
+	ret
+ENDM
+
+countroom: MACRO
+	readmem wRoomDefeatedCount
+	addval 1
+	writemem wRoomDefeatedCount
+	ret
 ENDM

@@ -8,22 +8,21 @@
 A2_MapScripts:
 	def_scene_scripts
 	scene_script .DummyScene ; SCENE_FINISHED	
-
+	
 	def_callbacks
 	callback MAPCALLBACK_OBJECTS, .LoadBaddies
 
 .DummyScene:
-	
 	end
 
 .LoadBaddies
-	disappear ARUINS_MONSTER4
-	disappear ARUINS_MONSTER5
-	random 23
+	random 0
 	ifnotequal 0, .NoSpawn
 	appear ARUINS_MONSTER4
 	appear ARUINS_MONSTER5
 .NoSpawn
+	disappear ARUINS_MONSTER4
+	disappear ARUINS_MONSTER5
 	endcallback
 
 
@@ -33,10 +32,15 @@ RandomStairWarp2:
 	
 Monster1:	
 	faceplayer
-	RuinMonsterA
+	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
+	RuinARandom
+	startbattle
+	reloadmapafterbattle	
 	disappear ARUINS_MONSTER1
 	readmem wRoomDefeatedCount
-	ifequal 2, .UnlockDoors
+	addval 1
+	writemem wRoomDefeatedCount
+	ifequal RUINA_TARGET_DEFEATS, .UnlockDoors
 	end
 	
 .UnlockDoors:
@@ -51,9 +55,14 @@ Monster1:
 
 Monster2:	
 	faceplayer
-	RuinMonsterA
-	readmem wRoomDefeatedCount
+	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
+	RuinARandom
+	startbattle
+	reloadmapafterbattle	
 	disappear ARUINS_MONSTER2
+	readmem wRoomDefeatedCount
+	addval 1
+	writemem wRoomDefeatedCount
 	ifequal RUINA_TARGET_DEFEATS, .UnlockDoors
 	end
 
@@ -69,9 +78,14 @@ Monster2:
 
 Monster3:	
 	faceplayer
-	RuinMonsterA
+	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
+	RuinARandom
+	startbattle
+	reloadmapafterbattle	
 	disappear ARUINS_MONSTER3
 	readmem wRoomDefeatedCount
+	addval 1
+	writemem wRoomDefeatedCount
 	ifequal RUINA_TARGET_DEFEATS, .UnlockDoors
 	end
 
@@ -87,9 +101,14 @@ Monster3:
 
 Monster4:	
 	faceplayer
-	RuinMonsterA
+	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
+	RuinARandom
+	startbattle
+	reloadmapafterbattle	
 	disappear ARUINS_MONSTER4
 	readmem wRoomDefeatedCount
+	addval 1
+	writemem wRoomDefeatedCount
 	ifequal RUINA_TARGET_DEFEATS, .UnlockDoors
 	end
 
@@ -105,9 +124,14 @@ Monster4:
 
 Monster5:	
 	faceplayer
-	RuinMonsterA
-	disappear ARUINS_MONSTER5	
+	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
+	RuinARandom
+	startbattle
+	reloadmapafterbattle	
+	disappear ARUINS_MONSTER5
 	readmem wRoomDefeatedCount
+	addval 1
+	writemem wRoomDefeatedCount
 	ifequal RUINA_TARGET_DEFEATS, .UnlockDoors
 	end
 

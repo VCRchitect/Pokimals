@@ -81,8 +81,6 @@ PlayersHouseRadioScript:
 
 RandomStairWarp0:
 	warp A2, 4, 4
-   loadmem wRoomDefeatedCount, 0
-   writemem wRoomDefeatedCount
 	end
 	
 

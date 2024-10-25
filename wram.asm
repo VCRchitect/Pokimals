@@ -2423,8 +2423,7 @@ wTilesetBlocksAddress:: dw
 wTilesetCollisionBank:: db
 wTilesetCollisionAddress:: dw
 wTilesetAnim:: dw ; bank 3f
-wRoomDefeatedCount:: ds 1
-	ds 1 ; unused
+	ds 2 ; unused
 wTilesetPalettes:: dw ; bank 3f
 wTilesetEnd::
 	assert wTilesetEnd - wTileset == TILESET_LENGTH
@@ -3005,8 +3004,9 @@ wTradeFlags:: flag_array NUM_NPC_TRADES
 wMooMooBerries:: db
 wUndergroundSwitchPositions:: db
 wDuckPosition:: db
+wRoomDefeatedCount:: db
 
-	ds 13
+	ds 12
 
 ; map scene ids
 wPokecenter2FSceneID::                            db
