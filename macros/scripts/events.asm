@@ -1,5 +1,4 @@
 ; ScriptCommandTable indexes (see engine/overworld/scripting.asm)
-; ScriptCommandTable indexes (see engine/overworld/scripting.asm)
 	const_def
 
 	const scall_command ; $00
@@ -1092,9 +1091,15 @@ loadrandomlevelmon: MACRO
     db \3 ; Maximum level
 ENDM
 
-	const RuinARandom_command
-RuinARandom: MACRO
-	db RuinARandom_command
+	const RuinRandomA_command
+RuinRandomA: MACRO
+	db RuinRandomA_command
 ENDM
+
+	const RuinRandomB_command
+RuinRandomB: MACRO
+	db RuinRandomB_command
+ENDM
+
 
 NUM_EVENT_COMMANDS EQU const_value

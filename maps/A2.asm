@@ -27,121 +27,90 @@ A2_MapScripts:
 
 
 RandomStairWarp2:
+	readmem wBossRoomCount
+	ifequal 3, .Boss
+	addval 1
+	writemem wBossRoomCount
 	warper
-	
+.Boss
+	warp A10, 4, 4
+	end
 	
 Monster1:	
 	faceplayer
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	RuinARandom
+	RuinRandomA	
 	startbattle
 	reloadmapafterbattle	
 	disappear ARUINS_MONSTER1
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, .UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
 	end
 	
-.UnlockDoors:
-	opentext
-	writetext ButtonText
-	promptbutton
-	closetext
-	changedoor 2, 0, $72
-	changedoor 7, 0, $72
-	end
-
-
 Monster2:	
 	faceplayer
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	RuinARandom
+	RuinRandomA	
 	startbattle
 	reloadmapafterbattle	
 	disappear ARUINS_MONSTER2
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, .UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
 	end
-
-.UnlockDoors:
-	opentext
-	writetext ButtonText
-	promptbutton
-	closetext
-	changedoor 2, 0, $72
-	changedoor 7, 0, $72
-	end
-
 
 Monster3:	
 	faceplayer
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	RuinARandom
+	RuinRandomB	
 	startbattle
 	reloadmapafterbattle	
 	disappear ARUINS_MONSTER3
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, .UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
 	end
-
-.UnlockDoors:
-	opentext
-	writetext ButtonText
-	promptbutton
-	closetext
-	changedoor 2, 0, $72
-	changedoor 7, 0, $72
-	end
-
 
 Monster4:	
 	faceplayer
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	RuinARandom
+	RuinRandomA	
 	startbattle
 	reloadmapafterbattle	
 	disappear ARUINS_MONSTER4
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, .UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
 	end
-
-.UnlockDoors:
-	opentext
-	writetext ButtonText
-	promptbutton
-	closetext
-	changedoor 2, 0, $72
-	changedoor 7, 0, $72
-	end
-
 
 Monster5:	
 	faceplayer
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	RuinARandom
+	RuinRandomB	
 	startbattle
 	reloadmapafterbattle	
 	disappear ARUINS_MONSTER5
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, .UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
 	end
 
-.UnlockDoors:
+UnlockDoors:
 	opentext
 	writetext ButtonText
 	promptbutton
 	closetext
 	changedoor 2, 0, $72
 	changedoor 7, 0, $72
+	readmem wRoomDefeatedCount
+	setval 0
+	writemem wRoomDefeatedCount
 	end
 
 	
@@ -161,7 +130,7 @@ A2_MapEvents:
 	def_bg_events
 
 	def_object_events
-	object_event 3,  2, SPRITE_CLICKER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster1, -1
+	object_event 3,  2, SPRITE_MERCHANT, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster1, -1
 	object_event 4,  2, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster2, -1
 	object_event 5,  2, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster3, -1
 	object_event 6,  2, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster4, -1

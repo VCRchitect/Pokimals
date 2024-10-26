@@ -109,4 +109,5 @@ OverworldSprites:
 	overworld_sprite CerberusSpriteGFX, 4, STILL_SPRITE, PAL_OW_RED
 	overworld_sprite BarghestSpriteGFX, 4, STILL_SPRITE, PAL_OW_RED
 	overworld_sprite StandingYoungsterSpriteGFX, 12, STANDING_SPRITE, PAL_OW_BLUE
+	overworld_sprite MerchantSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
 	assert_table_length NUM_OVERWORLD_SPRITES

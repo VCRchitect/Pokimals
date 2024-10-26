@@ -178,8 +178,8 @@ ENDM
 
 warper: MACRO
 .loop
-	random 9
-	ifequal 0, .10
+	random 8
+	ifequal 0, .1
 	ifequal 1, .2
 	ifequal 2, .3
 	ifequal 3, .4
@@ -188,6 +188,10 @@ warper: MACRO
 	ifequal 6, .7
 	ifequal 7, .8
 	ifequal 8, .9
+
+.1
+	warp A3, 4, 4
+	end
 
 .2
 	warp A2, 4, 4
@@ -213,9 +217,6 @@ warper: MACRO
 .9
 	warp A9, 4, 4
 	end
-.10
-	warp A10, 4, 4
-	end
 ENDM
 
 changedoor: MACRO
@@ -223,55 +224,4 @@ changedoor: MACRO
 	playsound SFX_ENTER_DOOR
 	changeblock \1, \2, \3
 	reloadmappart
-ENDM
-
-RuinMonsterA: MACRO
-	random 4
-	ifequal 0, .Rocky
-	ifequal 1, .Bat
-	ifequal 2, .Rat
-	ifequal 3, .Shrew
-	ifequal 4, .Mole
-	
-.Rocky:
-	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	loadwildmon ROCKY, 3
-	startbattle
-	reloadmapafterbattle
-	ret
-	
-.Bat:
-	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	loadwildmon BAT, 3
-	startbattle
-	reloadmapafterbattle
-	ret
-
-.Rat:
-	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	loadwildmon RAT, 3
-	startbattle
-	reloadmapafterbattle
-	ret
-	
-.Shrew:
-	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	loadwildmon SHREW, 3
-	startbattle
-	reloadmapafterbattle
-	ret
-	 
-.Mole:
-	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	loadwildmon MOLE, 3
-	startbattle
-	reloadmapafterbattle
-	ret
-ENDM
-
-countroom: MACRO
-	readmem wRoomDefeatedCount
-	addval 1
-	writemem wRoomDefeatedCount
-	ret
 ENDM

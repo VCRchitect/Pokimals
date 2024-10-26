@@ -105,6 +105,6 @@ FenrirSpriteGFX::             INCBIN "gfx/sprites/fenrir.2bpp"
 CerberusSpriteGFX::               INCBIN "gfx/sprites/cerberus.2bpp"
 BarghestSpriteGFX::              INCBIN "gfx/sprites/barghest.2bpp"
 StandingYoungsterSpriteGFX::   INCBIN "gfx/sprites/standing_youngster.2bpp"
-
 SECTION "Sprites 3", ROMX
 OldmanSpriteGFX::              INCBIN "gfx/sprites/oldman.2bpp"
+MerchantSpriteGFX::				INCBIN "gfx/sprites/merchant.2bpp"

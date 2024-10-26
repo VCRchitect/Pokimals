@@ -264,7 +264,8 @@ ScriptCommandTable:
 	dw Script_trainerpic		     ; ab
 	dw Script_closetrainpic		     ; ac
 	dw Script_loadrandomlevelmon		; ad
-	dw Script_RuinARandom				; b0
+	dw Script_RuinRandomA				; b0
+	dw Script_RuinRandomB				; b1
 
 	assert_table_length NUM_EVENT_COMMANDS
 
@@ -2472,9 +2473,14 @@ Script_loadrandomlevelmon:
     ld [wCurPartyLevel], a ; Store the randomized level
     ret
 		
-Script_RuinARandom:
-	farcall ChooseWildEncounter_RuinA
+Script_RuinRandomA:
+	farcall RuinSummonerA
 	ret
+
+Script_RuinRandomB:
+	farcall RuinSummonerB
+	ret
+
 		
 Script_checkver_duplicate: ; unreferenced
 	ld a, [.gs_version]

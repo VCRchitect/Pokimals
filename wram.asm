@@ -3005,8 +3005,12 @@ wMooMooBerries:: db
 wUndergroundSwitchPositions:: db
 wDuckPosition:: db
 wRoomDefeatedCount:: db
-
-	ds 12
+wHealRoomCount:: db
+wBossRoomCount:: db
+wItemRoomCount:: db
+wMartRoomCount:: db
+wRuinRandomTable:: db
+	ds 7
 
 ; map scene ids
 wPokecenter2FSceneID::                            db

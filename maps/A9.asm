@@ -9,7 +9,17 @@ A9_MapScripts:
 	end
 
 RandomStairWarp9:
+	readmem wBossRoomCount
+	ifequal 3, .Boss
+	addval 1
+	writemem wBossRoomCount
 	warper
+.Boss
+	warp A10, 4, 4
+	readmem wBossRoomCount
+	setval 0
+	writemem wBossRoomCount
+	end
 	
 
 A9_MapEvents:
