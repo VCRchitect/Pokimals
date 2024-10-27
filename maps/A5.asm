@@ -27,8 +27,8 @@ A5_MapEvents:
 	def_warp_events
 
 	def_coord_events
-	coord_event  2,  0, SCENE_RANDOMSTAIRS, RandomStairWarp5
-	coord_event  7,  0, SCENE_RANDOMSTAIRS, RandomStairWarp5
+	coord_event  4,  6, SCENE_RANDOMSTAIRS, RandomStairWarp5
+	coord_event  9,  6, SCENE_RANDOMSTAIRS, RandomStairWarp5
 
 
 
