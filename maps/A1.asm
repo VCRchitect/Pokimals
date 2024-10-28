@@ -9,8 +9,7 @@ A1_MapScripts:
 	end
 
 RandomStairWarp1:
-	warp A2, 4, 4
-	
+	warper
 
 A1_MapEvents:
 	db 0, 0 ; filler
@@ -20,6 +19,7 @@ A1_MapEvents:
 
 	def_coord_events
 	coord_event  2,  0, SCENE_RANDOMSTAIRS, RandomStairWarp1
+	coord_event  3,  0, SCENE_RANDOMSTAIRS, RandomStairWarp1
 
 
 

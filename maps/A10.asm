@@ -1,4 +1,12 @@
 	object_const_def
+	const ARUINS_MONSTER1i
+	const ARUINS_MONSTER2i
+	const ARUINS_MONSTER3i
+	const ARUINS_MONSTER4i
+	const ARUINS_MONSTER5i
+	const ARUINS_POKE_BALL1i
+	const ARUINS_POKE_BALL2i
+	
 
 A10_MapScripts:
 	def_scene_scripts
@@ -8,20 +16,133 @@ A10_MapScripts:
 .DummyScene: ; unreferenced
 	end
 
-RandomStairWarp10:
-	warper
+Monster1i:	
+	faceplayer
+	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
+	RuinRandomA	
+	startbattle
+	reloadmapafterbattle	
+	disappear ARUINS_MONSTER1
+	readmem wRoomDefeatedCount
+	addval 1
+	writemem wRoomDefeatedCount
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsB
+	end
 	
+Monster2i:	
+	faceplayer
+	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
+	RuinRandomA	
+	startbattle
+	reloadmapafterbattle	
+	disappear ARUINS_MONSTER2
+	readmem wRoomDefeatedCount
+	addval 1
+	writemem wRoomDefeatedCount
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsB
+	end
 
+Monster3i:	
+	faceplayer
+	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
+	RuinRandomB	
+	startbattle
+	reloadmapafterbattle	
+	disappear ARUINS_MONSTER3
+	readmem wRoomDefeatedCount
+	addval 1
+	writemem wRoomDefeatedCount
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsB
+	end
+
+Monster4i:	
+	faceplayer
+	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
+	RuinRandomA	
+	startbattle
+	reloadmapafterbattle	
+	disappear ARUINS_MONSTER4
+	readmem wRoomDefeatedCount
+	addval 1
+	writemem wRoomDefeatedCount
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsB
+	end
+
+Monster5i:	
+	faceplayer
+	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
+	RuinRandomB	
+	startbattle
+	reloadmapafterbattle	
+	disappear ARUINS_MONSTER5
+	readmem wRoomDefeatedCount
+	addval 1
+	writemem wRoomDefeatedCount
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsB
+	end
+
+A10Item1:
+	RuinItems
+	opentext
+	verbosegiveitem ITEM_FROM_MEM
+	closetext	
+	disappear ARUINS_POKE_BALL2i
+	disappear ARUINS_POKE_BALL1i
+	end	
+	
+A10Item2:
+	RuinItems
+	opentext
+	verbosegiveitem ITEM_FROM_MEM
+	closetext	
+	disappear ARUINS_POKE_BALL2i
+	disappear ARUINS_POKE_BALL1i
+	end	
+
+
+
+UnlockDoorsi:
+	opentext
+	writetext ButtonText
+	promptbutton
+	closetext
+	appear ARUINS_POKE_BALL1i
+	appear ARUINS_POKE_BALL2i	
+	changedoor 2, 0, $78
+	changedoor 10, 0, $79
+	readmem wRoomDefeatedCount
+	setval 0
+	writemem wRoomDefeatedCount
+	end
+
+
+RandomStairWarpA10a:
+	warp AHEAL, 4,  4
+	end
+
+RandomStairWarpA10b:
+	warp AMART, 4,  4
+	end
+	
 A10_MapEvents:
 	db 0, 0 ; filler
 	def_warp_events
 
 	def_coord_events
-	coord_event  2,  0, SCENE_RANDOMSTAIRS, RandomStairWarp10
-	coord_event  7,  0, SCENE_RANDOMSTAIRS, RandomStairWarp10
+	coord_event  2,  0, SCENE_RANDOMSTAIRS, RandomStairWarpA10a
+	coord_event  3,  0, SCENE_RANDOMSTAIRS, RandomStairWarpA10a
+	coord_event  10,  0, SCENE_RANDOMSTAIRS, RandomStairWarpA10b
+	coord_event  11,  0, SCENE_RANDOMSTAIRS, RandomStairWarpA10b
 
 
 
 	def_bg_events
 
 	def_object_events
+	object_event  6,  7, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster1i, -1
+	object_event  6,  4, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster2i, -1
+	object_event 11,  3, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster3i, -1
+	object_event  7,  6, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster4i, -1
+	object_event  2,  3, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster5i, -1
+	object_event  6,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, A10Item1, EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
+	object_event  7,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, A10Item2, EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1

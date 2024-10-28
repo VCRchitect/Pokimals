@@ -178,7 +178,7 @@ ENDM
 
 warper: MACRO
 .loop
-	random 8
+	random 9
 	ifequal 0, .1
 	ifequal 1, .2
 	ifequal 2, .3
@@ -188,35 +188,41 @@ warper: MACRO
 	ifequal 6, .7
 	ifequal 7, .8
 	ifequal 8, .9
+	ifequal 9, .10
 
 .1
-	warp A3, 4, 4
+	warp A2, 12, 12
 	end
-
+	
 .2
-	warp A2, 4, 4
+	warp A3, 6, 12
 	end
 .3
-	warp A3, 4, 4
+	warp A4, 8, 12
 	end
 .4
-	warp A4, 4, 4
+	warp A5, 6, 12
 	end
 .5
-	warp A5, 4, 4
-	end
-.6
 	warp A6, 4, 4
 	end
-.7
+.6
 	warp A7, 4, 4
 	end
-.8
+.7
 	warp A8, 4, 4
 	end
-.9
+.8
 	warp A9, 4, 4
 	end
+.9
+	warp A11, 4, 4
+	end
+
+.10
+	warp A12, 4, 4
+	end
+
 ENDM
 
 changedoor: MACRO
@@ -225,3 +231,4 @@ changedoor: MACRO
 	changeblock \1, \2, \3
 	reloadmappart
 ENDM
+

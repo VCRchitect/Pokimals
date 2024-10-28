@@ -131,3 +131,9 @@ ENDM
 	map_attributes A8, A8, $00, 0
 	map_attributes A9, A9, $00, 0
 	map_attributes A10, A10, $00, 0
+	map_attributes A11, A11, $00, 0
+	map_attributes A12, A12, $00, 0
+	map_attributes AHEAL, AHEAL, $00, 0
+	map_attributes AMART, AMART, $00, 0
+	map_attributes ABOSS, ABOSS, $00, 0
+	map_attributes APREBOSS, APREBOSS, $00, 0

@@ -80,7 +80,7 @@ PlayersHouseRadioScript:
 	end
 
 RandomStairWarp0:
-	warp A2, 4, 4
+	warp A1, 2, 4
 	end
 	
 
@@ -150,7 +150,6 @@ PlayersRadioText4:
 PlayersHouse2F_MapEvents:
 	db 0, 0 ; filler
 	def_warp_events
-	warp_event  7,  5, PLAYERS_HOUSE_1F, 4
 
 	def_coord_events
 	coord_event  7,  0, SCENE_RANDOMSTAIRS, RandomStairWarp0

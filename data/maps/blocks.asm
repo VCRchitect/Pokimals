@@ -82,3 +82,21 @@ A9_Blocks:
 	INCBIN "maps/A9.blk"
 A10_Blocks:
 	INCBIN "maps/A10.blk"
+
+A11_Blocks:
+	INCBIN "maps/A11.blk"
+
+A12_Blocks:
+	INCBIN "maps/A12.blk"
+
+AHEAL_Blocks:
+	INCBIN "maps/AHEAL.blk"
+
+AMART_Blocks:
+	INCBIN "maps/AMART.blk"
+
+APREBOSS_Blocks:
+	INCBIN "maps/APREBOSS.blk"
+
+ABOSS_Blocks:
+	INCBIN "maps/ABOSS.blk"

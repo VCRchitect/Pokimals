@@ -1,3 +1,17 @@
+RuinHealText:
+	text "You made it far..."
+	done
+
+RuinAskHealText:
+	text "Do you trust me to"
+	line "heal your team?"
+	done
+
+RuinGoodbyeText:
+	text "Maybe I'll see you"
+	line "again..."
+	done
+
 NurseMornText:
 	text "Good morning!"
 	line "Welcome to our"

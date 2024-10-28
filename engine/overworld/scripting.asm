@@ -266,6 +266,7 @@ ScriptCommandTable:
 	dw Script_loadrandomlevelmon		; ad
 	dw Script_RuinRandomA				; b0
 	dw Script_RuinRandomB				; b1
+	dw Script_RuinItems				; b2
 
 	assert_table_length NUM_EVENT_COMMANDS
 
@@ -2481,7 +2482,39 @@ Script_RuinRandomB:
 	farcall RuinSummonerB
 	ret
 
-		
+
+Script_RuinItems:
+	ld hl, .RuinItems
+	call Random
+.loop
+	sub [hl]
+	jr c, .ok
+	inc hl
+	inc hl
+	jr .loop
+
+.ok
+	ld a, [hli]
+	inc a
+	jr z, .done
+	ld a, [hli]
+.done
+	ld [wScriptVar], a
+	ret
+	
+.RuinItems:
+	db 1, POTION
+	db 2, BERRY
+	db 4, ANTIDOTE
+	db 6, PSNCUREBERRY
+	db 12, ETHER
+	db 18, X_ATTACK
+	db 24, X_DEFEND
+	db 24, X_SPECIAL
+	db 48, NUGGET
+	db 64, RARE_CANDY
+	db -1
+
 Script_checkver_duplicate: ; unreferenced
 	ld a, [.gs_version]
 	ld [wScriptVar], a

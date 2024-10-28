@@ -66,17 +66,23 @@ ENDM
 	map_const HALL_OF_FAME,                                 5,  7 ;  7
 	endgroup
 	
-	newgroup RUINS												; 5
+	newgroup RUINSA											; 5
 	map_const A1, 3, 3 ; 1
-	map_const A2, 5, 3 ; 2
-	map_const A3, 5, 3 ; 3
-	map_const A4, 5, 3 ; 4
-	map_const A5, 5, 3 ; 5
+	map_const A2, 9, 7 ; 2
+	map_const A3, 9, 7 ; 3
+	map_const A4, 9, 7 ; 4
+	map_const A5, 7, 9 ; 5
 	map_const A6, 5, 3 ; 6
 	map_const A7, 5, 3 ; 7
 	map_const A8, 5, 3 ; 8
 	map_const A9, 5, 3 ; 9
-	map_const A10, 5, 3 ; 10
+	map_const A10, 7, 5 ; 10
+	map_const A11, 5, 3 ; 11
+	map_const A12, 5, 3 ; 12
+	map_const AMART, 5, 3 ; 13	
+	map_const AHEAL, 5, 3 ; 14
+	map_const APREBOSS, 5, 3 ; 15
+	map_const ABOSS, 5, 5 ; 16
 	endgroup
 
 

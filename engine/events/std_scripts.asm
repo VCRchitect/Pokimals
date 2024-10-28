@@ -4,6 +4,7 @@ MACRO add_stdscript
 ENDM
 
 StdScripts::
+	add_stdscript RuinHealScript
 	add_stdscript PokecenterNurseScript
 	add_stdscript DifficultBookshelfScript
 	add_stdscript PictureBookshelfScript
@@ -52,6 +53,33 @@ StdScripts::
 	add_stdscript PCScript
 	add_stdscript HappinessCheckScript
 
+RuinHealScript:
+	opentext
+	farwritetext RuinHealText
+	promptbutton
+	farwritetext RuinAskHealText
+	yesorno
+	iffalse .done
+	turnobject LAST_TALKED, UP
+	pause 10
+	special HealParty
+	playmusic MUSIC_HEAL
+	pause 10	
+	turnobject LAST_TALKED, DOWN
+	farwritetext RuinGoodbyeText
+	special RestartMapMusic
+	pause 10
+	waitbutton
+	closetext
+	end
+	
+.done
+	farwritetext RuinGoodbyeText
+	pause 10
+	waitbutton
+	closetext
+	end
+	
 PokecenterNurseScript:
 ; EVENT_WELCOMED_TO_POKECOM_CENTER is never set
 

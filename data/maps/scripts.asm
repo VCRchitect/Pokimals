@@ -44,6 +44,12 @@ INCLUDE "maps/A7.asm"
 INCLUDE "maps/A8.asm"
 INCLUDE "maps/A9.asm"
 INCLUDE "maps/A10.asm"
+INCLUDE "maps/A11.asm"
+INCLUDE "maps/A12.asm"
+INCLUDE "maps/AHEAL.asm"
+INCLUDE "maps/AMART.asm"
+INCLUDE "maps/APREBOSS.asm"
+INCLUDE "maps/ABOSS.asm"
 
 
 SECTION "Map Scripts 6", ROMX

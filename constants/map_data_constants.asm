@@ -5,7 +5,7 @@ MAPGROUP_NONE EQU 0
 GROUP_NONE    EQU 0
 MAP_NONE      EQU 0
 
-RUINA_TARGET_DEFEATS EQU 3
+RUINA_TARGET_DEFEATS EQU 5
 
 
 ; map struct members (see data/maps/maps.asm)

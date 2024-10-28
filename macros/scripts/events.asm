@@ -1101,5 +1101,9 @@ RuinRandomB: MACRO
 	db RuinRandomB_command
 ENDM
 
+	const RuinItems_command
+RuinItems: MACRO
+	db RuinItems_command
+ENDM	
 
 NUM_EVENT_COMMANDS EQU const_value

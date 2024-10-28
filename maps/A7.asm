@@ -1,4 +1,12 @@
 	object_const_def
+	const ARUINS_MONSTER1f
+	const ARUINS_MONSTER2f
+	const ARUINS_MONSTER3f
+	const ARUINS_MONSTER4f
+	const ARUINS_MONSTER5f
+	const ARUINS_POKE_BALL1f
+	const ARUINS_POKE_BALL2f
+
 
 A7_MapScripts:
 	def_scene_scripts
@@ -9,17 +17,126 @@ A7_MapScripts:
 	end
 
 RandomStairWarp7:
+	readmem wSplitRoomCount
+	addval 1
+	writemem wSplitRoomCount
+	ifequal 6, .Split
+	warper
+.Split
 	readmem wBossRoomCount
-	ifequal 3, .Boss
 	addval 1
 	writemem wBossRoomCount
-	warper
-.Boss
+	ifequal 2, .Boss
 	warp A10, 4, 4
+	readmem wSplitRoomCount
+	setval 0
+	writemem wSplitRoomCount
+	end
+.Boss
+	warp APREBOSS, 4, 4
 	readmem wBossRoomCount
 	setval 0
 	writemem wBossRoomCount
 	end
+	
+Monster1f:	
+	faceplayer
+	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
+	RuinRandomA	
+	startbattle
+	reloadmapafterbattle	
+	disappear ARUINS_MONSTER1
+	readmem wRoomDefeatedCount
+	addval 1
+	writemem wRoomDefeatedCount
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsB
+	end
+	
+Monster2f:	
+	faceplayer
+	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
+	RuinRandomA	
+	startbattle
+	reloadmapafterbattle	
+	disappear ARUINS_MONSTER2
+	readmem wRoomDefeatedCount
+	addval 1
+	writemem wRoomDefeatedCount
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsB
+	end
+
+Monster3f:	
+	faceplayer
+	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
+	RuinRandomB	
+	startbattle
+	reloadmapafterbattle	
+	disappear ARUINS_MONSTER3
+	readmem wRoomDefeatedCount
+	addval 1
+	writemem wRoomDefeatedCount
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsB
+	end
+
+Monster4f:	
+	faceplayer
+	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
+	RuinRandomA	
+	startbattle
+	reloadmapafterbattle	
+	disappear ARUINS_MONSTER4
+	readmem wRoomDefeatedCount
+	addval 1
+	writemem wRoomDefeatedCount
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsB
+	end
+
+Monster5f:	
+	faceplayer
+	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
+	RuinRandomB	
+	startbattle
+	reloadmapafterbattle	
+	disappear ARUINS_MONSTER5
+	readmem wRoomDefeatedCount
+	addval 1
+	writemem wRoomDefeatedCount
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsB
+	end
+
+A7Item1:
+	RuinItems
+	opentext
+	verbosegiveitem ITEM_FROM_MEM
+	closetext	
+	disappear ARUINS_POKE_BALL2f
+	disappear ARUINS_POKE_BALL1f
+	end	
+	
+A7Item2:
+	RuinItems
+	opentext
+	verbosegiveitem ITEM_FROM_MEM
+	closetext	
+	disappear ARUINS_POKE_BALL2f
+	disappear ARUINS_POKE_BALL1f
+	end	
+
+
+UnlockDoorsf:
+	opentext
+	writetext ButtonText
+	promptbutton
+	closetext
+	appear ARUINS_POKE_BALL1f
+	appear ARUINS_POKE_BALL2f		
+	changedoor 2, 0, $0B
+	changedoor 6, 0, $0B
+	readmem wRoomDefeatedCount
+	setval 0
+	writemem wRoomDefeatedCount
+	end
+		
 	
 
 A7_MapEvents:
@@ -28,6 +145,9 @@ A7_MapEvents:
 
 	def_coord_events
 	coord_event  2,  0, SCENE_RANDOMSTAIRS, RandomStairWarp7
+	coord_event  3,  0, SCENE_RANDOMSTAIRS, RandomStairWarp7
+	
+	coord_event  6,  0, SCENE_RANDOMSTAIRS, RandomStairWarp7
 	coord_event  7,  0, SCENE_RANDOMSTAIRS, RandomStairWarp7
 
 
@@ -35,3 +155,10 @@ A7_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  4,  2, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster1f, -1
+	object_event  6,  2, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster2f, -1
+	object_event  5,  3, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster3f, -1
+	object_event  2,  4, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster4f, -1
+	object_event  2,  2, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster5f, -1
+	object_event  7,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, A7Item1, EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
+	object_event  3,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, A7Item2, EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
