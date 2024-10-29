@@ -1,4 +1,5 @@
 	object_const_def
+	const ARUINS_BOSS
 
 ABOSS_MapScripts:
 	def_scene_scripts
@@ -7,6 +8,17 @@ ABOSS_MapScripts:
 
 .DummyScene: ; unreferenced
 	end
+	
+	
+BossA:	
+	faceplayer
+	loadvar VAR_BATTLETYPE, BATTLETYPE_FENRIR
+	RuinABoss	
+	startbattle
+	reloadmapafterbattle	
+	disappear ARUINS_BOSS
+	end
+	
 	
 
 ABOSS_MapEvents:
@@ -20,3 +32,4 @@ ABOSS_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  5,  3, SPRITE_BARGHEST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, BossA, -1

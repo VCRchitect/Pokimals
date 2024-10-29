@@ -1106,4 +1106,10 @@ RuinItems: MACRO
 	db RuinItems_command
 ENDM	
 
+	const RuinABoss_command
+RuinABoss: MACRO
+	db RuinABoss_command
+ENDM
+
+
 NUM_EVENT_COMMANDS EQU const_value

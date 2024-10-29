@@ -267,6 +267,7 @@ ScriptCommandTable:
 	dw Script_RuinRandomA				; b0
 	dw Script_RuinRandomB				; b1
 	dw Script_RuinItems				; b2
+	dw Script_RuinABoss				; b3
 
 	assert_table_length NUM_EVENT_COMMANDS
 
@@ -2514,6 +2515,10 @@ Script_RuinItems:
 	db 48, NUGGET
 	db 64, RARE_CANDY
 	db -1
+	
+Script_RuinABoss:	
+	farcall RuinSummonerABoss
+	ret	
 
 Script_checkver_duplicate: ; unreferenced
 	ld a, [.gs_version]

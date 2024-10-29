@@ -3094,7 +3094,7 @@ wMobileBattleRoomSceneID::                        db
 
 ; fight counts
 wJackFightCount::    db
-wBeverlyFightCount:: db ; unreferenced
+wLevelCap:: 		 db
 wHueyFightCount::    db
 wGavenFightCount::   db
 wBethFightCount::    db

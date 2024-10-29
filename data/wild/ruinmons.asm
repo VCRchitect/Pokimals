@@ -12,6 +12,12 @@ RuinAMons:
 	db 5, BANSHEE, 2, 10
     db -1
 
+RuinABossTable:
+    db 33, WYRM, 15, 25
+    db 33, CHAMELEON, 15, 25
+	db 34, HARD_ROCK, 15, 15
+	db -1
+
 RuinBMons:
     db 10, ROCKY, 2, 10
     db 8, BAT, 2, 10

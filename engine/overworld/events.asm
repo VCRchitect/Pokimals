@@ -1240,6 +1240,16 @@ DoBikeStep::
 
 INCLUDE "engine/overworld/cmd_queue.asm"
 
+RuinSummonerABoss::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinABossTable
+	ld de, 4
+	jp CheckMon
+
 RuinSummonerB::
 .loop
 	call Random

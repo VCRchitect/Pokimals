@@ -213,6 +213,9 @@ endc
 	ld [hl], HIGH(MOM_MONEY) ; mid
 	inc hl
 	ld [hl], LOW(MOM_MONEY)
+	
+	ld a, 100
+	ld [wLevelCap], a	
 
 	call InitializeNPCNames
 
