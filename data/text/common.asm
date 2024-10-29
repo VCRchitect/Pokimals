@@ -32,3 +32,8 @@ INCLUDE "data/text/common_6.asm"
 SECTION "Text 7", ROMX
 
 INCLUDE "data/text/common_7.asm"
+
+SECTION "Text 8", ROMX
+
+INCLUDE "data/text/common_8.asm"
+

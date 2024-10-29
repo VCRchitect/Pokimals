@@ -1371,9 +1371,10 @@ HandleCigarette:
 	ld a, b
 	cp HELD_CIGARETTE
 	ret nz
-
-	ld de, ANIM_CIGARETTE
-	call SwitchTurnCore
+	call ItemCigaretteAnim
+	call GetSixteenthMaxHP
+	call SubtractHPFromUser
+	call SwitchTurnCore	
 	ld hl, BattleText_TargetSmoked
 	jp StdBattleTextbox
 
@@ -4373,6 +4374,22 @@ ItemRecoveryAnim:
 	pop de
 	pop hl
 	ret
+
+ItemCigaretteAnim:
+	push hl
+	push de
+	push bc
+	ld a, POISON_GAS
+	ld [wFXAnimID], a
+	xor a
+	ld [wNumHits], a
+	ld [wFXAnimID + 1], a
+	predef PlayBattleAnim
+	pop bc
+	pop de
+	pop hl
+	ret
+
 
 UseHeldStatusHealingItem:
 	callfar GetOpponentItem
@@ -8231,8 +8248,6 @@ ExitBattle:
 CleanUpBattleRAM:
 	call BattleEnd_HandleRoamMons
 	xor a
-	ld [wStatsScreenFlags], a
-	ld [wBattleTimeOfDay], a
 	ld [wLowHealthAlarm], a
 	ld [wBattleMode], a
 	ld [wBattleType], a

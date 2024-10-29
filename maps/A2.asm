@@ -13,9 +13,31 @@ A2_MapScripts:
 	scene_script .DummyScene ; SCENE_FINISHED	
 	
 	def_callbacks
+	callback MAPCALLBACK_OBJECTS, .Ball1
+	callback MAPCALLBACK_OBJECTS, .Ball2
+
 	
 .DummyScene:
 	end
+
+
+.Ball1
+	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
+	iffalse BallDisappeara
+	appear ARUINS_POKE_BALL1a
+	endcallback
+
+.Ball2
+	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
+	iffalse BallDisappeara
+	appear ARUINS_POKE_BALL2a
+	endcallback
+
+BallDisappeara:
+	disappear ARUINS_POKE_BALL1a
+	disappear ARUINS_POKE_BALL2a
+	endcallback
+
 
 RandomStairWarp2:
 	readmem wBossRoomCount
@@ -97,20 +119,36 @@ Monster5:
 
 A2Item1:
 	RuinItems
+	iffalse .no_item
 	opentext
 	verbosegiveitem ITEM_FROM_MEM
-	closetext	
-	disappear ARUINS_POKE_BALL2a
+	closetext
+	disappear ARUINS_POKE_BALL1a
+	end	
+
+.no_item
+	opentext
+	randomtext EmptyTable
+	waitbutton
+	closetext
 	disappear ARUINS_POKE_BALL1a
 	end	
 
 A2Item2:
 	RuinItems
+	iffalse .no_item
+	opentext
+	verbosegiveitem ITEM_FROM_MEM
+	closetext
 	disappear ARUINS_POKE_BALL2a
-	disappear ARUINS_POKE_BALL1a
 	end	
 
 .no_item
+	opentext
+	randomtext EmptyTable
+	waitbutton
+	closetext
+	disappear ARUINS_POKE_BALL2a
 	end	
 	
 UnlockDoors:

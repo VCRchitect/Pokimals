@@ -12,9 +12,29 @@ A10_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
-
+	callback MAPCALLBACK_OBJECTS, .Ball1
+	callback MAPCALLBACK_OBJECTS, .Ball2
+	
 .DummyScene: ; unreferenced
 	end
+
+.Ball1
+	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
+	iffalse BallDisappeari
+	appear ARUINS_POKE_BALL1i
+	endcallback
+
+.Ball2
+	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
+	iffalse BallDisappeari
+	appear ARUINS_POKE_BALL2i
+	endcallback
+
+BallDisappeari:
+	disappear ARUINS_POKE_BALL1i
+	disappear ARUINS_POKE_BALL2i
+	endcallback
+
 
 Monster1i:	
 	faceplayer
@@ -83,20 +103,38 @@ Monster5i:
 
 A10Item1:
 	RuinItems
+	iffalse .no_item
 	opentext
 	verbosegiveitem ITEM_FROM_MEM
-	closetext	
-	disappear ARUINS_POKE_BALL2i
+	closetext
+	disappear ARUINS_POKE_BALL1i
+	end	
+
+.no_item
+	opentext
+	randomtext EmptyTable
+	waitbutton	
+	
+	closetext
 	disappear ARUINS_POKE_BALL1i
 	end	
 	
 A10Item2:
 	RuinItems
+	iffalse .no_item
 	opentext
 	verbosegiveitem ITEM_FROM_MEM
-	closetext	
+	closetext
 	disappear ARUINS_POKE_BALL2i
-	disappear ARUINS_POKE_BALL1i
+	end	
+
+.no_item
+	opentext
+	randomtext EmptyTable
+	waitbutton	
+	
+	closetext
+	disappear ARUINS_POKE_BALL2i
 	end	
 
 

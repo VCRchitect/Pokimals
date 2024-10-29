@@ -12,22 +12,44 @@ A6_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
+	callback MAPCALLBACK_OBJECTS, .Ball1
+	callback MAPCALLBACK_OBJECTS, .Ball2	
 
 .DummyScene: ; unreferenced
 	end
+	
+
+.Ball1
+	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
+	iffalse BallDisappeare
+	appear ARUINS_POKE_BALL1e
+	endcallback
+
+.Ball2
+	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
+	iffalse BallDisappeare
+	appear ARUINS_POKE_BALL2e
+	endcallback
+
+
+BallDisappeare:
+	disappear ARUINS_POKE_BALL1e
+	disappear ARUINS_POKE_BALL2e
+	endcallback
+	
 
 RandomStairWarp6:
 	readmem wSplitRoomCount
 	addval 1
 	writemem wSplitRoomCount
-	ifequal 6, .Split
+	ifequal 3, .Split
 	warper
 .Split
 	readmem wBossRoomCount
 	addval 1
 	writemem wBossRoomCount
 	ifequal 2, .Boss
-	warp A10, 4, 4
+	warp A10, 6, 8
 	readmem wSplitRoomCount
 	setval 0
 	writemem wSplitRoomCount
@@ -106,20 +128,36 @@ Monster5e:
 
 A6Item1:
 	RuinItems
+	iffalse .no_item
 	opentext
 	verbosegiveitem ITEM_FROM_MEM
-	closetext	
-	disappear ARUINS_POKE_BALL2e
+	closetext
+	disappear ARUINS_POKE_BALL1e
+	end	
+
+.no_item
+	opentext
+	randomtext EmptyTable
+	waitbutton	
+	closetext
 	disappear ARUINS_POKE_BALL1e
 	end	
 	
 A6Item2:
 	RuinItems
+	iffalse .no_item
 	opentext
 	verbosegiveitem ITEM_FROM_MEM
-	closetext	
+	closetext
 	disappear ARUINS_POKE_BALL2e
-	disappear ARUINS_POKE_BALL1e
+	end	
+
+.no_item
+	opentext
+	randomtext EmptyTable
+	waitbutton		
+	closetext
+	disappear ARUINS_POKE_BALL2e
 	end	
 
 UnlockDoorse:
@@ -128,7 +166,7 @@ UnlockDoorse:
 	promptbutton
 	closetext
 	appear ARUINS_POKE_BALL1e
-	appear ARUINS_POKE_BALL2d	
+	appear ARUINS_POKE_BALL2e
 	changedoor 2, 0, $0B
 	changedoor 6, 0, $0B
 	readmem wRoomDefeatedCount

@@ -17,21 +17,35 @@ RandomStairWarpAPREBOSS:
 
 APreItem1:
 	RuinItems
+	iffalse .no_item
 	opentext
 	verbosegiveitem ITEM_FROM_MEM
-	closetext	
-	disappear ARUINS_POKE_BALL2l
+	closetext
+	disappear ARUINS_POKE_BALL1l
+	end	
+
+.no_item
+	opentext
+	randomtext EmptyTable
+	closetext
 	disappear ARUINS_POKE_BALL1l
 	end	
 
 
 APreItem2:
 	RuinItems
+	iffalse .no_item
 	opentext
 	verbosegiveitem ITEM_FROM_MEM
-	closetext	
+	closetext
 	disappear ARUINS_POKE_BALL2l
-	disappear ARUINS_POKE_BALL1l
+	end	
+
+.no_item
+	opentext
+	randomtext EmptyTable
+	closetext
+	disappear ARUINS_POKE_BALL2l
 	end	
 
 APREBOSS_MapEvents:

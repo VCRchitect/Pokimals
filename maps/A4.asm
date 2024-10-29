@@ -12,22 +12,45 @@ A4_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
+	callback MAPCALLBACK_OBJECTS, .Ball1
+	callback MAPCALLBACK_OBJECTS, .Ball2
+	
 
 .DummyScene: ; unreferenced
 	end
+
+
+.Ball1
+	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
+	iffalse BallDisappearc
+	appear ARUINS_POKE_BALL1c
+	endcallback
+
+.Ball2
+	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
+	iffalse BallDisappearc
+	appear ARUINS_POKE_BALL2c
+	endcallback
+
+
+BallDisappearc:
+	disappear ARUINS_POKE_BALL1c
+	disappear ARUINS_POKE_BALL2c
+	endcallback
+
 
 RandomStairWarp4:
 	readmem wSplitRoomCount
 	addval 1
 	writemem wSplitRoomCount
-	ifequal 6, .Split
+	ifequal 3, .Split
 	warper
 .Split
 	readmem wBossRoomCount
 	addval 1
 	writemem wBossRoomCount
 	ifequal 2, .Boss
-	warp A10, 4, 4
+	warp A10, 6, 8
 	readmem wSplitRoomCount
 	setval 0
 	writemem wSplitRoomCount
@@ -106,21 +129,37 @@ Monster5c:
 
 A4Item1:
 	RuinItems
+	iffalse .no_item
 	opentext
 	verbosegiveitem ITEM_FROM_MEM
-	closetext	
-	disappear ARUINS_POKE_BALL2c
+	closetext
+	disappear ARUINS_POKE_BALL1c
+	end	
+
+.no_item
+	opentext
+	randomtext EmptyTable
+	waitbutton	
+	closetext
 	disappear ARUINS_POKE_BALL1c
 	end	
 
 	
 A4Item2:
 	RuinItems
+	iffalse .no_item
 	opentext
 	verbosegiveitem ITEM_FROM_MEM
-	closetext	
+	closetext
 	disappear ARUINS_POKE_BALL2c
-	disappear ARUINS_POKE_BALL1c
+	end	
+
+.no_item
+	opentext
+	randomtext EmptyTable
+	waitbutton	
+	closetext
+	disappear ARUINS_POKE_BALL2c
 	end	
 
 
