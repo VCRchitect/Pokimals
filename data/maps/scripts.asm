@@ -20,7 +20,13 @@ SECTION "Map Scripts 3", ROMX
 INCLUDE "maps/NewBarkTown.asm"
 INCLUDE "maps/PlayersHouse1F.asm"
 INCLUDE "maps/PlayersHouse2F.asm"
-
+INCLUDE "maps/playeryard.asm"
+INCLUDE "maps/islandsouth.asm"
+INCLUDE "maps/thesiteoutside.asm"
+INCLUDE "maps/DayCare.asm"
+INCLUDE "maps/IslandNameRater.asm"
+INCLUDE "maps/MoveDeletersHouse.asm"
+INCLUDE "maps/SiteGate.asm"
 
 SECTION "Map Scripts 4", ROMX
 

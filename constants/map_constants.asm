@@ -51,9 +51,16 @@ ENDM
 	endgroup
 
 	newgroup NEW_BARK                                             ;  3
-	map_const NEW_BARK_TOWN,                               10,  9 ;  1
+	map_const PLAYERYARD,                               5,  7 ;  1
+	map_const THESITEOUTSIDE,									11, 13 ; 5
+	map_const ISLANDSOUTH,										11, 8 ; 3
 	map_const PLAYERS_HOUSE_1F,                             5,  4 ;  2
-	map_const PLAYERS_HOUSE_2F,                             4,  3 ;  3
+	map_const PLAYERS_HOUSE_2F,                             4,  3 ;  4
+	map_const ISLANDNAMERATER, 									4, 4 ; 6
+	map_const MOVEDELETERSHOUSE,								4, 4 ;	7
+	map_const DAY_CARE,											5, 4;  8
+	map_const NEW_BARK_TOWN,									10, 9 ; 9
+	map_const SITEGATE,                  					5,  4 ; 10
 	endgroup
 
 	newgroup INDIGO                                               ;  4
@@ -70,7 +77,7 @@ ENDM
 	map_const A1, 3, 3 ; 1
 	map_const A2, 9, 7 ; 2
 	map_const A3, 9, 7 ; 3
-	map_const A4, 9, 7 ; 4
+	map_const A4, 9, 5 ; 4
 	map_const A5, 7, 9 ; 5
 	map_const A6, 5, 3 ; 6
 	map_const A7, 5, 3 ; 7

@@ -17,7 +17,7 @@ MAP_MAPATTRIBUTES      rw ; 3
 MAP_LOCATION           rb ; 5
 MAP_MUSIC              rb ; 6
 MAP_PALETTE            rb ; 7
-MAP_FISHGROUP          rb ; 9
+MAP_FISHGROUP          rb ; 8
 MAP_LENGTH EQU _RS
 
 ; map environments (wEnvironment)
@@ -79,10 +79,12 @@ NUM_FISHGROUPS EQU const_value - 1
 ; SpawnPoints indexes (see data/maps/spawn_points.asm)
 	const_def
 	const SPAWN_HOME
+	
 ; kanto
 	const SPAWN_INDIGO
 ; johto
 	const SPAWN_NEW_BARK
+	const SPAWN_PLAYERYARD
 	const SPAWN_BATTLE_TOWER
 	const SPAWN_FAST_SHIP
 DEF NUM_SPAWNS EQU const_value

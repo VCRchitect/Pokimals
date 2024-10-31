@@ -96,10 +96,16 @@ MACRO connection
 	endc
 ENDM
 
-	map_attributes NewBarkTown, NEW_BARK_TOWN, $05, 0
+	map_attributes PlayerYard, PLAYERYARD, $05, WEST
+	connection west, IslandSouth, ISLANDSOUTH, 0	
+	
+	map_attributes IslandSouth, ISLANDSOUTH, $05, EAST
+	connection east, PlayerYard, PLAYERYARD, -1
+	
+	map_attributes TheSiteOutside, THESITEOUTSIDE, $00, 0
 
 	map_attributes BattleTowerOutside, BATTLE_TOWER_OUTSIDE, $05, 0
-
+	
 	map_attributes Pokecenter2F, POKECENTER_2F, $00, 0
 	map_attributes TradeCenter, TRADE_CENTER, $00, 0
 	map_attributes Colosseum, COLOSSEUM, $00, 0
@@ -112,6 +118,15 @@ ENDM
 
 	map_attributes PlayersHouse1F, PLAYERS_HOUSE_1F, $00, 0
 	map_attributes PlayersHouse2F, PLAYERS_HOUSE_2F, $00, 0
+
+	map_attributes IslandNameRater, ISLANDNAMERATER, $00, 0
+	map_attributes MoveDeletersHouse, MOVEDELETERSHOUSE, $00, 0
+	map_attributes DayCare, DAY_CARE, $00, 0
+	
+	map_attributes NewBarkTown, NEW_BARK_TOWN, $05, 0
+	
+	map_attributes SiteGate, SITEGATE, $00, 0
+
 
 	map_attributes IndigoPlateauPokecenter1F, INDIGO_PLATEAU_POKECENTER_1F, $00, 0
 	map_attributes WillsRoom, WILLS_ROOM, $00, 0

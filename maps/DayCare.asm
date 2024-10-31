@@ -25,39 +25,6 @@ DayCareManScript_Inside:
 	refreshscreen
 	opentext
 	trainerpic OLDMAN
-	checkevent EVENT_GOT_ODD_EGG
-	iftrue .AlreadyHaveOddEgg
-	writetext DayCareManText_GiveOddEgg
-	promptbutton
-	closetrainpic
-	closetext
-	readvar VAR_PARTYCOUNT
-	ifequal PARTY_LENGTH, .PartyFull
-	special GiveOddEgg
-	refreshscreen
-	opentext
-	trainerpic OLDMAN
-	writetext DayCareText_GotOddEgg
-	playsound SFX_KEY_ITEM
-	waitsfx
-	writetext DayCareText_DescribeOddEgg
-	waitbutton
-	closetrainpic
-	closetext
-	setevent EVENT_GOT_ODD_EGG
-	end
-
-.PartyFull:
-	refreshscreen
-	opentext
-	trainerpic OLDMAN
-	writetext DayCareText_PartyFull
-	waitbutton
-	closetrainpic
-	closetext
-	end
-
-.AlreadyHaveOddEgg:
 	special DayCareMan
 	waitbutton
 	closetrainpic
@@ -171,6 +138,11 @@ DayCare_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
+	warp_event  0,  5, ISLANDSOUTH, 3
+	warp_event  0,  6, ISLANDSOUTH, 4
+	warp_event  2,  7, ISLANDSOUTH, 5
+	warp_event  3,  7, ISLANDSOUTH, 5
+	
 	
 	def_coord_events
 

@@ -9,14 +9,18 @@ A1_MapScripts:
 	end
 
 RandomStairWarp1:
+	readmem wSplitRoomCount
+	setval 0
+	writemem wSplitRoomCount
+	readmem wBossRoomCount
+	setval 0
+	writemem wBossRoomCount
 	warper
 
 A1_MapEvents:
 	db 0, 0 ; filler
 	def_warp_events
-	warp_event  2,  5, NEW_BARK_TOWN, 2
 	
-
 	def_coord_events
 	coord_event  2,  0, SCENE_RANDOMSTAIRS, RandomStairWarp1
 	coord_event  3,  0, SCENE_RANDOMSTAIRS, RandomStairWarp1

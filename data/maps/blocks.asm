@@ -4,8 +4,9 @@ Pokecenter2F_Blocks:
 	INCBIN "maps/Pokecenter2F.blk"
 
 TradeCenter_Blocks:
-TimeCapsule_Blocks:
 	INCBIN "maps/TradeCenter.blk"
+
+TimeCapsule_Blocks:
 
 Colosseum_Blocks:
 	INCBIN "maps/Colosseum.blk"
@@ -36,6 +37,27 @@ PlayersHouse1F_Blocks:
 
 PlayersHouse2F_Blocks:
 	INCBIN "maps/PlayersHouse2F.blk"
+	
+PlayerYard_Blocks:
+	INCBIN "maps/playeryard.blk"
+
+IslandSouth_Blocks:
+	INCBIN "maps/islandsouth.blk"
+
+TheSiteOutside_Blocks:
+	INCBIN "maps/thesiteoutside.blk"
+
+DayCare_Blocks:
+	INCBIN "maps/DayCare.blk"
+
+IslandNameRater_Blocks:
+	INCBIN "maps/IslandNameRater.blk"
+	
+MoveDeletersHouse_Blocks:
+	INCBIN "maps/MoveDeletersHouse.blk"
+	
+SiteGate_Blocks:
+	INCBIN "maps/SiteGate.blk"
 
 
 SECTION "Map Blocks 3", ROMX

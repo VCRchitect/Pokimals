@@ -41,7 +41,7 @@ PlayersHouseBigDollScript:
 	describedecoration DECODESC_BIG_DOLL
 
 PlayersHouseGameConsoleScript:
-	end
+	describedecoration DECODESC_CONSOLE
 
 PlayersHousePosterScript:
 	conditional_event EVENT_PLAYERS_ROOM_POSTER, .Script
@@ -78,11 +78,6 @@ PlayersHouseRadioScript:
 	pause 45
 	closetext
 	end
-
-RandomStairWarp0:
-	warp A1, 2, 4
-	end
-	
 
 PlayersHouseBookshelfScript:
 	refreshscreen
@@ -150,9 +145,9 @@ PlayersRadioText4:
 PlayersHouse2F_MapEvents:
 	db 0, 0 ; filler
 	def_warp_events
+	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
 
 	def_coord_events
-	coord_event  7,  0, SCENE_RANDOMSTAIRS, RandomStairWarp0
 
 	def_bg_events
 	bg_event  2,  1, BGEVENT_UP, PlayersHousePCScript
