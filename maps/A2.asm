@@ -40,11 +40,21 @@ BallDisappeara:
 
 
 RandomStairWarp2:
+	readmem wSplitRoomCount
+	addval 1
+	writemem wSplitRoomCount
+	ifequal 3, .Split
+	warper
+.Split
 	readmem wBossRoomCount
-	ifequal 12, .Boss
 	addval 1
 	writemem wBossRoomCount
-	warper
+	ifequal 2, .Boss
+	warp A10, 6, 8
+	readmem wSplitRoomCount
+	setval 0
+	writemem wSplitRoomCount
+	end
 .Boss
 	warp APREBOSS, 4, 4
 	readmem wBossRoomCount
