@@ -100,7 +100,7 @@ ENDM
 	connection west, IslandSouth, ISLANDSOUTH, 0	
 	
 	map_attributes IslandSouth, ISLANDSOUTH, $05, EAST
-	connection east, PlayerYard, PLAYERYARD, -1
+	connection east, PlayerYard, PLAYERYARD, 0
 	
 	map_attributes TheSiteOutside, THESITEOUTSIDE, $00, 0
 

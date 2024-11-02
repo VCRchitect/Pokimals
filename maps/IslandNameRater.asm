@@ -7,6 +7,8 @@ IslandNameRater_MapScripts:
 	def_callbacks
 
 IslandNameRater:
+	checkevent EVENT_GOT_A_MON
+	iffalse .NameRaterRambles
 	faceplayer
 	refreshscreen
 	opentext
@@ -16,6 +18,19 @@ IslandNameRater:
 	closetrainpic
 	closetext
 	end
+
+.NameRaterRambles
+	faceplayer
+	refreshscreen
+	opentext
+	trainerpic GENTLEMAN
+	randomtext NPCKTextTable
+	waitbutton
+	closetrainpic
+	closetext
+	end
+
+
 
 IslandNameRaterBookshelf:
 	jumpstd DifficultBookshelfScript

@@ -21,6 +21,8 @@ DayCare_MapScripts:
 	endcallback
 
 DayCareManScript_Inside:
+	checkevent EVENT_GOT_A_MON
+	iffalse .DayCareManRambles
 	faceplayer
 	refreshscreen
 	opentext
@@ -31,7 +33,21 @@ DayCareManScript_Inside:
 	closetext
 	end
 
+.DayCareManRambles
+	faceplayer
+	refreshscreen
+	opentext
+	trainerpic OLDMAN
+	randomtext OldmanTextTable
+	waitbutton
+	closetrainpic
+	closetext
+	end
+
+
 DayCareLadyScript:
+	checkevent EVENT_GOT_A_MON
+	iffalse .DayCareLadyRambles
 	faceplayer
 	refreshscreen
 	opentext
@@ -43,6 +59,17 @@ DayCareLadyScript:
 	closetrainpic
 	closetext
 	end
+	
+.DayCareLadyRambles
+	faceplayer
+	refreshscreen
+	opentext
+	trainerpic MEDIUM
+	randomtext OldmanTextTable
+	waitbutton
+	closetrainpic
+	closetext
+	end	
 
 .HusbandWasLookingForYou:
 	writetext Text_GrampsLookingForYou

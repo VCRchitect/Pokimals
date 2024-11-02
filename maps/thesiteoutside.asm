@@ -28,8 +28,8 @@ TheSiteOutsideSignText:
 TheSiteOutside_MapEvents:
 	db 0, 0 ; filler
 	def_warp_events
-	warp_event 11, 21, SITEGATE, 1
-	warp_event 10, 21, SITEGATE, 2
+	warp_event 11, 21, SITEGATE, 2
+	warp_event 10, 21, SITEGATE, 1
 
 
 	def_coord_events

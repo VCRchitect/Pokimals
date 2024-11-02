@@ -88,6 +88,7 @@ GrampsScript:
 	
 
 NeighborScript:
+	setevent EVENT_GOT_A_MON
 	faceplayer
 	refreshscreen
 	opentext
