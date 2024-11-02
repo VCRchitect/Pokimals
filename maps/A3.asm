@@ -61,68 +61,178 @@ RandomStairWarp3:
 Monster1b:	
 	faceplayer
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	RuinRandomA	
-	startbattle
-	reloadmapafterbattle	
-	disappear ARUINS_MONSTER1
-	readmem wRoomDefeatedCount
-	addval 1
-	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsB
+	readmem wBadges
+	ifequal 0, nobadgeb
+	ifequal 1, onebadgeb
+	ifequal 2, twobadgeb
+	ifequal 3, threebadgeb
+	ifequal 4, fourbadgeb
+	ifequal 5, fivebadgeb
+	ifequal 6, sixbadgeb
+	ifequal 7, sevenbadgeb
+	ifequal 8, eightbadgeb
 	end
 	
 Monster2b:	
 	faceplayer
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	RuinRandomA	
-	startbattle
-	reloadmapafterbattle	
-	disappear ARUINS_MONSTER2
-	readmem wRoomDefeatedCount
-	addval 1
-	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsB
+	readmem wBadges
+	ifequal 0, nobadgeb
+	ifequal 1, onebadgeb
+	ifequal 2, twobadgeb
+	ifequal 3, threebadgeb
+	ifequal 4, fourbadgeb
+	ifequal 5, fivebadgeb
+	ifequal 6, sixbadgeb
+	ifequal 7, sevenbadgeb
+	ifequal 8, eightbadgeb
 	end
 
 Monster3b:	
 	faceplayer
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	RuinRandomB	
-	startbattle
-	reloadmapafterbattle	
-	disappear ARUINS_MONSTER3
-	readmem wRoomDefeatedCount
-	addval 1
-	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsB
+	readmem wBadges
+	ifequal 0, nobadgeb
+	ifequal 1, onebadgeb
+	ifequal 2, twobadgeb
+	ifequal 3, threebadgeb
+	ifequal 4, fourbadgeb
+	ifequal 5, fivebadgeb
+	ifequal 6, sixbadgeb
+	ifequal 7, sevenbadgeb
+	ifequal 8, eightbadgeb
 	end
 
 Monster4b:	
 	faceplayer
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	RuinRandomA	
-	startbattle
-	reloadmapafterbattle	
-	disappear ARUINS_MONSTER4
-	readmem wRoomDefeatedCount
-	addval 1
-	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsB
+	readmem wBadges
+	ifequal 0, nobadgeb
+	ifequal 1, onebadgeb
+	ifequal 2, twobadgeb
+	ifequal 3, threebadgeb
+	ifequal 4, fourbadgeb
+	ifequal 5, fivebadgeb
+	ifequal 6, sixbadgeb
+	ifequal 7, sevenbadgeb
+	ifequal 8, eightbadgeb
 	end
 
 Monster5b:	
 	faceplayer
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	RuinRandomB	
+	readmem wBadges
+	ifequal 0, nobadgeb
+	ifequal 1, onebadgeb
+	ifequal 2, twobadgeb
+	ifequal 3, threebadgeb
+	ifequal 4, fourbadgeb
+	ifequal 5, fivebadgeb
+	ifequal 6, sixbadgeb
+	ifequal 7, sevenbadgeb
+	ifequal 8, eightbadgeb
+	end
+	
+	
+nobadgeb:
+	RuinRandomABase
 	startbattle
 	reloadmapafterbattle	
-	disappear ARUINS_MONSTER5
+	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsB
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
 	end
 
+onebadgeb:
+	RuinRandomA1
+	startbattle
+	reloadmapafterbattle	
+	disappear -2
+	readmem wRoomDefeatedCount
+	addval 1
+	writemem wRoomDefeatedCount
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	end
+
+twobadgeb:
+	RuinRandomA2
+	startbattle
+	reloadmapafterbattle	
+	disappear -2
+	readmem wRoomDefeatedCount
+	addval 1
+	writemem wRoomDefeatedCount
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	end
+
+threebadgeb:
+	RuinRandomA3
+	startbattle
+	reloadmapafterbattle	
+	disappear -2
+	readmem wRoomDefeatedCount
+	addval 1
+	writemem wRoomDefeatedCount
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	end
+
+fourbadgeb:
+	RuinRandomA4
+	startbattle
+	reloadmapafterbattle	
+	disappear -2
+	readmem wRoomDefeatedCount
+	addval 1
+	writemem wRoomDefeatedCount
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	end
+
+fivebadgeb:
+	RuinRandomA5
+	startbattle
+	reloadmapafterbattle	
+	disappear -2
+	readmem wRoomDefeatedCount
+	addval 1
+	writemem wRoomDefeatedCount
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	end
+
+sixbadgeb:
+	RuinRandomA6
+	startbattle
+	reloadmapafterbattle	
+	disappear -2
+	readmem wRoomDefeatedCount
+	addval 1
+	writemem wRoomDefeatedCount
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	end
+
+sevenbadgeb:
+	RuinRandomA7
+	startbattle
+	reloadmapafterbattle	
+	disappear -2
+	readmem wRoomDefeatedCount
+	addval 1
+	writemem wRoomDefeatedCount
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	end
+
+eightbadgeb:
+	RuinRandomA8
+	startbattle
+	reloadmapafterbattle	
+	disappear -2
+	readmem wRoomDefeatedCount
+	addval 1
+	writemem wRoomDefeatedCount
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	end
+	
 A3Item1:
 	RuinItems
 	iffalse .no_item

@@ -1240,34 +1240,1091 @@ DoBikeStep::
 
 INCLUDE "engine/overworld/cmd_queue.asm"
 
-RuinSummonerABoss::
+
+RuinSummonerA1::
 .loop
 	call Random
 	cp 100 << 1
 	jr nc, .loop
 	srl a
-	ld hl, RuinABossTable
+	ld hl, RuinAMons1
 	ld de, 4
 	jp CheckMon
 
-RuinSummonerB::
+RuinSummonerA2::
 .loop
 	call Random
 	cp 100 << 1
 	jr nc, .loop
 	srl a
-	ld hl, RuinBMons
+	ld hl, RuinAMons2
 	ld de, 4
 	jp CheckMon
 
-RuinSummonerA::
+RuinSummonerA3::
 .loop
 	call Random
 	cp 100 << 1
 	jr nc, .loop
 	srl a
-	ld hl, RuinAMons
+	ld hl, RuinAMons3
 	ld de, 4
+	jp CheckMon
+
+RuinSummonerA4::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinAMons4
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerA5::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinAMons5
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerA6::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinAMons6
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerA7::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinAMons7
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerA8::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinAMons8
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerABossBase::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinABossBase
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerABoss1::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinABoss1
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerABoss2::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinABoss2
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerABoss3::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinABoss3
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerABoss4::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinABoss4
+	ld de, 4
+	jp CheckMon
+	
+RuinSummonerABoss5::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinABoss5
+	ld de, 4
+	jp CheckMon
+	
+RuinSummonerABoss6::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinABoss6
+	ld de, 4
+	jp CheckMon
+	
+RuinSummonerABoss7::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinABoss7
+	ld de, 4
+	jp CheckMon
+	
+RuinSummonerABoss8::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinABoss8
+	ld de, 4
+	jp CheckMon
+
+
+RuinSummonerBMons::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinBMonsBase
+	ld de, 4
+	jp CheckMon
+
+
+RuinSummonerB1::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinBMons1
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerB2::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinBMons2
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerB3::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinBMons3
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerB4::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinBMons4
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerB5::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinBMons5
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerB6::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinBMons6
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerB7::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinBMons7
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerB8::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinBMons8
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerBBossBase::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinBBossBase
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerBBoss1::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinBBoss1
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerBBoss2::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinBBoss2
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerBBoss3::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinBBoss3
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerBBoss4::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinBBoss4
+	ld de, 4
+	jp CheckMon
+	
+RuinSummonerBBoss5::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinBBoss5
+	ld de, 4
+	jp CheckMon
+	
+RuinSummonerBBoss6::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinBBoss6
+	ld de, 4
+	jp CheckMon
+	
+RuinSummonerBBoss7::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinBBoss7
+	ld de, 4
+	jp CheckMon
+	
+RuinSummonerBBoss8::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinBBoss8
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerCMons::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinCMonsBase
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerDMons::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinDMonsBase
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerEMons::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinEMonsBase
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerFMons::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinFMonsBase
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerC1::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinCMons1
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerC2::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinCMons2
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerC3::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinCMons3
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerC4::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinCMons4
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerC5::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinCMons5
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerC6::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinCMons6
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerC7::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinCMons7
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerC8::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinCMons8
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerCBossBase::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinCBossBase
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerCBoss1::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinCBoss1
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerCBoss2::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinCBoss2
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerCBoss3::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinCBoss3
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerCBoss4::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinCBoss4
+	ld de, 4
+	jp CheckMon
+	
+RuinSummonerCBoss5::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinCBoss5
+	ld de, 4
+	jp CheckMon
+	
+RuinSummonerCBoss6::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinCBoss6
+	ld de, 4
+	jp CheckMon
+	
+RuinSummonerCBoss7::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinCBoss7
+	ld de, 4
+	jp CheckMon
+	
+RuinSummonerCBoss8::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinCBoss8
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerD1::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinDMons1
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerD2::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinDMons2
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerD3::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinDMons3
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerD4::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinDMons4
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerD5::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinDMons5
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerD6::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinDMons6
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerD7::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinDMons7
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerD8::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinDMons8
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerDBossBase::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinDBossBase
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerDBoss1::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinDBoss1
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerDBoss2::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinDBoss2
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerDBoss3::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinDBoss3
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerDBoss4::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinDBoss4
+	ld de, 4
+	jp CheckMon
+	
+RuinSummonerDBoss5::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinDBoss5
+	ld de, 4
+	jp CheckMon
+	
+RuinSummonerDBoss6::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinDBoss6
+	ld de, 4
+	jp CheckMon
+	
+RuinSummonerDBoss7::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinDBoss7
+	ld de, 4
+	jp CheckMon
+	
+RuinSummonerDBoss8::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinDBoss8
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerE1::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinEMons1
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerE2::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinEMons2
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerE3::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinEMons3
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerE4::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinEMons4
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerE5::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinEMons5
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerE6::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinEMons6
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerE7::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinEMons7
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerE8::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinEMons8
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerEBossBase::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinEBossBase
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerEBoss1::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinEBoss1
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerEBoss2::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinEBoss2
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerEBoss3::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinEBoss3
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerEBoss4::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinEBoss4
+	ld de, 4
+	jp CheckMon
+	
+RuinSummonerEBoss5::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinEBoss5
+	ld de, 4
+	jp CheckMon
+	
+RuinSummonerEBoss6::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinEBoss6
+	ld de, 4
+	jp CheckMon
+	
+RuinSummonerEBoss7::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinEBoss7
+	ld de, 4
+	jp CheckMon
+	
+RuinSummonerEBoss8::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinEBoss8
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerF1::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinFMons1
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerF2::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinFMons2
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerF3::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinFMons3
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerF4::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinFMons4
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerF5::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinFMons5
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerF6::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinFMons6
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerF7::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinFMons7
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerF8::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinFMons8
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerFBossBase::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinFBossBase
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerFBoss1::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinFBoss1
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerFBoss2::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinFBoss2
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerFBoss3::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinFBoss3
+	ld de, 4
+	jp CheckMon
+
+RuinSummonerFBoss4::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinFBoss4
+	ld de, 4
+	jp CheckMon
+	
+RuinSummonerFBoss5::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinFBoss5
+	ld de, 4
+	jp CheckMon
+	
+RuinSummonerFBoss6::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinFBoss6
+	ld de, 4
+	jp CheckMon
+	
+RuinSummonerFBoss7::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinFBoss7
+	ld de, 4
+	jp CheckMon
+	
+RuinSummonerFBoss8::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinFBoss8
+	ld de, 4
+	jp CheckMon
+
+
+
+RuinSummonerAMons::
+.loop
+	call Random
+	cp 100 << 1
+	jr nc, .loop
+	srl a
+	ld hl, RuinAMonsBase
+	ld de, 4
+	jp CheckMon
+	
 CheckMon:
 	sub [hl]
 	jr c, GotMon

@@ -263,12 +263,115 @@ ScriptCommandTable:
 	dw Script_randomtext		     ; aa
 	dw Script_trainerpic		     ; ab
 	dw Script_closetrainpic		     ; ac
-	dw Script_loadrandomlevelmon		; ad
-	dw Script_RuinRandomA				; b0
-	dw Script_RuinRandomB				; b1
 	dw Script_RuinItems				; b2
-	dw Script_RuinABoss				; b3
-
+	dw Script_RuinRandomABase
+	dw Script_RuinRandomA1
+	dw Script_RuinRandomA2
+	dw Script_RuinRandomA3
+	dw Script_RuinRandomA4
+	dw Script_RuinRandomA5
+	dw Script_RuinRandomA6
+	dw Script_RuinRandomA7
+	dw Script_RuinRandomA8
+	dw Script_RuinRandomABossBase
+	dw Script_RuinRandomABoss1
+	dw Script_RuinRandomABoss2
+	dw Script_RuinRandomABoss3
+	dw Script_RuinRandomABoss4
+	dw Script_RuinRandomABoss5
+	dw Script_RuinRandomABoss6
+	dw Script_RuinRandomABoss7
+	dw Script_RuinRandomABoss8
+	dw Script_RuinRandomBBase
+	dw Script_RuinRandomB1
+	dw Script_RuinRandomB2
+	dw Script_RuinRandomB3
+	dw Script_RuinRandomB4
+	dw Script_RuinRandomB5
+	dw Script_RuinRandomB6
+	dw Script_RuinRandomB7
+	dw Script_RuinRandomB8
+	dw Script_RuinRandomBBossBase
+	dw Script_RuinRandomBBoss1
+	dw Script_RuinRandomBBoss2
+	dw Script_RuinRandomBBoss3
+	dw Script_RuinRandomBBoss4
+	dw Script_RuinRandomBBoss5
+	dw Script_RuinRandomBBoss6
+	dw Script_RuinRandomBBoss7
+	dw Script_RuinRandomBBoss8
+	dw Script_RuinRandomCBase
+	dw Script_RuinRandomC1
+	dw Script_RuinRandomC2
+	dw Script_RuinRandomC3
+	dw Script_RuinRandomC4
+	dw Script_RuinRandomC5
+	dw Script_RuinRandomC6
+	dw Script_RuinRandomC7
+	dw Script_RuinRandomC8
+	dw Script_RuinRandomCBossBase
+	dw Script_RuinRandomCBoss1
+	dw Script_RuinRandomCBoss2
+	dw Script_RuinRandomCBoss3
+	dw Script_RuinRandomCBoss4
+	dw Script_RuinRandomCBoss5
+	dw Script_RuinRandomCBoss6
+	dw Script_RuinRandomCBoss7
+	dw Script_RuinRandomCBoss8
+	dw Script_RuinRandomDBase
+	dw Script_RuinRandomD1
+	dw Script_RuinRandomD2
+	dw Script_RuinRandomD3
+	dw Script_RuinRandomD4
+	dw Script_RuinRandomD5
+	dw Script_RuinRandomD6
+	dw Script_RuinRandomD7
+	dw Script_RuinRandomD8
+	dw Script_RuinRandomDBossBase
+	dw Script_RuinRandomDBoss1
+	dw Script_RuinRandomDBoss2
+	dw Script_RuinRandomDBoss3
+	dw Script_RuinRandomDBoss4
+	dw Script_RuinRandomDBoss5
+	dw Script_RuinRandomDBoss6
+	dw Script_RuinRandomDBoss7
+	dw Script_RuinRandomDBoss8
+	dw Script_RuinRandomEBase
+	dw Script_RuinRandomE1
+	dw Script_RuinRandomE2
+	dw Script_RuinRandomE3
+	dw Script_RuinRandomE4
+	dw Script_RuinRandomE5
+	dw Script_RuinRandomE6
+	dw Script_RuinRandomE7
+	dw Script_RuinRandomE8
+	dw Script_RuinRandomEBossBase
+	dw Script_RuinRandomEBoss1
+	dw Script_RuinRandomEBoss2
+	dw Script_RuinRandomEBoss3
+	dw Script_RuinRandomEBoss4
+	dw Script_RuinRandomEBoss5
+	dw Script_RuinRandomEBoss6
+	dw Script_RuinRandomEBoss7
+	dw Script_RuinRandomEBoss8
+	dw Script_RuinRandomFBase
+	dw Script_RuinRandomF1
+	dw Script_RuinRandomF2
+	dw Script_RuinRandomF3
+	dw Script_RuinRandomF4
+	dw Script_RuinRandomF5
+	dw Script_RuinRandomF6
+	dw Script_RuinRandomF7
+	dw Script_RuinRandomF8
+	dw Script_RuinRandomFBossBase
+	dw Script_RuinRandomFBoss1
+	dw Script_RuinRandomFBoss2
+	dw Script_RuinRandomFBoss3
+	dw Script_RuinRandomFBoss4
+	dw Script_RuinRandomFBoss5
+	dw Script_RuinRandomFBoss6
+	dw Script_RuinRandomFBoss7
+	dw Script_RuinRandomFBoss8
 	assert_table_length NUM_EVENT_COMMANDS
 
 StartScript:
@@ -2447,43 +2550,6 @@ Script_closetrainpic:
 	farcall CloseTrainpic
 	ret
 
-
-Script_loadrandomlevelmon:
-    ; Read the species from the script
-    call GetScriptByte
-    ld [wTempWildMonSpecies], a
-
-    ; Read the minimum level from the script
-    call GetScriptByte
-    ld b, a ; Store min level in register B
-
-    ; Read the maximum level from the script
-    call GetScriptByte
-    ld c, a ; Store max level in register C
-
-    ; Calculate (max - min + 1) for the random range
-    ld a, c
-    sub b
-    inc a   ; Now A = (max - min + 1)
-    ld e, a ; Store the range in E
-
-    ; Generate a random number between 0 and (max - min)
-    call Random
-    ld a, e ; Get the random number
-    ; Add the minimum level to get a value between min and max
-    add b
-    ld [wCurPartyLevel], a ; Store the randomized level
-    ret
-		
-Script_RuinRandomA:
-	farcall RuinSummonerA
-	ret
-
-Script_RuinRandomB:
-	farcall RuinSummonerB
-	ret
-
-
 Script_RuinItems:
 	ld hl, .RuinItems
 	call Random
@@ -2516,10 +2582,445 @@ Script_RuinItems:
 	db 64, RARE_CANDY
 	db -1
 	
-Script_RuinABoss:	
-	farcall RuinSummonerABoss
-	ret	
+Script_RuinRandomABase:
+	farcall RuinSummonerAMons
+	ret
 
+Script_RuinRandomA1:
+	farcall RuinSummonerA1
+	ret
+
+Script_RuinRandomA2:
+	farcall RuinSummonerA2
+	ret
+
+Script_RuinRandomA3:
+	farcall RuinSummonerA3
+	ret
+
+Script_RuinRandomA4:
+	farcall RuinSummonerA4
+	ret
+
+Script_RuinRandomA5:
+	farcall RuinSummonerA5
+	ret
+
+Script_RuinRandomA6:
+	farcall RuinSummonerA6
+	ret
+
+Script_RuinRandomA7:
+	farcall RuinSummonerA7
+	ret
+
+Script_RuinRandomA8:
+	farcall RuinSummonerA8
+	ret
+
+Script_RuinRandomABossBase:
+	farcall RuinSummonerABossBase
+	ret
+
+Script_RuinRandomABoss1:
+	farcall RuinSummonerABoss1
+	ret
+	
+Script_RuinRandomABoss2:
+	farcall RuinSummonerABoss2
+	ret
+	
+Script_RuinRandomABoss3:
+	farcall RuinSummonerABoss3
+	ret
+	
+Script_RuinRandomABoss4:
+	farcall RuinSummonerABoss4
+	ret
+	
+Script_RuinRandomABoss5:
+	farcall RuinSummonerABoss5
+	ret
+	
+
+Script_RuinRandomABoss6:
+	farcall RuinSummonerABoss6
+	ret
+	
+Script_RuinRandomABoss7:
+	farcall RuinSummonerABoss7
+	ret
+	
+Script_RuinRandomABoss8:
+	farcall RuinSummonerABoss8
+	ret
+
+Script_RuinRandomBBase:
+	farcall RuinSummonerBMons
+	ret
+
+Script_RuinRandomB1:
+	farcall RuinSummonerB1
+	ret
+
+Script_RuinRandomB2:
+	farcall RuinSummonerB2
+	ret
+
+Script_RuinRandomB3:
+	farcall RuinSummonerB3
+	ret
+
+Script_RuinRandomB4:
+	farcall RuinSummonerB4
+	ret
+
+Script_RuinRandomB5:
+	farcall RuinSummonerB5
+	ret
+
+Script_RuinRandomB6:
+	farcall RuinSummonerB6
+	ret
+
+Script_RuinRandomB7:
+	farcall RuinSummonerB7
+	ret
+
+Script_RuinRandomB8:
+	farcall RuinSummonerB8
+	ret
+
+Script_RuinRandomBBossBase:
+	farcall RuinSummonerBBossBase
+	ret
+
+Script_RuinRandomBBoss1:
+	farcall RuinSummonerBBoss1
+	ret
+	
+Script_RuinRandomBBoss2:
+	farcall RuinSummonerBBoss2
+	ret
+	
+Script_RuinRandomBBoss3:
+	farcall RuinSummonerBBoss3
+	ret
+	
+Script_RuinRandomBBoss4:
+	farcall RuinSummonerBBoss4
+	ret
+	
+Script_RuinRandomBBoss5:
+	farcall RuinSummonerBBoss5
+	ret
+	
+
+Script_RuinRandomBBoss6:
+	farcall RuinSummonerBBoss6
+	ret
+	
+Script_RuinRandomBBoss7:
+	farcall RuinSummonerBBoss7
+	ret
+	
+Script_RuinRandomBBoss8:
+	farcall RuinSummonerBBoss8
+	ret
+
+Script_RuinRandomCBase:
+	farcall RuinSummonerCMons
+	ret
+
+Script_RuinRandomC1:
+	farcall RuinSummonerC1
+	ret
+
+Script_RuinRandomC2:
+	farcall RuinSummonerC2
+	ret
+
+Script_RuinRandomC3:
+	farcall RuinSummonerC3
+	ret
+
+Script_RuinRandomC4:
+	farcall RuinSummonerC4
+	ret
+
+Script_RuinRandomC5:
+	farcall RuinSummonerC5
+	ret
+
+Script_RuinRandomC6:
+	farcall RuinSummonerC6
+	ret
+
+Script_RuinRandomC7:
+	farcall RuinSummonerC7
+	ret
+
+Script_RuinRandomC8:
+	farcall RuinSummonerC8
+	ret
+
+Script_RuinRandomCBossBase:
+	farcall RuinSummonerCBossBase
+	ret
+
+Script_RuinRandomCBoss1:
+	farcall RuinSummonerCBoss1
+	ret
+	
+Script_RuinRandomCBoss2:
+	farcall RuinSummonerCBoss2
+	ret
+	
+Script_RuinRandomCBoss3:
+	farcall RuinSummonerCBoss3
+	ret
+	
+Script_RuinRandomCBoss4:
+	farcall RuinSummonerCBoss4
+	ret
+	
+Script_RuinRandomCBoss5:
+	farcall RuinSummonerCBoss5
+	ret
+	
+
+Script_RuinRandomCBoss6:
+	farcall RuinSummonerCBoss6
+	ret
+	
+Script_RuinRandomCBoss7:
+	farcall RuinSummonerCBoss7
+	ret
+	
+Script_RuinRandomCBoss8:
+	farcall RuinSummonerCBoss8
+	ret
+	
+Script_RuinRandomDBase:
+	farcall RuinSummonerDMons
+	ret
+
+Script_RuinRandomD1:
+	farcall RuinSummonerD1
+	ret
+
+Script_RuinRandomD2:
+	farcall RuinSummonerD2
+	ret
+
+Script_RuinRandomD3:
+	farcall RuinSummonerD3
+	ret
+
+Script_RuinRandomD4:
+	farcall RuinSummonerD4
+	ret
+
+Script_RuinRandomD5:
+	farcall RuinSummonerD5
+	ret
+
+Script_RuinRandomD6:
+	farcall RuinSummonerD6
+	ret
+
+Script_RuinRandomD7:
+	farcall RuinSummonerD7
+	ret
+
+Script_RuinRandomD8:
+	farcall RuinSummonerD8
+	ret
+
+Script_RuinRandomDBossBase:
+	farcall RuinSummonerDBossBase
+	ret
+
+Script_RuinRandomDBoss1:
+	farcall RuinSummonerDBoss1
+	ret
+	
+Script_RuinRandomDBoss2:
+	farcall RuinSummonerDBoss2
+	ret
+	
+Script_RuinRandomDBoss3:
+	farcall RuinSummonerDBoss3
+	ret
+	
+Script_RuinRandomDBoss4:
+	farcall RuinSummonerDBoss4
+	ret
+	
+Script_RuinRandomDBoss5:
+	farcall RuinSummonerDBoss5
+	ret
+	
+
+Script_RuinRandomDBoss6:
+	farcall RuinSummonerDBoss6
+	ret
+	
+Script_RuinRandomDBoss7:
+	farcall RuinSummonerDBoss7
+	ret
+	
+Script_RuinRandomDBoss8:
+	farcall RuinSummonerDBoss8
+	ret
+	
+	
+Script_RuinRandomEBase:
+	farcall RuinSummonerEMons
+	ret
+
+Script_RuinRandomE1:
+	farcall RuinSummonerE1
+	ret
+
+Script_RuinRandomE2:
+	farcall RuinSummonerE2
+	ret
+
+Script_RuinRandomE3:
+	farcall RuinSummonerE3
+	ret
+
+Script_RuinRandomE4:
+	farcall RuinSummonerE4
+	ret
+
+Script_RuinRandomE5:
+	farcall RuinSummonerE5
+	ret
+
+Script_RuinRandomE6:
+	farcall RuinSummonerE6
+	ret
+
+Script_RuinRandomE7:
+	farcall RuinSummonerE7
+	ret
+
+Script_RuinRandomE8:
+	farcall RuinSummonerE8
+	ret
+
+Script_RuinRandomEBossBase:
+	farcall RuinSummonerEBossBase
+	ret
+
+Script_RuinRandomEBoss1:
+	farcall RuinSummonerEBoss1
+	ret
+	
+Script_RuinRandomEBoss2:
+	farcall RuinSummonerEBoss2
+	ret
+	
+Script_RuinRandomEBoss3:
+	farcall RuinSummonerEBoss3
+	ret
+	
+Script_RuinRandomEBoss4:
+	farcall RuinSummonerEBoss4
+	ret
+	
+Script_RuinRandomEBoss5:
+	farcall RuinSummonerEBoss5
+	ret
+	
+
+Script_RuinRandomEBoss6:
+	farcall RuinSummonerEBoss6
+	ret
+	
+Script_RuinRandomEBoss7:
+	farcall RuinSummonerEBoss7
+	ret
+	
+Script_RuinRandomEBoss8:
+	farcall RuinSummonerEBoss8
+	ret
+	
+Script_RuinRandomFBase:
+	farcall RuinSummonerFMons
+	ret
+
+Script_RuinRandomF1:
+	farcall RuinSummonerF1
+	ret
+
+Script_RuinRandomF2:
+	farcall RuinSummonerF2
+	ret
+
+Script_RuinRandomF3:
+	farcall RuinSummonerF3
+	ret
+
+Script_RuinRandomF4:
+	farcall RuinSummonerF4
+	ret
+
+Script_RuinRandomF5:
+	farcall RuinSummonerF5
+	ret
+
+Script_RuinRandomF6:
+	farcall RuinSummonerF6
+	ret
+
+Script_RuinRandomF7:
+	farcall RuinSummonerF7
+	ret
+
+Script_RuinRandomF8:
+	farcall RuinSummonerF8
+	ret
+
+Script_RuinRandomFBossBase:
+	farcall RuinSummonerFBossBase
+	ret
+
+Script_RuinRandomFBoss1:
+	farcall RuinSummonerFBoss1
+	ret
+	
+Script_RuinRandomFBoss2:
+	farcall RuinSummonerFBoss2
+	ret
+	
+Script_RuinRandomFBoss3:
+	farcall RuinSummonerFBoss3
+	ret
+	
+Script_RuinRandomFBoss4:
+	farcall RuinSummonerFBoss4
+	ret
+	
+Script_RuinRandomFBoss5:
+	farcall RuinSummonerFBoss5
+	ret
+
+Script_RuinRandomFBoss6:
+	farcall RuinSummonerFBoss6
+	ret
+	
+Script_RuinRandomFBoss7:
+	farcall RuinSummonerFBoss7
+	ret
+	
+Script_RuinRandomFBoss8:
+	farcall RuinSummonerFBoss8
+	ret
+	
+	
 Script_checkver_duplicate: ; unreferenced
 	ld a, [.gs_version]
 	ld [wScriptVar], a

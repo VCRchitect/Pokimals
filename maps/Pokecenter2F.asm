@@ -472,7 +472,7 @@ Script_WalkOutOfLinkBattleRoom:
 TimeCapsuleScript_CheckPlayerGender:
 	checkflag ENGINE_PLAYER_IS_FEMALE
 	iftrue .Female
-	readvar VAR_FACING
+	readmem VAR_FACING
 	ifequal LEFT, .MaleFacingLeft
 	ifequal RIGHT, .MaleFacingRight
 	applymovementlasttalked Pokecenter2FMovementData_ReceptionistStepsLeftLooksDown
@@ -490,7 +490,7 @@ TimeCapsuleScript_CheckPlayerGender:
 	end
 
 .Female:
-	readvar VAR_FACING
+	readmem VAR_FACING
 	ifequal RIGHT, .FemaleFacingRight
 	ifequal LEFT, .FemaleFacingLeft
 	applymovementlasttalked Pokecenter2FMovementData_ReceptionistStepsLeftLooksRight_2
@@ -510,7 +510,7 @@ TimeCapsuleScript_CheckPlayerGender:
 	writetext Text_OhPleaseWait
 	waitbutton
 	closetext
-	readvar VAR_FACING
+	readmem VAR_FACING
 	ifnotequal UP, .FemaleChangeApperance
 	turnobject PLAYER, LEFT
 .FemaleChangeApperance:

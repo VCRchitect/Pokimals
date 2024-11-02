@@ -74,8 +74,8 @@ ENDM
 	endgroup
 	
 	newgroup RUINSA											; 5
-	map_const A1, 3, 3 ; 1
-	map_const A2, 9, 7 ; 2
+	map_const A1, 5, 3 ; 1
+	map_const A2, 5, 5 ; 2
 	map_const A3, 9, 7 ; 3
 	map_const A4, 9, 5 ; 4
 	map_const A5, 7, 9 ; 5

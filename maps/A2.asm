@@ -65,67 +65,177 @@ RandomStairWarp2:
 Monster1:	
 	faceplayer
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	RuinRandomA	
-	startbattle
-	reloadmapafterbattle	
-	disappear ARUINS_MONSTER1
-	readmem wRoomDefeatedCount
-	addval 1
-	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	readmem wBadges
+	ifequal 0, nobadge
+	ifequal 1, onebadge
+	ifequal 2, twobadge
+	ifequal 3, threebadge
+	ifequal 4, fourbadge
+	ifequal 5, fivebadge
+	ifequal 6, sixbadge
+	ifequal 7, sevenbadge
+	ifequal 8, eightbadge
 	end
 	
 Monster2:	
 	faceplayer
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	RuinRandomA	
-	startbattle
-	reloadmapafterbattle	
-	disappear ARUINS_MONSTER2
-	readmem wRoomDefeatedCount
-	addval 1
-	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	readmem wBadges
+	ifequal 0, nobadge
+	ifequal 1, onebadge
+	ifequal 2, twobadge
+	ifequal 3, threebadge
+	ifequal 4, fourbadge
+	ifequal 5, fivebadge
+	ifequal 6, sixbadge
+	ifequal 7, sevenbadge
+	ifequal 8, eightbadge
 	end
 
 Monster3:	
 	faceplayer
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	RuinRandomB	
-	startbattle
-	reloadmapafterbattle	
-	disappear ARUINS_MONSTER3
-	readmem wRoomDefeatedCount
-	addval 1
-	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	readmem wBadges
+	ifequal 0, nobadge
+	ifequal 1, onebadge
+	ifequal 2, twobadge
+	ifequal 3, threebadge
+	ifequal 4, fourbadge
+	ifequal 5, fivebadge
+	ifequal 6, sixbadge
+	ifequal 7, sevenbadge
+	ifequal 8, eightbadge
 	end
 
 Monster4:	
 	faceplayer
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	RuinRandomA	
+	readmem wBadges
+	ifequal 0, nobadge
+	ifequal 1, onebadge
+	ifequal 2, twobadge
+	ifequal 3, threebadge
+	ifequal 4, fourbadge
+	ifequal 5, fivebadge
+	ifequal 6, sixbadge
+	ifequal 7, sevenbadge
+	ifequal 8, eightbadge
+	end
+
+Monster5:	
+	faceplayer
+	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
+	readmem wBadges
+	ifequal 0, nobadge
+	ifequal 1, onebadge
+	ifequal 2, twobadge
+	ifequal 3, threebadge
+	ifequal 4, fourbadge
+	ifequal 5, fivebadge
+	ifequal 6, sixbadge
+	ifequal 7, sevenbadge
+	ifequal 8, eightbadge
+	end
+	
+	
+nobadge:
+	RuinRandomABase
 	startbattle
 	reloadmapafterbattle	
-	disappear ARUINS_MONSTER4
+	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
 	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
 	end
 
-Monster5:	
-	faceplayer
-	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	RuinRandomB	
+onebadge:
+	RuinRandomA1
 	startbattle
 	reloadmapafterbattle	
-	disappear ARUINS_MONSTER5
+	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
 	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
 	end
+
+twobadge:
+	RuinRandomA2
+	startbattle
+	reloadmapafterbattle	
+	disappear -2
+	readmem wRoomDefeatedCount
+	addval 1
+	writemem wRoomDefeatedCount
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	end
+
+threebadge:
+	RuinRandomA3
+	startbattle
+	reloadmapafterbattle	
+	disappear -2
+	readmem wRoomDefeatedCount
+	addval 1
+	writemem wRoomDefeatedCount
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	end
+
+fourbadge:
+	RuinRandomA4
+	startbattle
+	reloadmapafterbattle	
+	disappear -2
+	readmem wRoomDefeatedCount
+	addval 1
+	writemem wRoomDefeatedCount
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	end
+
+fivebadge:
+	RuinRandomA5
+	startbattle
+	reloadmapafterbattle	
+	disappear -2
+	readmem wRoomDefeatedCount
+	addval 1
+	writemem wRoomDefeatedCount
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	end
+
+sixbadge:
+	RuinRandomA6
+	startbattle
+	reloadmapafterbattle	
+	disappear -2
+	readmem wRoomDefeatedCount
+	addval 1
+	writemem wRoomDefeatedCount
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	end
+
+sevenbadge:
+	RuinRandomA7
+	startbattle
+	reloadmapafterbattle	
+	disappear -2
+	readmem wRoomDefeatedCount
+	addval 1
+	writemem wRoomDefeatedCount
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	end
+
+eightbadge:
+	RuinRandomA8
+	startbattle
+	reloadmapafterbattle	
+	disappear -2
+	readmem wRoomDefeatedCount
+	addval 1
+	writemem wRoomDefeatedCount
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	end	
 
 A2Item1:
 	RuinItems
@@ -168,13 +278,8 @@ UnlockDoors:
 	closetext
 	appear ARUINS_POKE_BALL1a
 	appear ARUINS_POKE_BALL2a
-	changedoor 2, 0, $0B
-	changedoor 2, 6, $0B
-	readmem wRoomDefeatedCount
-	setval 0
-	writemem wRoomDefeatedCount
+	changedoor 4, 0, $0B
 	end
-
 	
 ButtonText:
 	text "Room Clear!"
@@ -185,20 +290,15 @@ A2_MapEvents:
 	def_warp_events
 
 	def_coord_events
-	coord_event  2,  0, SCENE_RANDOMSTAIRS, RandomStairWarp2
-	coord_event  3,  0, SCENE_RANDOMSTAIRS, RandomStairWarp2
-
-	coord_event  2,  6, SCENE_RANDOMSTAIRS, RandomStairWarp2
-	coord_event  3,  6, SCENE_RANDOMSTAIRS, RandomStairWarp2
-
-
+	coord_event  4,  0, SCENE_RANDOMSTAIRS, RandomStairWarp2
+	coord_event  5,  0, SCENE_RANDOMSTAIRS, RandomStairWarp2
 	def_bg_events
 
 	def_object_events
-	object_event 13,  8, SPRITE_MERCHANT, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster1, -1
-	object_event 13,  5, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster2, -1
-	object_event 13,  2, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster3, -1
-	object_event  7,  8, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster4, -1
-	object_event  7,  2, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster5, -1
-	object_event 13,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, A2Item1, EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
-	object_event 12,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, A2Item2, EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
+	object_event  1,  4, SPRITE_MERCHANT, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster1, -1
+	object_event  4,  2, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster2, -1
+	object_event  5,  3, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster3, -1
+	object_event  5,  7, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster4, -1
+	object_event  8,  3, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster5, -1
+	object_event  6,  5, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, A2Item1, EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
+	object_event  3,  5, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, A2Item2, EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
