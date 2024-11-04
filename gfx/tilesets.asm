@@ -326,6 +326,10 @@ INCLUDE "data/tilesets/ruins_of_alph_collision.asm"
 TilesetRuinCaveColl::
 INCLUDE "data/tilesets/ruin_cave_collision.asm"
 
+
+TilesetTheSiteColl::
+INCLUDE "data/tilesets/thesite_collision.asm"
+
 SECTION "Tileset Data 8", ROMX
 
 TilesetPhoenixWordRoomMeta::
@@ -345,4 +349,10 @@ INCBIN "data/tilesets/ruin_cave_metatiles.bin"
 
 TilesetRuinCaveGFX::
 INCBIN "gfx/tilesets/ruin_cave.2bpp.lz"
+
+TilesetTheSiteGFX::
+INCBIN "gfx/tilesets/thesite.2bpp.lz"
+
+TilesetTheSiteMeta::
+INCBIN "data/tilesets/thesite_metatiles.bin"
 

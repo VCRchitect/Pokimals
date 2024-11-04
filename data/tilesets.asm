@@ -51,4 +51,5 @@ Tilesets::
 	tileset TilesetNautilusWordRoom
 	tileset TilesetPteranodonWordRoom
 	tileset TilesetRuinCave
+	tileset TilesetTheSite
 	assert_table_length NUM_TILESETS + 1

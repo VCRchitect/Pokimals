@@ -37,6 +37,7 @@
 	const TILESET_NAUTILUS_WORD_ROOM    ; 23
 	const TILESET_PTERANODON_WORD_ROOM ; 24
 	const TILESET_RUIN_CAVE ; 25
+	const TILESET_THESITE ; 26
 NUM_TILESETS EQU const_value - 1
 
 ; wTileset struct size
