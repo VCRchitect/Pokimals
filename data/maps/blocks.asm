@@ -58,6 +58,21 @@ MoveDeletersHouse_Blocks:
 	
 SiteGate_Blocks:
 	INCBIN "maps/SiteGate.blk"
+	
+TheSiteInside1F_Blocks:
+	INCBIN "maps/thesiteinside1f.blk"
+
+TheSitePokecenter1F_Blocks:
+	INCBIN "maps/SitePokecenter1F.blk"
+	
+TheSiteMart_Blocks:
+	INCBIN "maps/SiteMart.blk"
+	
+TheSiteGameCorner_Blocks:
+	INCBIN "maps/SiteGameCorner.blk"
+
+TheSiteCafe_Blocks:
+	INCBIN "maps/SiteCafe.blk"
 
 
 SECTION "Map Blocks 3", ROMX

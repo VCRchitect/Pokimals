@@ -51,7 +51,9 @@ StdScripts::
 	add_stdscript ReceiveItemScript
 	add_stdscript ReceiveTogepiEggScript
 	add_stdscript PCScript
+	add_stdscript GameCornerCoinVendorScript	
 	add_stdscript HappinessCheckScript
+	
 
 RuinHealScript:
 	opentext
@@ -84,10 +86,13 @@ PokecenterNurseScript:
 ; EVENT_WELCOMED_TO_POKECOM_CENTER is never set
 
 	opentext
+	trainerpic NURSELADY	 
 	checktime MORN
 	iftrue .morn
 	checktime DAY
 	iftrue .day
+	checktime EVE
+	iftrue .eve			
 	checktime NITE
 	iftrue .nite
 	sjump .ok
@@ -114,6 +119,16 @@ PokecenterNurseScript:
 	promptbutton
 	sjump .ok
 
+.eve
+	checkevent EVENT_WELCOMED_TO_POKECOM_CENTER
+	iftrue .eve_comcenter
+	farwritetext NurseEveText
+	promptbutton
+	sjump .ok
+.eve_comcenter
+	farwritetext PokeComNurseEveText
+	promptbutton
+	sjump .ok	
 .nite
 	checkevent EVENT_WELCOMED_TO_POKECOM_CENTER
 	iftrue .nite_comcenter
@@ -133,6 +148,7 @@ PokecenterNurseScript:
 	yesorno
 	iffalse .done
 
+	closetrainpic			  
 	farwritetext NurseTakePokemonText
 	pause 20
 	special StubbedTrainerRankings_Healings
@@ -154,7 +170,8 @@ PokecenterNurseScript:
 	special CheckPokerus
 	iftrue .pokerus
 .no
-
+	refreshscreen
+	trainerpic NURSELADY					 
 	farwritetext NurseReturnPokemonText
 	pause 20
 
@@ -167,6 +184,7 @@ PokecenterNurseScript:
 	pause 10
 
 	waitbutton
+	closetrainpic			  
 	closetext
 	end
 
@@ -176,12 +194,14 @@ PokecenterNurseScript:
 	iftrue .pokerus_comcenter
 	farwritetext NursePokerusText
 	waitbutton
+	closetrainpic			  
 	closetext
 	sjump .pokerus_done
 
 .pokerus_comcenter
 	farwritetext PokeComNursePokerusText
 	waitbutton
+	closetrainpic			  
 	closetext
 
 .pokerus_done

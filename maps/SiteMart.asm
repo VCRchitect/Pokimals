@@ -1,0 +1,224 @@
+	object_const_def
+	const THESITEMART_CLERK1
+	const THESITEMART_CLERK2
+	const THESITEMART_GENTLEMAN
+	const THESITEMART_SAILOR
+	const THESITEMART_TEACHER
+
+TheSiteMart_MapScripts:
+	def_scene_scripts
+
+	def_callbacks
+
+TheSiteMartClerk1Script:
+	faceplayer
+	opentext
+	readmem wBadges
+	ifequal 0, .nobadgeclerk1
+	ifequal 1, .onebadgeclerk1
+	ifequal 2, .twobadgeclerk1
+	ifequal 3, .threebadgeclerk1
+	ifequal 4, .fourbadgeclerk1
+	ifequal 5, .fivebadgeclerk1
+	ifequal 6, .sixbadgeclerk1
+	ifequal 7, .sevenbadgeclerk1
+	ifequal 8, .eightbadgeclerk1	
+	
+.nobadgeclerk1
+	pokemart MARTTYPE_STANDARD, MART_SITETMBASE
+	closetext
+	end
+
+.onebadgeclerk1
+	pokemart MARTTYPE_STANDARD, MART_SITETM1
+	closetext
+	end
+
+.twobadgeclerk1
+	pokemart MARTTYPE_STANDARD, MART_SITETM2
+	closetext
+	end
+
+.threebadgeclerk1
+	pokemart MARTTYPE_STANDARD, MART_SITETM3
+	closetext
+	end
+
+.fourbadgeclerk1
+	pokemart MARTTYPE_STANDARD, MART_SITETM4
+	closetext
+	end
+
+.fivebadgeclerk1
+	pokemart MARTTYPE_STANDARD, MART_SITETM5
+	closetext
+	end
+
+.sixbadgeclerk1
+	pokemart MARTTYPE_STANDARD, MART_SITETM6
+	closetext
+	end
+
+.sevenbadgeclerk1
+	pokemart MARTTYPE_STANDARD, MART_SITETM7
+	closetext
+	end
+
+.eightbadgeclerk1	
+	pokemart MARTTYPE_STANDARD, MART_SITETM8
+	closetext
+	end
+
+
+	
+	
+
+
+
+TheSiteMartClerk2Script:
+	faceplayer
+	opentext
+	readmem wBadges
+	ifequal 0, .nobadgeclerk2
+	ifequal 1, .onebadgeclerk2
+	ifequal 2, .twobadgeclerk2
+	ifequal 3, .threebadgeclerk2
+	ifequal 4, .fourbadgeclerk2
+	ifequal 5, .fivebadgeclerk2
+	ifequal 6, .sixbadgeclerk2
+	ifequal 7, .sevenbadgeclerk2
+	ifequal 8, .eightbadgeclerk2	
+	
+.nobadgeclerk2
+	pokemart MARTTYPE_STANDARD, MART_SITEHOLDBASE
+	closetext
+	end
+
+.onebadgeclerk2
+	pokemart MARTTYPE_STANDARD, MART_SITEHOLD1
+	closetext
+	end
+
+.twobadgeclerk2
+	pokemart MARTTYPE_STANDARD, MART_SITEHOLD2
+	closetext
+	end
+
+.threebadgeclerk2
+	pokemart MARTTYPE_STANDARD, MART_SITEHOLD3
+	closetext
+	end
+
+.fourbadgeclerk2
+	pokemart MARTTYPE_STANDARD, MART_SITEHOLD4
+	closetext
+	end
+
+.fivebadgeclerk2
+	pokemart MARTTYPE_STANDARD, MART_SITEHOLD5
+	closetext
+	end
+
+.sixbadgeclerk2
+	pokemart MARTTYPE_STANDARD, MART_SITEHOLD6
+	closetext
+	end
+
+.sevenbadgeclerk2
+	pokemart MARTTYPE_STANDARD, MART_SITEHOLD7
+	closetext
+	end
+
+.eightbadgeclerk2	
+	pokemart MARTTYPE_STANDARD, MART_SITEHOLD8
+	closetext
+	end
+	
+TheSiteMartClerk3Script:
+	faceplayer
+	opentext
+	pokemart MARTTYPE_STANDARD, MART_CHERRYGROVE_DEX
+	closetext
+	end
+	
+
+TheSiteMartGentlemanScript:
+	faceplayer
+	refreshscreen
+	opentext
+	trainerpic GENTLEMAN
+	randomtext NPCTextTable
+	waitbutton
+	closetrainpic
+	closetext
+	end
+	
+TheSiteMartSailorScript:
+	faceplayer
+	refreshscreen
+	opentext
+	trainerpic SAILOR
+	randomtext NPCKTextTable
+	waitbutton
+	closetrainpic
+	closetext
+	end
+	
+TheSiteMartTeacherScript:
+	faceplayer
+	refreshscreen
+	opentext
+	trainerpic TEACHER
+	randomtext NPCTextTable
+	waitbutton
+	closetrainpic
+	closetext
+	end
+	
+
+TheSiteMartGentlemanText:
+	text "I buy people drugs"
+	line "but I give them to"
+	
+	para "my ANIMALs because"
+	line "I'm a cheapskate."
+	done
+
+TheSiteMartSailorText:
+	text "I want PP UP, so I"
+	line "can raise the PP"
+
+	para "of moves. But you"
+	line "can't buy it..."
+	
+	para "Well, not in the"
+	line "traditional sense."
+	
+	para "I buy PP UP when"
+	line "I'm lonely or want"
+	cont "to cuddle."
+	done
+
+TheSiteMartTeacherText:
+	text "Some ANIMALs have"
+	line "strong opinions."
+	done
+
+TheSiteMart_MapEvents:
+	db 0, 0 ; filler
+
+	def_warp_events
+	warp_event  3,  7, THESITEINSIDE1F, 2
+	warp_event  2,  7, THESITEINSIDE1F, 2
+
+	def_coord_events
+
+	def_bg_events
+
+	def_object_events
+	object_event 15,  3, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TheSiteMartClerk3Script, -1
+	object_event  6,  1, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TheSiteMartClerk1Script, -1
+	object_event  7,  1, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TheSiteMartClerk2Script, -1
+	object_event  7,  5, SPRITE_GENTLEMAN, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, TheSiteMartGentlemanScript, -1
+	object_event  3,  4, SPRITE_SAILOR, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TheSiteMartSailorScript, -1
+	object_event 10,  6, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TheSiteMartTeacherScript, -1

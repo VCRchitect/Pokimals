@@ -61,6 +61,11 @@ ENDM
 	map_const DAY_CARE,											5, 4;  8
 	map_const NEW_BARK_TOWN,									10, 9 ; 9
 	map_const SITEGATE,                  					5,  4 ; 10
+	map_const THESITEINSIDE1F,									13, 11 ; 11
+	map_const THESITEPOKECENTER1F,									5, 4 ; 12
+	map_const THESITEMART,											8, 4 ; 13
+	map_const THESITEGAMECORNER,									10, 7 ; 14
+	map_const THESITECAFE,											4, 4 ; 15	
 	endgroup
 
 	newgroup INDIGO                                               ;  4

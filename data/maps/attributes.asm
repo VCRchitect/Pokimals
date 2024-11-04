@@ -126,6 +126,12 @@ ENDM
 	map_attributes NewBarkTown, NEW_BARK_TOWN, $05, 0
 	
 	map_attributes SiteGate, SITEGATE, $00, 0
+	
+	map_attributes TheSiteInside1F, THESITEINSIDE1F, $00, 0
+	map_attributes TheSitePokecenter1F, THESITEPOKECENTER1F, $00, 0
+	map_attributes TheSiteMart, THESITEMART, $00, 0
+	map_attributes TheSiteGameCorner, THESITEGAMECORNER, $00, 0
+	map_attributes TheSiteCafe, THESITECAFE, $00, 0
 
 
 	map_attributes IndigoPlateauPokecenter1F, INDIGO_PLATEAU_POKECENTER_1F, $00, 0

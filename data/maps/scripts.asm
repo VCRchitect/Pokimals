@@ -27,6 +27,12 @@ INCLUDE "maps/DayCare.asm"
 INCLUDE "maps/IslandNameRater.asm"
 INCLUDE "maps/MoveDeletersHouse.asm"
 INCLUDE "maps/SiteGate.asm"
+INCLUDE "maps/thesiteinside1f.asm"
+INCLUDE "maps/SitePokecenter1F.asm"
+INCLUDE "maps/SiteMart.asm"
+INCLUDE "maps/SiteGameCorner.asm"
+INCLUDE "maps/SiteCafe.asm"
+
 
 SECTION "Map Scripts 4", ROMX
 
