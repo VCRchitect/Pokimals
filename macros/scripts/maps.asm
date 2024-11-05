@@ -226,7 +226,7 @@ warper: MACRO
 ENDM
 
 changedoor: MACRO
-	refreshscreen $00 
+	refreshscreen
 	playsound SFX_ENTER_DOOR
 	waitsfx
 	changeblock \1, \2, \3

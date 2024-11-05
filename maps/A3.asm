@@ -275,8 +275,12 @@ UnlockDoorsB:
 	closetext	
 	appear ARUINS_POKE_BALL1b
 	appear ARUINS_POKE_BALL2b	
-	changedoor 2, 0, 11
-	changedoor 10, 0, 11
+	refreshscreen
+	playsound SFX_ENTER_DOOR
+	waitsfx
+	changeblock 2, 0, 11
+	changeblock 10, 0, 11
+	reloadmappart
 	readmem wRoomDefeatedCount
 	setval 0
 	writemem wRoomDefeatedCount

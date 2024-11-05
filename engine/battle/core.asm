@@ -6212,10 +6212,10 @@ LoadEnemyMon:
 ; Moreover, due to the check not being translated to feet+inches, all Carp
 ; smaller than 4'0" may be caught by the filter, a lot more than intended.
 	ld a, [wMapGroup]
-	cp GROUP_LAKE_OF_RAGE
+	cp MAPGROUP_BATTLE_TOWER
 	jr z, .Happiness
 	ld a, [wMapNumber]
-	cp MAP_LAKE_OF_RAGE
+	cp MAP_NEW_BARK_TOWN
 	jr z, .Happiness
 ; 40% chance of not flooring
 	call Random
@@ -8269,7 +8269,6 @@ CleanUpBattleRAM:
 	call BattleEnd_HandleRoamMons
 	xor a
 	ld [wStatsScreenFlags], a
-	ld [wBattleTimeOfDay], a
 	ld [wLowHealthAlarm], a
 	ld [wBattleMode], a
 	ld [wBattleType], a

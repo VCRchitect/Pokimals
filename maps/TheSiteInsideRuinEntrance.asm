@@ -68,7 +68,6 @@ TheSiteInsideRuinEntrance_MapScripts:
 	pokepic SKUNK
 	cry SKUNK
 	waitbutton
-	closepokepic
 	refreshscreen
 	opentext
 	scall RuinEntrance_ConfirmPurchaseScript	
@@ -88,7 +87,6 @@ TheSiteInsideRuinEntrance_MapScripts:
 	pokepic SCRAWNY
 	cry SCRAWNY
 	waitbutton
-	closepokepic
 	refreshscreen
 	opentext
 	scall RuinEntrance_ConfirmPurchaseScript	
@@ -108,7 +106,6 @@ TheSiteInsideRuinEntrance_MapScripts:
 	pokepic BAT
 	cry BAT
 	waitbutton
-	closepokepic
 	refreshscreen
 	opentext
 	scall RuinEntrance_ConfirmPurchaseScript	
@@ -128,7 +125,6 @@ TheSiteInsideRuinEntrance_MapScripts:
 	pokepic LARVA
 	cry LARVA
 	waitbutton
-	closepokepic
 	refreshscreen
 	opentext
 	scall RuinEntrance_ConfirmPurchaseScript	
@@ -159,7 +155,6 @@ TheSiteInsideRuinEntrance_MapScripts:
 	waitsfx
 	promptbutton
 	givepoke RAPTOR, 10, BERRY
-	closepokepic	
 	closetext
 	sjump ElmDirectionsScript
 
@@ -168,7 +163,6 @@ TheSiteInsideRuinEntrance_MapScripts:
 	pokepic DRIFTER
 	cry DRIFTER
 	waitbutton
-	closepokepic
 	refreshscreen
 	opentext
 	scall RuinEntrance_ConfirmPurchaseScript	
@@ -188,7 +182,6 @@ TheSiteInsideRuinEntrance_MapScripts:
 	pokepic BAG_LADY
 	cry BAG_LADY
 	waitbutton
-	closepokepic
 	refreshscreen
 	opentext
 	scall RuinEntrance_ConfirmPurchaseScript	
@@ -208,7 +201,6 @@ TheSiteInsideRuinEntrance_MapScripts:
 	pokepic SERPENT
 	cry SERPENT
 	waitbutton
-	closepokepic
 	refreshscreen
 	opentext
 	scall RuinEntrance_ConfirmPurchaseScript	
@@ -228,7 +220,6 @@ TheSiteInsideRuinEntrance_MapScripts:
 	pokepic SQUIRREL
 	cry SQUIRREL
 	waitbutton
-	closepokepic
 	refreshscreen
 	opentext
 	scall RuinEntrance_ConfirmPurchaseScript	
@@ -248,7 +239,6 @@ TheSiteInsideRuinEntrance_MapScripts:
 	pokepic SEA_TURTLE
 	cry SEA_TURTLE
 	waitbutton
-	closepokepic
 	refreshscreen
 	opentext
 	scall RuinEntrance_ConfirmPurchaseScript	
@@ -279,7 +269,6 @@ TheSiteInsideRuinEntrance_MapScripts:
 	waitsfx
 	promptbutton
 	givepoke LAMB, 10, BERRY
-	closepokepic		
 	closetext
 	sjump ElmDirectionsScript
 	
@@ -299,7 +288,6 @@ TheSiteInsideRuinEntrance_MapScripts:
 	waitsfx
 	promptbutton
 	givepoke ROCKY, 10, BERRY
-	closepokepic	
 	closetext
 	sjump ElmDirectionsScript
 	
@@ -308,7 +296,6 @@ TheSiteInsideRuinEntrance_MapScripts:
 	pokepic SLIME
 	cry SLIME
 	waitbutton
-	closepokepic
 	refreshscreen
 	opentext
 	scall RuinEntrance_ConfirmPurchaseScript	
@@ -384,9 +371,9 @@ LabTryToLeaveScript:
 
 
 DidntChooseStarterScript:
+	closepokepic	
 	writetext DidntChooseStarterText
 	waitbutton
-	closetrainpic
 	closetext
 	end
 
@@ -398,6 +385,7 @@ ElmDirectionsScript:
 	writetext ElmDirectionsText1
 	waitbutton
 	closetext
+	turnobject SITERUIN_ELM, UP
 	refreshscreen
 	playsound SFX_STRENGTH
 	earthquake 80
@@ -405,13 +393,13 @@ ElmDirectionsScript:
 	reloadmappart
 	waitsfx
 	setevent EVENT_SECRET_ELEVATOR_OPEN
+	turnobject SITERUIN_ELM, DOWN
 	refreshscreen
 	opentext
 	trainerpic ELM	
 	writetext ElmDirectionsText2
 	waitbutton
 	closetrainpic
-	closetext
 	setevent EVENT_GOT_A_POKEMON_FROM_ELM
 	setscene SCENE_FINISHED
 	end
@@ -438,9 +426,6 @@ ElmsLab_CantLeaveMovement:
 	step_end
 	
 WalkUpToElmMovement:
-	step UP
-	step UP
-	step UP
 	step UP
 	step UP
 	step UP
@@ -543,17 +528,19 @@ ElmText_ChooseAPokemon:
 	line "ANIMAL's first"
 	cont "owner, <PLAY_G>!"
 
-	para "Go on. Pick one!"
-	
 	para "There's no such"
 	line "thing as a bad"
-	cont "choice!"
+	cont "choice."
+
+	para "Go on. Pick one"
+	line "from this handy"
+	cont "menu I made!"	
 	done
 
 ElmText_YouSure:
 	text "Are you sure you"
-	line "want to spend all"
-	cont "your time with it?"
+	line "want to spend your"
+	cont "time with THAT?"
 	done
 
 ElmText_LetYourMonBattleIt:
@@ -665,13 +652,13 @@ TheSiteInsideRuinEntrance_MapEvents:
 	db 0, 0 ; filler
 	
 	def_warp_events
-	warp_event  8, 11, THESITEINSIDE1F, 7
-	warp_event  9, 11, THESITEINSIDE1F, 8
+	warp_event  8,  9, THESITEINSIDE1F, 7
+	warp_event  9,  9, THESITEINSIDE1F, 8
 
 
 	def_coord_events	
-	coord_event  8,  9, SCENE_ELMSLAB_CANT_LEAVE, LabTryToLeaveScript
-	coord_event  9,  9, SCENE_ELMSLAB_CANT_LEAVE, LabTryToLeaveScript
+	coord_event  8,  7, SCENE_ELMSLAB_CANT_LEAVE, LabTryToLeaveScript
+	coord_event  9,  7, SCENE_ELMSLAB_CANT_LEAVE, LabTryToLeaveScript
 
 	coord_event  8,  0, SCENE_RANDOMSTAIRS, SecretElevatorScript
 	coord_event  9,  0, SCENE_RANDOMSTAIRS, SecretElevatorScript
@@ -679,4 +666,4 @@ TheSiteInsideRuinEntrance_MapEvents:
 	def_bg_events
 
 	def_object_events
-	object_event  6,  6, SPRITE_ELM, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ProfElmScript, -1
+	object_event  6,  4, SPRITE_ELM, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ProfElmScript, -1

@@ -131,10 +131,14 @@ UnlockDoorsABoss:
 	writetext ButtonText
 	promptbutton
 	closetext
-	changedoor 2, 0, $0B
+	refreshscreen
+	playsound SFX_ENTER_DOOR
+	waitsfx
+	changeblock 2, 0, 11
+	reloadmappart
 	readmem wRoomDefeatedCount
 	setval 0
-	writemem wRoomDefeatedCount
+	writemem wRoomDefeatedCount		
 	end
 
 

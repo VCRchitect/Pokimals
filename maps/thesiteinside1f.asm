@@ -124,11 +124,24 @@ NPCBugCatcherScript:
 	end
 	
 NPCReceptionistScript:
+	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+	iffalse .directions
 	faceplayer
 	refreshscreen
 	opentext
 	trainerpic BEAUTY
 	writetext TheSiteWelcome
+	waitbutton
+	closetrainpic
+	closetext
+	end
+
+.directions:
+	faceplayer
+	refreshscreen
+	opentext
+	trainerpic BEAUTY
+	writetext TheSiteDirections
 	waitbutton
 	closetrainpic
 	closetext
@@ -161,6 +174,8 @@ TheRuinsScript:
 
 
 
+
+
 TheSiteWelcome:
 	text "Hey there and"
 	line "welcome!"
@@ -175,6 +190,31 @@ TheSiteWelcome:
 	line "future. Or so they"
 	cont "make me say."
 	done
+
+TheSiteDirections:
+	text "Hey there!"
+	
+	para "PROF. ELM will be"
+	line "waiting in his"
+	cont "office."
+	
+	para "Go up the stairs"
+	line "to your right,"
+	
+	para "then go all the"
+	line "way to the end of"
+	cont "the path."
+	
+	para "Go through the"
+	line "double doors and"
+	cont "he'll meet you."
+	
+	para "Good luck on your"
+	line "adventure!"
+	done
+
+
+
 	
 CafeSignText:	
 	text "THE SITE CAFE"

@@ -256,13 +256,16 @@ UnlockDoorsi:
 	closetext
 	appear ARUINS_POKE_BALL1i
 	appear ARUINS_POKE_BALL2i	
-	changedoor 2, 0, 120
-	changedoor 10, 0, 121
+	refreshscreen
+	playsound SFX_ENTER_DOOR
+	waitsfx
+	changeblock 2, 0, 120
+	changeblock 10, 0, 121
+	reloadmappart
 	readmem wRoomDefeatedCount
 	setval 0
-	writemem wRoomDefeatedCount
+	writemem wRoomDefeatedCount		
 	end
-
 
 RandomStairWarpA10a:
 	warp AHEAL, 4,  4
