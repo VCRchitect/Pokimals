@@ -66,6 +66,8 @@ ENDM
 	map_const THESITEMART,											8, 4 ; 13
 	map_const THESITEGAMECORNER,									10, 7 ; 14
 	map_const THESITECAFE,											4, 4 ; 15	
+	map_const THESITEINSIDERUINENTRANCE,							9, 7 ; 16
+	map_const THESITEINSIDETEACHERHALL,								7, 19; 17
 	endgroup
 
 	newgroup INDIGO                                               ;  4

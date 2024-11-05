@@ -278,7 +278,7 @@ UnlockDoors:
 	closetext
 	appear ARUINS_POKE_BALL1a
 	appear ARUINS_POKE_BALL2a
-	changedoor 4, 0, $0B
+	changedoor 4, 0, 11
 	end
 	
 ButtonText:

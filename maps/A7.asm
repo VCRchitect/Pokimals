@@ -279,8 +279,8 @@ UnlockDoorsf:
 	closetext
 	appear ARUINS_POKE_BALL1f
 	appear ARUINS_POKE_BALL2f		
-	changedoor 2, 0, $0B
-	changedoor 6, 0, $0B
+	changedoor 2, 0, 11
+	changedoor 6, 0, 11
 	readmem wRoomDefeatedCount
 	setval 0
 	writemem wRoomDefeatedCount

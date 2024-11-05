@@ -1,6 +1,8 @@
 	object_const_def
 	const THESITEMART_CLERK1
 	const THESITEMART_CLERK2
+	const THESITEMART_CLERK3
+	const THESITEMART_CLERK4
 	const THESITEMART_GENTLEMAN
 	const THESITEMART_SAILOR
 	const THESITEMART_TEACHER
@@ -69,11 +71,64 @@ TheSiteMartClerk1Script:
 	closetext
 	end
 
-
+TheSiteMartClerk4Script:
+	faceplayer
+	opentext
+	readmem wBadges
+	ifequal 0, .nobadgeclerk12
+	ifequal 1, .onebadgeclerk12
+	ifequal 2, .twobadgeclerk12
+	ifequal 3, .threebadgeclerk12
+	ifequal 4, .fourbadgeclerk12
+	ifequal 5, .fivebadgeclerk12
+	ifequal 6, .sixbadgeclerk12
+	ifequal 7, .sevenbadgeclerk12
+	ifequal 8, .eightbadgeclerk12	
 	
-	
+.nobadgeclerk12
+	pokemart MARTTYPE_STANDARD, MART_SITETMBASE2
+	closetext
+	end
 
+.onebadgeclerk12
+	pokemart MARTTYPE_STANDARD, MART_SITETM12
+	closetext
+	end
 
+.twobadgeclerk12
+	pokemart MARTTYPE_STANDARD, MART_SITETM22
+	closetext
+	end
+
+.threebadgeclerk12
+	pokemart MARTTYPE_STANDARD, MART_SITETM32
+	closetext
+	end
+
+.fourbadgeclerk12
+	pokemart MARTTYPE_STANDARD, MART_SITETM42
+	closetext
+	end
+
+.fivebadgeclerk12
+	pokemart MARTTYPE_STANDARD, MART_SITETM52
+	closetext
+	end
+
+.sixbadgeclerk12
+	pokemart MARTTYPE_STANDARD, MART_SITETM62
+	closetext
+	end
+
+.sevenbadgeclerk12
+	pokemart MARTTYPE_STANDARD, MART_SITETM72
+	closetext
+	end
+
+.eightbadgeclerk12	
+	pokemart MARTTYPE_STANDARD, MART_SITETM82
+	closetext
+	end
 
 TheSiteMartClerk2Script:
 	faceplayer
@@ -218,7 +273,10 @@ TheSiteMart_MapEvents:
 	def_object_events
 	object_event 15,  3, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TheSiteMartClerk3Script, -1
 	object_event  6,  1, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TheSiteMartClerk1Script, -1
-	object_event  7,  1, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TheSiteMartClerk2Script, -1
+	object_event  15,  4, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TheSiteMartClerk2Script, -1
+	object_event  7,  1, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TheSiteMartClerk4Script, -1
+
+
 	object_event  7,  5, SPRITE_GENTLEMAN, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, TheSiteMartGentlemanScript, -1
 	object_event  3,  4, SPRITE_SAILOR, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TheSiteMartSailorScript, -1
 	object_event 10,  6, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TheSiteMartTeacherScript, -1

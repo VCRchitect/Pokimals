@@ -256,8 +256,8 @@ UnlockDoorsi:
 	closetext
 	appear ARUINS_POKE_BALL1i
 	appear ARUINS_POKE_BALL2i	
-	changedoor 2, 0, $78
-	changedoor 10, 0, $79
+	changedoor 2, 0, 120
+	changedoor 10, 0, 121
 	readmem wRoomDefeatedCount
 	setval 0
 	writemem wRoomDefeatedCount

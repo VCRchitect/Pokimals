@@ -134,6 +134,33 @@ NPCReceptionistScript:
 	closetext
 	end
 
+
+CafeScript:
+	jumptext CafeSignText
+	end
+
+GameCornerScript:
+	jumptext GameCornerSignText
+	end
+
+TheMartScript:
+	jumptext MartSignText
+	end
+
+TheCenterScript:
+	jumptext CenterSignText
+	end
+
+TheHallScript:
+	jumptext TheHallSignText
+	end
+
+TheRuinsScript:
+	jumptext TheRuinsSignText
+	end
+
+
+
 TheSiteWelcome:
 	text "Hey there and"
 	line "welcome!"
@@ -149,7 +176,7 @@ TheSiteWelcome:
 	cont "make me say."
 	done
 	
-CafeScript:	
+CafeSignText:	
 	text "THE SITE CAFE"
 
 	para "Come enjoy our old"
@@ -158,7 +185,7 @@ CafeScript:
 	done
 	
 	
-GameCornerScript:
+GameCornerSignText:
 	text "THE GAME CORNER"
 	
 	para "This isn't the"
@@ -166,7 +193,7 @@ GameCornerScript:
 	cont "works every day."
 	done
 	
-TheMartScript:
+MartSignText:
 	text "SITE-MART"
 	
 	para "Come check out the"
@@ -176,12 +203,36 @@ TheMartScript:
 	line "test you pass!"
 	done
 	
-TheCenterScript:
+CenterSignText:
 	text "THE ANIMAL CENTER"
 
 	para "Ask us about the"
 	line "leprosy discount!"
 	done
+
+TheRuinsSignText:
+	text "ENTRANCE TO RUINS"
+
+	para "This is where the"
+	line "gameplay happens!"
+	done
+
+TheHallSignText:
+	text "THE GREAT HALL"
+
+	para "Don't confuse it"
+	line "with The OK Hall."
+
+	para "P.S. This is"
+	line "where the GYM LEA-"
+	
+	para "I mean where the"
+	line "INSTRUCTORS like"
+	cont "to hang out."
+	done
+
+
+
 	
 TheSiteInside1F_MapEvents:
 	db 0, 0 ; filler
@@ -193,6 +244,13 @@ TheSiteInside1F_MapEvents:
 	warp_event 17, 12, THESITECAFE, 1
 	warp_event 12, 21, THESITEOUTSIDE, 3
 	warp_event 13, 21, THESITEOUTSIDE, 4
+	warp_event 19,  4, THESITEINSIDERUINENTRANCE, 1
+	warp_event 20,  4, THESITEINSIDERUINENTRANCE, 1
+	warp_event  6,  4, THESITEINSIDETEACHERHALL, 1
+	warp_event  5,  4, THESITEINSIDETEACHERHALL, 1
+
+
+	
 
 	def_coord_events
 
@@ -201,6 +259,9 @@ TheSiteInside1F_MapEvents:
 	bg_event  9, 12, BGEVENT_READ, GameCornerScript
 	bg_event  2, 12, BGEVENT_READ, TheMartScript
 	bg_event 23, 12, BGEVENT_READ, TheCenterScript
+	bg_event 18,  4, BGEVENT_READ, TheRuinsScript
+	bg_event  7,  4, BGEVENT_READ, TheHallScript
+
 
 	def_object_events
 	object_event  2,  5, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NPCBugCatcherScript, -1

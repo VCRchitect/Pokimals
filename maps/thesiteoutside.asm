@@ -26,8 +26,8 @@ TheSiteOutside_MapEvents:
 	def_warp_events
 	warp_event 11, 21, SITEGATE, 1
 	warp_event 10, 21, SITEGATE, 1
-	warp_event 9, 20, THESITEINSIDE1F, 5
-	warp_event 10, 20, THESITEINSIDE1F, 6
+	warp_event 10,  9, THESITEINSIDE1F, 5
+	warp_event 11,  9, THESITEINSIDE1F, 6
 
 
 	def_coord_events	

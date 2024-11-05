@@ -132,6 +132,8 @@ ENDM
 	map_attributes TheSiteMart, THESITEMART, $00, 0
 	map_attributes TheSiteGameCorner, THESITEGAMECORNER, $00, 0
 	map_attributes TheSiteCafe, THESITECAFE, $00, 0
+	map_attributes TheSiteInsideRuinEntrance, THESITEINSIDERUINENTRANCE, $00, 0
+	map_attributes TheSiteInsideTeacherHall, THESITEINSIDETEACHERHALL, $00, 0
 
 
 	map_attributes IndigoPlateauPokecenter1F, INDIGO_PLATEAU_POKECENTER_1F, $00, 0

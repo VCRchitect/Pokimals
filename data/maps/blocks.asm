@@ -74,6 +74,13 @@ TheSiteGameCorner_Blocks:
 TheSiteCafe_Blocks:
 	INCBIN "maps/SiteCafe.blk"
 
+TheSiteInsideRuinEntrance_Blocks:
+	INCBIN "maps/TheSiteInsideRuinEntrance.blk"
+TheSiteInsideTeacherHall_Blocks:
+	INCBIN "maps/TheSiteInsideTeacherHall.blk"
+
+
+
 
 SECTION "Map Blocks 3", ROMX
 

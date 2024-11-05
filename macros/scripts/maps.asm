@@ -191,14 +191,14 @@ warper: MACRO
 	ifequal 9, .10
 
 .1
-	warp A2, 12, 12
+	warp A2, 4, 8
 	end
 	
 .2
 	warp A3, 6, 12
 	end
 .3
-	warp A4, 8, 12
+	warp A4, 8, 8
 	end
 .4
 	warp A5, 6, 12
@@ -226,7 +226,7 @@ warper: MACRO
 ENDM
 
 changedoor: MACRO
-	refreshscreen
+	refreshscreen $00 
 	playsound SFX_ENTER_DOOR
 	waitsfx
 	changeblock \1, \2, \3

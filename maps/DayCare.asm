@@ -21,7 +21,7 @@ DayCare_MapScripts:
 	endcallback
 
 DayCareManScript_Inside:
-	checkevent EVENT_GOT_A_MON
+	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iffalse .DayCareManRambles
 	faceplayer
 	refreshscreen
@@ -46,7 +46,7 @@ DayCareManScript_Inside:
 
 
 DayCareLadyScript:
-	checkevent EVENT_GOT_A_MON
+	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iffalse .DayCareLadyRambles
 	faceplayer
 	refreshscreen

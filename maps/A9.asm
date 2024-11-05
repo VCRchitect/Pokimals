@@ -277,8 +277,8 @@ UnlockDoorsh:
 	promptbutton
 	appear ARUINS_POKE_BALL1h
 	appear ARUINS_POKE_BALL2h		
-	changedoor 2, 0, $0B
-	changedoor 6, 0, $0B
+	changedoor 2, 0, 11
+	changedoor 6, 0, 11
 	readmem wRoomDefeatedCount
 	setval 0
 	writemem wRoomDefeatedCount

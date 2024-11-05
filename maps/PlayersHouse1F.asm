@@ -52,6 +52,16 @@ MeetGrampsScript:
 .DayOfWeekDone:
 	writetext ComeHomeForDSTText
 	waitbutton
+	writetext IGotYouText
+	waitbutton
+	verbosegiveitem EXP_SHARE
+	writetext InheritanceText
+	setevent EVENT_MADE_LETTAH_APPEAR_IN_RUINS
+	setflag ENGINE_UNLOCKED_LETTAHS_A_TO_K
+	setflag ENGINE_UNLOCKED_LETTAHS_L_TO_R
+	setflag ENGINE_UNLOCKED_LETTAHS_S_TO_W
+	setflag ENGINE_UNLOCKED_LETTAHS_X_TO_Z
+	waitbutton
 	closetext
 	special RestartMapMusic
 	turnobject PLAYERSHOUSE1F_GRAMPS1, LEFT
@@ -88,7 +98,6 @@ GrampsScript:
 	
 
 NeighborScript:
-	setevent EVENT_GOT_A_MON
 	faceplayer
 	refreshscreen
 	opentext
@@ -133,6 +142,25 @@ ComeHomeForDSTText:
 	line "hear me ramble."
 	done
 
+IGotYouText:
+	text "Oh yeah, I found"
+	line "this in the yard"
+	cont "today."
+	
+	para "You can have it."
+	
+	para "You know how I"
+	line "feel about sharing"
+	cont "and stuff."
+	done
+	
+InheritanceText:
+	text "Consider that your"
+	line "inheritance since"
+	para "I spent everything"
+	line "on CIGARETTEs and"
+	cont "nudie mags, hehe."
+	done
 
 NeighborText:
 	text "<PLAY_G>, your"

@@ -7,7 +7,7 @@ IslandNameRater_MapScripts:
 	def_callbacks
 
 IslandNameRater:
-	checkevent EVENT_GOT_A_MON
+	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iffalse .NameRaterRambles
 	faceplayer
 	refreshscreen

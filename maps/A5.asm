@@ -278,8 +278,8 @@ UnlockDoorsd:
 	closetext
 	appear ARUINS_POKE_BALL1d
 	appear ARUINS_POKE_BALL2d	
-	changedoor 2, 0, $0B
-	changedoor 10, 0, $0B
+	changedoor 2, 0, 11
+	changedoor 10, 0, 11
 	readmem wRoomDefeatedCount
 	setval 0
 	writemem wRoomDefeatedCount

@@ -32,6 +32,10 @@ INCLUDE "maps/SitePokecenter1F.asm"
 INCLUDE "maps/SiteMart.asm"
 INCLUDE "maps/SiteGameCorner.asm"
 INCLUDE "maps/SiteCafe.asm"
+INCLUDE "maps/TheSiteInsideRuinEntrance.asm"
+INCLUDE "maps/TheSiteInsideTeacherHall.asm"
+
+
 
 
 SECTION "Map Scripts 4", ROMX

@@ -10,11 +10,12 @@ Script_Whiteout:
 	writetext .WhitedOutText
 	waitbutton
 	special FadeOutPalettes
-	pause 40
+	pause 20
 	special HealParty
+					
 	callasm HalveMoney
 	callasm GetWhiteoutSpawn
-	farscall Script_AbortBugContest
+								
 	special WarpToSpawnPoint
 	newloadmap MAPSETUP_WARP
 	endall
@@ -54,10 +55,8 @@ HalveMoney:
 	ret
 
 GetWhiteoutSpawn:
-	ld a, [wLastSpawnMapGroup]
-	ld d, a
-	ld a, [wLastSpawnMapNumber]
-	ld e, a
+	ld a, SPAWN_HOME
+	ld [wDefaultSpawnpoint], a
 	farcall IsSpawnPoint
 	ld a, c
 	jr c, .yes

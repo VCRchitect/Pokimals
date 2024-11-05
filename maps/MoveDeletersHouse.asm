@@ -7,7 +7,7 @@ MoveDeletersHouse_MapScripts:
 	def_callbacks
 
 MoveDeleter:
-	checkevent EVENT_GOT_A_MON
+	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iffalse .MoveDeleterRambles
 	faceplayer
 	opentext
@@ -28,7 +28,7 @@ MoveDeleter:
 	end
 
 MoveRelearnerScript:
-	checkevent EVENT_GOT_A_MON
+	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iffalse .MoveRelearnerRambles
 	faceplayer
 	opentext

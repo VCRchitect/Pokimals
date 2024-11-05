@@ -255,8 +255,6 @@ HandleBetweenTurnEffects:
 	call HandleFutureSight
 	call CheckFaint_PlayerThenEnemy
 	ret c
-	call CheckFaint_PlayerThenEnemy
-	ret c
 	call HandleWeather
 	call CheckFaint_PlayerThenEnemy
 	ret c
@@ -921,7 +919,6 @@ Battle_EnemyFirst:
 	call HasPlayerFainted
 	jp z, HandlePlayerMonFaint
 	call SetPlayerTurn
-	call HandleRuinSickness
 	call ResidualDamage
 	jp z, HandlePlayerMonFaint
 	call RefreshBattleHuds
@@ -948,7 +945,6 @@ Battle_PlayerFirst:
 	jp z, HandlePlayerMonFaint
 	push bc
 	call SetPlayerTurn
-	call HandleRuinSickness
 	call ResidualDamage
 	pop bc
 	jp z, HandlePlayerMonFaint
@@ -1027,6 +1023,7 @@ ResidualDamage:
 ; Return z if the user fainted before
 ; or as a result of residual damage.
 ; For Sandstorm damage, see HandleWeather.
+
 	call HasUserFainted
 	ret z
 
@@ -1157,10 +1154,6 @@ ResidualDamage:
 	call DelayFrames
 	xor a
 	ret
-
-HandleRuinSickness:
-	call GetRoomCount
-	call SubtractHP
 
 HandlePerishSong:
 	ldh a, [hSerialConnectionStatus]
@@ -1876,7 +1869,7 @@ SubtractHP:
 	ld [wHPBuffer3], a
 	ld [wHPBuffer3 + 1], a
 	ret
-	
+
 GetSixteenthMaxHP:
 	call GetQuarterMaxHP
 ; quarter result
@@ -1902,12 +1895,6 @@ GetEighthMaxHP:
 	jr nz, .end
 	inc c
 .end
-	ret
-
-GetRoomCount:
-	ld a, [wRoomCount]
-	ld c, a
-	ld b, a
 	ret
 
 GetQuarterMaxHP:
@@ -4390,7 +4377,6 @@ ItemCigaretteAnim:
 	pop hl
 	ret
 
-
 UseHeldStatusHealingItem:
 	callfar GetOpponentItem
 	ld hl, HeldStatusHealingEffects
@@ -6226,8 +6212,10 @@ LoadEnemyMon:
 ; Moreover, due to the check not being translated to feet+inches, all Carp
 ; smaller than 4'0" may be caught by the filter, a lot more than intended.
 	ld a, [wMapGroup]
+	cp GROUP_LAKE_OF_RAGE
 	jr z, .Happiness
 	ld a, [wMapNumber]
+	cp MAP_LAKE_OF_RAGE
 	jr z, .Happiness
 ; 40% chance of not flooring
 	call Random
@@ -7178,8 +7166,7 @@ GiveExperiencePoints:
 	ld [wCurSpecies], a
 	call GetBaseData
 	push bc
-	ld a, [wLevelCap]
-	ld d, a
+	ld d, MAX_LEVEL
 	callfar CalcExpAtLevel
 	pop bc
 	ld hl, MON_EXP + 2
@@ -7214,12 +7201,8 @@ GiveExperiencePoints:
 	pop bc
 	ld hl, MON_LEVEL
 	add hl, bc
-	ld a, [wLevelCap]
-	push bc
-	ld b, a	
 	ld a, [hl]
-	cp b
-	pop bc
+	cp MAX_LEVEL
 	jp nc, .next_mon
 	cp d
 	jp z, .next_mon
@@ -7432,14 +7415,9 @@ AnimateExpBar:
 	ld a, [wCurBattleMon]
 	cp [hl]
 	jp nz, .finish
-	
-	ld a, [wLevelCap]
-	push bc
-	ld b, a	
 
 	ld a, [wBattleMonLevel]
-	cp b
-	pop bc
+	cp MAX_LEVEL
 	jp nc, .finish
 
 	ldh a, [hProduct + 3]
@@ -7476,8 +7454,7 @@ AnimateExpBar:
 	ld [hl], a
 
 .NoOverflow:
-	ld a, [wLevelCap]
-	ld d, a
+	ld d, MAX_LEVEL
 	callfar CalcExpAtLevel
 	ldh a, [hProduct + 1]
 	ld b, a
@@ -7512,12 +7489,8 @@ AnimateExpBar:
 	ld d, a
 
 .LoopLevels:
-	ld a, [wLevelCap]
-	push bc
-	ld b, a
 	ld a, e
-	cp b
-	pop bc
+	cp MAX_LEVEL
 	jr nc, .FinishExpBar
 	cp d
 	jr z, .FinishExpBar
@@ -7783,6 +7756,38 @@ TextJump_ComeBack: ; unreferenced
 ComeBackText:
 	text_far _ComeBackText
 	text_end
+
+HandleSafariAngerEatingStatus: ; unreferenced
+	ld hl, wSafariMonEating
+	ld a, [hl]
+	and a
+	jr z, .angry
+	dec [hl]
+	ld hl, BattleText_WildMonIsEating
+	jr .finish
+
+.angry
+	dec hl
+	assert wSafariMonEating - 1 == wSafariMonAngerCount
+	ld a, [hl]
+	and a
+	ret z
+	dec [hl]
+	ld hl, BattleText_WildMonIsAngry
+	jr nz, .finish
+	push hl
+	ld a, [wEnemyMonSpecies]
+	ld [wCurSpecies], a
+	call GetBaseData
+	ld a, [wBaseCatchRate]
+	ld [wEnemyMonCatchRate], a
+	pop hl
+
+.finish
+	push hl
+	call SafeLoadTempTilemapToTilemap
+	pop hl
+	jp StdBattleTextbox
 
 FillInExpBar:
 	push hl
@@ -8263,6 +8268,8 @@ ExitBattle:
 CleanUpBattleRAM:
 	call BattleEnd_HandleRoamMons
 	xor a
+	ld [wStatsScreenFlags], a
+	ld [wBattleTimeOfDay], a
 	ld [wLowHealthAlarm], a
 	ld [wBattleMode], a
 	ld [wBattleType], a
@@ -8285,7 +8292,6 @@ CleanUpBattleRAM:
 	ld [wBallsPocketScrollPosition], a
 	ld hl, wPlayerSubStatus1
 	ld b, wEnemyFuryCutterCount - wPlayerSubStatus1
-
 .loop
 	ld [hli], a
 	dec b
