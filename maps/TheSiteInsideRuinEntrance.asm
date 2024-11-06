@@ -36,8 +36,13 @@ TheSiteInsideRuinEntrance_MapScripts:
 	writetext ElmText_Intro
 	waitbutton
 	writetext ElmText_ChooseAPokemon
+	waitbutton
 	closetrainpic
 	closetext
+	sjump PickMonMenu
+
+
+PickMonMenu:
 .loop
 	refreshscreen
 	loadmenu RuinEntranceMenuHeader
@@ -312,6 +317,7 @@ TheSiteInsideRuinEntrance_MapScripts:
 	
 
 RuinEntranceStarter_CancelPurchaseScript:
+	sjump PickMonMenu
 
 RuinEntranceMenuHeader:
 	db MENU_BACKUP_TILES ; flags
@@ -504,21 +510,20 @@ ElmDirectionsText2:
 	para "I'll see you when"
 	line "you inevitably"
 	cont "panic and faint!"
+
+	para "..."
 	
-	para "Oh! Almost forgot."
-	line "The Site's best"
+	para "Oh!"
 	
-	para "instructors can"
-	line "now teach you a"
+	para "I almost forgot."
+	line "Don't forget to go"
 	
-	para "thing or two about"
-	line "battling. Go see"
+	para "see PROF. OAK at"
+	line "the ol' Digging"
+	cont "Academy."
 	
-	para "them if you'd like"
-	line "to challenge and"
-	
-	para "unlock more in The"
-	line "Ruins."
+	para "He has your"
+	line "ANMLDEX."
 	
 	para "Good luck!"
 	done

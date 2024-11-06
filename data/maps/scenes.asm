@@ -6,6 +6,7 @@ ENDM
 
 MapScenes::
 	scene_var THESITEINSIDERUINENTRANCE, 		wElmsLabSceneID
+	scene_var DIGGINGACADEMY, 					wMrPokemonsHouseSceneID
 	scene_var POKECENTER_2F,                wPokecenter2FSceneID
 	scene_var TRADE_CENTER,                 wTradeCenterSceneID
 	scene_var COLOSSEUM,                    wColosseumSceneID

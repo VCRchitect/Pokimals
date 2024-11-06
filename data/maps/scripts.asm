@@ -34,8 +34,11 @@ INCLUDE "maps/SiteGameCorner.asm"
 INCLUDE "maps/SiteCafe.asm"
 INCLUDE "maps/TheSiteInsideRuinEntrance.asm"
 INCLUDE "maps/TheSiteInsideTeacherHall.asm"
-
-
+INCLUDE "maps/ApartmentHall.asm"
+INCLUDE "maps/Apartments123.asm"
+INCLUDE "maps/Apartments789.asm"
+INCLUDE "maps/WeirdCloset.asm"
+INCLUDE "maps/DiggingAcademy.asm"
 
 
 SECTION "Map Scripts 4", ROMX

@@ -172,6 +172,13 @@ TheRuinsScript:
 	jumptext TheRuinsSignText
 	end
 
+TheAcademyScript:
+	jumptext AcademySignText
+	end
+	
+TheApartmentsScript:
+	jumptext ApartmentsSignText
+	end
 
 
 
@@ -250,6 +257,21 @@ CenterSignText:
 	line "leprosy discount!"
 	done
 
+AcademySignText:
+	text "DIGGING ACADEMY"
+
+	para "GET EDUCATED, YOU"
+	line "SIMPLETON."
+	done
+
+ApartmentsSignText:
+	text "SITE APARTMENTS"
+
+	para "Not old? Rent a"
+	line "room with us!"
+	done
+
+
 TheRuinsSignText:
 	text "ENTRANCE TO RUINS"
 
@@ -288,6 +310,8 @@ TheSiteInside1F_MapEvents:
 	warp_event 20,  4, THESITEINSIDERUINENTRANCE, 1
 	warp_event  6,  4, THESITEINSIDETEACHERHALL, 1
 	warp_event  5,  4, THESITEINSIDETEACHERHALL, 1
+	warp_event 14,  4, APARTMENT_HALL, 7
+	warp_event 11,  4, DIGGINGACADEMY, 1
 
 
 	
@@ -301,6 +325,11 @@ TheSiteInside1F_MapEvents:
 	bg_event 23, 12, BGEVENT_READ, TheCenterScript
 	bg_event 18,  4, BGEVENT_READ, TheRuinsScript
 	bg_event  7,  4, BGEVENT_READ, TheHallScript
+	bg_event 10,  4, BGEVENT_READ, TheAcademyScript
+	bg_event 15,  4, BGEVENT_READ, TheApartmentsScript
+
+
+
 
 
 	def_object_events

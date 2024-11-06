@@ -78,8 +78,21 @@ TheSiteInsideRuinEntrance_Blocks:
 	INCBIN "maps/TheSiteInsideRuinEntrance.blk"
 TheSiteInsideTeacherHall_Blocks:
 	INCBIN "maps/TheSiteInsideTeacherHall.blk"
+	
+ApartmentHall_Blocks:
+	INCBIN "maps/ApartmentHall.blk"
+	
+Apartments123_Blocks:
+	INCBIN "maps/Apartments123.blk"
 
+Apartments789_Blocks:
+	INCBIN "maps/Apartments789.blk"
 
+WeirdCloset_Blocks:
+	INCBIN "maps/WeirdCloset.blk"
+
+DiggingAcademy_Blocks:
+	INCBIN "maps/DiggingAcademy.blk"
 
 
 SECTION "Map Blocks 3", ROMX

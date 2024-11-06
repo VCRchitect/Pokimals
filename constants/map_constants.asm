@@ -68,6 +68,11 @@ ENDM
 	map_const THESITECAFE,											4, 4 ; 15	
 	map_const THESITEINSIDERUINENTRANCE,							9, 7 ; 16
 	map_const THESITEINSIDETEACHERHALL,								7, 19; 17
+	map_const APARTMENT_HALL,										15, 3; 18
+	map_const APARTMENTS123,										4, 16; 19
+	map_const APARTMENTS789,										4, 16; 20
+	map_const WEIRDCLOSET,											3, 3; 21
+	map_const DIGGINGACADEMY,										4, 8; 22
 	endgroup
 
 	newgroup INDIGO                                               ;  4

@@ -55,7 +55,7 @@ HalveMoney:
 	ret
 
 GetWhiteoutSpawn:
-	ld a, SPAWN_HOME
+	ld a, SPAWN_THESITEINSIDE1F
 	ld [wDefaultSpawnpoint], a
 	farcall IsSpawnPoint
 	ld a, c

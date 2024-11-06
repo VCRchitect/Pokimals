@@ -19,7 +19,7 @@ SpawnPoints:
 	spawn PLAYERYARD,               5,  8
 	spawn BATTLE_TOWER_OUTSIDE,          8, 10
 	spawn NONE,                          6,  2
-	spawn THESITEINSIDE1F, 13, 18
+	spawn THESITEINSIDE1F, 					12, 18
 	spawn N_A,                          -1, -1
 
 	assert_table_length NUM_SPAWNS + 1

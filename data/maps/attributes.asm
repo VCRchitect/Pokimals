@@ -134,7 +134,11 @@ ENDM
 	map_attributes TheSiteCafe, THESITECAFE, $00, 0
 	map_attributes TheSiteInsideRuinEntrance, THESITEINSIDERUINENTRANCE, $00, 0
 	map_attributes TheSiteInsideTeacherHall, THESITEINSIDETEACHERHALL, $00, 0
-
+	map_attributes ApartmentHall, APARTMENT_HALL, $00, 0
+	map_attributes Apartments123, APARTMENTS123, $00, 0
+	map_attributes Apartments789, APARTMENTS789, $00, 0
+	map_attributes WeirdCloset, WEIRDCLOSET, $00, 0
+	map_attributes DiggingAcademy, DIGGINGACADEMY, $00, 0
 
 	map_attributes IndigoPlateauPokecenter1F, INDIGO_PLATEAU_POKECENTER_1F, $00, 0
 	map_attributes WillsRoom, WILLS_ROOM, $00, 0
