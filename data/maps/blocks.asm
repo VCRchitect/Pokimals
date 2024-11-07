@@ -93,6 +93,30 @@ WeirdCloset_Blocks:
 
 DiggingAcademy_Blocks:
 	INCBIN "maps/DiggingAcademy.blk"
+	
+Teacher1_Blocks:
+	INCBIN "maps/Teacher1.blk"
+
+Teacher2_Blocks:
+	INCBIN "maps/Teacher2.blk"
+
+Teacher3_Blocks:
+	INCBIN "maps/Teacher3.blk"
+
+Teacher4_Blocks:
+	INCBIN "maps/Teacher4.blk"
+
+Teacher5_Blocks:
+	INCBIN "maps/Teacher5.blk"
+
+Teacher6_Blocks:
+	INCBIN "maps/Teacher6.blk"
+
+Teacher7_Blocks:
+	INCBIN "maps/Teacher7.blk"
+
+Teacher8_Blocks:
+	INCBIN "maps/Teacher8.blk"
 
 
 SECTION "Map Blocks 3", ROMX

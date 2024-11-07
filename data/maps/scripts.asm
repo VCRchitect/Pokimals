@@ -39,7 +39,7 @@ INCLUDE "maps/Apartments123.asm"
 INCLUDE "maps/Apartments789.asm"
 INCLUDE "maps/WeirdCloset.asm"
 INCLUDE "maps/DiggingAcademy.asm"
-
+INCLUDE "maps/Teacher1.asm"
 
 SECTION "Map Scripts 4", ROMX
 
@@ -50,6 +50,13 @@ INCLUDE "maps/BrunosRoom.asm"
 INCLUDE "maps/KarensRoom.asm"
 INCLUDE "maps/LancesRoom.asm"
 INCLUDE "maps/HallOfFame.asm"
+INCLUDE "maps/Teacher2.asm"
+INCLUDE "maps/Teacher3.asm"
+INCLUDE "maps/Teacher4.asm"
+INCLUDE "maps/Teacher5.asm"
+INCLUDE "maps/Teacher6.asm"
+INCLUDE "maps/Teacher7.asm"
+INCLUDE "maps/Teacher8.asm"
 
 
 SECTION "Map Scripts 5", ROMX

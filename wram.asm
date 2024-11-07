@@ -2759,7 +2759,8 @@ wDudeNumBalls:: db
 wDudeBalls:: ds 2 * 4 + 1
 ENDU
 
-	ds 4
+wOtherTrainerType:: db
+	ds 3
 
 wd430:: ; mobile
 wBattleAction:: db
@@ -3095,6 +3096,7 @@ wMobileBattleRoomSceneID::                        db
 ; fight counts
 wJackFightCount::    db
 wLevelCap:: 		 db
+wBaseLevel::		db
 wHueyFightCount::    db
 wGavenFightCount::   db
 wBethFightCount::    db
@@ -3122,7 +3124,7 @@ wKenjiFightCount::   db ; unreferenced
 wParryFightCount::   db
 wErinFightCount::    db
 
-	ds 100
+	ds 99
 
 wEventFlags:: flag_array NUM_EVENTS
 

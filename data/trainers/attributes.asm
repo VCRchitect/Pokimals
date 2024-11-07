@@ -2,49 +2,49 @@ TrainerClassAttributes:
 ; entries correspond to trainer classes (see constants/trainer_constants.asm)
 	table_width NUM_TRAINER_ATTRIBUTES, TrainerClassAttributes
 
-; Falkner
+; Big Bird
 	db NO_ITEM, NO_ITEM ; items
 	db 25 ; base reward
 	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Whitney
+; Lara
 	db NO_ITEM, NO_ITEM ; items
 	db 25 ; base reward
 	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Bugsy
+; TPain
 	db NO_ITEM, NO_ITEM ; items
 	db 25 ; base reward
 	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Morty
+; Jason
 	db NO_ITEM, NO_ITEM ; items
 	db 25 ; base reward
 	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Pryce
+; Lincoln
 	db HYPER_POTION, NO_ITEM ; items
 	db 25 ; base reward
 	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Jasmine
+; Diana
 	db HYPER_POTION, NO_ITEM ; items
 	db 25 ; base reward
 	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Jose
+; Kid Rock
 	db FULL_HEAL, NO_ITEM ; items
 	db 25 ; base reward
 	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Clair
+; Peely
 	db FULL_HEAL, HYPER_POTION ; items
 	db 25 ; base reward
 	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
@@ -445,5 +445,12 @@ TrainerClassAttributes:
 	db 10 ; base reward
 	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
+	
+; Papa
+	db NO_ITEM, NO_ITEM ; items
+	db 10 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+	
 	
 	assert_table_length NUM_TRAINER_CLASSES

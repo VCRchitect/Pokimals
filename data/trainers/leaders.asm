@@ -5,14 +5,14 @@
 ; accounted for prior to the list check.
 
 GymLeaders:
-	db FALKNER
-	db WHITNEY
-	db BUGSY
-	db MORTY
-	db PRYCE
-	db JASMINE
-	db JOSE
-	db CLAIR
+	db BIG_BIRD
+	db LARA
+	db TPAIN
+	db JASON
+	db LINCOLN
+	db DIANA
+	db KID_ROCK
+	db PEELY
 	db WILL
 	db BRUNO
 	db KAREN

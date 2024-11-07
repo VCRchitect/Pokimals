@@ -3,14 +3,14 @@
 TrainerGroups:
 ; entries correspond to trainer classes (see constants/trainer_constants.asm)
 	table_width 2, TrainerGroups
-	dw FalknerGroup
-	dw WhitneyGroup
-	dw BugsyGroup
-	dw MortyGroup
-	dw PryceGroup
-	dw JasmineGroup
-	dw JoseGroup
-	dw ClairGroup
+	dw Big_BirdGroup
+	dw LaraGroup
+	dw TPainGroup
+	dw JasonGroup
+	dw LincolnGroup
+	dw DianaGroup
+	dw Kid_RockGroup
+	dw PeelyGroup
 	dw Rival1Group
 	dw PokemonProfGroup
 	dw WillGroup
@@ -77,4 +77,5 @@ TrainerGroups:
 	dw BillGroup
 	dw KurtGroup
 	dw GuideGroup
+	dw PapaGroup
 	assert_table_length NUM_TRAINER_CLASSES

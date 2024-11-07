@@ -3,14 +3,14 @@
 BTTrainerClassGenders:
 ; entries correspond to trainer classes
 	table_width 1, BTTrainerClassGenders
-	db MALE   ; FALKNER
-	db FEMALE ; WHITNEY
-	db FEMALE ; BUGSY
-	db MALE   ; MORTY
-	db MALE   ; PRYCE
-	db FEMALE ; JASMINE
-	db MALE   ; JOSE
-	db FEMALE ; CLAIR
+	db MALE   ; BIG_BIRD
+	db FEMALE ; LARA
+	db FEMALE ; TPAIN
+	db MALE   ; JASON
+	db MALE   ; LINCOLN
+	db FEMALE ; DIANA
+	db MALE   ; KID_ROCK
+	db FEMALE ; PEELY
 	db MALE   ; RIVAL1
 	db MALE   ; POKEMON_PROF
 	db FEMALE ; WILL
@@ -77,6 +77,6 @@ BTTrainerClassGenders:
 	db MALE ; BILL_T
 	db MALE ; KURT
 	db MALE ; GUIDE
-
+	db MALE ; PAPA
 	assert_table_length NUM_TRAINER_CLASSES
 	

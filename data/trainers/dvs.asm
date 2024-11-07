@@ -2,14 +2,14 @@ TrainerClassDVs:
 ; entries correspond to trainer classes (see constants/trainer_constants.asm)
 	table_width 2, TrainerClassDVs
 	;  atk,def,spd,spc
-	dn  9, 10,  7,  7 ; FALKNER
-	dn  8,  8,  8,  8 ; WHITNEY
-	dn  9,  8,  8,  8 ; BUGSY
-	dn  9,  8,  8,  8 ; MORTY
-	dn  9,  8,  8,  8 ; PRYCE
-	dn  9,  8,  8,  8 ; JASMINE
-	dn  9,  8,  8,  8 ; JOSE
-	dn  7, 12, 13, 13 ; CLAIR
+	dn  9, 10,  7,  7 ; BIG_BIRD
+	dn  8,  8,  8,  8 ; LARA
+	dn  9,  8,  8,  8 ; TPAIN
+	dn  9,  8,  8,  8 ; JASON
+	dn  9,  8,  8,  8 ; LINCOLN
+	dn  9,  8,  8,  8 ; DIANA
+	dn  9,  8,  8,  8 ; KID_ROCK
+	dn  7, 12, 13, 13 ; PEELY
 	dn 13, 13, 13, 13 ; RIVAL1
 	dn  9,  8,  8,  8 ; POKEMON_PROF
 	dn 13, 12, 13, 13 ; WILL
@@ -76,4 +76,5 @@ TrainerClassDVs:
 	dn  9,  8,  8,  8 ; BILL_T
 	dn  9,  8,  8,  8 ; KURT
 	dn  9,  8,  8,  8 ; GUIDE
+	dn  9,  8,  8,  8 ; PAPA	
 	assert_table_length NUM_TRAINER_CLASSES

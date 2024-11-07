@@ -1,14 +1,14 @@
 TrainerClassNames::
 ; entries correspond to trainer classes (see constants/trainer_constants.asm)
 	list_start TrainerClassNames
-	li "LEADER"
-	li "LEADER"
-	li "LEADER"
-	li "LEADER"
-	li "LEADER"
-	li "LEADER"
-	li "LEADER"
-	li "LEADER"
+	li "INSTRUCTOR"
+	li "INSTRUCTOR"
+	li "INSTRUCTOR"
+	li "INSTRUCTOR"
+	li "INSTRUCTOR"
+	li "INSTRUCTOR"
+	li "INSTRUCTOR"
+	li "INSTRUCTOR"
 	li "RIVAL"
 	li "ANML PROF."
 	li "ELITE FOUR"
@@ -75,5 +75,5 @@ TrainerClassNames::
 	li "BILL"
 	li "KURT"
 	li "GUIDE"
-
+	li "PAPA"
 	assert_list_length NUM_TRAINER_CLASSES

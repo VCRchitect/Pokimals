@@ -139,6 +139,14 @@ ENDM
 	map_attributes Apartments789, APARTMENTS789, $00, 0
 	map_attributes WeirdCloset, WEIRDCLOSET, $00, 0
 	map_attributes DiggingAcademy, DIGGINGACADEMY, $00, 0
+	map_attributes Teacher1, TEACHER1, $00, 0
+	map_attributes Teacher2, TEACHER2, $00, 0
+	map_attributes Teacher3, TEACHER3, $00, 0
+	map_attributes Teacher4, TEACHER4, $00, 0
+	map_attributes Teacher5, TEACHER5, $00, 0
+	map_attributes Teacher6, TEACHER6, $00, 0
+	map_attributes Teacher7, TEACHER7, $00, 0
+	map_attributes Teacher8, TEACHER8, $00, 0
 
 	map_attributes IndigoPlateauPokecenter1F, INDIGO_PLATEAU_POKECENTER_1F, $00, 0
 	map_attributes WillsRoom, WILLS_ROOM, $00, 0

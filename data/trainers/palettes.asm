@@ -9,14 +9,14 @@ TrainerPalettes:
 PlayerPalette: ; Chris uses the same colors as Cal
 INCBIN "gfx/trainers/cal.gbcpal", middle_colors
 KrisPalette: ; Kris shares Falkner's palette
-INCBIN "gfx/trainers/falkner.gbcpal", middle_colors
-INCBIN "gfx/trainers/whitney.gbcpal", middle_colors
-INCBIN "gfx/trainers/bugsy.gbcpal", middle_colors
-INCBIN "gfx/trainers/morty.gbcpal", middle_colors
-INCBIN "gfx/trainers/pryce.gbcpal", middle_colors
-INCBIN "gfx/trainers/jasmine.gbcpal", middle_colors
+INCBIN "gfx/trainers/big_bird.gbcpal", middle_colors
+INCBIN "gfx/trainers/lara.gbcpal", middle_colors
+INCBIN "gfx/trainers/tpain.gbcpal", middle_colors
+INCBIN "gfx/trainers/jason.gbcpal", middle_colors
+INCBIN "gfx/trainers/lincoln.gbcpal", middle_colors
+INCBIN "gfx/trainers/diana.gbcpal", middle_colors
 INCBIN "gfx/trainers/jose.gbcpal", middle_colors
-INCBIN "gfx/trainers/clair.gbcpal", middle_colors
+INCBIN "gfx/trainers/peely.gbcpal", middle_colors
 INCBIN "gfx/trainers/rival1.gbcpal", middle_colors
 INCBIN "gfx/trainers/oak.gbcpal", middle_colors
 INCBIN "gfx/trainers/will.gbcpal", middle_colors
@@ -83,5 +83,5 @@ INCBIN "gfx/trainers/nurselady.gbcpal", middle_colors
 INCBIN "gfx/trainers/bill_t.gbcpal", middle_colors
 INCBIN "gfx/trainers/kurt.gbcpal", middle_colors
 INCBIN "gfx/trainers/guide.gbcpal", middle_colors
-
+INCBIN "gfx/trainers/papa.gbcpal", middle_colors
 	assert_table_length NUM_TRAINER_CLASSES + 1

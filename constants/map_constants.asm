@@ -73,6 +73,14 @@ ENDM
 	map_const APARTMENTS789,										4, 16; 20
 	map_const WEIRDCLOSET,											3, 3; 21
 	map_const DIGGINGACADEMY,										4, 8; 22
+	map_const TEACHER1, 											3, 3; 23
+	map_const TEACHER2, 											3, 3; 24
+	map_const TEACHER3, 											3, 3; 25
+	map_const TEACHER4, 											3, 3; 26
+	map_const TEACHER5, 											3, 3; 27
+	map_const TEACHER6, 											3, 3; 28
+	map_const TEACHER7, 											3, 3; 29
+	map_const TEACHER8, 											3, 3; 30
 	endgroup
 
 	newgroup INDIGO                                               ;  4
