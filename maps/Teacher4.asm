@@ -29,11 +29,14 @@ LaraScript:
 	checkevent EVENT_GOT_TM45_ATTRACT
 	iftrue .GotAttract
 	readmem wLevelCap
-	addval 5
+	addval 10
 	writemem wLevelCap
 	readmem wBaseLevel
-	addval 5
+	addval 10
 	writemem wBaseLevel	
+	readmem wBadges
+	addval 1
+	writemem wBadges
 	checkflag ENGINE_PLAINBADGE
 	iftrue .GotPlainBadge
 	writetext LaraWhatDoYouWantText
@@ -44,7 +47,6 @@ LaraScript:
 	playsound SFX_GET_BADGE
 	waitsfx
 	setflag ENGINE_PLAINBADGE
-	readvar VAR_BADGES
 .GotPlainBadge:
 	refreshscreen
 	trainerpic LARA
@@ -66,6 +68,10 @@ LaraScript:
 	trainerpic LARA
 	writetext LaraGoodCryText
 	waitbutton
+	closetrainpic
+	closetext
+	end
+	
 .NoRoomForAttract:
 	closetrainpic
 	closetext

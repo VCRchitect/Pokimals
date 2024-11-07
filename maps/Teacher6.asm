@@ -28,16 +28,18 @@ DianaScript:
 	playsound SFX_GET_BADGE
 	waitsfx
 	setflag ENGINE_MINERALBADGE
-	readvar VAR_BADGES
 .FightDone:
 	checkevent EVENT_GOT_TM23_IRON_TAIL
 	iftrue .GotIronTail
 	readmem wLevelCap
-	addval 5
+	addval 10
 	writemem wLevelCap
 	readmem wBaseLevel
-	addval 5
+	addval 10
 	writemem wBaseLevel	
+	readmem wBadges
+	addval 1
+	writemem wBadges
 	refreshscreen
 	trainerpic DIANA
 	writetext Diana_BadgeSpeech
@@ -57,6 +59,10 @@ DianaScript:
 .GotIronTail:
 	writetext Diana_GoodLuck
 	waitbutton
+	closetrainpic
+	closetext
+	end
+	
 .NoRoomForIronTail:
 	closetrainpic
 	closetext

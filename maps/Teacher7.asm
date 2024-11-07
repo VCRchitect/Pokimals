@@ -29,16 +29,18 @@ Big_BirdScript:
 	playsound SFX_GET_BADGE
 	waitsfx
 	setflag ENGINE_ZEPHYRBADGE
-	readvar VAR_BADGES
 .FightDone:
 	checkevent EVENT_GOT_TM31_MUD_SLAP
 	iftrue .SpeechAfterTM
 	readmem wLevelCap
-	addval 5
+	addval 10
 	writemem wLevelCap
 	readmem wBaseLevel
-	addval 5
+	addval 10
 	writemem wBaseLevel	
+	readmem wBadges
+	addval 1
+	writemem wBadges
 	refreshscreen
 	trainerpic BIG_BIRD
 	writetext Big_BirdZephyrBadgeText
@@ -58,6 +60,10 @@ Big_BirdScript:
 .SpeechAfterTM:
 	writetext Big_BirdFightDoneText
 	waitbutton
+	closetrainpic
+	closetext
+	end
+	
 .NoRoomForMudSlap:
 	closetext
 	end

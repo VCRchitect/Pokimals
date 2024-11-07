@@ -27,16 +27,18 @@ Kid_RockScript:
 	playsound SFX_GET_BADGE
 	waitsfx
 	setflag ENGINE_STORMBADGE
-	readvar VAR_BADGES
 .FightDone:
 	checkevent EVENT_GOT_TM01_DYNAMICPUNCH
 	iftrue .AlreadyGotTM
 	readmem wLevelCap
-	addval 5
+	addval 10
 	writemem wLevelCap
 	readmem wBaseLevel
-	addval 5
+	addval 10
 	writemem wBaseLevel	
+	readmem wBadges
+	addval 1
+	writemem wBadges
 	refreshscreen
 	trainerpic KID_ROCK
 	writetext KidRockExplainBadgeText
@@ -56,6 +58,10 @@ Kid_RockScript:
 .AlreadyGotTM:
 	writetext KidRockAfterText
 	waitbutton
+	closetrainpic
+	closetext
+	end
+	
 .BagFull:
 	closetrainpic
 	closetext

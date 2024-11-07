@@ -90,7 +90,7 @@ TheSiteInsideTeacherHall_MapEvents:
 	
 	def_warp_events
 	warp_event  7, 37, THESITEINSIDE1F, 10
-	warp_event  6, 37, THESITEINSIDE1F, 19
+	warp_event  6, 37, THESITEINSIDE1F, 9
 	warp_event  2, 30, TEACHER1, 1
 	warp_event 11, 30, TEACHER2, 1
 	warp_event  2, 22, TEACHER3, 1

@@ -22,20 +22,23 @@ Teacher1TPainScript:
 	startbattle
 	reloadmapafterbattle
 	setevent EVENT_BEAT_TPAIN
+	refreshscreen
 	writetext Text_ReceivedHiveBadge
 	playsound SFX_GET_BADGE
 	waitsfx
 	setflag ENGINE_HIVEBADGE
-	readvar VAR_BADGES
 .FightDone:
 	checkevent EVENT_GOT_TM49_FURY_CUTTER
 	iftrue .GotFuryCutter
 	readmem wLevelCap
-	addval 5
+	addval 10
 	writemem wLevelCap
 	readmem wBaseLevel
-	addval 5
+	addval 10
 	writemem wBaseLevel	
+	readmem wBadges
+	addval 1
+	writemem wBadges
 	refreshscreen
 	opentext
 	trainerpic TPAIN
@@ -57,6 +60,10 @@ Teacher1TPainScript:
 	refreshscreen
 	writetext TPainText_BugMonsAreDeep
 	waitbutton
+	closetrainpic
+	closetext
+	end
+	
 .NoRoomForFuryCutter:
 	closetrainpic
 	closetext

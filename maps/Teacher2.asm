@@ -11,8 +11,6 @@ PeelyScript:
 	refreshscreen
 	opentext
 	trainerpic PEELY
-	checkflag ENGINE_RISINGBADGE
-	iftrue .AlreadyGotBadge
 	checkevent EVENT_BEAT_PEELY
 	iftrue .FightDone
 	writetext PeelyIntroText
@@ -25,32 +23,28 @@ PeelyScript:
 	reloadmapafterbattle
 	setevent EVENT_BEAT_PEELY
 	refreshscreen
-	opentext
-	trainerpic PEELY
-	writetext PeelyText_GoodJob
-	waitbutton
-	closetrainpic
-	closetext
-	end
-
+	writetext DragonShrinePlayerReceivedRisingBadgeText
+	playsound SFX_GET_BADGE
+	waitsfx
+	setflag ENGINE_RISINGBADGE
 .FightDone:
-	writetext Teacher2GymPeelyText_League
-	waitbutton
-	closetrainpic
-	closetext
-	readmem wLevelCap
-	addval 5
-	writemem wLevelCap
-	readmem wBaseLevel
-	addval 5
-	writemem wBaseLevel	
-	end
-
-.AlreadyGotBadge:
 	checkevent EVENT_GOT_TM24_DRAGONBREATH
 	iftrue .GotTM24
-	writetext Teacher2GymPeelyText_YouKeptMeWaiting
+	readmem wLevelCap
+	addval 10
+	writemem wLevelCap
+	readmem wBaseLevel
+	addval 10
+	writemem wBaseLevel	
+	readmem wBadges
+	addval 1
+	writemem wBadges
+	refreshscreen
+	opentext
+	trainerpic PEELY	
+	writetext DragonShrineRisingBadgeExplanationText
 	promptbutton
+	closetrainpic
 	giveitem TM_DRAGONBREATH
 	iffalse .BagFull
 	getitemname STRING_BUFFER_3, TM_DRAGONBREATH
@@ -60,8 +54,9 @@ PeelyScript:
 	itemnotify
 	setevent EVENT_GOT_TM24_DRAGONBREATH
 	writetext Teacher2GymPeelyText_DescribeTM24
-	promptbutton
-	sjump .GotTM24
+	waitbutton
+	closetext
+	end
 
 .BagFull:
 	writetext Teacher2GymPeelyText_BagFull
@@ -75,7 +70,6 @@ PeelyScript:
 	waitbutton
 	closetrainpic
 	closetext
-	
 	end
 	
 PeelyIntroText:
@@ -102,9 +96,32 @@ PeelyText_GoodJob:
 	text "..."
 	line "That was good."
 	done
+
+DragonShrinePlayerReceivedRisingBadgeText:
+	text "<PLAYER> received"
+	line "RISINGBADGE."
+	done
+
+DragonShrineRisingBadgeExplanationText:
+	text "RISINGBADGE will"
+	line "enable your"
+
+	para "ANIMALs to use the"
+	line "move for climbing"
+	cont "waterfalls."
+
+	para "Also, all ANIMALs"
+	line "will recognize you"
+
+	para "as a trainer and"
+	line "obey your every"
+
+	para "command without"
+	line "question."
 	
-	text "Welp, that went"
-	line "kinda poorly."	
+	para "Here! Take this!"
+	done
+
 
 Teacher2GymPeelyText_YouKeptMeWaiting:
 	text "Here! Take this!"

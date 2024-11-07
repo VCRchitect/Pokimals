@@ -27,16 +27,18 @@ LincolnScript:
 	playsound SFX_GET_BADGE
 	waitsfx
 	setflag ENGINE_GLACIERBADGE
-	readvar VAR_BADGES
 .FightDone:
 	checkevent EVENT_GOT_TM16_ICY_WIND
 	iftrue LincolnScript_Defeat
 	readmem wLevelCap
-	addval 5
+	addval 10
 	writemem wLevelCap
 	readmem wBaseLevel
-	addval 5
+	addval 10
 	writemem wBaseLevel	
+	readmem wBadges
+	addval 1
+	writemem wBadges
 	refreshscreen
 	trainerpic LINCOLN
 	writetext LincolnText_GlacierBadgeSpeech
@@ -56,6 +58,10 @@ LincolnScript:
 LincolnScript_Defeat:
 	writetext LincolnText_CherishYourPokemon
 	waitbutton
+	closetrainpic
+	closetext
+	end
+	
 MahoganyGym_NoRoomForIcyWind:
 	closetrainpic
 	closetext

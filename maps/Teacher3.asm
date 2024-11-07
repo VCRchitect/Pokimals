@@ -28,16 +28,18 @@ JasonScript:
 	playsound SFX_GET_BADGE
 	waitsfx
 	setflag ENGINE_FOGBADGE
-	readvar VAR_BADGES
 .FightDone:
 	checkevent EVENT_GOT_TM30_SHADOW_BALL
 	iftrue .GotShadowBall
 	readmem wLevelCap
-	addval 5
+	addval 10
 	writemem wLevelCap
 	readmem wBaseLevel
-	addval 5
+	addval 10
 	writemem wBaseLevel	
+	readmem wBadges
+	addval 1
+	writemem wBadges
 	refreshscreen
 	trainerpic JASON
 	writetext JasonText_FogBadgeSpeech
@@ -57,6 +59,10 @@ JasonScript:
 .GotShadowBall:
 	writetext JasonFightDoneText
 	waitbutton
+	closetrainpic
+	closetext
+	end
+	
 .NoRoomForShadowBall:
 	closetrainpic
 	closetext
