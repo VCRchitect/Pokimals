@@ -7,13 +7,98 @@ Teacher6_MapScripts:
 	def_callbacks
 
 DianaScript:
-	faceplayer
-	refreshscreen
-	opentext
-	trainerpic DIANA
 	checkevent EVENT_BEAT_DIANA
 	iftrue .FightDone
+	faceplayer
+	refreshscreen
+	special PlaceMoneyTopRight		
+	trainerpic DIANA
 	writetext Diana_SteelTypeIntro
+	yesorno
+	iffalse .Refused
+	readvar VAR_BADGES
+	ifequal 0, .Zero
+	ifequal 1, .One
+	ifequal 2, .Two
+	ifequal 3, .Three
+	ifequal 4, .Four
+	ifequal 5, .Five
+	ifequal 6, .Six
+	ifequal 7, .Seven
+	ifequal 8, .Eight
+	end
+
+.Zero:
+	checkmoney YOUR_MONEY, NOBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+
+.One:
+	checkmoney YOUR_MONEY, ONEBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, ONEBADGETUITION
+	sjump .GotTheCost
+
+.Two:
+	checkmoney YOUR_MONEY, TWOBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, TWOBADGETUITION
+	sjump .GotTheCost
+
+.Three:
+	checkmoney YOUR_MONEY, THREEBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, THREEBADGETUITION
+	sjump .GotTheCost
+
+.Four:
+	checkmoney YOUR_MONEY, FOURBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, FOURBADGETUITION
+	sjump .GotTheCost
+
+.Five:
+	checkmoney YOUR_MONEY, FIVEBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, FIVEBADGETUITION
+	sjump .GotTheCost
+
+.Six:	
+	checkmoney YOUR_MONEY, SIXBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+
+.Seven:
+	checkmoney YOUR_MONEY, SEVENBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+
+.Eight:
+	checkmoney YOUR_MONEY, EIGHTBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+	
+.GotTheCost:
+	special PlaceMoneyTopRight
+	sjump .FightTime
+
+.Refused:
+	writetext DianaNoLearnText
+	waitbutton
+	closetext
+	end
+
+.NotEnoughMoney:
+	writetext DianaPoorText
+	waitbutton
+	closetext
+	end
+	
+.FightTime	
 	waitbutton
 	closetrainpic
 	closetext
@@ -37,9 +122,6 @@ DianaScript:
 	readmem wBaseLevel
 	addval 10
 	writemem wBaseLevel	
-	readmem wBadges
-	addval 1
-	writemem wBadges
 	refreshscreen
 	trainerpic DIANA
 	writetext Diana_BadgeSpeech
@@ -57,6 +139,9 @@ DianaScript:
 	end
 
 .GotIronTail:
+	refreshscreen
+	opentext
+	trainerpic DIANA
 	writetext Diana_GoodLuck
 	waitbutton
 	closetrainpic
@@ -67,6 +152,16 @@ DianaScript:
 	closetrainpic
 	closetext
 	end
+	
+DianaNoLearnText:
+	text "It is dishonorable"
+	line "to deny wisdom."
+	done
+
+DianaPoorText:
+	text "It is unforgivable"
+	line "to be poor."
+	done
 	
 Diana_SteelTypeIntro:
 	text "I am DIANA, an"

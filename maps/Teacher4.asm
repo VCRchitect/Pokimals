@@ -8,13 +8,98 @@ Teacher4_MapScripts:
 	def_callbacks
 
 LaraScript:
-	faceplayer
-	refreshscreen
 	checkevent EVENT_BEAT_LARA
 	iftrue .FightDone
-	opentext
+	faceplayer
+	refreshscreen
+	special PlaceMoneyTopRight	
 	trainerpic LARA
 	writetext LaraBeforeText
+	yesorno
+	iffalse .Refused
+	readvar VAR_BADGES
+	ifequal 0, .Zero
+	ifequal 1, .One
+	ifequal 2, .Two
+	ifequal 3, .Three
+	ifequal 4, .Four
+	ifequal 5, .Five
+	ifequal 6, .Six
+	ifequal 7, .Seven
+	ifequal 8, .Eight
+	end
+
+.Zero:
+	checkmoney YOUR_MONEY, NOBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+
+.One:
+	checkmoney YOUR_MONEY, ONEBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, ONEBADGETUITION
+	sjump .GotTheCost
+
+.Two:
+	checkmoney YOUR_MONEY, TWOBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, TWOBADGETUITION
+	sjump .GotTheCost
+
+.Three:
+	checkmoney YOUR_MONEY, THREEBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, THREEBADGETUITION
+	sjump .GotTheCost
+
+.Four:
+	checkmoney YOUR_MONEY, FOURBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, FOURBADGETUITION
+	sjump .GotTheCost
+
+.Five:
+	checkmoney YOUR_MONEY, FIVEBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, FIVEBADGETUITION
+	sjump .GotTheCost
+
+.Six:	
+	checkmoney YOUR_MONEY, SIXBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+
+.Seven:
+	checkmoney YOUR_MONEY, SEVENBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+
+.Eight:
+	checkmoney YOUR_MONEY, EIGHTBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+	
+.GotTheCost:
+	special PlaceMoneyTopRight
+	sjump .FightTime
+
+.Refused:
+	writetext LaraNoLearnText
+	waitbutton
+	closetext
+	end
+
+.NotEnoughMoney:
+	writetext LaraPoorText
+	waitbutton
+	closetext
+	end
+	
+.FightTime	
 	waitbutton
 	closetrainpic
 	closetext
@@ -34,9 +119,6 @@ LaraScript:
 	readmem wBaseLevel
 	addval 10
 	writemem wBaseLevel	
-	readmem wBadges
-	addval 1
-	writemem wBadges
 	checkflag ENGINE_PLAINBADGE
 	iftrue .GotPlainBadge
 	writetext LaraWhatDoYouWantText
@@ -65,6 +147,8 @@ LaraScript:
 	end
 
 .GotAttract:
+	refreshscreen
+	opentext
 	trainerpic LARA
 	writetext LaraGoodCryText
 	waitbutton
@@ -96,8 +180,21 @@ LaraBeforeText:
 	
 	done
 
+LaraPoorText:
+	text "Is this some kind"
+	line "of poor people"
+	para "joke that I'm too"
+	line "rich to get?"
+	done
+
+LaraNoLearnText:
+	text "That's okay! Lots"
+	line "of uneducated"
+	cont "people succeed!"
+	done
+
 LaraShouldntBeSoSeriousText:
-	para "You shouldn't be"
+	text "You shouldn't be"
 	line "so serious! You..."
 	cont "you child, you!"
 	

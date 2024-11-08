@@ -193,7 +193,7 @@ EggMovePointers::
 	dw NoEggMoves
 	dw NoEggMoves
 	dw DragonflyEggMoves
-	dw Shags2DopeEggMoves
+	dw AxolotlEggMoves
 	dw NoEggMoves
 	dw NoEggMoves
 	dw NoEggMoves

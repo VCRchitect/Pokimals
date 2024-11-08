@@ -233,8 +233,8 @@ Pokered_MonIndices:
 	db SEED
 	db SUNFLOWER
 	db DRAGONFLY
-	db SHAGS2DOPE
-	db VIOLENT_J
+	db AXOLOTL
+	db MUDPUPPY
 	db TERRIER
 	db XOLO_DOG
 	db CROW

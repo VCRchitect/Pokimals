@@ -60,7 +60,7 @@
 	const CRY_SLUG
 	const CRY_LADYBUG
 	const CRY_CERBERUS
-	const CRY_SHAGS2DOPE
+	const CRY_AXOLOTL
 	const CRY_MANTA
 	const CRY_BADGER
 	const CRY_KAKAPO

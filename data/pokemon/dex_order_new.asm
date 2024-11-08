@@ -57,8 +57,8 @@ NewPokedexOrder:
 	db LAMB
 	db SHEEP
 	db RAM
-	db SHAGS2DOPE
-	db VIOLENT_J
+	db AXOLOTL
+	db MUDPUPPY
 	db DRIFTER
 	db SPOOKY
 	db PHANTOM

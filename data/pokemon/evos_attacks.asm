@@ -2620,8 +2620,8 @@ DragonflyEvosAttacks:
 	db 43, SCREECH
 	db 0 ; no more level-up moves
 
-Shags2DopeEvosAttacks:
-	db EVOLVE_LEVEL, 20, VIOLENT_J
+AxolotlEvosAttacks:
+	db EVOLVE_LEVEL, 20, MUDPUPPY
 	db 0 ; no more evolutions
 	db 1, WATER_GUN
 	db 1, TAIL_WHIP
@@ -2633,7 +2633,7 @@ Shags2DopeEvosAttacks:
 	db 51, HAZE
 	db 0 ; no more level-up moves
 
-Violent_JEvosAttacks:
+MudpuppyEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, WATER_GUN
 	db 1, TAIL_WHIP

@@ -57,7 +57,7 @@ SpriteAnimFrameData:
 	dw .Frameset_IntroFenrir
 	dw .Frameset_IntroFenrir2
 	dw .Frameset_IntroGerbil
-	dw .Frameset_IntroShags2Dope
+	dw .Frameset_IntroAxolotl
 	dw .Frameset_IntroLettah1
 	dw .Frameset_IntroLettah2
 	dw .Frameset_IntroLettah3
@@ -444,8 +444,8 @@ SpriteAnimFrameData:
 	frame SPRITE_ANIM_OAMSET_INTRO_GERBIL_3,  7
 	endanim
 
-.Frameset_IntroShags2Dope:
-	frame SPRITE_ANIM_OAMSET_INTRO_SHAGS2DOPE,  3
+.Frameset_IntroAxolotl:
+	frame SPRITE_ANIM_OAMSET_INTRO_AXOLOTL,  3
 	endanim
 
 .Frameset_IntroLettah1:

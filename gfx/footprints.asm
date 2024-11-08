@@ -445,8 +445,8 @@ INCBIN "gfx/footprints/seed.1bpp",    footprint_bottom
 INCBIN "gfx/footprints/sunflower.1bpp",   footprint_bottom
 ; 193-200 top halves
 INCBIN "gfx/footprints/dragonfly.1bpp",      footprint_top
-INCBIN "gfx/footprints/shags2dope.1bpp",     footprint_top
-INCBIN "gfx/footprints/violent_j.1bpp",   footprint_top
+INCBIN "gfx/footprints/axolotl.1bpp",     footprint_top
+INCBIN "gfx/footprints/mudpuppy.1bpp",   footprint_top
 INCBIN "gfx/footprints/terrier.1bpp",     footprint_top
 INCBIN "gfx/footprints/xolo_dog.1bpp",    footprint_top
 INCBIN "gfx/footprints/crow.1bpp",    footprint_top
@@ -454,8 +454,8 @@ INCBIN "gfx/footprints/warlock.1bpp",   footprint_top
 INCBIN "gfx/footprints/banshee.1bpp", footprint_top
 ; 193-200 bottom halves
 INCBIN "gfx/footprints/dragonfly.1bpp",      footprint_bottom
-INCBIN "gfx/footprints/shags2dope.1bpp",     footprint_bottom
-INCBIN "gfx/footprints/violent_j.1bpp",   footprint_bottom
+INCBIN "gfx/footprints/axolotl.1bpp",     footprint_bottom
+INCBIN "gfx/footprints/mudpuppy.1bpp",   footprint_bottom
 INCBIN "gfx/footprints/terrier.1bpp",     footprint_bottom
 INCBIN "gfx/footprints/xolo_dog.1bpp",    footprint_bottom
 INCBIN "gfx/footprints/crow.1bpp",    footprint_bottom

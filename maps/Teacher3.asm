@@ -8,13 +8,98 @@ Teacher3_MapScripts:
 	def_callbacks
 
 JasonScript:
-	faceplayer
-	refreshscreen
-	opentext
-	trainerpic JASON
 	checkevent EVENT_BEAT_JASON
 	iftrue .FightDone
+	faceplayer
+	refreshscreen	
+	special PlaceMoneyTopRight		
+	trainerpic JASON	
 	writetext JasonIntroText
+	yesorno
+	iffalse .Refused
+	readvar VAR_BADGES
+	ifequal 0, .Zero
+	ifequal 1, .One
+	ifequal 2, .Two
+	ifequal 3, .Three
+	ifequal 4, .Four
+	ifequal 5, .Five
+	ifequal 6, .Six
+	ifequal 7, .Seven
+	ifequal 8, .Eight
+	end
+
+.Zero:
+	checkmoney YOUR_MONEY, NOBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+
+.One:
+	checkmoney YOUR_MONEY, ONEBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, ONEBADGETUITION
+	sjump .GotTheCost
+
+.Two:
+	checkmoney YOUR_MONEY, TWOBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, TWOBADGETUITION
+	sjump .GotTheCost
+
+.Three:
+	checkmoney YOUR_MONEY, THREEBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, THREEBADGETUITION
+	sjump .GotTheCost
+
+.Four:
+	checkmoney YOUR_MONEY, FOURBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, FOURBADGETUITION
+	sjump .GotTheCost
+
+.Five:
+	checkmoney YOUR_MONEY, FIVEBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, FIVEBADGETUITION
+	sjump .GotTheCost
+
+.Six:	
+	checkmoney YOUR_MONEY, SIXBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+
+.Seven:
+	checkmoney YOUR_MONEY, SEVENBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+
+.Eight:
+	checkmoney YOUR_MONEY, EIGHTBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+	
+.GotTheCost:
+	special PlaceMoneyTopRight
+	sjump .FightTime
+
+.Refused:
+	writetext JasonGrumbleText
+	waitbutton
+	closetext
+	end
+
+.NotEnoughMoney:
+	writetext JasonSadText
+	waitbutton
+	closetext
+	end
+	
+.FightTime	
 	waitbutton
 	closetrainpic
 	closetext
@@ -37,9 +122,6 @@ JasonScript:
 	readmem wBaseLevel
 	addval 10
 	writemem wBaseLevel	
-	readmem wBadges
-	addval 1
-	writemem wBadges
 	refreshscreen
 	trainerpic JASON
 	writetext JasonText_FogBadgeSpeech
@@ -57,6 +139,9 @@ JasonScript:
 	end
 
 .GotShadowBall:
+	refreshscreen
+	opentext
+	trainerpic JASON
 	writetext JasonFightDoneText
 	waitbutton
 	closetrainpic
@@ -75,6 +160,15 @@ JasonIntroText:
 	para "Grugh! Rah!"
 
 	para "BLARGH!"
+	done
+
+JasonGrumbleText:
+	text "CH CH CH HA HA HA"
+	line "-JASON looks sad-"	
+	done
+	
+JasonSadText:
+	text "-JASON SHRUGS-"
 	done
 
 JasonWinLossText:
@@ -122,7 +216,6 @@ JasonFightDoneText:
 	cont "whole chickens."
 	done
 
-	
 
 Teacher3_MapEvents:
 	db 0, 0 ; filler

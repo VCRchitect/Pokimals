@@ -192,8 +192,8 @@ AnimationPointers:
 	dw SeedAnimation
 	dw SunflowerAnimation
 	dw DragonflyAnimation
-	dw Shags2DopeAnimation
-	dw Violent_JAnimation
+	dw AxolotlAnimation
+	dw MudpuppyAnimation
 	dw TerrierAnimation
 	dw Xolo_DogAnimation
 	dw CrowAnimation

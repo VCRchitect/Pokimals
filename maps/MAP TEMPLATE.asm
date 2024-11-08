@@ -65,7 +65,7 @@ RandomStairWarp`:
 Monster1`:	
 	faceplayer
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	readmem wBadges
+	readvar VAR_BADGES
 	ifequal 0, nobadge`
 	ifequal 1, onebadge`
 	ifequal 2, twobadge`
@@ -80,7 +80,7 @@ Monster1`:
 Monster2`:	
 	faceplayer
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	readmem wBadges
+	readvar VAR_BADGES
 	ifequal 0, nobadge`
 	ifequal 1, onebadge`
 	ifequal 2, twobadge`
@@ -95,7 +95,7 @@ Monster2`:
 Monster3`:	
 	faceplayer
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	readmem wBadges
+	readvar VAR_BADGES
 	ifequal 0, nobadge`
 	ifequal 1, onebadge`
 	ifequal 2, twobadge`
@@ -110,7 +110,7 @@ Monster3`:
 Monster4`:	
 	faceplayer
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	readmem wBadges
+	readvar VAR_BADGES
 	ifequal 0, nobadge`
 	ifequal 1, onebadge`
 	ifequal 2, twobadge`
@@ -125,7 +125,7 @@ Monster4`:
 Monster5`:	
 	faceplayer
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	readmem wBadges
+	readvar VAR_BADGES
 	ifequal 0, nobadge`
 	ifequal 1, onebadge`
 	ifequal 2, twobadge`

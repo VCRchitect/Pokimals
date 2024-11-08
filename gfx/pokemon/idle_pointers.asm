@@ -192,8 +192,8 @@ AnimationIdlePointers:
 	dw SeedAnimationIdle
 	dw SunflowerAnimationIdle
 	dw DragonflyAnimationIdle
-	dw Shags2DopeAnimationIdle
-	dw Violent_JAnimationIdle
+	dw AxolotlAnimationIdle
+	dw MudpuppyAnimationIdle
 	dw TerrierAnimationIdle
 	dw Xolo_DogAnimationIdle
 	dw CrowAnimationIdle

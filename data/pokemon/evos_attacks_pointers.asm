@@ -195,8 +195,8 @@ EvosAttacksPointers::
 	dw SeedEvosAttacks
 	dw SunflowerEvosAttacks
 	dw DragonflyEvosAttacks
-	dw Shags2DopeEvosAttacks
-	dw Violent_JEvosAttacks
+	dw AxolotlEvosAttacks
+	dw MudpuppyEvosAttacks
 	dw TerrierEvosAttacks
 	dw Xolo_DogEvosAttacks
 	dw CrowEvosAttacks

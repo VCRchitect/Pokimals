@@ -1073,7 +1073,7 @@ BattleTowerMons:
 	bigdw 46 ; SDef
 	db "KAIJUKINGU@@"
 
-	db VIOLENT_J
+	db MUDPUPPY
 	db QUICK_CLAW
 	db AMNESIA, EARTHQUAKE, SURF, RAIN_DANCE
 	dw 0 ; OT ID
@@ -3584,7 +3584,7 @@ BattleTowerMons:
 	bigdw 204 ; SDef
 	db "GIyaRADOSU@"
 
-	db VIOLENT_J
+	db MUDPUPPY
 	db MIRACLEBERRY
 	db EARTHQUAKE, SURF, SLUDGE_BOMB, IRON_TAIL
 	dw 0 ; OT ID

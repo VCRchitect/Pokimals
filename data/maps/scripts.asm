@@ -39,7 +39,6 @@ INCLUDE "maps/Apartments123.asm"
 INCLUDE "maps/Apartments789.asm"
 INCLUDE "maps/WeirdCloset.asm"
 INCLUDE "maps/DiggingAcademy.asm"
-INCLUDE "maps/Teacher1.asm"
 
 SECTION "Map Scripts 4", ROMX
 
@@ -50,6 +49,10 @@ INCLUDE "maps/BrunosRoom.asm"
 INCLUDE "maps/KarensRoom.asm"
 INCLUDE "maps/LancesRoom.asm"
 INCLUDE "maps/HallOfFame.asm"
+
+
+SECTION "Map Scripts 5", ROMX
+INCLUDE "maps/Teacher1.asm"
 INCLUDE "maps/Teacher2.asm"
 INCLUDE "maps/Teacher3.asm"
 INCLUDE "maps/Teacher4.asm"
@@ -58,8 +61,7 @@ INCLUDE "maps/Teacher6.asm"
 INCLUDE "maps/Teacher7.asm"
 INCLUDE "maps/Teacher8.asm"
 
-
-SECTION "Map Scripts 5", ROMX
+SECTION "Map Scripts 6", ROMX
 INCLUDE "maps/A1.asm"
 INCLUDE "maps/A2.asm"
 INCLUDE "maps/A3.asm"
@@ -76,9 +78,6 @@ INCLUDE "maps/AHEAL.asm"
 INCLUDE "maps/AMART.asm"
 INCLUDE "maps/APREBOSS.asm"
 INCLUDE "maps/ABOSS.asm"
-
-
-SECTION "Map Scripts 6", ROMX
 
 
 SECTION "Map Scripts 7", ROMX

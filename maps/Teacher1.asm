@@ -7,12 +7,98 @@ Teacher1_MapScripts:
 	def_callbacks
 
 Teacher1TPainScript:
-	faceplayer
-	refreshscreen
-	opentext
-	trainerpic TPAIN
 	checkevent EVENT_BEAT_TPAIN
 	iftrue .FightDone
+	faceplayer
+	refreshscreen
+	special PlaceMoneyTopRight
+	trainerpic TPAIN
+	writetext GottaPayToPlayText
+	yesorno
+	iffalse .Refused
+	readvar VAR_BADGES
+	ifequal 0, .Zero
+	ifequal 1, .One
+	ifequal 2, .Two
+	ifequal 3, .Three
+	ifequal 4, .Four
+	ifequal 5, .Five
+	ifequal 6, .Six
+	ifequal 7, .Seven
+	ifequal 8, .Eight
+	end
+
+.Zero:
+	checkmoney YOUR_MONEY, NOBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+
+.One:
+	checkmoney YOUR_MONEY, ONEBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, ONEBADGETUITION
+	sjump .GotTheCost
+
+.Two:
+	checkmoney YOUR_MONEY, TWOBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, TWOBADGETUITION
+	sjump .GotTheCost
+
+.Three:
+	checkmoney YOUR_MONEY, THREEBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, THREEBADGETUITION
+	sjump .GotTheCost
+
+.Four:
+	checkmoney YOUR_MONEY, FOURBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, FOURBADGETUITION
+	sjump .GotTheCost
+
+.Five:
+	checkmoney YOUR_MONEY, FIVEBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, FIVEBADGETUITION
+	sjump .GotTheCost
+
+.Six:	
+	checkmoney YOUR_MONEY, SIXBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+
+.Seven:
+	checkmoney YOUR_MONEY, SEVENBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+
+.Eight:
+	checkmoney YOUR_MONEY, EIGHTBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+	
+.GotTheCost:
+	special PlaceMoneyTopRight
+	sjump .FightTime
+
+.Refused:
+	writetext StayUneducatedBabyText
+	waitbutton
+	closetext
+	end
+
+.NotEnoughMoney:
+	writetext TakeBrokeAssHomeText
+	waitbutton
+	closetext
+	end
+	
+.FightTime	
 	writetext TPainText_INeverLose
 	waitbutton
 	closetrainpic
@@ -36,9 +122,6 @@ Teacher1TPainScript:
 	readmem wBaseLevel
 	addval 10
 	writemem wBaseLevel	
-	readmem wBadges
-	addval 1
-	writemem wBadges
 	refreshscreen
 	opentext
 	trainerpic TPAIN
@@ -58,6 +141,8 @@ Teacher1TPainScript:
 
 .GotFuryCutter:
 	refreshscreen
+	opentext
+	trainerpic TPAIN
 	writetext TPainText_BugMonsAreDeep
 	waitbutton
 	closetrainpic
@@ -69,16 +154,41 @@ Teacher1TPainScript:
 	closetext
 	end
 
+GottaPayToPlayText:
+	text "I WAS TRYING TO"
+	line "ENJOY MY NIGHT BUT"
+	cont "YOU DONE CAME IN!"
+
+	para "RAH!"
+	
+	para "YOU KNOW YOU GOTTA"
+	line "PAY IF YOU WANNA"
+	cont "PLAY, BABY."
+
+	para "YOU DOWN?"
+	done
+	
+StayUneducatedBabyText:	
+	text "WELL DAMN, IF YOU"
+	line "WANNA STAY ON THE"
+	cont "UNEDUCATED SIDE,"
+
+	para "YOU SHOULD HAVE"
+	line "SAID SO."
+	done
+
+TakeBrokeAssHomeText:
+	text "DAMN, SON, YOU"
+	line "GONNA HAVE TO TAKE"
+	cont "YA BROKE ASS HOME."
+	done
+	
 TPainText_INeverLose:
 	text "SHAWTY SNAP!"
 	line "WHAT'S UP, BABY?"
 
 	para "IT'S YA BOY,"
 	line "T-PAIAIAIAIAIN!"
-
-	para "YOU WANT THIS GYM"
-	line "BADGE, YOU'RE"
-	cont "GONNA WORK FOR IT."
 
 	para "LEEEEETTT'S"
 	line "DOOOOO THIIIS!"
@@ -116,10 +226,6 @@ TPainText_FuryCutterSpeech:
 	text "TM49 contains"
 	line "FURY CUTTER."
 
-	para "If you don't miss,"
-	line "it gets stronger"
-	cont "every turn."
-
 	para "The longer your"
 	line "battle goes, the"
 	cont "better it gets."
@@ -135,7 +241,7 @@ TPainText_BugMonsAreDeep:
 	para "that was left to"
 	line "pick from when we"
 	para "signed up to be"
-	line "Instructors."
+	line "teachers."
 	done
 	
 

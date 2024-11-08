@@ -39,7 +39,7 @@ BallDisappeari:
 Monster1i:	
 	faceplayer
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	readmem wBadges
+	readvar VAR_BADGES
 	ifequal 0, nobadgei
 	ifequal 1, onebadgei
 	ifequal 2, twobadgei
@@ -54,7 +54,7 @@ Monster1i:
 Monster2i:	
 	faceplayer
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	readmem wBadges
+	readvar VAR_BADGES
 	ifequal 0, nobadgei
 	ifequal 1, onebadgei
 	ifequal 2, twobadgei
@@ -69,7 +69,7 @@ Monster2i:
 Monster3i:	
 	faceplayer
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	readmem wBadges
+	readvar VAR_BADGES
 	ifequal 0, nobadgei
 	ifequal 1, onebadgei
 	ifequal 2, twobadgei
@@ -84,7 +84,7 @@ Monster3i:
 Monster4i:	
 	faceplayer
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	readmem wBadges
+	readvar VAR_BADGES
 	ifequal 0, nobadgei
 	ifequal 1, onebadgei
 	ifequal 2, twobadgei
@@ -99,7 +99,7 @@ Monster4i:
 Monster5i:	
 	faceplayer
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	readmem wBadges
+	readvar VAR_BADGES
 	ifequal 0, nobadgei
 	ifequal 1, onebadgei
 	ifequal 2, twobadgei
@@ -256,12 +256,11 @@ UnlockDoorsi:
 	closetext
 	appear ARUINS_POKE_BALL1i
 	appear ARUINS_POKE_BALL2i	
-	refreshscreen
+	refreshscreen $86
 	playsound SFX_ENTER_DOOR
-	waitsfx
-	changeblock 2, 0, 120
-	changeblock 10, 0, 121
+	changeblock 2, 0, $78
 	reloadmappart
+	closetext
 	readmem wRoomDefeatedCount
 	setval 0
 	writemem wRoomDefeatedCount		

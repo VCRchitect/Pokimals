@@ -44,7 +44,7 @@ DoAnimFrame:
 	dw AnimSeq_MobileTradeSentPulse
 	dw AnimSeq_MobileTradeOTPulse
 	dw AnimSeq_IntroFenrir
-	dw AnimSeq_IntroGerbilShags2Dope
+	dw AnimSeq_IntroGerbilAxolotl
 	dw AnimSeq_Celebi
 	dw AnimSeq_IntroLettah
 	dw AnimSeq_IntroLettahF
@@ -775,7 +775,7 @@ AnimSeq_IntroFenrir:
 	call _ReinitSpriteAnimFrame
 	ret
 
-AnimSeq_IntroGerbilShags2Dope:
+AnimSeq_IntroGerbilAxolotl:
 	ld hl, SPRITEANIMSTRUCT_VAR1
 	add hl, bc
 	ld a, [hl]

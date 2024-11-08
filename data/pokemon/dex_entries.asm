@@ -207,8 +207,8 @@ SunflowerPokedexEntry::   INCLUDE "data/pokemon/dex_entries/sunflower.asm"
 SECTION "Pokedex Entries 193-251", ROMX
 
 DragonflyPokedexEntry::      INCLUDE "data/pokemon/dex_entries/dragonfly.asm"
-Shags2DopePokedexEntry::     INCLUDE "data/pokemon/dex_entries/shags2dope.asm"
-Violent_JPokedexEntry::   INCLUDE "data/pokemon/dex_entries/violent_j.asm"
+AxolotlPokedexEntry::     INCLUDE "data/pokemon/dex_entries/axolotl.asm"
+MudpuppyPokedexEntry::   INCLUDE "data/pokemon/dex_entries/mudpuppy.asm"
 TerrierPokedexEntry::     INCLUDE "data/pokemon/dex_entries/terrier.asm"
 Xolo_DogPokedexEntry::    INCLUDE "data/pokemon/dex_entries/xolo_dog.asm"
 CrowPokedexEntry::    INCLUDE "data/pokemon/dex_entries/crow.asm"

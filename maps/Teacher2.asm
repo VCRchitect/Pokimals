@@ -7,13 +7,98 @@ Teacher2_MapScripts:
 	def_callbacks
 
 PeelyScript:
-	faceplayer
-	refreshscreen
-	opentext
-	trainerpic PEELY
 	checkevent EVENT_BEAT_PEELY
 	iftrue .FightDone
+	faceplayer
+	refreshscreen	
+	special PlaceMoneyTopRight	
+	trainerpic PEELY
 	writetext PeelyIntroText
+	yesorno
+	iffalse .Refused
+	readvar VAR_BADGES
+	ifequal 0, .Zero
+	ifequal 1, .One
+	ifequal 2, .Two
+	ifequal 3, .Three
+	ifequal 4, .Four
+	ifequal 5, .Five
+	ifequal 6, .Six
+	ifequal 7, .Seven
+	ifequal 8, .Eight
+	end
+
+.Zero:
+	checkmoney YOUR_MONEY, NOBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+
+.One:
+	checkmoney YOUR_MONEY, ONEBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, ONEBADGETUITION
+	sjump .GotTheCost
+
+.Two:
+	checkmoney YOUR_MONEY, TWOBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, TWOBADGETUITION
+	sjump .GotTheCost
+
+.Three:
+	checkmoney YOUR_MONEY, THREEBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, THREEBADGETUITION
+	sjump .GotTheCost
+
+.Four:
+	checkmoney YOUR_MONEY, FOURBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, FOURBADGETUITION
+	sjump .GotTheCost
+
+.Five:
+	checkmoney YOUR_MONEY, FIVEBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, FIVEBADGETUITION
+	sjump .GotTheCost
+
+.Six:	
+	checkmoney YOUR_MONEY, SIXBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+
+.Seven:
+	checkmoney YOUR_MONEY, SEVENBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+
+.Eight:
+	checkmoney YOUR_MONEY, EIGHTBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+	
+.GotTheCost:
+	special PlaceMoneyTopRight
+	sjump .FightTime
+
+.Refused:
+	writetext PeelyNoLearnText
+	waitbutton
+	closetext
+	end
+
+.NotEnoughMoney:
+	writetext PeelyPoorText
+	waitbutton
+	closetext
+	end
+	
+.FightTime	
 	waitbutton
 	closetrainpic
 	closetext
@@ -36,9 +121,6 @@ PeelyScript:
 	readmem wBaseLevel
 	addval 10
 	writemem wBaseLevel	
-	readmem wBadges
-	addval 1
-	writemem wBadges
 	refreshscreen
 	opentext
 	trainerpic PEELY	
@@ -66,6 +148,9 @@ PeelyScript:
 	end
 
 .GotTM24:
+	refreshscreen
+	opentext
+	trainerpic PEELY
 	writetext Teacher2GymPeelyText_League
 	waitbutton
 	closetrainpic
@@ -73,58 +158,30 @@ PeelyScript:
 	end
 	
 PeelyIntroText:
-	text "I am PEELY."
-
-	para "Let's fight."
-	line "Or else this talk"
-	
-	para "will start DRAGON"
-	line "me down. haha"
-	
-	para "I kid. I kid."
+	text "PEELY: ..."
 	done
 
 PeelyWinText:
-	text "I lost?"
-
-	para "Huh. Maybe I'll"
-	line "spend less time on"
-	cont "puns now."
-	done
-
-PeelyText_GoodJob:
 	text "..."
-	line "That was good."
 	done
 
+PeelyNoLearnText:
+	text "..."
+	done
+
+PeelyPoorText:
+	text "..."
+	para "???"
+	done
+	
 DragonShrinePlayerReceivedRisingBadgeText:
 	text "<PLAYER> received"
 	line "RISINGBADGE."
 	done
 
 DragonShrineRisingBadgeExplanationText:
-	text "RISINGBADGE will"
-	line "enable your"
-
-	para "ANIMALs to use the"
-	line "move for climbing"
-	cont "waterfalls."
-
-	para "Also, all ANIMALs"
-	line "will recognize you"
-
-	para "as a trainer and"
-	line "obey your every"
-
-	para "command without"
-	line "question."
-	
-	para "Here! Take this!"
-	done
-
-
-Teacher2GymPeelyText_YouKeptMeWaiting:
-	text "Here! Take this!"
+	text "-PEELY tossed an"
+	line "item at you-"
 	done
 
 Teacher2GymText_ReceivedTM24:
@@ -133,20 +190,11 @@ Teacher2GymText_ReceivedTM24:
 	done
 
 Teacher2GymPeelyText_DescribeTM24:
-	text "That contains"
-	line "DRAGONBREATH."
-
-	para "No, it doesn't"
-	line "have anything to"
-	cont "do with my breath."
-	
-	para "But my breath was"
-	line "spicy earlier."
+	text "..."
 	done
 
 Teacher2GymPeelyText_BagFull:
-	text "What is this? You"
-	line "don't have room?"
+	text "???"
 	done
 
 Teacher2GymPeelyText_League:
@@ -170,8 +218,6 @@ Teacher2GymPeelyText_League:
 	para "Huh? You need"
 	line "something?"
 	done
-
-
 
 Teacher2_MapEvents:
 	db 0, 0 ; filler

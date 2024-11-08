@@ -7,13 +7,98 @@ Teacher8_MapScripts:
 	def_callbacks
 
 Kid_RockScript:
-	faceplayer
-	refreshscreen
-	opentext
-	trainerpic KID_ROCK
 	checkflag ENGINE_STORMBADGE
 	iftrue .FightDone
+	faceplayer
+	refreshscreen
+	special PlaceMoneyTopRight
+	trainerpic KID_ROCK
 	writetext Kid_RockIntroText
+	yesorno
+	iffalse .Refused
+	readvar VAR_BADGES
+	ifequal 0, .Zero
+	ifequal 1, .One
+	ifequal 2, .Two
+	ifequal 3, .Three
+	ifequal 4, .Four
+	ifequal 5, .Five
+	ifequal 6, .Six
+	ifequal 7, .Seven
+	ifequal 8, .Eight
+	end
+
+.Zero:
+	checkmoney YOUR_MONEY, NOBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+
+.One:
+	checkmoney YOUR_MONEY, ONEBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, ONEBADGETUITION
+	sjump .GotTheCost
+
+.Two:
+	checkmoney YOUR_MONEY, TWOBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, TWOBADGETUITION
+	sjump .GotTheCost
+
+.Three:
+	checkmoney YOUR_MONEY, THREEBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, THREEBADGETUITION
+	sjump .GotTheCost
+
+.Four:
+	checkmoney YOUR_MONEY, FOURBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, FOURBADGETUITION
+	sjump .GotTheCost
+
+.Five:
+	checkmoney YOUR_MONEY, FIVEBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, FIVEBADGETUITION
+	sjump .GotTheCost
+
+.Six:	
+	checkmoney YOUR_MONEY, SIXBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+
+.Seven:
+	checkmoney YOUR_MONEY, SEVENBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+
+.Eight:
+	checkmoney YOUR_MONEY, EIGHTBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+	
+.GotTheCost:
+	special PlaceMoneyTopRight
+	sjump .FightTime
+
+.Refused:
+	writetext KidRockNoLearnText
+	waitbutton
+	closetext
+	end
+
+.NotEnoughMoney:
+	writetext KidRockPoorText
+	waitbutton
+	closetext
+	end
+	
+.FightTime	
 	waitbutton
 	closetrainpic
 	closetext
@@ -36,9 +121,6 @@ Kid_RockScript:
 	readmem wBaseLevel
 	addval 10
 	writemem wBaseLevel	
-	readmem wBadges
-	addval 1
-	writemem wBadges
 	refreshscreen
 	trainerpic KID_ROCK
 	writetext KidRockExplainBadgeText
@@ -56,6 +138,9 @@ Kid_RockScript:
 	end
 
 .AlreadyGotTM:
+	refreshscreen
+	opentext
+	trainerpic KID_ROCK
 	writetext KidRockAfterText
 	waitbutton
 	closetrainpic
@@ -66,6 +151,19 @@ Kid_RockScript:
 	closetrainpic
 	closetext
 	end
+	
+KidRockNoLearnText:
+	text "You turning down"
+	line "an education?"
+	
+	para "Man, that's pretty"
+	line "cool of you!"
+	done
+	
+KidRockPoorText:
+	text "You're broke as a"
+	line "joke, my man."
+	done
 
 Kid_RockIntroText:
 	text "KID ROCK: MY NAME"

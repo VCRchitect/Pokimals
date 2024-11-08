@@ -597,7 +597,7 @@ DragonflyEggMoves:
 	db LEECH_LIFE
 	db -1 ; end
 
-Shags2DopeEggMoves:
+AxolotlEggMoves:
 	db BODY_SLAM
 	db ANCIENTPOWER
 	db SAFEGUARD

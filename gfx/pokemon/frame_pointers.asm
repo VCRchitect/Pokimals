@@ -192,8 +192,8 @@ FramesPointers:
 	dw SeedFrames
 	dw SunflowerFrames
 	dw DragonflyFrames
-	dw Shags2DopeFrames
-	dw Violent_JFrames
+	dw AxolotlFrames
+	dw MudpuppyFrames
 	dw TerrierFrames
 	dw Xolo_DogFrames
 	dw CrowFrames

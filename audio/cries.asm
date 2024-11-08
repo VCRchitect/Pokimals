@@ -82,11 +82,11 @@ Cry_Ladybug:
 	channel 6, Cry_Ladybug_Ch6
 	channel 8, Cry_Ladybug_Ch8
 
-Cry_Shags2Dope:
+Cry_Axolotl:
 	channel_count 3
-	channel 5, Cry_Shags2Dope_Ch5
-	channel 6, Cry_Shags2Dope_Ch6
-	channel 8, Cry_Shags2Dope_Ch8
+	channel 5, Cry_Axolotl_Ch5
+	channel 6, Cry_Axolotl_Ch6
+	channel 8, Cry_Axolotl_Ch8
 
 Cry_Elephant:
 	channel_count 3
@@ -588,7 +588,7 @@ Cry_Ladybug_Ch8:
 	noise_note 4, 8, 7, 0
 	sound_ret
 
-Cry_Shags2Dope_Ch5:
+Cry_Axolotl_Ch5:
 Cry_Elephant_Ch5:
 	duty_cycle 2
 	square_note 2, 9, -1, 1816
@@ -599,7 +599,7 @@ Cry_Elephant_Ch5:
 	square_note 8, 0, 0, 0
 	sound_ret
 
-Cry_Shags2Dope_Ch6:
+Cry_Axolotl_Ch6:
 Cry_Elephant_Ch6:
 	duty_cycle_pattern 0, 0, 1, 3
 	square_note 2, 11, -1, 1848
@@ -610,7 +610,7 @@ Cry_Elephant_Ch6:
 	square_note 8, 0, 0, 0
 	sound_ret
 
-Cry_Shags2Dope_Ch8:
+Cry_Axolotl_Ch8:
 	noise_note 2, 5, -3, 4
 	noise_note 4, 6, 8, 19
 	noise_note 8, 6, 8, 32

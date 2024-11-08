@@ -209,7 +209,7 @@ AlphabeticalPokedexOrder:
 	db  SEASTAR
 	db  SEED
 	db  SERPENT
-	db  SHAGS2DOPE
+	db  AXOLOTL
 	db  SHALLOTS
 	db  SHEEP
 	db  SHISA
@@ -240,7 +240,7 @@ AlphabeticalPokedexOrder:
 	db  TREX
 	db  TSUCHINOKO
 	db  TWO_DODOS
-	db  VIOLENT_J
+	db  MUDPUPPY
 	db  VIRUS
 	db  VULTURE
 	db  WARLOCK

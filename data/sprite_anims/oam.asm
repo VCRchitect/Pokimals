@@ -119,7 +119,7 @@ SpriteAnimOAMData:
 	dbw $00, .OAMData_IntroGerbil               ; SPRITE_ANIM_OAMSET_INTRO_GERBIL_1
 	dbw $05, .OAMData_IntroGerbil               ; SPRITE_ANIM_OAMSET_INTRO_GERBIL_2
 	dbw $0a, .OAMData_IntroGerbil               ; SPRITE_ANIM_OAMSET_INTRO_GERBIL_3
-	dbw $50, .OAMData_IntroShags2Dope              ; SPRITE_ANIM_OAMSET_INTRO_SHAGS2DOPE
+	dbw $50, .OAMData_IntroAxolotl              ; SPRITE_ANIM_OAMSET_INTRO_AXOLOTL
 	dbw $00, .OAMData_IntroLettah1              ; SPRITE_ANIM_OAMSET_INTRO_LETTAH_1
 	dbw $01, .OAMData_IntroLettah2              ; SPRITE_ANIM_OAMSET_INTRO_LETTAH_2
 	dbw $04, .OAMData_IntroLettah3              ; SPRITE_ANIM_OAMSET_INTRO_LETTAH_3
@@ -972,7 +972,7 @@ SpriteAnimOAMData:
 	dbsprite  0,  1,  4,  4, $43, 1 | VRAM_BANK_1
 	dbsprite  1,  1,  4,  4, $44, 1 | VRAM_BANK_1
 
-.OAMData_IntroShags2Dope:
+.OAMData_IntroAxolotl:
 	db 16
 	dbsprite -3, -2,  4,  0, $00, 2 | VRAM_BANK_1
 	dbsprite -2, -2,  4,  0, $01, 2 | VRAM_BANK_1

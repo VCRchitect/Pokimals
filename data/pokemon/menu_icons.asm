@@ -195,8 +195,8 @@ MonMenuIcons:
 	db ICON_RADISH      ; SEED
 	db ICON_RADISH      ; SUNFLOWER
 	db ICON_BUG         ; DRAGONFLY
-	db ICON_MONSTER     ; SHAGS2DOPE
-	db ICON_MONSTER     ; VIOLENT_J
+	db ICON_MONSTER     ; AXOLOTL
+	db ICON_MONSTER     ; MUDPUPPY
 	db ICON_FOX         ; TERRIER
 	db ICON_FOX         ; XOLO_DOG
 	db ICON_BIRD        ; CROW

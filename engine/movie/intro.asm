@@ -616,8 +616,8 @@ Intro_PerspectiveScrollBG:
 IntroFenrirRunGFX:
 INCBIN "gfx/intro/fenrir_run.2bpp.lz"
 
-IntroGerbilShags2DopeGFX:
-INCBIN "gfx/intro/gerbil_shags2dope.2bpp.lz"
+IntroGerbilAxolotlGFX:
+INCBIN "gfx/intro/gerbil_axolotl.2bpp.lz"
 
 IntroBackgroundGFX:
 INCBIN "gfx/intro/background.2bpp.lz"

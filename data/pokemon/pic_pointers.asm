@@ -389,10 +389,10 @@ PokemonPicPointers::
 	dba_pic SunflowerBackpic
 	dba_pic DragonflyFrontpic
 	dba_pic DragonflyBackpic
-	dba_pic Shags2DopeFrontpic
-	dba_pic Shags2DopeBackpic
-	dba_pic Violent_JFrontpic
-	dba_pic Violent_JBackpic
+	dba_pic AxolotlFrontpic
+	dba_pic AxolotlBackpic
+	dba_pic MudpuppyFrontpic
+	dba_pic MudpuppyBackpic
 	dba_pic TerrierFrontpic
 	dba_pic TerrierBackpic
 	dba_pic Xolo_DogFrontpic

@@ -199,8 +199,8 @@ PokemonCries::
 	mon_cry CRY_WATER_RAT,      299,  184 ; SEED
 	mon_cry CRY_SUNFLOWER,    -32,  384 ; SUNFLOWER
 	mon_cry CRY_TOTODILE,     49,  200 ; DRAGONFLY
-	mon_cry CRY_SHAGS2DOPE,      147,  175 ; SHAGS2DOPE
-	mon_cry CRY_SHAGS2DOPE,     -198,  320 ; VIOLENT_J
+	mon_cry CRY_AXOLOTL,      147,  175 ; AXOLOTL
+	mon_cry CRY_AXOLOTL,     -198,  320 ; MUDPUPPY
 	mon_cry CRY_CHIMPANZEE,       162,  320 ; TERRIER
 	mon_cry CRY_GNAT,    -233,  240 ; XOLO_DOG
 	mon_cry CRY_WATER_RAT,      -31,  384 ; CROW
@@ -220,7 +220,7 @@ PokemonCries::
 	mon_cry CRY_RAM,      0,  352 ; MANTIDFLY
 	mon_cry CRY_TSUCHINOKO,   656,  168 ; SCALEBUG
 	mon_cry CRY_RAM,     53,  224 ; BEETLE
-	mon_cry CRY_SHAGS2DOPE,       83,  175 ; WEASEL
+	mon_cry CRY_AXOLOTL,       83,  175 ; WEASEL
 	mon_cry CRY_TEDDYBEAR,  1954,  110 ; TEDDYBEAR
 	mon_cry CRY_TEDDYBEAR,  1600,  216 ; BEAR
 	mon_cry CRY_SLUG,     -472,  320 ; SLUG

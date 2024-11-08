@@ -13,7 +13,7 @@ ABOSS_MapScripts:
 BossA:	
 	faceplayer
 	loadvar VAR_BATTLETYPE, BATTLETYPE_FENRIR
-	readmem wBadges
+	readvar VAR_BADGES
 	ifequal 0, nobadgeABoss
 	ifequal 1, onebadgeABoss
 	ifequal 2, twobadgeABoss

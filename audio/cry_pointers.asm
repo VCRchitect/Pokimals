@@ -57,7 +57,7 @@ Cries:
 	dba Cry_Slug
 	dba Cry_Ladybug
 	dba Cry_Cerberus
-	dba Cry_Shags2Dope
+	dba Cry_Axolotl
 	dba Cry_Manta
 	dba Cry_Badger
 	dba Cry_Kakapo

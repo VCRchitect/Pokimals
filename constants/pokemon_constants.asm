@@ -213,8 +213,8 @@ JOHTO_POKEMON EQU const_value
 	const SEED    ; bf
 	const SUNFLOWER   ; c0
 	const DRAGONFLY      ; c1
-	const SHAGS2DOPE     ; c2
-	const VIOLENT_J   ; c3
+	const AXOLOTL     ; c2
+	const MUDPUPPY   ; c3
 	const TERRIER     ; c4
 	const XOLO_DOG    ; c5
 	const CROW    ; c6

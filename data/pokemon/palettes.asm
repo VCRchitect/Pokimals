@@ -401,10 +401,10 @@ INCBIN "gfx/pokemon/sunflower/front.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/sunflower/shiny.pal"
 INCBIN "gfx/pokemon/dragonfly/front.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/dragonfly/shiny.pal"
-INCBIN "gfx/pokemon/shags2dope/front.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/shags2dope/shiny.pal"
-INCBIN "gfx/pokemon/violent_j/front.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/violent_j/shiny.pal"
+INCBIN "gfx/pokemon/axolotl/front.gbcpal", middle_colors
+INCLUDE "gfx/pokemon/axolotl/shiny.pal"
+INCBIN "gfx/pokemon/mudpuppy/front.gbcpal", middle_colors
+INCLUDE "gfx/pokemon/mudpuppy/shiny.pal"
 INCBIN "gfx/pokemon/terrier/front.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/terrier/shiny.pal"
 INCBIN "gfx/pokemon/xolo_dog/front.gbcpal", middle_colors

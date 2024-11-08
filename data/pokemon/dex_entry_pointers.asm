@@ -194,8 +194,8 @@ PokedexDataPointerTable:
 	dw SeedPokedexEntry
 	dw SunflowerPokedexEntry
 	dw DragonflyPokedexEntry
-	dw Shags2DopePokedexEntry
-	dw Violent_JPokedexEntry
+	dw AxolotlPokedexEntry
+	dw MudpuppyPokedexEntry
 	dw TerrierPokedexEntry
 	dw Xolo_DogPokedexEntry
 	dw CrowPokedexEntry

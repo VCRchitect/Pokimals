@@ -9,13 +9,98 @@ Teacher7_MapScripts:
 	def_callbacks
 
 Big_BirdScript:
-	faceplayer
-	refreshscreen
-	opentext
-	trainerpic BIG_BIRD
 	checkevent EVENT_BEAT_BIG_BIRD
 	iftrue .FightDone
+	faceplayer
+	refreshscreen
+	special PlaceMoneyTopRight		
+	trainerpic BIG_BIRD
 	writetext Big_BirdIntroText
+	yesorno
+	iffalse .Refused
+	readvar VAR_BADGES
+	ifequal 0, .Zero
+	ifequal 1, .One
+	ifequal 2, .Two
+	ifequal 3, .Three
+	ifequal 4, .Four
+	ifequal 5, .Five
+	ifequal 6, .Six
+	ifequal 7, .Seven
+	ifequal 8, .Eight
+	end
+
+.Zero:
+	checkmoney YOUR_MONEY, NOBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+
+.One:
+	checkmoney YOUR_MONEY, ONEBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, ONEBADGETUITION
+	sjump .GotTheCost
+
+.Two:
+	checkmoney YOUR_MONEY, TWOBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, TWOBADGETUITION
+	sjump .GotTheCost
+
+.Three:
+	checkmoney YOUR_MONEY, THREEBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, THREEBADGETUITION
+	sjump .GotTheCost
+
+.Four:
+	checkmoney YOUR_MONEY, FOURBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, FOURBADGETUITION
+	sjump .GotTheCost
+
+.Five:
+	checkmoney YOUR_MONEY, FIVEBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, FIVEBADGETUITION
+	sjump .GotTheCost
+
+.Six:	
+	checkmoney YOUR_MONEY, SIXBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+
+.Seven:
+	checkmoney YOUR_MONEY, SEVENBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+
+.Eight:
+	checkmoney YOUR_MONEY, EIGHTBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+	
+.GotTheCost:
+	special PlaceMoneyTopRight
+	sjump .FightTime
+
+.Refused:
+	writetext BigBirdNoLearnText
+	waitbutton
+	closetext
+	end
+
+.NotEnoughMoney:
+	writetext BigBirdPoorText
+	waitbutton
+	closetext
+	end
+	
+.FightTime	
 	waitbutton
 	closetrainpic
 	closetext
@@ -38,9 +123,6 @@ Big_BirdScript:
 	readmem wBaseLevel
 	addval 10
 	writemem wBaseLevel	
-	readmem wBadges
-	addval 1
-	writemem wBadges
 	refreshscreen
 	trainerpic BIG_BIRD
 	writetext Big_BirdZephyrBadgeText
@@ -58,6 +140,9 @@ Big_BirdScript:
 	end
 
 .SpeechAfterTM:
+	refreshscreen
+	opentext
+	trainerpic BIG_BIRD
 	writetext Big_BirdFightDoneText
 	waitbutton
 	closetrainpic
@@ -67,6 +152,22 @@ Big_BirdScript:
 .NoRoomForMudSlap:
 	closetext
 	end
+	
+BigBirdPoorText:
+	text "Just because it's"
+	line "okay to be poor,"
+	
+	para "it doesn't mean"
+	line "you should be."
+	done
+	
+BigBirdNoLearnText:
+	text "Did you learn a"
+	line "single thing from"
+	cont "Sesame Street?"
+	
+	para "Get an education!"
+	done
 	
 Big_BirdIntroText:
 	text "I'm BIG BIRD, the"

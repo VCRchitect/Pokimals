@@ -15,7 +15,7 @@ TheSiteMart_MapScripts:
 TheSiteMartClerk1Script:
 	faceplayer
 	opentext
-	readmem wBadges
+	readvar VAR_BADGES
 	ifequal 0, .nobadgeclerk1
 	ifequal 1, .onebadgeclerk1
 	ifequal 2, .twobadgeclerk1
@@ -71,10 +71,10 @@ TheSiteMartClerk1Script:
 	closetext
 	end
 
-TheSiteMartClerk4Script:
+TheSiteMartClerk2Script:
 	faceplayer
 	opentext
-	readmem wBadges
+	readvar VAR_BADGES
 	ifequal 0, .nobadgeclerk12
 	ifequal 1, .onebadgeclerk12
 	ifequal 2, .twobadgeclerk12
@@ -130,10 +130,10 @@ TheSiteMartClerk4Script:
 	closetext
 	end
 
-TheSiteMartClerk2Script:
+TheSiteMartClerk4Script:
 	faceplayer
 	opentext
-	readmem wBadges
+	readvar VAR_BADGES
 	ifequal 0, .nobadgeclerk2
 	ifequal 1, .onebadgeclerk2
 	ifequal 2, .twobadgeclerk2
@@ -273,8 +273,8 @@ TheSiteMart_MapEvents:
 	def_object_events
 	object_event 15,  3, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TheSiteMartClerk3Script, -1
 	object_event  6,  1, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TheSiteMartClerk1Script, -1
-	object_event  15,  4, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TheSiteMartClerk2Script, -1
-	object_event  7,  1, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TheSiteMartClerk4Script, -1
+	object_event  15,  4, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TheSiteMartClerk4Script, -1
+	object_event  7,  1, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TheSiteMartClerk2Script, -1
 	object_event  7,  5, SPRITE_GENTLEMAN, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, TheSiteMartGentlemanScript, -1
 	object_event  3,  4, SPRITE_SAILOR, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TheSiteMartSailorScript, -1
 	object_event 10,  6, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TheSiteMartTeacherScript, -1

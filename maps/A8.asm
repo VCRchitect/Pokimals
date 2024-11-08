@@ -63,7 +63,7 @@ RandomStairWarp8:
 Monster1g:	
 	faceplayer
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	readmem wBadges
+	readvar VAR_BADGES
 	ifequal 0, nobadgeg
 	ifequal 1, onebadgeg
 	ifequal 2, twobadgeg
@@ -78,7 +78,7 @@ Monster1g:
 Monster2g:	
 	faceplayer
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	readmem wBadges
+	readvar VAR_BADGES
 	ifequal 0, nobadgeg
 	ifequal 1, onebadgeg
 	ifequal 2, twobadgeg
@@ -93,7 +93,7 @@ Monster2g:
 Monster3g:	
 	faceplayer
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	readmem wBadges
+	readvar VAR_BADGES
 	ifequal 0, nobadgeg
 	ifequal 1, onebadgeg
 	ifequal 2, twobadgeg
@@ -108,7 +108,7 @@ Monster3g:
 Monster4g:	
 	faceplayer
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	readmem wBadges
+	readvar VAR_BADGES
 	ifequal 0, nobadgeg
 	ifequal 1, onebadgeg
 	ifequal 2, twobadgeg
@@ -123,7 +123,7 @@ Monster4g:
 Monster5g:	
 	faceplayer
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	readmem wBadges
+	readvar VAR_BADGES
 	ifequal 0, nobadgeg
 	ifequal 1, onebadgeg
 	ifequal 2, twobadgeg
@@ -278,12 +278,11 @@ UnlockDoorsg:
 	closetext
 	appear ARUINS_POKE_BALL1g
 	appear ARUINS_POKE_BALL2g	
-	refreshscreen
+	refreshscreen $86
 	playsound SFX_ENTER_DOOR
-	waitsfx
-	changeblock 2, 0, 11
-	changeblock 6, 0, 11
+	changeblock 2, 0, $0B
 	reloadmappart
+	closetext
 	readmem wRoomDefeatedCount
 	setval 0
 	writemem wRoomDefeatedCount		

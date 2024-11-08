@@ -211,7 +211,7 @@ RuinBMonsBase:
 	db 25, BOOBY, 5, 15
 	db 20, DOZEN_EGGS, 5, 15
 	db 20, MONKEY, 5, 15
-	db 15, SHAGS2DOPE, 5, 15
+	db 15, AXOLOTL, 5, 15
 	db 10, SHOE_CRAB, 5, 15
 	db 10, FOX, 5, 15
 	db -1
@@ -221,7 +221,7 @@ RuinBMons1:
 	db 20, BOOBY, 15, 25 
 	db 15, DOZEN_EGGS, 15, 25
 	db 10, MONKEY, 15, 25
-	db 10, SHAGS2DOPE, 15, 25
+	db 10, AXOLOTL, 15, 25
 	db 10, SHOE_CRAB, 15, 25
 	db 10, FOX, 15, 25
 	db -1
@@ -232,7 +232,7 @@ RuinBMons2:
 	db 10, BOOBY, 25, 35
  	db 10, DOZEN_EGGS, 25, 35
 	db 10, MONKEY, 25, 35
-	db 10, SHAGS2DOPE, 25, 35
+	db 10, AXOLOTL, 25, 35
 	db 10, SHOE_CRAB, 25, 35
 	db 10, FOX, 25, 35
 	db -1
@@ -244,7 +244,7 @@ RuinBMons3:
 	db 10, BOOBY, 35, 45
 	db 10, DOZEN_EGGS, 35, 45
 	db 10, MONKEY, 35, 45
-	db 10, SHAGS2DOPE, 35, 45
+	db 10, AXOLOTL, 35, 45
 	db 10, SHOE_CRAB, 35, 45
 	db 5, FOX, 35, 45
 	db -1
@@ -257,7 +257,7 @@ RuinBMons4:
 	db 10, BOOBY, 45, 55
 	db 10, DOZEN_EGGS, 45, 55
 	db 10, MONKEY, 45, 55
-	db 5, SHAGS2DOPE, 45, 55
+	db 5, AXOLOTL, 45, 55
 	db 5, SHOE_CRAB, 45, 55
 	db 5, FOX, 45, 55
 	db -1	
@@ -271,7 +271,7 @@ RuinBMons5:
 	db 10, BOOBY, 55, 65
 	db 5, DOZEN_EGGS, 55, 65
 	db 5, MONKEY, 55, 65
-	db 5, SHAGS2DOPE, 55, 65
+	db 5, AXOLOTL, 55, 65
 	db 5, SHOE_CRAB, 55, 65
 	db 5, FOX, 55, 65
 	db -1
@@ -286,7 +286,7 @@ RuinBMons6:
 	db 5, BOOBY, 65, 75
 	db 5, DOZEN_EGGS, 65, 75
 	db 5, MONKEY, 65, 75
-	db 5, SHAGS2DOPE, 65, 75
+	db 5, AXOLOTL, 65, 75
 	db 5, SHOE_CRAB, 65, 75
 	db 5, FOX, 65, 75
 	db -1	
@@ -302,7 +302,7 @@ RuinBMons7:
 	db 5, BOOBY, 75, 85
 	db 5, DOZEN_EGGS, 75, 85
 	db 5, MONKEY, 75, 85
-	db 5, SHAGS2DOPE, 75, 85
+	db 5, AXOLOTL, 75, 85
 	db 5, SHOE_CRAB, 75, 85
 	db 5, FOX, 75, 85
 	db -1	
@@ -319,7 +319,7 @@ RuinBMons8:
 	db 5, BOOBY, 85, 100
 	db 5, DOZEN_EGGS, 85, 100
 	db 5, MONKEY, 85, 100
-	db 5, SHAGS2DOPE, 85, 100
+	db 5, AXOLOTL, 85, 100
 	db 5, SHOE_CRAB, 85, 100
 	db 5, FOX, 85, 100
 	db -1	

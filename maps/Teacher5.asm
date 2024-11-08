@@ -7,16 +7,98 @@ Teacher5_MapScripts:
 	def_callbacks
 
 LincolnScript:
-	faceplayer
-	refreshscreen
-	opentext
-	trainerpic LINCOLN
 	checkevent EVENT_BEAT_LINCOLN
 	iftrue .FightDone
+	faceplayer
+	refreshscreen
+	special PlaceMoneyTopRight		
+	trainerpic LINCOLN
 	writetext LincolnText_Intro
+	yesorno
+	iffalse .Refused
+	readvar VAR_BADGES
+	ifequal 0, .Zero
+	ifequal 1, .One
+	ifequal 2, .Two
+	ifequal 3, .Three
+	ifequal 4, .Four
+	ifequal 5, .Five
+	ifequal 6, .Six
+	ifequal 7, .Seven
+	ifequal 8, .Eight
+	end
+
+.Zero:
+	checkmoney YOUR_MONEY, NOBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+
+.One:
+	checkmoney YOUR_MONEY, ONEBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, ONEBADGETUITION
+	sjump .GotTheCost
+
+.Two:
+	checkmoney YOUR_MONEY, TWOBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, TWOBADGETUITION
+	sjump .GotTheCost
+
+.Three:
+	checkmoney YOUR_MONEY, THREEBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, THREEBADGETUITION
+	sjump .GotTheCost
+
+.Four:
+	checkmoney YOUR_MONEY, FOURBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, FOURBADGETUITION
+	sjump .GotTheCost
+
+.Five:
+	checkmoney YOUR_MONEY, FIVEBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, FIVEBADGETUITION
+	sjump .GotTheCost
+
+.Six:	
+	checkmoney YOUR_MONEY, SIXBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+
+.Seven:
+	checkmoney YOUR_MONEY, SEVENBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+
+.Eight:
+	checkmoney YOUR_MONEY, EIGHTBADGETUITION
+	ifequal HAVE_LESS, .NotEnoughMoney
+	takemoney YOUR_MONEY, NOBADGETUITION
+	sjump .GotTheCost
+	
+.GotTheCost:
+	special PlaceMoneyTopRight
+	sjump .FightTime
+
+.Refused:
+	writetext LincolnNoLearnText
 	waitbutton
-	closetrainpic
 	closetext
+	end
+
+.NotEnoughMoney:
+	writetext LincolnPoorText
+	waitbutton
+	closetext
+	end
+	
+.FightTime	
 	winlosstext LincolnText_Impressed, 0
 	loadtrainer LINCOLN, LINCOLN1
 	startbattle
@@ -36,9 +118,6 @@ LincolnScript:
 	readmem wBaseLevel
 	addval 10
 	writemem wBaseLevel	
-	readmem wBadges
-	addval 1
-	writemem wBadges
 	refreshscreen
 	trainerpic LINCOLN
 	writetext LincolnText_GlacierBadgeSpeech
@@ -56,6 +135,9 @@ LincolnScript:
 	end
 
 LincolnScript_Defeat:
+	refreshscreen
+	opentext
+	trainerpic LINCOLN
 	writetext LincolnText_CherishYourPokemon
 	waitbutton
 	closetrainpic
@@ -66,6 +148,22 @@ MahoganyGym_NoRoomForIcyWind:
 	closetrainpic
 	closetext
 	end
+	
+LincolnNoLearnText:
+	text "You serious?"
+	
+	para "Son, I became an"
+	line "attorney from just"
+	cont "a buncha books."
+	
+	para "You gotta learn."
+	done
+	
+LincolnPoorText:
+	text "You should not be"
+	line "so broke. Even I"
+	cont "had five dollars."
+	done
 	
 LincolnText_Intro:
 	text "Four score and"

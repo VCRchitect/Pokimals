@@ -192,8 +192,8 @@ BitmasksPointers:
 	dw SeedBitmasks
 	dw SunflowerBitmasks
 	dw DragonflyBitmasks
-	dw Shags2DopeBitmasks
-	dw Violent_JBitmasks
+	dw AxolotlBitmasks
+	dw MudpuppyBitmasks
 	dw TerrierBitmasks
 	dw Xolo_DogBitmasks
 	dw CrowBitmasks
