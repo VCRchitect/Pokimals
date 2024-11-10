@@ -2570,17 +2570,18 @@ Script_RuinItems:
 	ret
 	
 .RuinItems:
-	db 1, POTION
-	db 2, BERRY
-	db 4, ANTIDOTE
-	db 6, PSNCUREBERRY
-	db 12, ETHER
-	db 18, X_ATTACK
-	db 24, X_DEFEND
-	db 24, X_SPECIAL
-	db 48, NUGGET
-	db 64, RARE_CANDY
+	db 1, RARE_CANDY
+	db 2, NUGGET
+	db 4, X_SPECIAL
+	db 6, X_DEFEND
+	db 12, X_ATTACK
+	db 18, ETHER
+	db 24, SUPER_POTION
+	db 24, ANTIDOTE
+	db 48, POTION
+	db 64, BERRY
 	db -1
+	
 	
 Script_RuinRandomABase:
 	farcall RuinSummonerAMons

@@ -171,7 +171,7 @@ BigBirdNoLearnText:
 	
 Big_BirdIntroText:
 	text "I'm BIG BIRD, the"
-	line "FLYING INSTRUCTOR."
+	line "FLYING MENTOR."
 
 	para "People say you can"
 	line "clip flying-type"

@@ -146,7 +146,7 @@ nobadgec:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsC
 	end
 
 onebadgec:
@@ -157,7 +157,7 @@ onebadgec:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsC
 	end
 
 twobadgec:
@@ -168,7 +168,7 @@ twobadgec:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsC
 	end
 
 threebadgec:
@@ -179,7 +179,7 @@ threebadgec:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsC
 	end
 
 fourbadgec:
@@ -190,7 +190,7 @@ fourbadgec:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsC
 	end
 
 fivebadgec:
@@ -201,7 +201,7 @@ fivebadgec:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsC
 	end
 
 sixbadgec:
@@ -212,7 +212,7 @@ sixbadgec:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsC
 	end
 
 sevenbadgec:
@@ -223,7 +223,7 @@ sevenbadgec:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsC
 	end
 
 eightbadgec:
@@ -234,7 +234,7 @@ eightbadgec:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsC
 	end
 	
 A4Item1:
@@ -273,16 +273,17 @@ A4Item2:
 	end	
 
 
-UnlockDoorsc:
+UnlockDoorsC:
 	opentext
 	writetext ButtonText
 	promptbutton
 	closetext
 	appear ARUINS_POKE_BALL1c
 	appear ARUINS_POKE_BALL2c	
-	refreshscreen $86
+	refreshscreen
 	playsound SFX_ENTER_DOOR
 	changeblock 2, 0, $0B
+	changeblock 14, 0, $0B
 	reloadmappart
 	closetext
 	readmem wRoomDefeatedCount

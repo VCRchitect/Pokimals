@@ -146,7 +146,7 @@ nobadge`:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINX_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINX_TARGET_DEFEATS, UnlockDoors`
 	end
 
 onebadge`:
@@ -157,7 +157,7 @@ onebadge`:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINX_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINX_TARGET_DEFEATS, UnlockDoors`
 	end
 
 twobadge`:
@@ -168,7 +168,7 @@ twobadge`:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINX_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINX_TARGET_DEFEATS, UnlockDoors`
 	end
 
 threebadge`:
@@ -179,7 +179,7 @@ threebadge`:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINX_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINX_TARGET_DEFEATS, UnlockDoors`
 	end
 
 fourbadge`:
@@ -190,7 +190,7 @@ fourbadge`:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINX_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINX_TARGET_DEFEATS, UnlockDoors`
 	end
 
 fivebadge`:
@@ -201,7 +201,7 @@ fivebadge`:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINX_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINX_TARGET_DEFEATS, UnlockDoors`
 	end
 
 sixbadge`:
@@ -212,7 +212,7 @@ sixbadge`:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINX_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINX_TARGET_DEFEATS, UnlockDoors`
 	end
 
 sevenbadge`:
@@ -223,7 +223,7 @@ sevenbadge`:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINX_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINX_TARGET_DEFEATS, UnlockDoors`
 	end
 
 eightbadge`:
@@ -234,7 +234,7 @@ eightbadge`:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINX_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINX_TARGET_DEFEATS, UnlockDoors`
 	end
 	
 `Item1:

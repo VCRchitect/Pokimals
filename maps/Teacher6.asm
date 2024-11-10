@@ -165,7 +165,7 @@ DianaPoorText:
 	
 Diana_SteelTypeIntro:
 	text "I am DIANA, an"
-	line "INSTRUCTOR. I use"
+	line "instructor. I use"
 	cont "the steel-type."
 
 	para "Do you know about"
@@ -186,7 +186,7 @@ Diana_BetterTrainer:
 	line "kindness."
 
 	para "In accordance with"
-	line "class rules, I"
+	line "academy rules, I"
 
 	para "confer upon you"
 	line "this BADGE."

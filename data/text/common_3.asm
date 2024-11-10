@@ -11,17 +11,14 @@ _OakText7::
 	line "stabbed or"
 	cont "carried off."
 
-	para "You are a kid,"
-	line "after all."
+	para "We have no idea"
+	line "what kinds of"
 
-	para "A world of walking"
-	line "and weird events"
+	para "wild things roam"
+	line "those ruins."
 
-	para "is waiting!"
-	line "Go on, git!"
-
-	para "I might see you"
-	line "later!"
+	para "The Site awaits!"
+	line "Go see PROF. Elm!"
 	done
 
 _ClockTimeMayBeWrongText::

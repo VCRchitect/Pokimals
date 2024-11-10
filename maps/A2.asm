@@ -146,7 +146,7 @@ nobadge:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsA
 	end
 
 onebadge:
@@ -157,7 +157,7 @@ onebadge:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsA
 	end
 
 twobadge:
@@ -168,7 +168,7 @@ twobadge:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsA
 	end
 
 threebadge:
@@ -179,7 +179,7 @@ threebadge:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsA
 	end
 
 fourbadge:
@@ -190,7 +190,7 @@ fourbadge:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsA
 	end
 
 fivebadge:
@@ -201,7 +201,7 @@ fivebadge:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsA
 	end
 
 sixbadge:
@@ -212,7 +212,7 @@ sixbadge:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsA
 	end
 
 sevenbadge:
@@ -223,7 +223,7 @@ sevenbadge:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsA
 	end
 
 eightbadge:
@@ -234,7 +234,7 @@ eightbadge:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsA
 	end	
 
 A2Item1:
@@ -271,14 +271,14 @@ A2Item2:
 	disappear ARUINS_POKE_BALL2a
 	end	
 	
-UnlockDoors:
+UnlockDoorsA:
 	opentext
 	writetext ButtonText
 	promptbutton
 	closetext
 	appear ARUINS_POKE_BALL1a
 	appear ARUINS_POKE_BALL2a
-	refreshscreen $86
+	refreshscreen
 	playsound SFX_ENTER_DOOR
 	changeblock 4, 0, $0B
 	reloadmappart

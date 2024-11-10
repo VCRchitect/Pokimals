@@ -289,7 +289,7 @@ TheHallSignText:
 	line "where the GYM LEA-"
 	
 	para "I mean where the"
-	line "INSTRUCTORS like"
+	line "MENTORS like"
 	cont "to hang out."
 	done
 

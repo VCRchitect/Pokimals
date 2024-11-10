@@ -585,7 +585,7 @@ wLastEnemyMove:: db
 
 wPlayerFutureSightCount:: db
 wEnemyFutureSightCount:: db
-ds 8
+	ds 8
 wPlayerFutureSightDamage:: dw
 wEnemyFutureSightDamage:: dw
 wPlayerRageCounter:: db
@@ -709,13 +709,12 @@ wDexListingCursorBackup:: db
 wBackupDexListingCursor:: db
 wBackupDexListingPage:: db
 wDexCurLocation:: db
-if DEF(_CRYSTAL11)
 wPokedexStatus:: db
+wPokedexShinyToggle::
+; bit 0: set if displaying shiny palettes
+	db
 wPokedexDataEnd::
-else
-wPokedexDataEnd:: ds 1
-endc
-	ds 2
+	ds 1
 
 NEXTU
 ; pokegear
@@ -1508,12 +1507,7 @@ wCreditsLYOverride:: db
 NEXTU
 ; pokedex
 wPrevDexEntryJumptableIndex:: db
-if DEF(_CRYSTAL11)
 wPrevDexEntryBackup:: db
-else
-wPrevDexEntryBackup::
-wPokedexStatus:: db
-endc
 wUnusedPokedexByte:: db
 
 NEXTU
@@ -2760,7 +2754,10 @@ wDudeBalls:: ds 2 * 4 + 1
 ENDU
 
 wOtherTrainerType:: db
-	ds 3
+wTrainerGroupBank:: db
+wRandomTrainerNumPokemon:: db
+wRandomTrainerTotalPokemon:: db
+wRandomTrainerRandomNumbers:: ds 6
 
 wd430:: ; mobile
 wBattleAction:: db
@@ -2772,7 +2769,7 @@ wMapEventStatus:: db
 wScriptFlags::
 ; bit 3: run deferred script
 	db
-	ds 1
+
 wScriptFlags2::
 ; bit 0: count steps
 ; bit 1: coord events
@@ -2788,7 +2785,6 @@ wScriptPos:: dw
 
 wScriptStackSize:: db
 wScriptStack:: ds 3 * 5
-	ds 1
 wScriptDelay:: db
 
 wDeferredScriptBank::
@@ -2797,11 +2793,10 @@ wScriptTextBank::
 wDeferredScriptAddr::
 wScriptTextAddr::
 	dw
-	ds 1
 wWildEncounterCooldown:: db
 
 wXYComparePointer:: dw
-	ds 4
+	ds 1
 
 wBattleScriptFlags:: db
 	ds 1

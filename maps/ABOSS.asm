@@ -34,7 +34,7 @@ nobadgeABoss:
 	readmem wRoomDefeatedCount
 	setval 5
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsABoss
 	end
 
 onebadgeABoss:
@@ -45,7 +45,7 @@ onebadgeABoss:
 	readmem wRoomDefeatedCount
 	setval 5
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsABoss
 	end
 
 twobadgeABoss:
@@ -56,7 +56,7 @@ twobadgeABoss:
 	readmem wRoomDefeatedCount
 	setval 5
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsABoss
 	end
 
 threebadgeABoss:
@@ -67,7 +67,7 @@ threebadgeABoss:
 	readmem wRoomDefeatedCount
 	setval 5
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsABoss
 	end
 
 fourbadgeABoss:
@@ -78,7 +78,7 @@ fourbadgeABoss:
 	readmem wRoomDefeatedCount
 	setval 5
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsABoss
 	end
 
 fivebadgeABoss:
@@ -89,7 +89,7 @@ fivebadgeABoss:
 	readmem wRoomDefeatedCount
 	setval 5
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsABoss
 	end
 
 sixbadgeABoss:
@@ -100,7 +100,7 @@ sixbadgeABoss:
 	readmem wRoomDefeatedCount
 	setval 5
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsABoss
 	end
 
 sevenbadgeABoss:
@@ -111,7 +111,7 @@ sevenbadgeABoss:
 	readmem wRoomDefeatedCount
 	setval 5
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsABoss
 	end
 
 eightbadgeABoss:
@@ -122,7 +122,7 @@ eightbadgeABoss:
 	readmem wRoomDefeatedCount
 	setval 5
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsABoss
 	end	
 	
 
@@ -133,9 +133,9 @@ UnlockDoorsABoss:
 	closetext
 	refreshscreen
 	playsound SFX_ENTER_DOOR
-	waitsfx
-	changeblock 2, 0, 11
+	changeblock 2, 0, $0B
 	reloadmappart
+	closetext
 	readmem wRoomDefeatedCount
 	setval 0
 	writemem wRoomDefeatedCount		

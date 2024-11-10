@@ -9,6 +9,8 @@ TrainerPalettes:
 PlayerPalette: ; Chris uses the same colors as Cal
 INCBIN "gfx/trainers/cal.gbcpal", middle_colors
 KrisPalette: ; Kris shares Falkner's palette
+INCBIN "gfx/trainers/bird_keeper.gbcpal", middle_colors
+INCBIN "gfx/trainers/schoolboy.gbcpal", middle_colors
 INCBIN "gfx/trainers/big_bird.gbcpal", middle_colors
 INCBIN "gfx/trainers/lara.gbcpal", middle_colors
 INCBIN "gfx/trainers/tpain.gbcpal", middle_colors
@@ -31,8 +33,6 @@ INCBIN "gfx/trainers/lt_surge.gbcpal", middle_colors
 INCBIN "gfx/trainers/scientist.gbcpal", middle_colors
 INCBIN "gfx/trainers/erika.gbcpal", middle_colors
 INCBIN "gfx/trainers/youngster.gbcpal", middle_colors
-INCBIN "gfx/trainers/schoolboy.gbcpal", middle_colors
-INCBIN "gfx/trainers/bird_keeper.gbcpal", middle_colors
 INCBIN "gfx/trainers/lass.gbcpal", middle_colors
 INCBIN "gfx/trainers/janine.gbcpal", middle_colors
 INCBIN "gfx/trainers/cooltrainer_m.gbcpal", middle_colors

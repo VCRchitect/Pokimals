@@ -1572,19 +1572,15 @@ _OakText4::
 	prompt
 
 _OakText5::
-	text "One mystery is"
-	line "why do some"
-	cont "ANIMALs look all"
+	text "We recently found"
+	line "an interesting"
+	cont "site where all"
 	
-	para "cartoony and"
-	line "others have"
-	cont "good graphics."
-
-	para "There are still"
-	line "many mysteries to"
-	cont "solve."
-
-	para "That's why I am"
-	line "sending you, a"
-	cont "child, out."
+	para "kinds of weird and"
+	line "kooky ANIMALs roam"
+	cont "around."
+	
+	para "This is one of the"
+	line "biggest mysteries"
+	cont "of our time."
 	prompt

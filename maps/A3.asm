@@ -142,7 +142,7 @@ nobadgeb:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsB
 	end
 
 onebadgeb:
@@ -153,7 +153,7 @@ onebadgeb:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsB
 	end
 
 twobadgeb:
@@ -164,7 +164,7 @@ twobadgeb:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsB
 	end
 
 threebadgeb:
@@ -175,7 +175,7 @@ threebadgeb:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsB
 	end
 
 fourbadgeb:
@@ -186,7 +186,7 @@ fourbadgeb:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsB
 	end
 
 fivebadgeb:
@@ -197,7 +197,7 @@ fivebadgeb:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsB
 	end
 
 sixbadgeb:
@@ -208,7 +208,7 @@ sixbadgeb:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsB
 	end
 
 sevenbadgeb:
@@ -219,7 +219,7 @@ sevenbadgeb:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsB
 	end
 
 eightbadgeb:
@@ -230,7 +230,7 @@ eightbadgeb:
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoors
+	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsB
 	end
 	
 A3Item1:
@@ -275,9 +275,10 @@ UnlockDoorsB:
 	closetext	
 	appear ARUINS_POKE_BALL1b
 	appear ARUINS_POKE_BALL2b	
-	refreshscreen $86
+	refreshscreen
 	playsound SFX_ENTER_DOOR
 	changeblock 2, 0, $0B
+	changeblock 10, 0, $0B
 	reloadmappart
 	closetext
 	readmem wRoomDefeatedCount

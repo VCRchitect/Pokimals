@@ -1,76 +1,62 @@
-INCLUDE "data/trainers/party_pointers.asm"
-
-Trainers:
 ; Trainer data structure:
-; - db "NAME@", TRAINERTYPE_* constant
+; - db "NAME@", TRAINERTYPE_* constants |ed together
 ; - 1 to 6 Pokémon:
-;    * for TRAINERTYPE_NORMAL:     db level, species
-;    * for TRAINERTYPE_MOVES:      db level, species, 4 moves
-;    * for TRAINERTYPE_ITEM:       db level, species, item
-;    * for TRAINERTYPE_ITEM_MOVES: db level, species, item, 4 moves
+;    * in all cases:              db level, species
+;    * with TRAINERTYPE_NICKNAME: db "NICKNAME@"
+;    * with TRAINERTYPE_DVS:      db atk|def dv, spd|spc dv
+;    * with TRAINERTYPE_STAT_EXP: dw hp, atk, def, spd, spc
+;    * with TRAINERTYPE_HAPPINESS db happiness 
+;    * with TRAINERTYPE_ITEM:     db item
+;    * with TRAINERTYPE_MOVES:    db move 1, move 2, move 3, move 4
+;    (TRAINERTYPE_ITEM_MOVES is just TRAINERTYPE_ITEM | TRAINERTYPE_MOVES)
 ; - db -1 ; end
+; - db "NAME@", TRAINERTYPE_RANDOM | other TRAINERTYPE_* constants, number of party pokémon, list constant (defined in constants/trainer_constants.asm)
+; - db -1 ; end
+; Lists of random Pokémon:
+; - db length of list
+; - Pokémon, separated by db $fe
+; - db -1 ; end
+
+SECTION "Enemy Trainer Parties 1", ROMX; Random Trainers:
 
 Big_BirdGroup:
 	; BIG_BIRD (1)
-	db "BIG BIRD@", TRAINERTYPE_MOVES
-	db  3, PIGEON,     TACKLE, MUD_SLAP, NO_MOVE, NO_MOVE
-	db  4, OSPREY,  TACKLE, MUD_SLAP, GUST, NO_MOVE
+	db "BIG BIRD@", TRAINERTYPE_RANDOM, 6, RANDOMLIST_BIGBIRD
 	db -1 ; end
 
 LaraGroup:
 	; LARA (1)
-	db "LARA@", TRAINERTYPE_MOVES
-	db 3, FAERIE,   DOUBLESLAP, MIMIC, ENCORE, METRONOME
-	db 5, COW,    ROLLOUT, ATTRACT, STOMP, MILK_DRINK
+	db "LARA@", TRAINERTYPE_RANDOM, 6, RANDOMLIST_LARA
 	db -1 ; end
 
 TPainGroup:
 	; TPAIN (1)
-	db "T-PAIN@", TRAINERTYPE_MOVES
-	db 2, CHRYSALIS,    TACKLE, STRING_SHOT, HARDEN, NO_MOVE
-	db 2, PUPA,     POISON_STING, STRING_SHOT, HARDEN, NO_MOVE
-	db 5, MANTIS,    QUICK_ATTACK, LEER, FURY_CUTTER, NO_MOVE
+	db "T-PAIN@", TRAINERTYPE_RANDOM, 6, RANDOMLIST_TPAIN
 	db -1 ; end
 
 JasonGroup:
 	; JASON (1)
-	db "JASON@", TRAINERTYPE_MOVES
-	db 3, DRIFTER,     LICK, SPITE, MEAN_LOOK, CURSE
-	db 4, SPOOKY,    HYPNOSIS, MIMIC, CURSE, NIGHT_SHADE
-	db 5, PHANTOM,     HYPNOSIS, SHADOW_BALL, MEAN_LOOK, DREAM_EATER
-	db 4, SPOOKY,    SPITE, MEAN_LOOK, MIMIC, NIGHT_SHADE
+	db "JASON@", TRAINERTYPE_RANDOM, 4, RANDOMLIST_JASON
 	db -1 ; end
 
 LincolnGroup:
 	; LINCOLN (1)
-	db "LINCOLN@", TRAINERTYPE_MOVES
-	db 3, SEAL,       HEADBUTT, ICY_WIND, AURORA_BEAM, REST
-	db 4, DUGONG,    HEADBUTT, ICY_WIND, AURORA_BEAM, REST
-	db 5, MAMMOTH,  ICY_WIND, FURY_ATTACK, MIST, BLIZZARD
+	db "LINCOLN@", TRAINERTYPE_RANDOM, 6, RANDOMLIST_LINCOLN
 	db -1 ; end
 
 DianaGroup:
 	; DIANA (1)
-	db "DIANA@", TRAINERTYPE_MOVES
-	db 4, MAGNET,  THUNDERBOLT, SUPERSONIC, SONICBOOM, THUNDER_WAVE
-	db 4, MAGNET,  THUNDERBOLT, SUPERSONIC, SONICBOOM, THUNDER_WAVE
-	db 5, DEATHWORM,    SCREECH, SUNNY_DAY, ROCK_THROW, IRON_TAIL
+	db "DIANA@", TRAINERTYPE_RANDOM, 6, RANDOMLIST_DIANA
 	db -1 ; end
 
 Kid_RockGroup:
 	; KID_ROCK (1)
-	db "KID ROCK@", TRAINERTYPE_MOVES
-	db 5, GORILLA,   LEER, RAGE, KARATE_CHOP, FURY_SWIPES
-	db 5, TOAD,  HYPNOSIS, MIND_READER, SURF, DYNAMICPUNCH
+	db "KID ROCK@", TRAINERTYPE_RANDOM, 6, RANDOMLIST_KIDROCK
 	db -1 ; end
 
 PeelyGroup:
 	; PEELY (1)
-	db "PEELY@", TRAINERTYPE_MOVES
-	db 5, LEVIATHAN,  THUNDER_WAVE, SURF, SLAM, DRAGONBREATH
-	db 6, MASCOT,  THUNDER_WAVE, THUNDERBOLT, SLAM, DRAGONBREATH
-	db 5, LEVIATHAN,  THUNDER_WAVE, ICE_BEAM, SLAM, DRAGONBREATH
-	db 3, SEA_DRAGON,    SMOKESCREEN, SURF, HYPER_BEAM, DRAGONBREATH
+	db "PEELY@", TRAINERTYPE_RANDOM, 5, RANDOMLIST_PEELY
 	db -1 ; end
 
 Rival1Group:
@@ -195,12 +181,7 @@ PokemonProfGroup:
 
 WillGroup:
 	; WILL (1)
-	db "WILL@", TRAINERTYPE_MOVES
-	db 40, QUETZAL,       QUICK_ATTACK, FUTURE_SIGHT, CONFUSE_RAY, PSYCHIC_M
-	db 41, DRAG_QUEEN,       DOUBLESLAP, LOVELY_KISS, ICE_PUNCH, PSYCHIC_M
-	db 41, COCONUTS,  REFLECT, LEECH_SEED, EGG_BOMB, PSYCHIC_M
-	db 41, SAZAE_ONI,    CURSE, AMNESIA, BODY_SLAM, PSYCHIC_M
-	db 42, QUETZAL,       QUICK_ATTACK, FUTURE_SIGHT, CONFUSE_RAY, PSYCHIC_M
+	db "WILL@", TRAINERTYPE_RANDOM, 6, RANDOMLIST_WILL
 	db -1 ; end
 
 ANMLTrainerGroup:
@@ -227,43 +208,22 @@ ANMLTrainerGroup:
 
 BrunoGroup:
 	; BRUNO (1)
-	db "BRUNO@", TRAINERTYPE_MOVES
-	db 5, DREIDEL,  PURSUIT, QUICK_ATTACK, DIG, DETECT
-	db 5, BRUCE_LEE,  SWAGGER, DOUBLE_KICK, HI_JUMP_KICK, FORESIGHT
-	db 5, JACKIECHAN, THUNDERPUNCH, ICE_PUNCH, FIRE_PUNCH, MACH_PUNCH
-	db 5, WYRM,       BIND, EARTHQUAKE, SANDSTORM, ROCK_SLIDE
-	db 5, BEEFCAKE,    ROCK_SLIDE, FORESIGHT, VITAL_THROW, CROSS_CHOP
+	db "BRUNO@", TRAINERTYPE_RANDOM, 6, RANDOMLIST_BRUNO
 	db -1 ; end
 
 KarenGroup:
 	; KAREN (1)
-	db "KAREN@", TRAINERTYPE_MOVES
-	db 5, XOLO_DOG,    SAND_ATTACK, CONFUSE_RAY, FAINT_ATTACK, MEAN_LOOK
-	db 5, RAFFLESIA,  STUN_SPORE, ACID, MOONLIGHT, PETAL_DANCE
-	db 5, PHANTOM,     LICK, SPITE, CURSE, DESTINY_BOND
-	db 5, CROW,    QUICK_ATTACK, WHIRLWIND, PURSUIT, FAINT_ATTACK
-	db 5, DOBERMAN,   ROAR, PURSUIT, FLAMETHROWER, CRUNCH
+	db "KAREN@", TRAINERTYPE_RANDOM, 6, RANDOMLIST_KAREN
 	db -1 ; end
 
 KogaGroup:
 	; KOGA (1)
-	db "KOGA@", TRAINERTYPE_MOVES
-	db 5, WASP,    DOUBLE_TEAM, SPIDER_WEB, BATON_PASS, GIGA_DRAIN
-	db 5, MOTH,   SUPERSONIC, GUST, PSYCHIC_M, TOXIC
-	db 5, FORTRESS, PROTECT, SWIFT, EXPLOSION, SPIKES
-	db 5, MUD,        MINIMIZE, ACID_ARMOR, SLUDGE_BOMB, TOXIC
-	db 5, BIG_BAT,     DOUBLE_TEAM, QUICK_ATTACK, WING_ATTACK, TOXIC
+	db "KOGA@", TRAINERTYPE_RANDOM, 6, RANDOMLIST_KOGA
 	db -1 ; end
 
 ChampionGroup:
 	; CHAMPION (1)
-	db "LANCE@", TRAINERTYPE_MOVES
-	db 5, INKANYAMBA,   FLAIL, RAIN_DANCE, SURF, HYPER_BEAM
-	db 5, MASCOT,  THUNDER_WAVE, TWISTER, THUNDER, HYPER_BEAM
-	db 5, MASCOT,  THUNDER_WAVE, TWISTER, BLIZZARD, HYPER_BEAM
-	db 5, PTERANODON, WING_ATTACK, ANCIENTPOWER, ROCK_SLIDE, HYPER_BEAM
-	db 5, RED_DRAGON,  FLAMETHROWER, WING_ATTACK, SLASH, HYPER_BEAM
-	db 5, MASCOT,  FIRE_BLAST, SAFEGUARD, OUTRAGE, HYPER_BEAM
+	db "LANCE@", TRAINERTYPE_RANDOM, 5, RANDOMLIST_LANCE
 	db -1 ; end
 
 BrockGroup:
@@ -3560,3 +3520,212 @@ PapaGroup:
 	db 25, BOMB,  SCREECH, SONICBOOM, THUNDER, ROLLOUT
 	db -1 ; end
 		
+SECTION "Random Party Lists", ROMX
+
+RandomPartyLists::
+    ; RANDOMLIST_TPAIN
+	db 16
+	db 1, CATERPILLA,  $fe
+	db 2, CHRYSALIS, $fe
+	db 3, LARVA,   $fe
+	db 2, PUPA,  $fe
+	db 4, NYMPH,  $fe
+	db 5, HERMITCRAB,   $fe
+	db 1, LADYBUG, $fe
+	db 2, FIREFLY, $fe
+	db 1, SPIDER, $fe
+	db 2, WASP, $fe
+	db 4, DRAGONFLY, $fe
+	db 1, PINECONE, $fe
+	db 2, FORTRESS, $fe
+	db 1, MANTIS, $fe
+	db 2, MANTIDFLY, $fe
+	db 4, SCALEBUG, $fe
+	db 5, BEETLE, $fe
+	db -1 ; end
+
+	; RANDOMLIST_LARA
+	db 36
+	db 1, RAT, $fe
+	db 2, MOLERAT, $fe
+	db 2, FAERIE, $fe
+	db 3, ANGEL, $fe
+	db 2, BLOONBUNCH, $fe
+	db 3, BLOONDOG, $fe
+	db 4, CAT, $fe
+	db 5, COUGAR, $fe
+	db 5, PERVERT, $fe
+	db 4, KANGAROO, $fe
+	db 4, BULL, $fe
+	db 1, SLIME, $fe
+	db 1, WOLF, $fe
+	db 1, LOPOLYFACE, $fe
+	db 2, LOPOLYKIWI, $fe
+	db 1, PANDA, $fe
+	db 1, RACCOON, $fe
+	db 2, FERRET, $fe
+	db 1, CHERUB, $fe
+	db 1, BALLOON, $fe
+	db 1, HOBO_CLOWN, $fe
+	db 2, BADCLOWN, $fe
+	db 1, CHIMPANZEE, $fe
+	db 4, TSUCHINOKO, $fe
+	db 1, FRENCHIE, $fe
+	db 2, BULLDOG, $fe
+	db 1, TEDDYBEAR, $fe
+	db 2, BEAR, $fe
+	db 1, ELK, $fe
+	db 4, ARTIST, $fe
+	db 1, BIG_EGG, $fe
+	db 2, COW, $fe
+	db 2, NURSE, $fe
+	db -1
+	
+	; RANDOMLIST_BIGBIRD
+	db 7
+	db 1, PIGEON, $fe
+	db 1, DODO, $fe
+	db 2, TWO_DODOS, $fe
+	db 3, EAGLE, $fe
+	db 1, SPARROW, $fe
+	db 2, VULTURE, $fe
+	db 4, DUCK, $fe
+	db -1
+	
+	; RANDOMLIST_PEELY
+	db 5
+	db 3, SERPENT, $fe
+	db 4, LEVIATHAN, $fe
+	db 5, MASCOT, $fe
+	db 3, SEA_DRAGON, $fe
+	db 4, RED_DRAGON, $fe
+	db -1
+
+	; RANDOMLIST_JASON
+	db 4
+	db 1, DRIFTER, $fe
+	db 2, SPOOKY, $fe
+	db 3, PHANTOM, $fe
+	db 4, BANSHEE, $fe
+	db -1
+	
+	; RANDOMLIST_DIANA
+	db 6
+	db 3, DEATHWORM, $fe
+	db 4, CONDOR, $fe
+	db 2, MAGNET, $fe
+	db 3, ELECTROMAG, $fe
+	db 3, MANTIDFLY, $fe
+	db 4, FORTRESS, $fe
+	db -1
+
+	; RANDOMLIST_KIDROCK
+	db 11
+	db 1, MONKEY, $fe
+	db 2, GORILLA, $fe
+	db 1, SCRAWNY, $fe
+	db 2, HUNK, $fe
+	db 3, BEEFCAKE, $fe
+	db 4, BRUCE_LEE, $fe
+	db 4, JACKIECHAN, $fe
+	db 2, JOHN_CENA, $fe
+	db 4, DREIDEL, $fe
+	db 3, FROG, $fe
+	db 1, BEETLE, $fe
+	db -1
+
+	; RANDOMLIST_LINCOLN
+	db 9
+	db 2, DRAG_QUEEN, $fe
+	db 1, BOWLCUT, $fe
+	db 1, BOAR, $fe
+	db 2, MAMMOTH, $fe
+	db 4, SANTA, $fe
+	db 2, DUGONG, $fe
+	db 2, OYSTER, $fe
+	db 5, PLESIOSAUR, $fe
+	db 4, WEASEL, $fe
+	db -1
+
+	; RANDOMLIST_WILL
+	db 11
+	db 1, BAG_LADY, $fe
+	db 2, HAGABOND, $fe
+	db 3, HOMELASS, $fe
+	db 1, TAPIR, $fe
+	db 2, BAKU, $fe
+	db 4, LETTAH_X, $fe
+	db 1, ROLYPOLY, $fe
+	db 2, TERRIER, $fe
+	db 5, CRACKHEAD, $fe
+	db 1, KAKAPO, $fe
+	db 2, QUETZAL, $fe
+	db -1
+
+	; RANDOMLIST_BRUNO
+	db 11
+	db 1, MONKEY, $fe
+	db 2, GORILLA, $fe
+	db 1, SCRAWNY, $fe
+	db 2, HUNK, $fe
+	db 3, BEEFCAKE, $fe
+	db 4, BRUCE_LEE, $fe
+	db 5, JACKIECHAN, $fe
+	db 1, JOHN_CENA, $fe
+	db 4, DREIDEL, $fe
+	db 3, FROG, $fe
+	db 1, BEETLE, $fe
+	db -1
+
+; RANDOMLIST_KOGA
+	db 30
+	db 1, CHIVES, $fe
+	db 2, SHALLOTS, $fe
+	db 3, ONION, $fe
+	db 3, BUTTERFLY, $fe
+	db 3, BEE, $fe
+	db 1, SNAKE, $fe
+	db 2, COBRA, $fe
+	db 1, BOYHYRAX, $fe
+	db 2, JACKALOPE, $fe
+	db 4, KAIJUKING, $fe
+	db 1, GIRLHYRAX, $fe
+	db 2, JANEKALOPE, $fe
+	db 5, KAIJUQUEEN, $fe
+	db 1, BAT, $fe
+	db 2, SCARY_BAT, $fe
+	db 1, RADISH, $fe
+	db 2, MANDRAKE, $fe
+	db 3, RAFFLESIA, $fe
+	db 1, GNAT, $fe
+	db 2, MOTH, $fe
+	db 1, BEANSPROUT, $fe
+	db 2, DRYSPROUT, $fe
+	db 3, MUNGSPROUT, $fe
+	db 1, JELLYFISH, $fe
+	db 4, MANOWAR, $fe
+	db 1, GRIME, $fe
+	db 2, MUD, $fe
+	db 4, VIRUS, $fe
+	db 5, BACTOPHAGE, $fe
+	db 4, BLOWFISH, $fe
+	db -1 ; end
+
+	; RANDOMLIST_KAREN
+	db 6
+	db 4, XOLO_DOG, $fe
+	db 4, CROW, $fe
+	db 5, WEASEL, $fe
+	db 3, ROTTWEILER, $fe
+	db 4, DOBERMAN, $fe
+	db 5, TREX, $fe
+	db -1
+
+	; RANDOMLIST_LANCE
+	db 5
+	db 3, SERPENT, $fe
+	db 4, LEVIATHAN, $fe
+	db 5, MASCOT, $fe
+	db 5, SEA_DRAGON, $fe
+	db 5, RED_DRAGON, $fe
+	db -1

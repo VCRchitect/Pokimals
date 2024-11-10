@@ -1,12 +1,65 @@
 	object_const_def
+	const TEACHER_GUARD1
+	const TEACHER_GUARD2
+	
 
 TheSiteInsideTeacherHall_MapScripts:
 	def_scene_scripts
+	callback MAPCALLBACK_OBJECTS, .Guards
+
 
 	def_callbacks
 
 .DummyScene: ; unreferenced
 	end
+
+
+.Guards
+	readvar VAR_BADGES
+	ifequal 8, .noguards
+	appear TEACHER_GUARD1
+	appear TEACHER_GUARD2
+	endcallback
+
+.noguards:
+	disappear TEACHER_GUARD1
+	disappear TEACHER_GUARD2
+	end
+
+TeacherOfficerScript1:
+	faceplayer
+	refreshscreen
+	opentext
+	trainerpic OFFICER
+	writetext Officer1
+	waitbutton
+	closetrainpic
+	closetext
+	end
+
+TeacherOfficerScript2:
+	faceplayer
+	refreshscreen
+	opentext
+	trainerpic OFFICER
+	writetext Officer2
+	waitbutton
+	closetrainpic
+	closetext
+	end
+
+
+Officer1:
+	text "Sorry, but no"
+	line "rookies past this"
+	cont "point."
+	done
+
+Officer2:
+	text "You can't go any"
+	line "further unless you"
+	cont "have 8 BADGES."
+	done
 
 Sign1Script:
 	jumptext Sign1Text
@@ -117,3 +170,5 @@ TheSiteInsideTeacherHall_MapEvents:
 	bg_event  8,  0, BGEVENT_READ, SignE4Script
 
 	def_object_events
+	object_event  6,  1, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TeacherOfficerScript1, EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
+	object_event  7,  1, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TeacherOfficerScript2, EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1

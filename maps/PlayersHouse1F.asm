@@ -32,6 +32,7 @@ MeetGrampsRightScript:
 MeetGrampsScript:
 	refreshscreen
 	opentext
+	trainerpic OLDMAN
 	writetext Greeting
 	waitbutton
 	setscene SCENE_FINISHED
@@ -62,6 +63,7 @@ MeetGrampsScript:
 	setflag ENGINE_UNLOCKED_LETTAHS_S_TO_W
 	setflag ENGINE_UNLOCKED_LETTAHS_X_TO_Z
 	waitbutton
+	closetrainpic
 	closetext
 	special RestartMapMusic
 	turnobject PLAYERSHOUSE1F_GRAMPS1, LEFT
@@ -132,13 +134,10 @@ IsItDSTText:
 	done
 
 ComeHomeForDSTText:
-	text "Come home to"
-	line "adjust your clock"
-
-	para "for Daylight"
-	line "Saving Time,"
+	text "Come home from"
+	line "time to time..."
 	
-	para "Or if you need to"
+	para "If you need to"
 	line "hear me ramble."
 	done
 
