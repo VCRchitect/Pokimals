@@ -278,6 +278,14 @@ TilesetPteranodonWordRoomAnim:
 TilesetTheSiteAnim:
 TilesetForestRuinAnim:
 TilesetFireRuinAnim:
+	dw NULL,  AnimateLavaBubbleTile2
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  AnimateLavaBubbleTile1
+	dw NULL,  WaitTileAnimation
+	dw NULL,  StandingTileFrame8
+	dw NULL,  DoneTileAnimation
 TilesetIceRuinAnim:
 TilesetElectricRuinAnim:
 TilesetRuinCaveAnim:
