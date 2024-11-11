@@ -36,6 +36,7 @@ MeetGrampsScript:
 	writetext Greeting
 	waitbutton
 	setscene SCENE_FINISHED
+	closetrainpic
 	special SetDayOfWeek
 .SetDayOfWeek:
 	writetext IsItDSTText
@@ -51,11 +52,16 @@ MeetGrampsScript:
 	yesorno
 	iffalse .SetDayOfWeek
 .DayOfWeekDone:
+	refreshscreen
+	trainerpic OLDMAN
 	writetext ComeHomeForDSTText
 	waitbutton
 	writetext IGotYouText
 	waitbutton
+	closetrainpic
 	verbosegiveitem EXP_SHARE
+	refreshscreen
+	trainerpic OLDMAN
 	writetext InheritanceText
 	setevent EVENT_MADE_LETTAH_APPEAR_IN_RUINS
 	setflag ENGINE_UNLOCKED_LETTAHS_A_TO_K
@@ -86,7 +92,6 @@ GrampsWalksBackMovement:
 	slow_step LEFT
 	step_end
 
-
 GrampsScript:
 	faceplayer
 	refreshscreen
@@ -98,7 +103,6 @@ GrampsScript:
 	closetext
 	end
 	
-
 NeighborScript:
 	faceplayer
 	refreshscreen
