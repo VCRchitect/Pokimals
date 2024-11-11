@@ -16,6 +16,7 @@ _ReceiveItem::
 	dw .KeyItem
 	dw .Ball
 	dw .TMHM
+	dw .HeldItem	
 
 .Item:
 	ld h, d
@@ -30,6 +31,10 @@ _ReceiveItem::
 .Ball:
 	ld hl, wNumBalls
 	jp PutItemInPocket
+	
+.HeldItem:
+	ld hl, wNumHeldItems
+	jp PutItemInPocket	
 
 .TMHM:
 	ld h, d
@@ -57,9 +62,14 @@ _TossItem::
 	dw .KeyItem
 	dw .Ball
 	dw .TMHM
+	dw .HeldItem
 
 .Ball:
 	ld hl, wNumBalls
+	jp RemoveItemFromPocket
+
+.HeldItem:
+	ld hl, wNumHeldItems
 	jp RemoveItemFromPocket
 
 .TMHM:
@@ -100,10 +110,15 @@ _CheckItem::
 	dw .KeyItem
 	dw .Ball
 	dw .TMHM
+	dw .HeldItem
 
 .Ball:
 	ld hl, wNumBalls
 	jp CheckTheItem
+	
+.HeldItem:
+	ld hl, wNumHeldItems
+	jp CheckTheItem	
 
 .TMHM:
 	ld h, d
@@ -152,6 +167,16 @@ GetPocketCapacity:
 	ret z
 
 .not_pc
+	ld c, MAX_HELDITEMS
+	ld a, e
+	cp LOW(wNumHeldItems)
+	jr nz, .not_helditems
+	ld a, d
+	cp HIGH(wNumHeldItems)
+	ret z
+
+.not_helditems
+
 	ld c, MAX_BALLS
 	ret
 

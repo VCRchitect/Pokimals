@@ -43,11 +43,6 @@ ENDM
 	endgroup
 
 	newgroup BATTLE_TOWER                                         ;  2
-	map_const BATTLE_TOWER_OUTSIDE,                        10, 14 ;  1
-	map_const BATTLE_TOWER_1F,                              8,  5 ;  2
-	map_const BATTLE_TOWER_ELEVATOR,                        2,  2 ;  3
-	map_const BATTLE_TOWER_HALLWAY,                        11,  2 ;  4
-	map_const BATTLE_TOWER_BATTLE_ROOM,                     4,  4 ;  5
 	endgroup
 
 	newgroup NEW_BARK                                             ;  3

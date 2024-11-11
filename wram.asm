@@ -2236,6 +2236,7 @@ wItemsPocketCursor::    db
 wKeyItemsPocketCursor:: db
 wBallsPocketCursor::    db
 wTMHMPocketCursor::     db
+wHeldItemsPocketCursor:: db
 
 wPCItemsScrollPosition::        db
 	ds 1
@@ -2243,6 +2244,7 @@ wItemsPocketScrollPosition::    db
 wKeyItemsPocketScrollPosition:: db
 wBallsPocketScrollPosition::    db
 wTMHMPocketScrollPosition::     db
+wHeldItemsPocketScrollPosition::    db
 
 wSwitchMon::
 wSwitchItem::
@@ -2743,6 +2745,7 @@ wOTPartyDataEnd::
 
 NEXTU
 ; catch tutorial dude pack
+wDudeNumHeldItems::
 wDudeNumItems:: db
 wDudeItems:: ds 2 * 4 + 1
 
@@ -2900,8 +2903,6 @@ endr
 
 wCmdQueue:: ds CMDQUEUE_CAPACITY * CMDQUEUE_ENTRY_SIZE
 
-	ds 40
-
 wMapObjects::
 wPlayerObject:: map_object wPlayer ; player is map object 0
 ; wMap1Object - wMap15Object
@@ -2972,6 +2973,9 @@ wKeyItems:: ds MAX_KEY_ITEMS + 1
 
 wNumBalls:: db
 wBalls:: ds MAX_BALLS * 2 + 1
+
+wNumHeldItems:: db
+wHeldItems:: ds MAX_HELDITEMS * 2 + 1
 
 wNumPCItems:: db
 wPCItems:: ds MAX_PC_ITEMS * 2 + 1
@@ -3227,7 +3231,7 @@ wPhoneList:: ds CONTACT_LIST_SIZE + 1
 
 wFlagTest:: db
 
-	ds 21
+	ds 12
 
 wLuckyNumberShowFlag:: db
 	ds 1

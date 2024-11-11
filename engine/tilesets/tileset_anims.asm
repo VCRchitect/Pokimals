@@ -276,6 +276,10 @@ TilesetShoe_CrabWordRoomAnim:
 TilesetNautilusWordRoomAnim:
 TilesetPteranodonWordRoomAnim:
 TilesetTheSiteAnim:
+TilesetForestRuinAnim:
+TilesetFireRuinAnim:
+TilesetIceRuinAnim:
+TilesetElectricRuinAnim:
 TilesetRuinCaveAnim:
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation

@@ -5,9 +5,6 @@
 	
 
 IslandSouth_MapScripts:
-
-	def_scene_scripts
-
 	def_scene_scripts
 
 	def_callbacks
@@ -72,17 +69,13 @@ DayCareManScript_Outside:
 
 DayCareMon1Script:
 	opentext
-	trainerpic OLDMAN
 	special DayCareMon1
-	closetrainpic
 	closetext
 	end
 
 DayCareMon2Script:
 	opentext
-	trainerpic OLDMAN
 	special DayCareMon2
-	closetrainpic
 	closetext
 	end
 

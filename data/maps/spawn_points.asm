@@ -17,7 +17,6 @@ SpawnPoints:
 ; johto
 	spawn NEW_BARK_TOWN, 				5, 5
 	spawn PLAYERYARD,               5,  8
-	spawn BATTLE_TOWER_OUTSIDE,          8, 10
 	spawn NONE,                          6,  2
 	spawn THESITEINSIDE1F, 					12, 18
 	spawn N_A,                          -1, -1

@@ -192,7 +192,30 @@ TheSiteMartClerk4Script:
 TheSiteMartClerk3Script:
 	faceplayer
 	opentext
+	readvar VAR_BADGES
+	ifequal 0, .okay
+	ifequal 1, .okay
+	ifequal 2, .okay
+	ifequal 3, .good
+	ifequal 4, .good
+	ifequal 5, .good
+	ifequal 6, .great
+	ifequal 7, .great
+	ifequal 8, .great	
+	
+	
+.okay
 	pokemart MARTTYPE_STANDARD, MART_CHERRYGROVE_DEX
+	closetext
+	end
+
+.good
+	pokemart MARTTYPE_STANDARD, MART_ECRUTEAK
+	closetext
+	end
+
+.great
+	pokemart MARTTYPE_STANDARD, MART_INDIGO_PLATEAU
 	closetext
 	end
 	

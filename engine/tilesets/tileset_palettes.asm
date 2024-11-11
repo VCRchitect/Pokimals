@@ -10,16 +10,10 @@ LoadSpecialMapPalette:
 	ld a, [wMapTileset]
 	cp TILESET_POKECOM_CENTER
 	jr z, .pokecom_2f
-	cp TILESET_BATTLE_TOWER_INSIDE
-	jr z, .battle_tower_inside
 	cp TILESET_ICE_PATH
 	jr z, .ice_path
 	cp TILESET_HOUSE
 	jr z, .house
-	cp TILESET_RADIO_TOWER
-	jr z, .radio_tower
-	cp TILESET_MANSION
-	jr z, .mansion_mobile
 	jr .do_nothing
 
 .darkness

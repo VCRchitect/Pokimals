@@ -16,41 +16,29 @@ Tilesets::
 	tileset Tileset0
 	tileset TilesetJohto
 	tileset TilesetJohtoModern
-	tileset TilesetKanto
-	tileset TilesetBattleTowerOutside
+	tileset TilesetBattleTowerOutside	
 	tileset TilesetHouse
 	tileset TilesetPlayersHouse
 	tileset TilesetPokecenter
 	tileset TilesetGate
-	tileset TilesetPort
-	tileset TilesetLab
+	tileset TilesetLab	
 	tileset TilesetFacility
 	tileset TilesetMart
-	tileset TilesetMansion
+	tileset TilesetIcePath
 	tileset TilesetGameCorner
 	tileset TilesetEliteFourRoom
-	tileset TilesetTraditionalHouse
-	tileset TilesetTrainStation
 	tileset TilesetChampionsRoom
 	tileset TilesetLighthouse
 	tileset TilesetPlayersRoom
 	tileset TilesetPokeComCenter
-	tileset TilesetBattleTowerInside
 	tileset TilesetTower
 	tileset TilesetCave
-	tileset TilesetPark
-	tileset TilesetRuinsOfAlph
-	tileset TilesetRadioTower
-	tileset TilesetUnderground
-	tileset TilesetIcePath
-	tileset TilesetDarkCave
 	tileset TilesetForest
-	tileset TilesetBetaWordRoom
-	tileset TilesetPhoenixWordRoom
-	tileset TilesetShoe_CrabWordRoom
-	tileset TilesetNautilusWordRoom
-	tileset TilesetPteranodonWordRoom
 	tileset TilesetRuinCave
+	tileset TilesetForestRuin
+	tileset TilesetFireRuin
+	tileset TilesetIceRuin
+	tileset TilesetElectricRuin
 	tileset TilesetTheSite
 	assert_table_length NUM_TILESETS + 1
 	

@@ -249,8 +249,8 @@ Teacher7_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  4,  5, THESITEINSIDETEACHERHALL, 8
-	warp_event  5,  5, THESITEINSIDETEACHERHALL, 8
+	warp_event  4,  5, THESITEINSIDETEACHERHALL, 9
+	warp_event  5,  5, THESITEINSIDETEACHERHALL, 9
 
 	def_coord_events
 

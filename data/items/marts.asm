@@ -427,9 +427,8 @@ MartMtMoon:
 	db -1 ; end
 
 MartIndigoPlateau:
-	db 8 ; # items
+	db 7 ; # items
 	db ULTRA_BALL
-	db MAX_REPEL
 	db HYPER_POTION
 	db MAX_POTION
 	db FULL_RESTORE
@@ -863,7 +862,7 @@ MartSiteTM82:
 	db TM_THIEF
 	db TM_STEEL_WING
 	db TM_FIRE_PUNCH
-	db TM_NIGHTMARE
+	db TM_SUBSTITUTE
 	db -1	
 
 DefaultMart:

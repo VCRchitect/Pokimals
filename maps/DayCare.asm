@@ -23,15 +23,33 @@ DayCare_MapScripts:
 DayCareManScript_Inside:
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iffalse .DayCareManRambles
+	checkevent EVENT_GOT_ODD_EGG
+	iftrue .AlreadyHaveOddEgg
 	faceplayer
 	refreshscreen
 	opentext
 	trainerpic OLDMAN
-	special DayCareMan
+	writetext DayCareManText_GiveOddEgg
+	promptbutton
+	closetrainpic
+	closetext
+	readvar VAR_PARTYCOUNT
+	ifequal PARTY_LENGTH, .PartyFull
+	special GiveOddEgg
+	refreshscreen
+	opentext
+	writetext DayCareText_GotOddEgg
+	playsound SFX_KEY_ITEM
+	waitsfx
+	refreshscreen
+	opentext
+	trainerpic OLDMAN
+	writetext DayCareText_DescribeOddEgg
 	waitbutton
 	closetrainpic
 	closetext
-	end
+	setevent EVENT_GOT_ODD_EGG
+	end						  
 
 .DayCareManRambles
 	faceplayer
@@ -44,6 +62,22 @@ DayCareManScript_Inside:
 	closetext
 	end
 
+.PartyFull:
+	refreshscreen
+	opentext
+	trainerpic OLDMAN
+	writetext DayCareText_PartyFull
+	waitbutton
+	closetrainpic
+	closetext
+	end				   
+
+.AlreadyHaveOddEgg:
+	special DayCareMan
+	waitbutton
+	closetrainpic
+	closetext
+	end		   
 
 DayCareLadyScript:
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM

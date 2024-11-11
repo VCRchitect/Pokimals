@@ -1,9 +1,14 @@
-THESITEGAMECORNER_TM25_COINS EQU 5500
-THESITEGAMECORNER_TM14_COINS EQU 5500
-THESITEGAMECORNER_TM38_COINS EQU 5500
+THESITEGAMECORNER_MOON_STONE_COINS EQU 5500
+THESITEGAMECORNER_FIRE_STONE_COINS EQU 5500
+THESITEGAMECORNER_THUNDERSTONE_COINS EQU 5500
+THESITEGAMECORNER_WATER_STONE_COINS EQU 5500
+THESITEGAMECORNER_LEAF_STONE_COINS EQU 5500
+THESITEGAMECORNER_SUN_STONE_COINS EQU 5500
+
 THESITEGAMECORNER_BAG_LADY_COINS      EQU 100
 THESITEGAMECORNER_CAVE_MAN_COINS    EQU 800
 THESITEGAMECORNER_ROLYPOLY_COINS EQU 1500
+THESITEGAMECORNER_MASTER_BALL_COINS EQU 9999
 
 	object_const_def
 	const THESITEGAMECORNER_CLERK
@@ -79,43 +84,45 @@ TheSiteGameCornerTMVendor_LoopScript:
 	loadmenu TheSiteGameCornerTMVendorMenuHeader
 	verticalmenu
 	closewindow
-	ifequal 1, .Thunder
-	ifequal 2, .Blizzard
-	ifequal 3, .FireBlast
+	ifequal 1, .MoonStone
+	ifequal 2, .FireStone
+	ifequal 3, .ThunderStone
+
 	sjump TheSiteGameCornerPrizeVendor_CancelPurchaseScript
 
-.Thunder:
-	checkcoins THESITEGAMECORNER_TM25_COINS
+.MoonStone:
+	checkcoins THESITEGAMECORNER_MOON_STONE_COINS
 	ifequal HAVE_LESS, TheSiteGameCornerPrizeVendor_NotEnoughCoinsScript
-	getitemname STRING_BUFFER_3, TM_THUNDER
+	getitemname STRING_BUFFER_3, MOON_STONE
 	scall TheSiteGameCornerPrizeVendor_ConfirmPurchaseScript
 	iffalse TheSiteGameCornerPrizeVendor_CancelPurchaseScript
-	giveitem TM_THUNDER
+	giveitem MOON_STONE
 	iffalse TheSiteGameCornerPrizeMonVendor_NoRoomForPrizeScript
-	takecoins THESITEGAMECORNER_TM25_COINS
+	takecoins THESITEGAMECORNER_MOON_STONE_COINS
 	sjump TheSiteGameCornerTMVendor_FinishScript
 
-.Blizzard:
-	checkcoins THESITEGAMECORNER_TM14_COINS
+.FireStone:
+	checkcoins THESITEGAMECORNER_FIRE_STONE_COINS
 	ifequal HAVE_LESS, TheSiteGameCornerPrizeVendor_NotEnoughCoinsScript
-	getitemname STRING_BUFFER_3, TM_BLIZZARD
+	getitemname STRING_BUFFER_3, FIRE_STONE
 	scall TheSiteGameCornerPrizeVendor_ConfirmPurchaseScript
 	iffalse TheSiteGameCornerPrizeVendor_CancelPurchaseScript
-	giveitem TM_BLIZZARD
+	giveitem FIRE_STONE
 	iffalse TheSiteGameCornerPrizeMonVendor_NoRoomForPrizeScript
-	takecoins THESITEGAMECORNER_TM14_COINS
+	takecoins THESITEGAMECORNER_FIRE_STONE_COINS
 	sjump TheSiteGameCornerTMVendor_FinishScript
 
-.FireBlast:
-	checkcoins THESITEGAMECORNER_TM38_COINS
+.ThunderStone:
+	checkcoins THESITEGAMECORNER_THUNDERSTONE_COINS
 	ifequal HAVE_LESS, TheSiteGameCornerPrizeVendor_NotEnoughCoinsScript
-	getitemname STRING_BUFFER_3, TM_FIRE_BLAST
+	getitemname STRING_BUFFER_3, THUNDERSTONE
 	scall TheSiteGameCornerPrizeVendor_ConfirmPurchaseScript
 	iffalse TheSiteGameCornerPrizeVendor_CancelPurchaseScript
-	giveitem TM_FIRE_BLAST
+	giveitem THUNDERSTONE
 	iffalse TheSiteGameCornerPrizeMonVendor_NoRoomForPrizeScript
-	takecoins THESITEGAMECORNER_TM38_COINS
+	takecoins THESITEGAMECORNER_THUNDERSTONE_COINS
 	sjump TheSiteGameCornerTMVendor_FinishScript
+
 
 TheSiteGameCornerPrizeVendor_ConfirmPurchaseScript:
 	writetext TheSiteGameCornerPrizeVendorConfirmPrizeText
@@ -155,16 +162,16 @@ TheSiteGameCornerPrizeVendor_NoCoinCaseScript:
 
 TheSiteGameCornerTMVendorMenuHeader:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 2, 15, TEXTBOX_Y - 1
+	menu_coords 0, 2, 19, TEXTBOX_Y - 1
 	dw .MenuData
 	db 1 ; default option
 
 .MenuData:
 	db STATICMENU_CURSOR ; flags
 	db 4 ; items
-	db "TM25    5500@"
-	db "TM14    5500@"
-	db "TM38    5500@"
+	db "MOON STONE   5500@"
+	db "FIRE STONE   5500@"
+	db "THUNDERSTONE 5500@"
 	db "CANCEL@"
 
 TheSiteGameCornerPrizeMonVendorScript:
@@ -180,77 +187,69 @@ TheSiteGameCornerPrizeMonVendorScript:
 	loadmenu .MenuHeader
 	verticalmenu
 	closewindow
-	ifequal 1, .Bag_Lady
-	ifequal 2, .Cave_Man
-	ifequal 3, .Rolypoly
+	ifequal 1, .WaterStone
+	ifequal 2, .LeafStone
+	ifequal 3, .SunStone
+	ifequal 4, .MasterBall
 	sjump TheSiteGameCornerPrizeVendor_CancelPurchaseScript
 
-.Bag_Lady:
-	checkcoins THESITEGAMECORNER_BAG_LADY_COINS
+.WaterStone:
+	checkcoins THESITEGAMECORNER_WATER_STONE_COINS
 	ifequal HAVE_LESS, TheSiteGameCornerPrizeVendor_NotEnoughCoinsScript
-	readvar VAR_PARTYCOUNT
-	ifequal PARTY_LENGTH, TheSiteGameCornerPrizeMonVendor_NoRoomForPrizeScript
-	getmonname STRING_BUFFER_3, BAG_LADY
+	getitemname STRING_BUFFER_3, WATER_STONE
 	scall TheSiteGameCornerPrizeVendor_ConfirmPurchaseScript
 	iffalse TheSiteGameCornerPrizeVendor_CancelPurchaseScript
-	waitsfx
-	playsound SFX_TRANSACTION
-	writetext TheSiteGameCornerPrizeVendorHereYouGoText
-	waitbutton
-	setval BAG_LADY
-	special GameCornerPrizeMonCheckDex
-	givepoke BAG_LADY, 5
-	takecoins THESITEGAMECORNER_BAG_LADY_COINS
-	sjump .loop
+	giveitem WATER_STONE
+	iffalse TheSiteGameCornerPrizeMonVendor_NoRoomForPrizeScript
+	takecoins THESITEGAMECORNER_WATER_STONE_COINS
+	sjump TheSiteGameCornerTMVendor_FinishScript
 
-.Cave_Man:
-	checkcoins THESITEGAMECORNER_CAVE_MAN_COINS
+.LeafStone:
+	checkcoins THESITEGAMECORNER_LEAF_STONE_COINS
 	ifequal HAVE_LESS, TheSiteGameCornerPrizeVendor_NotEnoughCoinsScript
-	readvar VAR_PARTYCOUNT
-	ifequal PARTY_LENGTH, TheSiteGameCornerPrizeMonVendor_NoRoomForPrizeScript
-	getmonname STRING_BUFFER_3, CAVE_MAN
+	getitemname STRING_BUFFER_3, LEAF_STONE
 	scall TheSiteGameCornerPrizeVendor_ConfirmPurchaseScript
 	iffalse TheSiteGameCornerPrizeVendor_CancelPurchaseScript
-	waitsfx
-	playsound SFX_TRANSACTION
-	writetext TheSiteGameCornerPrizeVendorHereYouGoText
-	waitbutton
-	setval CAVE_MAN
-	special GameCornerPrizeMonCheckDex
-	givepoke CAVE_MAN, 15
-	takecoins THESITEGAMECORNER_CAVE_MAN_COINS
-	sjump .loop
+	giveitem LEAF_STONE
+	iffalse TheSiteGameCornerPrizeMonVendor_NoRoomForPrizeScript
+	takecoins THESITEGAMECORNER_LEAF_STONE_COINS
+	sjump TheSiteGameCornerTMVendor_FinishScript
 
-.Rolypoly:
-	checkcoins THESITEGAMECORNER_ROLYPOLY_COINS
+.SunStone:
+	checkcoins THESITEGAMECORNER_SUN_STONE_COINS
 	ifequal HAVE_LESS, TheSiteGameCornerPrizeVendor_NotEnoughCoinsScript
-	readvar VAR_PARTYCOUNT
-	ifequal PARTY_LENGTH, TheSiteGameCornerPrizeMonVendor_NoRoomForPrizeScript
-	getmonname STRING_BUFFER_3, ROLYPOLY
+	getitemname STRING_BUFFER_3, SUN_STONE
 	scall TheSiteGameCornerPrizeVendor_ConfirmPurchaseScript
 	iffalse TheSiteGameCornerPrizeVendor_CancelPurchaseScript
-	waitsfx
-	playsound SFX_TRANSACTION
-	writetext TheSiteGameCornerPrizeVendorHereYouGoText
-	waitbutton
-	setval ROLYPOLY
-	special GameCornerPrizeMonCheckDex
-	givepoke ROLYPOLY, 15
-	takecoins THESITEGAMECORNER_ROLYPOLY_COINS
-	sjump .loop
+	giveitem SUN_STONE
+	iffalse TheSiteGameCornerPrizeMonVendor_NoRoomForPrizeScript
+	takecoins THESITEGAMECORNER_SUN_STONE_COINS
+	sjump TheSiteGameCornerTMVendor_FinishScript
+
+.MasterBall:
+	checkcoins THESITEGAMECORNER_MASTER_BALL_COINS
+	ifequal HAVE_LESS, TheSiteGameCornerPrizeVendor_NotEnoughCoinsScript
+	getitemname STRING_BUFFER_3, MASTER_BALL
+	scall TheSiteGameCornerPrizeVendor_ConfirmPurchaseScript
+	iffalse TheSiteGameCornerPrizeVendor_CancelPurchaseScript
+	giveitem MASTER_BALL
+	iffalse TheSiteGameCornerPrizeMonVendor_NoRoomForPrizeScript
+	takecoins THESITEGAMECORNER_MASTER_BALL_COINS
+	sjump TheSiteGameCornerTMVendor_FinishScript
 
 .MenuHeader:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 2, 17, TEXTBOX_Y - 1
+	menu_coords 0, 2, 19, TEXTBOX_Y - 1
 	dw .MenuData
 	db 1 ; default option
 
 .MenuData:
 	db STATICMENU_CURSOR ; flags
 	db 4 ; items
-	db "BAG LADY        100@"
-	db "CAVE MAN      800@"
-	db "ROLYPOLY  1500@"
+	db "WATER STONE 5500@"
+	db "LEAF STONE  5500@"
+	db "SUN STONE   5500@"
+	db "MASTER BALL 9999@"
 	db "CANCEL@"
 
 TheSiteGameCornerPharmacistScript:

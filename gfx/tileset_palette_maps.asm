@@ -8,9 +8,6 @@ rept (_NARG - 1) / 2
 endr
 ENDM
 
-TilesetKantoPalMap:
-INCLUDE "gfx/tilesets/kanto_palette_map.asm"
-
 Tileset0PalMap:
 TilesetJohtoPalMap:
 INCLUDE "gfx/tilesets/johto_palette_map.asm"
@@ -24,17 +21,14 @@ INCLUDE "gfx/tilesets/house_palette_map.asm"
 TilesetPlayersHousePalMap:
 INCLUDE "gfx/tilesets/players_house_palette_map.asm"
 
+TilesetLabPalMap:
+INCLUDE "gfx/tilesets/lab_palette_map.asm"
+
 TilesetPokecenterPalMap:
 INCLUDE "gfx/tilesets/pokecenter_palette_map.asm"
 
 TilesetGatePalMap:
 INCLUDE "gfx/tilesets/gate_palette_map.asm"
-
-TilesetPortPalMap:
-INCLUDE "gfx/tilesets/port_palette_map.asm"
-
-TilesetLabPalMap:
-INCLUDE "gfx/tilesets/lab_palette_map.asm"
 
 TilesetFacilityPalMap:
 INCLUDE "gfx/tilesets/facility_palette_map.asm"
@@ -42,44 +36,20 @@ INCLUDE "gfx/tilesets/facility_palette_map.asm"
 TilesetMartPalMap:
 INCLUDE "gfx/tilesets/mart_palette_map.asm"
 
-TilesetMansionPalMap:
-INCLUDE "gfx/tilesets/mansion_palette_map.asm"
-
 TilesetGameCornerPalMap:
 INCLUDE "gfx/tilesets/game_corner_palette_map.asm"
 
 TilesetEliteFourRoomPalMap:
 INCLUDE "gfx/tilesets/elite_four_room_palette_map.asm"
 
-TilesetTraditionalHousePalMap:
-INCLUDE "gfx/tilesets/traditional_house_palette_map.asm"
-
 TilesetTowerPalMap:
 INCLUDE "gfx/tilesets/tower_palette_map.asm"
 
 TilesetCavePalMap:
-TilesetDarkCavePalMap:
 INCLUDE "gfx/tilesets/cave_palette_map.asm"
 
-TilesetParkPalMap:
-INCLUDE "gfx/tilesets/park_palette_map.asm"
-
-TilesetRuinsOfAlphPalMap:
-TilesetBetaWordRoomPalMap:
-TilesetPhoenixWordRoomPalMap:
-TilesetShoe_CrabWordRoomPalMap:
-TilesetNautilusWordRoomPalMap:
-TilesetPteranodonWordRoomPalMap:
-INCLUDE "gfx/tilesets/ruins_of_alph_palette_map.asm"
-
-TilesetRadioTowerPalMap:
-INCLUDE "gfx/tilesets/radio_tower_palette_map.asm"
-
-TilesetTrainStationPalMap:
-INCLUDE "gfx/tilesets/train_station_palette_map.asm"
-
-TilesetUndergroundPalMap:
-INCLUDE "gfx/tilesets/underground_palette_map.asm"
+TilesetIcePathPalMap:
+INCLUDE "gfx/tilesets/ice_path_palette_map.asm"
 
 TilesetChampionsRoomPalMap:
 INCLUDE "gfx/tilesets/champions_room_palette_map.asm"
@@ -90,31 +60,32 @@ INCLUDE "gfx/tilesets/lighthouse_palette_map.asm"
 TilesetPlayersRoomPalMap:
 INCLUDE "gfx/tilesets/players_room_palette_map.asm"
 
-UnusedMuseumPalMap: ; unreferenced
-INCLUDE "gfx/tilesets/unused_museum_palette_map.asm"
-
-TilesetIcePathPalMap:
-INCLUDE "gfx/tilesets/ice_path_palette_map.asm"
-
 TilesetForestPalMap:
 INCLUDE "gfx/tilesets/forest_palette_map.asm"
 
 TilesetPokeComCenterPalMap:
 INCLUDE "gfx/tilesets/pokecom_center_palette_map.asm"
 
-TilesetBattleTowerInsidePalMap:
-INCLUDE "gfx/tilesets/battle_tower_inside_palette_map.asm"
-
-TilesetBattleTowerOutsidePalMap:
-INCLUDE "gfx/tilesets/battle_tower_outside_palette_map.asm"
-
 TilesetRuinCavePalMap:
 INCLUDE "gfx/tilesets/ruin_cave_palette_map.asm"
+
+TilesetForestRuinPalMap:
+INCLUDE "gfx/tilesets/forestruin_palette_map.asm"
+
+TilesetFireRuinPalMap:
+INCLUDE "gfx/tilesets/fireruin_palette_map.asm"
+
+TilesetIceRuinPalMap:
+INCLUDE "gfx/tilesets/iceruin_palette_map.asm"
+
+TilesetElectricRuinPalMap:
+INCLUDE "gfx/tilesets/electricruin_palette_map.asm"
 
 TilesetTheSitePalMap:
 INCLUDE "gfx/tilesets/thesite_palette_map.asm"
 
-
+TilesetBattleTowerOutsidePalMap:
+INCLUDE "gfx/tilesets/battle_tower_outside_palette_map.asm"
 
 MapGroupPalettes: ; unreferenced
 ; entries correspond to MAPGROUP_* constants

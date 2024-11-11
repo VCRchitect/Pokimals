@@ -160,6 +160,9 @@ _ResetWRAM:
 
 	ld hl, wNumPCItems
 	call .InitList
+	
+	ld hl, wNumHeldItems
+	call .InitList	
 
 	xor a
 	ld [wRoamMon1Species], a

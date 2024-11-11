@@ -8,13 +8,6 @@ INCLUDE "maps/TimeCapsule.asm"
 
 SECTION "Map Scripts 2", ROMX
 
-INCLUDE "maps/BattleTowerOutside.asm"
-INCLUDE "maps/BattleTower1F.asm"
-INCLUDE "maps/BattleTowerElevator.asm"
-INCLUDE "maps/BattleTowerHallway.asm"
-INCLUDE "maps/BattleTowerBattleRoom.asm"
-
-
 SECTION "Map Scripts 3", ROMX
 
 INCLUDE "maps/NewBarkTown.asm"
@@ -38,10 +31,9 @@ INCLUDE "maps/ApartmentHall.asm"
 INCLUDE "maps/Apartments123.asm"
 INCLUDE "maps/Apartments789.asm"
 INCLUDE "maps/WeirdCloset.asm"
-INCLUDE "maps/DiggingAcademy.asm"
 
 SECTION "Map Scripts 4", ROMX
-
+INCLUDE "maps/DiggingAcademy.asm"
 INCLUDE "maps/IndigoPlateauPokecenter1F.asm"
 INCLUDE "maps/WillsRoom.asm"
 INCLUDE "maps/KogasRoom.asm"
