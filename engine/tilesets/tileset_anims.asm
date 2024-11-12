@@ -277,6 +277,15 @@ TilesetNautilusWordRoomAnim:
 TilesetPteranodonWordRoomAnim:
 TilesetTheSiteAnim:
 TilesetForestRuinAnim:
+TilesetIceRuinAnim:
+TilesetElectricRuinAnim:
+TilesetRuinCaveAnim:
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  DoneTileAnimation
+
 TilesetFireRuinAnim:
 	dw NULL,  AnimateLavaBubbleTile2
 	dw NULL,  WaitTileAnimation
@@ -286,14 +295,7 @@ TilesetFireRuinAnim:
 	dw NULL,  WaitTileAnimation
 	dw NULL,  StandingTileFrame8
 	dw NULL,  DoneTileAnimation
-TilesetIceRuinAnim:
-TilesetElectricRuinAnim:
-TilesetRuinCaveAnim:
-	dw NULL,  WaitTileAnimation
-	dw NULL,  WaitTileAnimation
-	dw NULL,  WaitTileAnimation
-	dw NULL,  WaitTileAnimation
-	dw NULL,  DoneTileAnimation
+
 
 DoneTileAnimation:
 ; Reset the animation command loop.

@@ -105,6 +105,13 @@ DayCareYardSign:
 
 NameRaterYardSign:
 	jumptext NameRaterSignText
+	
+FruitTree1:
+	fruittree FRUITTREE_ROUTE_37_1
+
+FruitTree2:
+	fruittree FRUITTREE_ROUTE_37_2  
+	
 
 OldPeopleText:
 	text "SILVER ROW"
@@ -169,3 +176,6 @@ IslandSouth_MapEvents:
 	object_event 15,  8, SPRITE_DAY_CARE_MON_1, SPRITEMOVEDATA_POKEMON, 2, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DayCareMon1Script, EVENT_DAY_CARE_MON_1
 	object_event 15,  7, SPRITE_DAY_CARE_MON_2, SPRITEMOVEDATA_POKEMON, 2, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DayCareMon2Script, EVENT_DAY_CARE_MON_2
 	object_event 19,  6, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DayCareManScript_Outside, EVENT_DAY_CARE_MAN_ON_ROUTE_34
+	object_event  9,  4, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, FruitTree1, -1
+	object_event  8,  4, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, FruitTree2, -1
+

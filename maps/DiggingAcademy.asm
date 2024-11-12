@@ -16,7 +16,7 @@ DiggingAcademy_MapScripts:
 
 .DummyScene:
 	end
-
+	
 .MeetProfOak:
 	applymovement PLAYER, DiggingAcademy_PlayerWalksToOak
 	playmusic MUSIC_PROF_OAK
@@ -432,7 +432,7 @@ AcademyNotebookText3:
 	para "They are expected"
 	line "to visit ANIMAL"
 
-	para "GYMS and defeat"
+	para "TEACHERS to defeat"
 	line "other trainers."
 
 	para "The next page"

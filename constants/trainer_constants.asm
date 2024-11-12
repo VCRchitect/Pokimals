@@ -27,7 +27,6 @@ CHRIS EQU __trainer_class__
 	const PHONECONTACT_BUENA
 NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 
-KRIS EQU __trainer_class__
 	trainerclass BIG_BIRD ; 1
 	const BIG_BIRD1
 
@@ -726,7 +725,8 @@ KRIS EQU __trainer_class__
 
 	trainerclass PAPA ; 51
 	const PAPA1
-	
+
+KRIS EQU __trainer_class__	
 NUM_TRAINER_CLASSES EQU __trainer_class__ - 1
 
 	const_def

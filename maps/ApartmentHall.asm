@@ -93,26 +93,42 @@ SignScript7:
 
 Sign1:
 	text "ROOM 101"
+	line "VACANT"
 	done
 
 Sign2:
 	text "ROOM 102"
+	line "DO NOT DISTURB"
 	done
 
 Sign3:
 	text "ROOM 103"
+	line "Useless NPCs"
 	done
 
 Sign4:
 	text "ROOM 104"
+	line "KURT'S APARTMENT"
+	
+	para "Someone scribbled"
+	line "on the sign."
+	
+	para "'Old man Kurt"
+	line "loves BALLs!'"
 	done
 
 Sign5:
 	text "ROOM 105"
+	line "ANIMAL BARBER"
+	
+	para "'I'll even cut"
+	line "hair where there"
+	cont "is none!'"
 	done
 
 Sign6:
 	text "ROOM 106"
+	line "More Useless NPCs"
 	done
 
 Sign7:

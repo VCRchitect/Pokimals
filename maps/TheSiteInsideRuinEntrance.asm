@@ -97,7 +97,7 @@ PickMonMenu:
 	scall RuinEntrance_ConfirmPurchaseScript	
 	iffalse RuinEntranceStarter_CancelPurchaseScript
 	promptbutton
-	getmonname STRING_BUFFER_3, SKUNK
+	getmonname STRING_BUFFER_3, SCRAWNY
 	writetext ReceivedStarterText
 	playsound SFX_CAUGHT_MON
 	waitsfx
@@ -116,7 +116,7 @@ PickMonMenu:
 	scall RuinEntrance_ConfirmPurchaseScript	
 	iffalse RuinEntranceStarter_CancelPurchaseScript
 	promptbutton
-	getmonname STRING_BUFFER_3, SKUNK
+	getmonname STRING_BUFFER_3, BAT
 	writetext ReceivedStarterText
 	playsound SFX_CAUGHT_MON
 	waitsfx
@@ -353,7 +353,7 @@ ProfElmScript:
 	refreshscreen
 	opentext
 	trainerpic ELM
-	randomtext NPCKTextTable
+	randomtext ElmTextTable
 	waitbutton
 	closetrainpic
 	closetext
@@ -374,7 +374,6 @@ LabTryToLeaveScript:
 	closetext
 	applymovement PLAYER, ElmsLab_CantLeaveMovement
 	end	
-
 
 DidntChooseStarterScript:
 	closepokepic	
@@ -409,7 +408,6 @@ ElmDirectionsScript:
 	setevent EVENT_GOT_A_POKEMON_FROM_ELM
 	setscene SCENE_FINISHED
 	end
-
 
 RuinEntrance_ConfirmPurchaseScript:
 	writetext ElmText_YouSure
@@ -525,7 +523,7 @@ ElmDirectionsText2:
 	para "He has your"
 	line "ANMLDEX."
 	
-	para "Good luck!"
+	para "See you later!"
 	done
 	
 ElmText_ChooseAPokemon:
