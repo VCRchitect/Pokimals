@@ -9,7 +9,7 @@ TrainerEncounterMusic::
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; tpain
 	db MUSIC_OFFICER_ENCOUNTER     ; jason
 	db MUSIC_OFFICER_ENCOUNTER     ; lincoln
-	db MUSIC_LASS_ENCOUNTER        ; diana
+	db MUSIC_LASS_ENCOUNTER        ; arnold
 	db MUSIC_OFFICER_ENCOUNTER     ; kid_rock
 	db MUSIC_BEAUTY_ENCOUNTER      ; peely
 	db MUSIC_RIVAL_ENCOUNTER       ; rival1
@@ -67,7 +67,7 @@ TrainerEncounterMusic::
 	db MUSIC_LASS_ENCOUNTER        ; twins
 	db MUSIC_BEAUTY_ENCOUNTER      ; pokefanf
 	db MUSIC_HIKER_ENCOUNTER       ; red
-	db MUSIC_RIVAL_ENCOUNTER       ; blue
+	db MUSIC_RIVAL_ENCOUNTER       ; geist
 	db MUSIC_HIKER_ENCOUNTER       ; officer
 	db MUSIC_ROCKET_ENCOUNTER      ; gruntf
 	db MUSIC_HIKER_ENCOUNTER       ; mysticalman

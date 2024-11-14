@@ -1,19 +1,19 @@
 	object_const_def
-	const TEACHER6_DIANA
+	const TEACHER6_ARNOLD
 
 Teacher6_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
 
-DianaScript:
-	checkevent EVENT_BEAT_DIANA
+ArnoldScript:
+	checkevent EVENT_BEAT_ARNOLD
 	iftrue .FightDone
 	faceplayer
 	refreshscreen
 	special PlaceMoneyTopRight		
-	trainerpic DIANA
-	writetext Diana_SteelTypeIntro
+	trainerpic ARNOLD
+	writetext Arnold_SteelTypeIntro
 	yesorno
 	iffalse .Refused
 	readvar VAR_BADGES
@@ -87,13 +87,13 @@ DianaScript:
 	sjump .FightTime
 
 .Refused:
-	writetext DianaNoLearnText
+	writetext ArnoldNoLearnText
 	waitbutton
 	closetext
 	end
 
 .NotEnoughMoney:
-	writetext DianaPoorText
+	writetext ArnoldPoorText
 	waitbutton
 	closetext
 	end
@@ -102,11 +102,11 @@ DianaScript:
 	waitbutton
 	closetrainpic
 	closetext
-	winlosstext Diana_BetterTrainer, 0
-	loadtrainer DIANA, DIANA1
+	winlosstext Arnold_BetterTrainer, 0
+	loadtrainer ARNOLD, ARNOLD1
 	startbattle
 	reloadmapafterbattle
-	setevent EVENT_BEAT_DIANA
+	setevent EVENT_BEAT_ARNOLD
 	refreshscreen
 	opentext
 	writetext Text_ReceivedMineralBadge
@@ -123,16 +123,16 @@ DianaScript:
 	addval 10
 	writemem wBaseLevel	
 	refreshscreen
-	trainerpic DIANA
-	writetext Diana_BadgeSpeech
+	trainerpic ARNOLD
+	writetext Arnold_BadgeSpeech
 	promptbutton
 	closetrainpic
 	verbosegiveitem TM_IRON_TAIL
 	iffalse .NoRoomForIronTail
 	setevent EVENT_GOT_TM23_IRON_TAIL
 	refreshscreen
-	trainerpic DIANA
-	writetext Diana_IronTailSpeech
+	trainerpic ARNOLD
+	writetext Arnold_IronTailSpeech
 	waitbutton
 	closetrainpic
 	closetext
@@ -141,8 +141,8 @@ DianaScript:
 .GotIronTail:
 	refreshscreen
 	opentext
-	trainerpic DIANA
-	writetext Diana_GoodLuck
+	trainerpic ARNOLD
+	writetext Arnold_GoodLuck
 	waitbutton
 	closetrainpic
 	closetext
@@ -153,18 +153,18 @@ DianaScript:
 	closetext
 	end
 	
-DianaNoLearnText:
+ArnoldNoLearnText:
 	text "It is dishonorable"
 	line "to deny wisdom."
 	done
 
-DianaPoorText:
+ArnoldPoorText:
 	text "It is unforgivable"
 	line "to be poor."
 	done
 	
-Diana_SteelTypeIntro:
-	text "I am DIANA, an"
+Arnold_SteelTypeIntro:
+	text "I am ARNOLD, an"
 	line "instructor. I use"
 	cont "the steel-type."
 
@@ -178,7 +178,7 @@ Diana_SteelTypeIntro:
 	para "Let's begin."
 	done
 
-Diana_BetterTrainer:
+Arnold_BetterTrainer:
 	text "You are a better"
 	line "trainer than me,"
 
@@ -197,7 +197,7 @@ Text_ReceivedMineralBadge:
 	line "MINERALBADGE."
 	done
 
-Diana_BadgeSpeech:
+Arnold_BadgeSpeech:
 	text "MINERALBADGE"
 	line "raises ANIMALs'"
 	cont "DEFENSE."
@@ -206,13 +206,13 @@ Diana_BadgeSpeech:
 	line "as well."
 	done
 
-Diana_IronTailSpeech:
+Arnold_IronTailSpeech:
 	text "You could use"
 	line "that TM to teach"
 	cont "IRON TAIL."
 	done
 
-Diana_GoodLuck:
+Arnold_GoodLuck:
 	text "You won't need it,"
 	line "but good luck..."
 	done
@@ -230,4 +230,4 @@ Teacher6_MapEvents:
 	def_bg_events
 
 	def_object_events
-	object_event  3,  2, SPRITE_DIANA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, DianaScript, -1
+	object_event  3,  2, SPRITE_ARNOLD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ArnoldScript, -1

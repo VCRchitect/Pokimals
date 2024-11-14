@@ -12,110 +12,15 @@ ABOSS_MapScripts:
 	
 BossA:	
 	faceplayer
+	refreshscreen
+	trainerpic GEIST
+	writetext GhostIntroText	
+	waitbutton
+	closetrainpic
+	closetext
 	loadvar VAR_BATTLETYPE, BATTLETYPE_FENRIR
-	readvar VAR_BADGES
-	ifequal 0, nobadgeABoss
-	ifequal 1, onebadgeABoss
-	ifequal 2, twobadgeABoss
-	ifequal 3, threebadgeABoss
-	ifequal 4, fourbadgeABoss
-	ifequal 5, fivebadgeABoss
-	ifequal 6, sixbadgeABoss
-	ifequal 7, sevenbadgeABoss
-	ifequal 8, eightbadgeABoss
-	end
-	
-		
-nobadgeABoss:
-	RuinRandomABossBase
-	startbattle
-	reloadmapafterbattle	
-	disappear -2
-	readmem wRoomDefeatedCount
-	setval 5
-	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsABoss
-	end
-
-onebadgeABoss:
-	RuinRandomABoss1
-	startbattle
-	reloadmapafterbattle	
-	disappear -2
-	readmem wRoomDefeatedCount
-	setval 5
-	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsABoss
-	end
-
-twobadgeABoss:
-	RuinRandomABoss2
-	startbattle
-	reloadmapafterbattle	
-	disappear -2
-	readmem wRoomDefeatedCount
-	setval 5
-	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsABoss
-	end
-
-threebadgeABoss:
-	RuinRandomABoss3
-	startbattle
-	reloadmapafterbattle	
-	disappear -2
-	readmem wRoomDefeatedCount
-	setval 5
-	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsABoss
-	end
-
-fourbadgeABoss:
-	RuinRandomABoss4
-	startbattle
-	reloadmapafterbattle	
-	disappear -2
-	readmem wRoomDefeatedCount
-	setval 5
-	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsABoss
-	end
-
-fivebadgeABoss:
-	RuinRandomABoss5
-	startbattle
-	reloadmapafterbattle	
-	disappear -2
-	readmem wRoomDefeatedCount
-	setval 5
-	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsABoss
-	end
-
-sixbadgeABoss:
-	RuinRandomABoss6
-	startbattle
-	reloadmapafterbattle	
-	disappear -2
-	readmem wRoomDefeatedCount
-	setval 5
-	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsABoss
-	end
-
-sevenbadgeABoss:
-	RuinRandomABoss7
-	startbattle
-	reloadmapafterbattle	
-	disappear -2
-	readmem wRoomDefeatedCount
-	setval 5
-	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsABoss
-	end
-
-eightbadgeABoss:
-	RuinRandomABoss8
+	winlosstext GhostWinLossText, 0
+	loadtrainer GEIST, GEIST1
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
@@ -125,7 +30,6 @@ eightbadgeABoss:
 	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsABoss
 	end	
 	
-
 UnlockDoorsABoss:
 	opentext
 	writetext ButtonText
@@ -133,7 +37,7 @@ UnlockDoorsABoss:
 	closetext
 	refreshscreen
 	playsound SFX_ENTER_DOOR
-	changeblock 2, 0, $0B
+	changeblock 4, 0, $0B
 	reloadmappart
 	closetext
 	readmem wRoomDefeatedCount
@@ -141,6 +45,15 @@ UnlockDoorsABoss:
 	writemem wRoomDefeatedCount		
 	end
 
+GhostIntroText:
+	text "LET... THE..."
+	line "PAST... SLUMBER..."
+	done
+
+GhostWinLossText:
+	text "TO... REST..."
+	line "I... RETURN..."
+	done
 
 
 ABOSS_MapEvents:
@@ -152,4 +65,4 @@ ABOSS_MapEvents:
 	def_bg_events
 
 	def_object_events
-	object_event  5,  1, SPRITE_BARGHEST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, BossA, -1
+	object_event  5,  1, SPRITE_GEIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, BossA, -1

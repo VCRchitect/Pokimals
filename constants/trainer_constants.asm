@@ -42,8 +42,8 @@ NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	trainerclass LINCOLN ; 5
 	const LINCOLN1
 
-	trainerclass DIANA ; 6
-	const DIANA1
+	trainerclass ARNOLD ; 6
+	const ARNOLD1
 
 	trainerclass KID_ROCK ; 7
 	const KID_ROCK1
@@ -351,7 +351,7 @@ NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	trainerclass FISHER ; 25
 	const JUSTIN
 	const RALPH1
-	const ARNOLD
+	const ARNOLDI
 	const KYLE
 	const HENRY
 	const MARVIN
@@ -416,7 +416,7 @@ NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const LORI
 	const JODY ; unused
 	const NIKKI
-	const DIANAVITCH
+	const ARNOLDVITCH
 	const BRIANA
 
 	trainerclass SAILOR ; 28
@@ -685,8 +685,14 @@ NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	trainerclass RED ; 3f
 	const RED1
 
-	trainerclass BLUE ; 40
-	const BLUE1
+	trainerclass GEIST ; 40
+	const GEIST1
+	const GEIST2
+	const GEIST3
+	const GEIST4
+	const GEIST5
+	const GEIST6
+	
 
 	trainerclass OFFICER ; 41
 	const KEITH
@@ -735,7 +741,7 @@ NUM_TRAINER_CLASSES EQU __trainer_class__ - 1
 	const RANDOMLIST_BIGBIRD
 	const RANDOMLIST_PEELY
 	const RANDOMLIST_JASON
-	const RANDOMLIST_DIANA
+	const RANDOMLIST_ARNOLD
 	const RANDOMLIST_KIDROCK
 	const RANDOMLIST_LINCOLN
 	const RANDOMLIST_WILL

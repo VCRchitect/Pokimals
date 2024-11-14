@@ -8,7 +8,7 @@
 	const SPRITE_SILVER ; 04
 	const SPRITE_OAK ; 05
 	const SPRITE_RED ; 06
-	const SPRITE_BLUE ; 07
+	const SPRITE_GEIST ; 07
 	const SPRITE_BILL ; 08
 	const SPRITE_ELDER ; 09
 	const SPRITE_JANINE ; 0a
@@ -24,7 +24,7 @@
 	const SPRITE_TPAIN ; 14
 	const SPRITE_JASON ; 15
 	const SPRITE_JOSE ; 16
-	const SPRITE_DIANA ; 17
+	const SPRITE_ARNOLD ; 17
 	const SPRITE_LINCOLN ; 18
 	const SPRITE_PEELY ; 19
 	const SPRITE_KID_ROCK ; 1a
@@ -32,7 +32,7 @@
 	const SPRITE_BRUNO ; 1c
 	const SPRITE_MISTY ; 1d
 	const SPRITE_LANCE ; 1e
-	const SPRITE_ARNOLD ; 1f
+	const SPRITE_DIANA ; 1f
 	const SPRITE_ERIKA ; 20
 	const SPRITE_KOGA ; 21
 	const SPRITE_SABRINA ; 22

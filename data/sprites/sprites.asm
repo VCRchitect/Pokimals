@@ -13,7 +13,7 @@ OverworldSprites:
 	overworld_sprite SilverSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite OakSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite RedSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
-	overworld_sprite BlueSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite GeistSpriteGFX, 12, WALKING_SPRITE, PAL_OW_SILVER
 	overworld_sprite BillSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite ElderSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite JanineSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
@@ -29,7 +29,7 @@ OverworldSprites:
 	overworld_sprite TPainSpriteGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
 	overworld_sprite JasonSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite JoseSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
-	overworld_sprite DianaSpriteGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
+	overworld_sprite ArnoldSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
 	overworld_sprite LincolnSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite PeelySpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite Kid_RockSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
@@ -37,7 +37,7 @@ OverworldSprites:
 	overworld_sprite BrunoSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite MistySpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
 	overworld_sprite LanceSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
-	overworld_sprite ArnoldSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
+	overworld_sprite DianaSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite ErikaSpriteGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
 	overworld_sprite KogaSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite SabrinaSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED

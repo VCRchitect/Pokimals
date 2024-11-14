@@ -10,10 +10,10 @@ ChrisNameMenuHeader:
 	db 5 ; items
 	db "NEW NAME@"
 MalePlayerNameArray:
-	db "JOEY@"
+	db "JAIME@"
 	db "WILLIS@"
-	db "PAUL@"
-	db "GRIMM@"
+	db "JOSE@"
+	db "ETHAN@"
 	db 2 ; title indent
 	db " NAME @" ; title
 

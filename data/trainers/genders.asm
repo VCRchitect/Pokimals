@@ -8,7 +8,7 @@ BTTrainerClassGenders:
 	db FEMALE ; TPAIN
 	db MALE   ; JASON
 	db MALE   ; LINCOLN
-	db FEMALE ; DIANA
+	db MALE ; ARNOLD
 	db MALE   ; KID_ROCK
 	db FEMALE ; PEELY
 	db MALE   ; RIVAL1
@@ -66,7 +66,7 @@ BTTrainerClassGenders:
 	db FEMALE ; TWINS
 	db FEMALE ; POKEFANF
 	db MALE   ; RED
-	db MALE   ; BLUE
+	db MALE   ; GEIST
 	db MALE   ; OFFICER
 	db FEMALE ; GRUNTF
 	db MALE   ; MYSTICALMAN

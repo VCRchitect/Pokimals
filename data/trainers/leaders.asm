@@ -10,7 +10,7 @@ GymLeaders:
 	db TPAIN
 	db JASON
 	db LINCOLN
-	db DIANA
+	db ARNOLD
 	db KID_ROCK
 	db PEELY
 	db WILL
@@ -28,5 +28,5 @@ KantoGymLeaders:
 	db JANINE
 	db SABRINA
 	db BLAINE
-	db BLUE
+	db GEIST
 	db -1

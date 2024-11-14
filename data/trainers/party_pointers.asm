@@ -8,7 +8,7 @@ TrainerGroups:
 	dba TPainGroup
 	dba JasonGroup
 	dba LincolnGroup
-	dba DianaGroup
+	dba ArnoldGroup
 	dba Kid_RockGroup
 	dba PeelyGroup
 	dba Rival1Group
@@ -66,7 +66,7 @@ TrainerGroups:
 	dba TwinsGroup
 	dba PokefanFGroup
 	dba RedGroup
-	dba BlueGroup
+	dba GeistGroup
 	dba OfficerGroup
 	dba GruntFGroup
 	dba MysticalmanGroup

@@ -8,7 +8,7 @@ TrainerPicPointers::
 	dba_pic TPainPic
 	dba_pic JasonPic
 	dba_pic LincolnPic
-	dba_pic DianaPic
+	dba_pic ArnoldPic
 	dba_pic Kid_RockPic
 	dba_pic PeelyPic
 	dba_pic Rival1Pic
@@ -21,7 +21,7 @@ TrainerPicPointers::
 	dba_pic ChampionPic
 	dba_pic JosePic
 	dba_pic MistyPic
-	dba_pic ArnoldPic
+	dba_pic DianaPic
 	dba_pic ScientistPic	
 	dba_pic ErikaPic
 	dba_pic YoungsterPic
@@ -66,7 +66,7 @@ TrainerPicPointers::
 	dba_pic TwinsPic
 	dba_pic PokefanfPic
 	dba_pic RedPic
-	dba_pic BluePic
+	dba_pic GeistPic
 	dba_pic OfficerPic
 	dba_pic GruntfPic
 	dba_pic MysticalmanPic

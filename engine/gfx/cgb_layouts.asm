@@ -643,7 +643,7 @@ _CGB_TrainerCard:
 	ld a, KID_ROCK
 	call GetTrainerPalettePointer
 	call LoadPalette_White_Col1_Col2_Black
-	ld a, DIANA
+	ld a, ARNOLD
 	call GetTrainerPalettePointer
 	call LoadPalette_White_Col1_Col2_Black
 	ld a, LINCOLN
@@ -698,7 +698,7 @@ _CGB_TrainerCard:
 	call FillBoxCGB
 	hlcoord 6, 14, wAttrmap
 	lb bc, 2, 4
-	ld a, $6 ; diana
+	ld a, $6 ; arnold
 	call FillBoxCGB
 	hlcoord 10, 14, wAttrmap
 	lb bc, 2, 4

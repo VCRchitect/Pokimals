@@ -118,7 +118,7 @@ Sign5Text:
 	done
 
 Sign6Text:	
-	text "DIANA's Office"
+	text "ARNOLD's Office"
 	done
 
 Sign7Text:	

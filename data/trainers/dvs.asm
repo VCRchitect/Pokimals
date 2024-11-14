@@ -7,7 +7,7 @@ TrainerClassDVs:
 	dn  9,  8,  8,  8 ; TPAIN
 	dn  9,  8,  8,  8 ; JASON
 	dn  9,  8,  8,  8 ; LINCOLN
-	dn  9,  8,  8,  8 ; DIANA
+	dn  9,  8,  8,  8 ; ARNOLD
 	dn  9,  8,  8,  8 ; KID_ROCK
 	dn  7, 12, 13, 13 ; PEELY
 	dn 13, 13, 13, 13 ; RIVAL1
@@ -65,7 +65,7 @@ TrainerClassDVs:
 	dn  6,  8, 10,  8 ; TWINS
 	dn  6, 13,  8,  8 ; POKEFANF
 	dn 15, 13, 13, 14 ; RED
-	dn  9, 13, 13, 13 ; BLUE
+	dn  9, 13, 13, 13 ; GEIST
 	dn  9,  8,  8,  8 ; OFFICER
 	dn  7, 14, 10,  8 ; GRUNTF
 	dn  9,  8,  8,  8 ; MYSTICALMAN
