@@ -281,8 +281,7 @@ UnlockDoorsJ:
 	refreshscreen
 	playsound SFX_ENTER_DOOR
 	changeblock 2, 0, $0B
-	changeblock 6, 0, $0B
-
+	changeblock 10, 0, $71
 	reloadmappart
 	closetext
 	readmem wRoomDefeatedCount
@@ -291,6 +290,9 @@ UnlockDoorsJ:
 	end
 
 
+
+RandomStairWarpEscape:
+	warp THESITEINSIDERUINENTRANCE, 8, 2
 	
 A11_MapEvents:
 	db 0, 0 ; filler
@@ -299,18 +301,18 @@ A11_MapEvents:
 	def_coord_events
 	coord_event  2,  0, SCENE_RANDOMSTAIRS, RandomStairWarp11
 	coord_event  3,  0, SCENE_RANDOMSTAIRS, RandomStairWarp11
-	coord_event  6,  0, SCENE_RANDOMSTAIRS, RandomStairWarp11
-	coord_event  7,  0, SCENE_RANDOMSTAIRS, RandomStairWarp11
+	coord_event 10,  0, SCENE_RANDOMSTAIRS, RandomStairWarpEscape
+	coord_event 11,  0, SCENE_RANDOMSTAIRS, RandomStairWarpEscape
 
 
 
 	def_bg_events
 
 	def_object_events
-	object_event  8,  3, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster1j, -1
-	object_event  7,  3, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster2j, -1
-	object_event  6,  2, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster3j, -1
-	object_event  4,  3, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster4j, -1
-	object_event  2,  2, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster5j, -1
-	object_event  3,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, A11Item1, EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
-	object_event  6,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, A11Item2, EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
+	object_event 10,  3, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster1j, -1
+	object_event  9,  3, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster2j, -1
+	object_event  7,  3, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster3j, -1
+	object_event  6,  3, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster4j, -1
+	object_event  3,  3, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster5j, -1
+	object_event  2,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, A11Item1, EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
+	object_event 11,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, A11Item2, EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1

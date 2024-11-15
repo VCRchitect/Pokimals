@@ -76,6 +76,7 @@ ENDM
 	map_const TEACHER6, 											3, 3; 28
 	map_const TEACHER7, 											3, 3; 29
 	map_const TEACHER8, 											3, 3; 30
+	map_const BADSHED,												3, 3; 31
 	endgroup
 
 	newgroup INDIGO                                               ;  4
@@ -93,13 +94,13 @@ ENDM
 	map_const A2, 5, 5 ; 2
 	map_const A3, 9, 7 ; 3
 	map_const A4, 9, 5 ; 4
-	map_const A5, 7, 9 ; 5
-	map_const A6, 5, 3 ; 6
-	map_const A7, 5, 3 ; 7
-	map_const A8, 5, 3 ; 8
-	map_const A9, 5, 3 ; 9
+	map_const A5, 5, 5 ; 5
+	map_const A6, 5, 5 ; 6
+	map_const A7, 7, 3 ; 7
+	map_const A8, 5, 5 ; 8
+	map_const A9, 7, 5 ; 9
 	map_const A10, 7, 5 ; 10
-	map_const A11, 5, 3 ; 11
+	map_const A11, 7, 3 ; 11
 	map_const A12, 5, 3 ; 12
 	map_const AMART, 5, 3 ; 13	
 	map_const AHEAL, 5, 3 ; 14

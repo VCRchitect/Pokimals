@@ -102,6 +102,9 @@ Teacher7_Blocks:
 
 Teacher8_Blocks:
 	INCBIN "maps/Teacher8.blk"
+	
+BadShed_Blocks:
+	INCBIN "maps/BadShed.blk"
 
 
 SECTION "Map Blocks 3", ROMX

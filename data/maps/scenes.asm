@@ -21,5 +21,6 @@ MapScenes::
 	scene_var KARENS_ROOM,                  wKarensRoomSceneID
 	scene_var LANCES_ROOM,                  wLancesRoomSceneID
 	scene_var HALL_OF_FAME,                 wHallOfFameSceneID
+	scene_var BADSHED, 							wBadShedSceneID
 
 	db -1 ; end

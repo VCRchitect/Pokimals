@@ -140,6 +140,7 @@ ENDM
 	map_attributes Teacher6, TEACHER6, $00, 0
 	map_attributes Teacher7, TEACHER7, $00, 0
 	map_attributes Teacher8, TEACHER8, $00, 0
+	map_attributes BadShed, BADSHED, $00, 0
 
 	map_attributes IndigoPlateauPokecenter1F, INDIGO_PLATEAU_POKECENTER_1F, $00, 0
 	map_attributes WillsRoom, WILLS_ROOM, $00, 0

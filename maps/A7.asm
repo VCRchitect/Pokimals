@@ -282,8 +282,6 @@ UnlockDoorsF:
 	refreshscreen
 	playsound SFX_ENTER_DOOR
 	changeblock 2, 0, $0B
-	changeblock 6, 0, $0B
-
 	reloadmappart
 	closetext
 	readmem wRoomDefeatedCount
@@ -300,19 +298,15 @@ A7_MapEvents:
 	def_coord_events
 	coord_event  2,  0, SCENE_RANDOMSTAIRS, RandomStairWarp7
 	coord_event  3,  0, SCENE_RANDOMSTAIRS, RandomStairWarp7
-	
-	coord_event  6,  0, SCENE_RANDOMSTAIRS, RandomStairWarp7
-	coord_event  7,  0, SCENE_RANDOMSTAIRS, RandomStairWarp7
-
 
 
 	def_bg_events
 
 	def_object_events
-	object_event  4,  2, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster1f, -1
-	object_event  6,  2, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster2f, -1
-	object_event  5,  3, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster3f, -1
-	object_event  2,  4, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster4f, -1
-	object_event  2,  2, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster5f, -1
-	object_event  7,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, A7Item1, EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
-	object_event  3,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, A7Item2, EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
+	object_event 10,  2, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster1f, -1
+	object_event 10,  4, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster2f, -1
+	object_event  3,  4, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster3f, -1
+	object_event  7,  4, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster4f, -1
+	object_event  3,  2, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster5f, -1
+	object_event 11,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, A7Item1, EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
+	object_event  2,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, A7Item2, EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1

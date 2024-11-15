@@ -186,6 +186,8 @@ PokecenterNurseScript:
 	waitbutton
 	closetrainpic			  
 	closetext
+	random 9
+	ifequal 1, KidnappingScript	
 	end
 
 .pokerus
@@ -208,6 +210,12 @@ PokecenterNurseScript:
 	setflag ENGINE_CAUGHT_POKERUS
 	specialphonecall SPECIALCALL_POKERUS
 	end
+	
+KidnappingScript:
+	special FadeBlackQuickly
+	pause 20
+	warp BADSHED, 2, 2
+	end	
 
 DifficultBookshelfScript:
 	farjumptext DifficultBookshelfText

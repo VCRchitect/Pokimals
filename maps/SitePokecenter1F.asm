@@ -23,6 +23,7 @@ TheSitePokecenter1FGentlemanScript:
 	closetext
 	end
 	
+	
 TheSitePokecenter1FTwinScript:
 	faceplayer
 	refreshscreen

@@ -52,6 +52,7 @@ INCLUDE "maps/Teacher5.asm"
 INCLUDE "maps/Teacher6.asm"
 INCLUDE "maps/Teacher7.asm"
 INCLUDE "maps/Teacher8.asm"
+INCLUDE "maps/BadShed.asm"
 
 SECTION "Map Scripts 6", ROMX
 INCLUDE "maps/A1.asm"
