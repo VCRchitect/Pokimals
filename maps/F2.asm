@@ -12,6 +12,7 @@
 
 F2_MapScripts:
 	def_scene_scripts
+	scene_script .DummyScene ; SCENE_FINISHED	
 
 	def_callbacks
 	callback MAPCALLBACK_OBJECTS, .Ball1
@@ -139,7 +140,7 @@ Monster5F2:
 
 
 nobadgeF2:
-	RuinRandomFBase
+	RuinRandomZBase
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
@@ -150,7 +151,7 @@ nobadgeF2:
 	end
 
 onebadgeF2:
-	RuinRandomF1
+	RuinRandomZ1
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
@@ -161,7 +162,7 @@ onebadgeF2:
 	end
 
 twobadgeF2:
-	RuinRandomF2
+	RuinRandomZ2
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
@@ -172,7 +173,7 @@ twobadgeF2:
 	end
 
 threebadgeF2:
-	RuinRandomF3
+	RuinRandomZ3
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
@@ -183,7 +184,7 @@ threebadgeF2:
 	end
 
 fourbadgeF2:
-	RuinRandomF4
+	RuinRandomZ4
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
@@ -194,7 +195,7 @@ fourbadgeF2:
 	end
 
 fivebadgeF2:
-	RuinRandomF5
+	RuinRandomZ5
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
@@ -205,7 +206,7 @@ fivebadgeF2:
 	end
 
 sixbadgeF2:
-	RuinRandomF6
+	RuinRandomZ6
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
@@ -216,7 +217,7 @@ sixbadgeF2:
 	end
 
 sevenbadgeF2:
-	RuinRandomF7
+	RuinRandomZ7
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
@@ -227,9 +228,9 @@ sevenbadgeF2:
 	end
 
 eightbadgeF2:
-	RuinRandomF8
+	RuinRandomZ8
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -274,6 +275,7 @@ F2Item2:
 	end	
 
 UnlockDoorsF2:
+	playsound SFX_FANFARE
 	opentext
 	writetext FButtonText
 	promptbutton

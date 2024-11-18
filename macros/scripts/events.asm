@@ -1132,46 +1132,6 @@ RuinRandomA8: MACRO
 	db RuinRandomA8_command
 ENDM
 
-	const RuinRandomABossBase_command
-RuinRandomABossBase: MACRO
-	db RuinRandomABossBase_command
-ENDM
-
-	const RuinRandomABoss1_command
-RuinRandomABoss1: MACRO
-	db RuinRandomABoss1_command
-ENDM
-
-	const RuinRandomABoss2_command
-RuinRandomABoss2: MACRO
-	db RuinRandomABoss2_command
-ENDM
-
-	const RuinRandomABoss3_command
-RuinRandomABoss3: MACRO
-	db RuinRandomABoss3_command
-ENDM
-
-	const RuinRandomABoss4_command
-RuinRandomABoss4: MACRO
-	db RuinRandomABoss4_command
-ENDM
-
-	const RuinRandomABoss5_command
-RuinRandomABoss5: MACRO
-	db RuinRandomABoss5_command
-ENDM
-
-	const RuinRandomABoss6_command
-RuinRandomABoss6: MACRO
-	db RuinRandomABoss6_command
-ENDM
-
-	const RuinRandomABoss7_command
-RuinRandomABoss7: MACRO
-	db RuinRandomABoss7_command
-ENDM
-
 	const RuinRandomABoss8_command
 RuinRandomABoss8: MACRO
 	db RuinRandomABoss8_command
@@ -1220,46 +1180,6 @@ ENDM
 	const RuinRandomB8_command
 RuinRandomB8: MACRO
 	db RuinRandomB8_command
-ENDM
-
-	const RuinRandomBBossBase_command
-RuinRandomBBossBase: MACRO
-	db RuinRandomBBossBase_command
-ENDM
-
-	const RuinRandomBBoss1_command
-RuinRandomBBoss1: MACRO
-	db RuinRandomBBoss1_command
-ENDM
-
-	const RuinRandomBBoss2_command
-RuinRandomBBoss2: MACRO
-	db RuinRandomBBoss2_command
-ENDM
-
-	const RuinRandomBBoss3_command
-RuinRandomBBoss3: MACRO
-	db RuinRandomBBoss3_command
-ENDM
-
-	const RuinRandomBBoss4_command
-RuinRandomBBoss4: MACRO
-	db RuinRandomBBoss4_command
-ENDM
-
-	const RuinRandomBBoss5_command
-RuinRandomBBoss5: MACRO
-	db RuinRandomBBoss5_command
-ENDM
-
-	const RuinRandomBBoss6_command
-RuinRandomBBoss6: MACRO
-	db RuinRandomBBoss6_command
-ENDM
-
-	const RuinRandomBBoss7_command
-RuinRandomBBoss7: MACRO
-	db RuinRandomBBoss7_command
 ENDM
 
 	const RuinRandomBBoss8_command
@@ -1312,46 +1232,6 @@ RuinRandomC8: MACRO
 	db RuinRandomC8_command
 ENDM
 
-	const RuinRandomCBossBase_command
-RuinRandomCBossBase: MACRO
-	db RuinRandomCBossBase_command
-ENDM
-
-	const RuinRandomCBoss1_command
-RuinRandomCBoss1: MACRO
-	db RuinRandomCBoss1_command
-ENDM
-
-	const RuinRandomCBoss2_command
-RuinRandomCBoss2: MACRO
-	db RuinRandomCBoss2_command
-ENDM
-
-	const RuinRandomCBoss3_command
-RuinRandomCBoss3: MACRO
-	db RuinRandomCBoss3_command
-ENDM
-
-	const RuinRandomCBoss4_command
-RuinRandomCBoss4: MACRO
-	db RuinRandomCBoss4_command
-ENDM
-
-	const RuinRandomCBoss5_command
-RuinRandomCBoss5: MACRO
-	db RuinRandomCBoss5_command
-ENDM
-
-	const RuinRandomCBoss6_command
-RuinRandomCBoss6: MACRO
-	db RuinRandomCBoss6_command
-ENDM
-
-	const RuinRandomCBoss7_command
-RuinRandomCBoss7: MACRO
-	db RuinRandomCBoss7_command
-ENDM
-
 	const RuinRandomCBoss8_command
 RuinRandomCBoss8: MACRO
 	db RuinRandomCBoss8_command
@@ -1400,46 +1280,6 @@ ENDM
 	const RuinRandomD8_command
 RuinRandomD8: MACRO
 	db RuinRandomD8_command
-ENDM
-
-	const RuinRandomDBossBase_command
-RuinRandomDBossBase: MACRO
-	db RuinRandomDBossBase_command
-ENDM
-
-	const RuinRandomDBoss1_command
-RuinRandomDBoss1: MACRO
-	db RuinRandomDBoss1_command
-ENDM
-
-	const RuinRandomDBoss2_command
-RuinRandomDBoss2: MACRO
-	db RuinRandomDBoss2_command
-ENDM
-
-	const RuinRandomDBoss3_command
-RuinRandomDBoss3: MACRO
-	db RuinRandomDBoss3_command
-ENDM
-
-	const RuinRandomDBoss4_command
-RuinRandomDBoss4: MACRO
-	db RuinRandomDBoss4_command
-ENDM
-
-	const RuinRandomDBoss5_command
-RuinRandomDBoss5: MACRO
-	db RuinRandomDBoss5_command
-ENDM
-
-	const RuinRandomDBoss6_command
-RuinRandomDBoss6: MACRO
-	db RuinRandomDBoss6_command
-ENDM
-
-	const RuinRandomDBoss7_command
-RuinRandomDBoss7: MACRO
-	db RuinRandomDBoss7_command
 ENDM
 
 	const RuinRandomDBoss8_command
@@ -1492,139 +1332,59 @@ RuinRandomE8: MACRO
 	db RuinRandomE8_command
 ENDM
 
-	const RuinRandomEBossBase_command
-RuinRandomEBossBase: MACRO
-	db RuinRandomEBossBase_command
-ENDM
-
-	const RuinRandomEBoss1_command
-RuinRandomEBoss1: MACRO
-	db RuinRandomEBoss1_command
-ENDM
-
-	const RuinRandomEBoss2_command
-RuinRandomEBoss2: MACRO
-	db RuinRandomEBoss2_command
-ENDM
-
-	const RuinRandomEBoss3_command
-RuinRandomEBoss3: MACRO
-	db RuinRandomEBoss3_command
-ENDM
-
-	const RuinRandomEBoss4_command
-RuinRandomEBoss4: MACRO
-	db RuinRandomEBoss4_command
-ENDM
-
-	const RuinRandomEBoss5_command
-RuinRandomEBoss5: MACRO
-	db RuinRandomEBoss5_command
-ENDM
-
-	const RuinRandomEBoss6_command
-RuinRandomEBoss6: MACRO
-	db RuinRandomEBoss6_command
-ENDM
-
-	const RuinRandomEBoss7_command
-RuinRandomEBoss7: MACRO
-	db RuinRandomEBoss7_command
-ENDM
-
 	const RuinRandomEBoss8_command
 RuinRandomEBoss8: MACRO
 	db RuinRandomEBoss8_command
 ENDM
 
-	const RuinRandomFBase_command
-RuinRandomFBase: MACRO
-	db RuinRandomFBase_command
+	const RuinRandomZBase_command
+RuinRandomZBase: MACRO
+	db RuinRandomZBase_command
 ENDM
 
-	const RuinRandomF1_command
-RuinRandomF1: MACRO
-	db RuinRandomF1_command
+	const RuinRandomZ1_command
+RuinRandomZ1: MACRO
+	db RuinRandomZ1_command
 ENDM
 
-	const RuinRandomF2_command
-RuinRandomF2: MACRO
-	db RuinRandomF2_command
+	const RuinRandomZ2_command
+RuinRandomZ2: MACRO
+	db RuinRandomZ2_command
 ENDM
 
-	const RuinRandomF3_command
-RuinRandomF3: MACRO
-	db RuinRandomF3_command
+	const RuinRandomZ3_command
+RuinRandomZ3: MACRO
+	db RuinRandomZ3_command
 ENDM
 
-	const RuinRandomF4_command
-RuinRandomF4: MACRO
-	db RuinRandomF4_command
+	const RuinRandomZ4_command
+RuinRandomZ4: MACRO
+	db RuinRandomZ4_command
 ENDM
 
-	const RuinRandomF5_command
-RuinRandomF5: MACRO
-	db RuinRandomF5_command
+	const RuinRandomZ5_command
+RuinRandomZ5: MACRO
+	db RuinRandomZ5_command
 ENDM
 
-	const RuinRandomF6_command
-RuinRandomF6: MACRO
-	db RuinRandomF6_command
+	const RuinRandomZ6_command
+RuinRandomZ6: MACRO
+	db RuinRandomZ6_command
 ENDM
 
-	const RuinRandomF7_command
-RuinRandomF7: MACRO
-	db RuinRandomF7_command
+	const RuinRandomZ7_command
+RuinRandomZ7: MACRO
+	db RuinRandomZ7_command
 ENDM
 
-	const RuinRandomF8_command
-RuinRandomF8: MACRO
-	db RuinRandomF8_command
+	const RuinRandomZ8_command
+RuinRandomZ8: MACRO
+	db RuinRandomZ8_command
 ENDM
 
-	const RuinRandomFBossBase_command
-RuinRandomFBossBase: MACRO
-	db RuinRandomFBossBase_command
-ENDM
-
-	const RuinRandomFBoss1_command
-RuinRandomFBoss1: MACRO
-	db RuinRandomFBoss1_command
-ENDM
-
-	const RuinRandomFBoss2_command
-RuinRandomFBoss2: MACRO
-	db RuinRandomFBoss2_command
-ENDM
-
-	const RuinRandomFBoss3_command
-RuinRandomFBoss3: MACRO
-	db RuinRandomFBoss3_command
-ENDM
-
-	const RuinRandomFBoss4_command
-RuinRandomFBoss4: MACRO
-	db RuinRandomFBoss4_command
-ENDM
-
-	const RuinRandomFBoss5_command
-RuinRandomFBoss5: MACRO
-	db RuinRandomFBoss5_command
-ENDM
-
-	const RuinRandomFBoss6_command
-RuinRandomFBoss6: MACRO
-	db RuinRandomFBoss6_command
-ENDM
-
-	const RuinRandomFBoss7_command
-RuinRandomFBoss7: MACRO
-	db RuinRandomFBoss7_command
-ENDM
-
-	const RuinRandomFBoss8_command
-RuinRandomFBoss8: MACRO
-	db RuinRandomFBoss8_command
+	const RuinRandomZBoss8_command
+RuinRandomZBoss8: MACRO
+	db RuinRandomZBoss8_command
 ENDM
 
 

@@ -10,6 +10,22 @@ TimeCapsule_Blocks:
 
 Colosseum_Blocks:
 	INCBIN "maps/Colosseum.blk"
+	
+LegendTower1F_Blocks:
+	INCBIN "maps/LegendTower1F.blk"
+
+LegendTower2F_Blocks:
+	INCBIN "maps/LegendTower2F.blk"
+
+LegendTower3F_Blocks:
+	INCBIN "maps/LegendTower3F.blk"
+
+LegendTower4F_Blocks:
+	INCBIN "maps/LegendTower4F.blk"
+
+LegendTower5F_Blocks:
+	INCBIN "maps/LegendTower5F.blk"
+
 
 SECTION "Map Blocks 2", ROMX
 

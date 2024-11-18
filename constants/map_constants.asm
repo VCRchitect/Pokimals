@@ -215,4 +215,12 @@ ENDM
 	map_const FBOSS, 5, 5 ; 19
 	endgroup
 	
+	newgroup LEGENDTOWER
+	map_const LEGENDTOWER1F, 11, 7 ; 1
+	map_const LEGENDTOWER2F, 11, 7 ; 2
+	map_const LEGENDTOWER3F, 11, 7 ; 3
+	map_const LEGENDTOWER4F, 11, 7 ; 4
+	map_const LEGENDTOWER5F, 7, 7 ; 5
+	endgroup
+	
 DEF NUM_MAP_GROUPS EQU const_value ; 5

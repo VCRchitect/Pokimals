@@ -124,7 +124,7 @@ Monster5F10:
 
 
 nobadgeF10:
-	RuinRandomFBase
+	RuinRandomZBase
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
@@ -135,7 +135,7 @@ nobadgeF10:
 	end
 
 onebadgeF10:
-	RuinRandomF1
+	RuinRandomZ1
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
@@ -146,7 +146,7 @@ onebadgeF10:
 	end
 
 twobadgeF10:
-	RuinRandomF2
+	RuinRandomZ2
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
@@ -157,7 +157,7 @@ twobadgeF10:
 	end
 
 threebadgeF10:
-	RuinRandomF3
+	RuinRandomZ3
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
@@ -168,7 +168,7 @@ threebadgeF10:
 	end
 
 fourbadgeF10:
-	RuinRandomF4
+	RuinRandomZ4
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
@@ -179,7 +179,7 @@ fourbadgeF10:
 	end
 
 fivebadgeF10:
-	RuinRandomF5
+	RuinRandomZ5
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
@@ -190,7 +190,7 @@ fivebadgeF10:
 	end
 
 sixbadgeF10:
-	RuinRandomF6
+	RuinRandomZ6
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
@@ -201,7 +201,7 @@ sixbadgeF10:
 	end
 
 sevenbadgeF10:
-	RuinRandomF7
+	RuinRandomZ7
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
@@ -212,7 +212,7 @@ sevenbadgeF10:
 	end
 
 eightbadgeF10:
-	RuinRandomF8
+	RuinRandomZ8
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
@@ -260,7 +260,7 @@ F10Item2:
 
 UnlockDoorsF10:
 	opentext
-	writetext EButtonText
+	writetext FButtonText
 	promptbutton
 	closetext
 	appear F10RUINS_POKE_BALL1F10

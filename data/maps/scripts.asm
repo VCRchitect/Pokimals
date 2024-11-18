@@ -4,7 +4,11 @@ INCLUDE "maps/Pokecenter2F.asm"
 INCLUDE "maps/TradeCenter.asm"
 INCLUDE "maps/Colosseum.asm"
 INCLUDE "maps/TimeCapsule.asm"
-
+INCLUDE "maps/LegendTower1F.asm"
+INCLUDE "maps/LegendTower2F.asm"
+INCLUDE "maps/LegendTower3F.asm"
+INCLUDE "maps/LegendTower4F.asm"
+INCLUDE "maps/LegendTower5F.asm"
 
 SECTION "Map Scripts 2", ROMX
 

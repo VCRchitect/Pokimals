@@ -274,6 +274,7 @@ D2Item2:
 	end	
 
 UnlockDoorsD2:
+	playsound SFX_FANFARE
 	opentext
 	writetext DButtonText
 	promptbutton

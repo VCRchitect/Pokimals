@@ -139,7 +139,7 @@ Monster5F12:
 
 
 nobadgeF12:
-	RuinRandomFBase
+	RuinRandomZBase
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
@@ -150,7 +150,7 @@ nobadgeF12:
 	end
 
 onebadgeF12:
-	RuinRandomF1
+	RuinRandomZ1
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
@@ -161,7 +161,7 @@ onebadgeF12:
 	end
 
 twobadgeF12:
-	RuinRandomF2
+	RuinRandomZ2
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
@@ -172,7 +172,7 @@ twobadgeF12:
 	end
 
 threebadgeF12:
-	RuinRandomF3
+	RuinRandomZ3
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
@@ -183,7 +183,7 @@ threebadgeF12:
 	end
 
 fourbadgeF12:
-	RuinRandomF4
+	RuinRandomZ4
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
@@ -194,7 +194,7 @@ fourbadgeF12:
 	end
 
 fivebadgeF12:
-	RuinRandomF5
+	RuinRandomZ5
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
@@ -205,7 +205,7 @@ fivebadgeF12:
 	end
 
 sixbadgeF12:
-	RuinRandomF6
+	RuinRandomZ6
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
@@ -216,7 +216,7 @@ sixbadgeF12:
 	end
 
 sevenbadgeF12:
-	RuinRandomF7
+	RuinRandomZ7
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
@@ -227,7 +227,7 @@ sevenbadgeF12:
 	end
 
 eightbadgeF12:
-	RuinRandomF8
+	RuinRandomZ8
 	startbattle
 	reloadmapafterbattle	
 	disappear -2

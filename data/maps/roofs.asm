@@ -22,6 +22,7 @@ MapGroupRoofs:
 	db ROOF_OLIVINE 
 	db ROOF_OLIVINE 
 	db ROOF_OLIVINE 
+	db -1
 	assert_table_length NUM_MAP_GROUPS + 1
 
 Roofs:

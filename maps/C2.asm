@@ -274,6 +274,7 @@ C2Item2:
 	end	
 
 UnlockDoorsC2:
+	playsound SFX_FANFARE
 	opentext
 	writetext CButtonText
 	promptbutton

@@ -107,21 +107,21 @@ RuinAMons7:
 	db -1	
 	
 RuinAMons8:
-	db 25, SEAL, 85, 100
-	db 10, PONY, 85, 100
- 	db 5, SQUIRREL, 85, 100
-	db 5, FLUFFYDUCK, 85, 100
-	db 5, BALLOON, 85, 100
-	db 5, LOPOLYFACE, 85, 100
-	db 5, OWL, 85, 100
-	db 5, SEED, 85, 100
-	db 5, KAI_KEN, 85, 100
-	db 5, SNAKE, 85, 100
-	db 5, PIGEON, 85, 100
-	db 5, BOAR, 85, 100
-	db 5, BEANSPROUT, 85, 100
-	db 5, RACCOON, 85, 100
-	db 5, TAPIR, 85, 100
+	db 25, SEAL, 85, 95
+	db 10, PONY, 85, 95
+ 	db 5, SQUIRREL, 85, 95
+	db 5, FLUFFYDUCK, 85, 95
+	db 5, BALLOON, 85, 95
+	db 5, LOPOLYFACE, 85, 95
+	db 5, OWL, 85, 95
+	db 5, SEED, 85, 95
+	db 5, KAI_KEN, 85, 95
+	db 5, SNAKE, 85, 95
+	db 5, PIGEON, 85, 95
+	db 5, BOAR, 85, 95
+	db 5, BEANSPROUT, 85, 95
+	db 5, RACCOON, 85, 95
+	db 5, TAPIR, 85, 95
 	db -1	
 
 RuinABossBase:
@@ -197,12 +197,12 @@ RuinABoss7:
 	db -1
 
 RuinABoss8:
-	db 18, DUCK, 85, 100
-	db 18, BRUCE_LEE, 85, 100
-	db 16, JACKIECHAN, 85, 100
-	db 16, PERVERT, 85, 100
-	db 16, MEDUSA, 85, 100
-	db 16, KANGAROO, 85, 100
+	db 18, DUCK, 85, 95
+	db 18, BRUCE_LEE, 85, 95
+	db 16, JACKIECHAN, 85, 95
+	db 16, PERVERT, 85, 95
+	db 16, MEDUSA, 85, 95
+	db 16, KANGAROO, 85, 95
 	db -1
 
 
@@ -308,20 +308,20 @@ RuinBMons7:
 	db -1	
 	
 RuinBMons8:
-	db 25, BAG_LADY, 85, 100
-	db 10, GRIME, 85, 100
- 	db 10, CAIMAN, 85, 100
-	db 5, RHINO, 85, 100
-	db 5, BEAVER, 85, 100
-	db 5, WYRM, 85, 100
-	db 5, SKUNK, 85, 100
-	db 5, SPARROW, 85, 100
-	db 5, BOOBY, 85, 100
-	db 5, DOZEN_EGGS, 85, 100
-	db 5, MONKEY, 85, 100
-	db 5, AXOLOTL, 85, 100
-	db 5, SHOE_CRAB, 85, 100
-	db 5, FOX, 85, 100
+	db 25, BAG_LADY, 85, 95
+	db 10, GRIME, 85, 95
+ 	db 10, CAIMAN, 85, 95
+	db 5, RHINO, 85, 95
+	db 5, BEAVER, 85, 95
+	db 5, WYRM, 85, 95
+	db 5, SKUNK, 85, 95
+	db 5, SPARROW, 85, 95
+	db 5, BOOBY, 85, 95
+	db 5, DOZEN_EGGS, 85, 95
+	db 5, MONKEY, 85, 95
+	db 5, AXOLOTL, 85, 95
+	db 5, SHOE_CRAB, 85, 95
+	db 5, FOX, 85, 95
 	db -1	
 	
 RuinBBossBase:
@@ -397,12 +397,12 @@ RuinBBoss7:
 	db -1
 
 RuinBBoss8:
-	db 18, CRACKHEAD, 85, 100
-	db 18, STAGBEETLE, 85, 100
-	db 16, BULL, 85, 100
-	db 16, PLESIOSAUR, 85, 100
-	db 16, SLIME, 85, 100
-	db 16, PTERANODON, 85, 100
+	db 18, CRACKHEAD, 85, 95
+	db 18, STAGBEETLE, 85, 95
+	db 16, BULL, 85, 95
+	db 16, PLESIOSAUR, 85, 95
+	db 16, SLIME, 85, 95
+	db 16, PTERANODON, 85, 95
 	db -1	
 	
 
@@ -507,20 +507,20 @@ RuinCMons7:
 	db -1	
 	
 RuinCMons8:
-	db 25, NYMPH, 85, 100
-	db 10, SHREW, 85, 100
- 	db 10, NAUTILUS, 85, 100
-	db 5, WATER_RAT, 85, 100
-	db 5, RAPTOR, 85, 100
-	db 5, BIG_EGG, 85, 100
-	db 5, VIRUS, 85, 100
-	db 5, TADPOLE, 85, 100
-	db 5, CHERUB, 85, 100
-	db 5, ELEBABY, 85, 100
-	db 5, JOHN_CENA, 85, 100
-	db 5, BOYHYRAX, 85, 100
-	db 5, DODO, 85, 100
-	db 5, GOLDFISH, 85, 100
+	db 25, NYMPH, 85, 95
+	db 10, SHREW, 85, 95
+ 	db 10, NAUTILUS, 85, 95
+	db 5, WATER_RAT, 85, 95
+	db 5, RAPTOR, 85, 95
+	db 5, BIG_EGG, 85, 95
+	db 5, VIRUS, 85, 95
+	db 5, TADPOLE, 85, 95
+	db 5, CHERUB, 85, 95
+	db 5, ELEBABY, 85, 95
+	db 5, JOHN_CENA, 85, 95
+	db 5, BOYHYRAX, 85, 95
+	db 5, DODO, 85, 95
+	db 5, GOLDFISH, 85, 95
 	db -1	
 
 RuinCBossBase:
@@ -596,12 +596,12 @@ RuinCBoss7:
 	db -1
 
 RuinCBoss8:
-	db 18, PANDA, 85, 100
-	db 18, FAKE_BUSH, 85, 100
-	db 16, CHIMPANZEE, 85, 100
-	db 16, DRAGONFLY, 85, 100
-	db 16, CROW, 85, 100
-	db 16, BANSHEE, 85, 100
+	db 18, PANDA, 85, 95
+	db 18, FAKE_BUSH, 85, 95
+	db 16, CHIMPANZEE, 85, 95
+	db 16, DRAGONFLY, 85, 95
+	db 16, CROW, 85, 95
+	db 16, BANSHEE, 85, 95
 	db -1
 
 RuinDMonsBase:
@@ -705,20 +705,20 @@ RuinDMons7:
 	db -1	
 	
 RuinDMons8:
-	db 25, CAT, 85, 100
-	db 10, MOLE, 85, 100
- 	db 10, FOOBA_FISH, 85, 100
-	db 5, ROTTWEILER, 85, 100
-	db 5, KAKAPO, 85, 100
-	db 5, SEA_TURTLE, 85, 100
-	db 5, WOLF, 85, 100
-	db 5, RADISH, 85, 100
-	db 5, RAT, 85, 100
-	db 5, MOLE, 85, 100
-	db 5, SLUG, 85, 100
-	db 5, GIRLHYRAX, 85, 100
-	db 5, CLAM, 85, 100
-	db 5, MAGNET, 85, 100
+	db 25, CAT, 85, 95
+	db 10, MOLE, 85, 95
+ 	db 10, FOOBA_FISH, 85, 95
+	db 5, ROTTWEILER, 85, 95
+	db 5, KAKAPO, 85, 95
+	db 5, SEA_TURTLE, 85, 95
+	db 5, WOLF, 85, 95
+	db 5, RADISH, 85, 95
+	db 5, RAT, 85, 95
+	db 5, MOLE, 85, 95
+	db 5, SLUG, 85, 95
+	db 5, GIRLHYRAX, 85, 95
+	db 5, CLAM, 85, 95
+	db 5, MAGNET, 85, 95
 	db -1	
 	
 RuinDBossBase:
@@ -794,12 +794,12 @@ RuinDBoss7:
 	db -1
 
 RuinDBoss8:
-	db 18, LETTAH, 85, 100
-	db 18, ROLYPOLY, 85, 100
-	db 16, GIRAFFE, 85, 100
-	db 16, TSUCHINOKO, 85, 100
-	db 16, MOTHMAN, 85, 100
-	db 16, BLOWFISH, 85, 100
+	db 18, LETTAH, 85, 95
+	db 18, ROLYPOLY, 85, 95
+	db 16, GIRAFFE, 85, 95
+	db 16, TSUCHINOKO, 85, 95
+	db 16, MOTHMAN, 85, 95
+	db 16, BLOWFISH, 85, 95
 	db -1	
 
 RuinEMonsBase:
@@ -903,20 +903,20 @@ RuinEMons7:
 	db -1	
 	
 RuinEMons8:
-	db 25, CHIVES, 85, 100
-	db 10, ROCKY, 85, 100
- 	db 10, MANTIS, 85, 100
-	db 5, HOBO_CLOWN, 85, 100
-	db 5, FRENCHIE, 85, 100
-	db 5, GERBIL, 85, 100
-	db 5, SCRAWNY, 85, 100
-	db 5, CRAB, 85, 100
-	db 5, PLUG, 85, 100
-	db 5, JELLYFISH, 85, 100
-	db 5, BOWLCUT, 85, 100
-	db 5, CATERPILLA, 85, 100
-	db 5, SPIDER, 85, 100
-	db 5, SERPENT, 85, 100
+	db 25, CHIVES, 85, 95
+	db 10, ROCKY, 85, 95
+ 	db 10, MANTIS, 85, 95
+	db 5, HOBO_CLOWN, 85, 95
+	db 5, FRENCHIE, 85, 95
+	db 5, GERBIL, 85, 95
+	db 5, SCRAWNY, 85, 95
+	db 5, CRAB, 85, 95
+	db 5, PLUG, 85, 95
+	db 5, JELLYFISH, 85, 95
+	db 5, BOWLCUT, 85, 95
+	db 5, CATERPILLA, 85, 95
+	db 5, SPIDER, 85, 95
+	db 5, SERPENT, 85, 95
 	db -1
 
 RuinEBossBase:
@@ -992,12 +992,12 @@ RuinEBoss7:
 	db -1
 
 RuinEBoss8:
-	db 18, SCALEBUG, 85, 100
-	db 18, BEETLE, 85, 100
-	db 16, WEASEL, 85, 100
-	db 16, CORAL, 85, 100
-	db 16, REMORA, 85, 100
-	db 16, OCTOPUS, 85, 100
+	db 18, SCALEBUG, 85, 95
+	db 18, BEETLE, 85, 95
+	db 16, WEASEL, 85, 95
+	db 16, CORAL, 85, 95
+	db 16, REMORA, 85, 95
+	db 16, OCTOPUS, 85, 95
 	db -1	
 
 RuinFMonsBase:
@@ -1101,20 +1101,20 @@ RuinFMons7:
 	db -1	
 	
 RuinFMons8:
-	db 25, GNAT, 85, 100
-	db 10, LADYBUG, 85, 100
- 	db 10, PINECONE, 85, 100
-	db 5, EXPLOSIVE, 85, 100
-	db 5, LAMB, 85, 100
-	db 5, SALAMANDER, 85, 100
-	db 5, DRIFTER, 85, 100
-	db 5, COTTON, 85, 100
-	db 5, LARVA, 85, 100
-	db 5, CAVE_MAN, 85, 100
-	db 5, TEDDYBEAR, 85, 100
-	db 5, BAT, 85, 100
-	db 5, SEAHORSE, 85, 100
-	db 5, CARP, 85, 100
+	db 25, GNAT, 85, 95
+	db 10, LADYBUG, 85, 95
+ 	db 10, PINECONE, 85, 95
+	db 5, EXPLOSIVE, 85, 95
+	db 5, LAMB, 85, 95
+	db 5, SALAMANDER, 85, 95
+	db 5, DRIFTER, 85, 95
+	db 5, COTTON, 85, 95
+	db 5, LARVA, 85, 95
+	db 5, CAVE_MAN, 85, 95
+	db 5, TEDDYBEAR, 85, 95
+	db 5, BAT, 85, 95
+	db 5, SEAHORSE, 85, 95
+	db 5, CARP, 85, 95
 	db -1	
 
 RuinFBossBase:
@@ -1190,12 +1190,12 @@ RuinFBoss7:
 	db -1
 
 RuinFBoss8:
-	db 18, SANTA, 85, 100
-	db 18, MANTA, 85, 100
-	db 16, CONDOR, 85, 100
-	db 16, ELK, 85, 100
-	db 16, ARTIST, 85, 100
-	db 16, DREIDEL, 85, 100
+	db 18, SANTA, 85, 95
+	db 18, MANTA, 85, 95
+	db 16, CONDOR, 85, 95
+	db 16, ELK, 85, 95
+	db 16, ARTIST, 85, 95
+	db 16, DREIDEL, 85, 95
 	db -1
 	
 	

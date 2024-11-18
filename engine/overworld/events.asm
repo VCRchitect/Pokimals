@@ -1623,7 +1623,7 @@ RuinSummonerEMons::
 	ld de, 4
 	jp CheckMon
 
-RuinSummonerFMons::
+RuinSummonerZMons::
 .loop
 	call Random
 	cp 100 << 1
@@ -2143,7 +2143,7 @@ RuinSummonerEBoss8::
 	ld de, 4
 	jp CheckMon
 
-RuinSummonerF1::
+RuinSummonerZ1::
 .loop
 	call Random
 	cp 100 << 1
@@ -2153,7 +2153,7 @@ RuinSummonerF1::
 	ld de, 4
 	jp CheckMon
 
-RuinSummonerF2::
+RuinSummonerZ2::
 .loop
 	call Random
 	cp 100 << 1
@@ -2163,7 +2163,7 @@ RuinSummonerF2::
 	ld de, 4
 	jp CheckMon
 
-RuinSummonerF3::
+RuinSummonerZ3::
 .loop
 	call Random
 	cp 100 << 1
@@ -2173,7 +2173,7 @@ RuinSummonerF3::
 	ld de, 4
 	jp CheckMon
 
-RuinSummonerF4::
+RuinSummonerZ4::
 .loop
 	call Random
 	cp 100 << 1
@@ -2183,7 +2183,7 @@ RuinSummonerF4::
 	ld de, 4
 	jp CheckMon
 
-RuinSummonerF5::
+RuinSummonerZ5::
 .loop
 	call Random
 	cp 100 << 1
@@ -2193,7 +2193,7 @@ RuinSummonerF5::
 	ld de, 4
 	jp CheckMon
 
-RuinSummonerF6::
+RuinSummonerZ6::
 .loop
 	call Random
 	cp 100 << 1
@@ -2203,7 +2203,7 @@ RuinSummonerF6::
 	ld de, 4
 	jp CheckMon
 
-RuinSummonerF7::
+RuinSummonerZ7::
 .loop
 	call Random
 	cp 100 << 1
@@ -2213,7 +2213,7 @@ RuinSummonerF7::
 	ld de, 4
 	jp CheckMon
 
-RuinSummonerF8::
+RuinSummonerZ8::
 .loop
 	call Random
 	cp 100 << 1
@@ -2223,7 +2223,7 @@ RuinSummonerF8::
 	ld de, 4
 	jp CheckMon
 
-RuinSummonerFBossBase::
+RuinSummonerZBossBase::
 .loop
 	call Random
 	cp 100 << 1
@@ -2233,7 +2233,7 @@ RuinSummonerFBossBase::
 	ld de, 4
 	jp CheckMon
 
-RuinSummonerFBoss1::
+RuinSummonerZBoss1::
 .loop
 	call Random
 	cp 100 << 1
@@ -2243,7 +2243,7 @@ RuinSummonerFBoss1::
 	ld de, 4
 	jp CheckMon
 
-RuinSummonerFBoss2::
+RuinSummonerZBoss2::
 .loop
 	call Random
 	cp 100 << 1
@@ -2253,7 +2253,7 @@ RuinSummonerFBoss2::
 	ld de, 4
 	jp CheckMon
 
-RuinSummonerFBoss3::
+RuinSummonerZBoss3::
 .loop
 	call Random
 	cp 100 << 1
@@ -2263,7 +2263,7 @@ RuinSummonerFBoss3::
 	ld de, 4
 	jp CheckMon
 
-RuinSummonerFBoss4::
+RuinSummonerZBoss4::
 .loop
 	call Random
 	cp 100 << 1
@@ -2273,7 +2273,7 @@ RuinSummonerFBoss4::
 	ld de, 4
 	jp CheckMon
 	
-RuinSummonerFBoss5::
+RuinSummonerZBoss5::
 .loop
 	call Random
 	cp 100 << 1
@@ -2283,7 +2283,7 @@ RuinSummonerFBoss5::
 	ld de, 4
 	jp CheckMon
 	
-RuinSummonerFBoss6::
+RuinSummonerZBoss6::
 .loop
 	call Random
 	cp 100 << 1
@@ -2293,7 +2293,7 @@ RuinSummonerFBoss6::
 	ld de, 4
 	jp CheckMon
 	
-RuinSummonerFBoss7::
+RuinSummonerZBoss7::
 .loop
 	call Random
 	cp 100 << 1
@@ -2303,7 +2303,7 @@ RuinSummonerFBoss7::
 	ld de, 4
 	jp CheckMon
 	
-RuinSummonerFBoss8::
+RuinSummonerZBoss8::
 .loop
 	call Random
 	cp 100 << 1

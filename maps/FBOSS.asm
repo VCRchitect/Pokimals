@@ -53,20 +53,21 @@ UnlockDoorsFBoss:
 	promptbutton
 	closetext
 	warp THESITEINSIDE1F, 12, 18
+	end
 
 
 RandomStairWarpFBOSS:
-	warp F1, 4, 4
+	warp LEGENDTOWER1F, 10, 13
 	end
 
 GhostIntroFText:
-	text "WE... WILL..."
-	line "BURY... YOU..."
+	text "OUR... TREASURE..."
+	line "LIES... AHEAD..."
 	done
 
 GhostFWinLossText:
-	text "SECRETS... DIE..."
-	line "WITH... US..."
+	text "WE... WILL..."
+	line "BE... BACK..."
 	done
 
 OnlyElites:

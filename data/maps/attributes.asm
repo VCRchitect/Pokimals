@@ -263,4 +263,10 @@ ENDM
 	map_attributes FMART, FMART, $00, 0
 	map_attributes FBOSS, FBOSS, $00, 0
 	map_attributes FPREBOSS, FPREBOSS, $00, 0
-		
+	
+	map_attributes LegendTower1F, LEGENDTOWER1F, $00, 0
+	map_attributes LegendTower2F, LEGENDTOWER2F, $00, 0
+	map_attributes LegendTower3F, LEGENDTOWER3F, $00, 0
+	map_attributes LegendTower4F, LEGENDTOWER4F, $00, 0
+	map_attributes LegendTower5F, LEGENDTOWER5F, $00, 0
+	

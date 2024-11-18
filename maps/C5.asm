@@ -250,7 +250,6 @@ C5Item1:
 	opentext
 	randomtext EmptyTable
 	waitbutton	
-	
 	closetext
 	disappear C5RUINS_POKE_BALL1C5
 	end	
