@@ -63,12 +63,6 @@ INCLUDE "gfx/tilesets/lighthouse_palette_map.asm"
 TilesetPlayersRoomPalMap:
 INCLUDE "gfx/tilesets/players_room_palette_map.asm"
 
-TilesetForestPalMap:
-INCLUDE "gfx/tilesets/forest_palette_map.asm"
-
-TilesetPokeComCenterPalMap:
-INCLUDE "gfx/tilesets/pokecom_center_palette_map.asm"
-
 TilesetRuinCavePalMap:
 INCLUDE "gfx/tilesets/ruin_cave_palette_map.asm"
 

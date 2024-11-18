@@ -58,8 +58,8 @@
 	tilecoll WALL, FLOOR, WALL, FLOOR ; 39
 	tilecoll FLOOR, WALL, FLOOR, WALL ; 3a
 	tilecoll FLOOR, FLOOR, FLOOR, WALL ; 3b
-	tilecoll WALL, WALL, FLOOR, FLOOR ; 3c
-	tilecoll FLOOR, FLOOR, WALL, WALL ; 3d
+	tilecoll WALL, WALL, WALL, WALL ; 3c
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 3d
 	tilecoll WALL, WALL, WALL, WALL ; 3e
 	tilecoll FLOOR, FLOOR, WALL, FLOOR ; 3f
 	tilecoll WATER, WATER, WATER, WATER ; 40

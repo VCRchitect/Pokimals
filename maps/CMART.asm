@@ -9,7 +9,7 @@ CMART_MapScripts:
 	end
 
 RandomStairWarpCMART:
-	warper
+	warperC
 	
 RuinMartCScript:
 	faceplayer

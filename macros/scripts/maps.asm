@@ -425,16 +425,17 @@ warperE: MACRO
 	ifequal 8, .9
 	ifequal 9, .10
 	ifequal 10, .11
+	ifequal 11, .12
 	
 .1
-	warp E2, 4, 8
+	warp E2, 4, 6
 	end
 	
 .2
-	warp E3, 4, 8
+	warp E3, 6, 8
 	end
 .3
-	warp E4, 8, 8
+	warp E4, 4, 8
 	end
 .4
 	warp E5, 4, 8
@@ -443,23 +444,27 @@ warperE: MACRO
 	warp E6, 4, 8
 	end
 .6
-	warp E7, 10, 1
+	warp E7, 4, 6
 	end
 .7
 	warp E8, 4, 8
 	end
 .8
-	warp E9, 6, 8
+	warp E9, 4, 8
 	end
-.9
-	warp E12, 4, 4
-	end
+	
+.9 
+	warp E11, 4, 8
 
 .10
-	warp E13, 4, 8
+	warp E12, 4, 8
 	end
 
 .11
+	warp E13, 4, 8
+	end
+
+.12
 	warp E14, 4, 8
 	end
 ENDM

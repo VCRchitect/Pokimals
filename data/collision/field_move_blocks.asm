@@ -3,7 +3,6 @@ CutTreeBlockPointers:
 ; tileset, block list pointer
 	dbw TILESET_JOHTO,        .johto
 	dbw TILESET_JOHTO_MODERN, .johto_modern
-	dbw TILESET_FOREST,       .forest
 	db -1 ; end
 
 .johto:
@@ -19,12 +18,6 @@ CutTreeBlockPointers:
 ; facing block, replacement block, animation
 	db $03, $02, $01 ; grass
 	db -1 ; end
-
-.forest:
-; facing block, replacement block, animation
-	db $0f, $17, 0
-	db -1 ; end
-
 
 ; these blocks all use COLL_WHIRLPOOL in one quadrant
 WhirlpoolBlockPointers:

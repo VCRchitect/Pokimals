@@ -290,9 +290,6 @@ UnlockDoorsB14:
 	writemem wRoomDefeatedCount
 	end
 
-BButtonText:
-	text "Room Clear!"
-	done
 
 B14_MapEvents:
 	db 0, 0 ; filler

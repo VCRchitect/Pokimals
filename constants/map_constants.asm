@@ -134,7 +134,7 @@ ENDM
 	newgroup RUINSC											; 7
 	map_const C1, 5, 3 ; 1
 	map_const C2, 5, 5 ; 2
-	map_const C3, 9, 7 ; 3
+	map_const C3, 5, 5 ; 3
 	map_const C4, 9, 5 ; 4
 	map_const C5, 5, 5 ; 5
 	map_const C6, 5, 5 ; 6
@@ -176,16 +176,16 @@ ENDM
 	newgroup RUINSE											; 9
 	map_const E1, 5, 3 ; 1
 	map_const E2, 5, 5 ; 2
-	map_const E3, 9, 7 ; 3
-	map_const E4, 9, 5 ; 4
+	map_const E3, 5, 5 ; 3
+	map_const E4, 5, 5 ; 4
 	map_const E5, 5, 5 ; 5
 	map_const E6, 5, 5 ; 6
-	map_const E7, 7, 3 ; 7
+	map_const E7, 5, 5 ; 7
 	map_const E8, 5, 5 ; 8
-	map_const E9, 7, 5 ; 9
+	map_const E9, 5, 5 ; 9
 	map_const E10, 7, 5 ; 10
-	map_const E11, 7, 3 ; 11
-	map_const E12, 5, 3 ; 12
+	map_const E11, 5, 5 ; 11
+	map_const E12, 5, 5 ; 12
 	map_const E13, 5, 5 ; 13
 	map_const E14, 5, 5 ; 14
 	map_const EMART, 5, 3 ; 15	

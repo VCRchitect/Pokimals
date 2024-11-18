@@ -196,7 +196,7 @@ EnterMapWarp:
 	ld a, c
 	cp TILESET_POKECENTER
 	jr z, .pokecenter_pokecom
-	cp TILESET_POKECOM_CENTER
+	cp TILESET_POKECENTER
 	jr z, .pokecenter_pokecom
 	ret
 .pokecenter_pokecom

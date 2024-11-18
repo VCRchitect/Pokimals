@@ -52,7 +52,7 @@ PlayersHousePosterScript:
 	closetrainpic
 	closetext
 	refreshscreen
-	warp ABOSS, 4, 4
+	warp EBOSS, 4, 4
 	end
 
 PlayersHouseRadioScript:

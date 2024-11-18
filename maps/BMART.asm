@@ -9,7 +9,7 @@ BMART_MapScripts:
 	end
 
 RandomStairWarpBMART:
-	warper
+	warperB
 	
 RuinBMartScript:
 	faceplayer

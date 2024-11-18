@@ -282,7 +282,7 @@ UnlockDoorsC8:
 	appear C8RUINS_POKE_BALL2C8	
 	refreshscreen
 	playsound SFX_ENTER_DOOR
-	changeblock 2, 0, $0B
+	changeblock 4, 0, $0B
 	reloadmappart
 	closetext
 	readmem wRoomDefeatedCount
@@ -296,8 +296,8 @@ C8_MapEvents:
 	def_warp_events
 
 	def_coord_events
-	coord_event  2,  0, SCENE_RANDOMSTAIRS, RandomStairWarpC8
-	coord_event  3,  0, SCENE_RANDOMSTAIRS, RandomStairWarpC8
+	coord_event  4,  0, SCENE_RANDOMSTAIRS, RandomStairWarpC8
+	coord_event  5,  0, SCENE_RANDOMSTAIRS, RandomStairWarpC8
 
 
 	def_bg_events
@@ -306,7 +306,7 @@ C8_MapEvents:
 	object_event  2,  3, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster1C8, -1
 	object_event  6,  3, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster2C8, -1
 	object_event  7,  2, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster3C8, -1
-	object_event  4,  2, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster4C8, -1
-	object_event  4,  3, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster5C8, -1
-	object_event  3,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, C8Item1, EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
-	object_event  7,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, C8Item2, EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
+	object_event  5,  3, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster4C8, -1
+	object_event  4,  6, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster5C8, -1
+	object_event  3,  1, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, C8Item1, EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
+	object_event  6,  1, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, C8Item2, EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1

@@ -277,9 +277,33 @@ TilesetNautilusWordRoomAnim:
 TilesetPteranodonWordRoomAnim:
 TilesetTheSiteAnim:
 TilesetForestRuinAnim:
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  DoneTileAnimation
+
 TilesetIceRuinAnim:
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  DoneTileAnimation
+
 TilesetElectricRuinAnim:
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  DoneTileAnimation
+
 TilesetRuinCaveAnim:
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  DoneTileAnimation
+
 TilesetRuinGoldAnim:
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
@@ -737,7 +761,7 @@ AnimateLavaBubbleTile1:
 
 ; Write the tile graphic from hl (now sp) to tile $5b (now hl)
 	ld sp, hl
-	ld hl, vTiles2 tile $5b
+	ld hl, vTiles2 tile $30
 	jp WriteTile
 
 AnimateLavaBubbleTile2:

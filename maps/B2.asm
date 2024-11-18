@@ -275,7 +275,7 @@ B2Item2:
 
 UnlockDoorsB2:
 	opentext
-	writetext ButtonText
+	writetext BButtonText
 	promptbutton
 	closetext
 	appear B2RUINS_POKE_BALL1B2
@@ -289,6 +289,10 @@ UnlockDoorsB2:
 	setval 0
 	writemem wRoomDefeatedCount
 	end
+	
+BButtonText:
+	text "Room Clear!"
+	done	
 
 B2_MapEvents:
 	db 0, 0 ; filler
@@ -306,6 +310,6 @@ B2_MapEvents:
 	object_event  8,  6, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster2B2, -1
 	object_event  8,  2, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster3B2, -1
 	object_event  1,  1, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster4B2, -1
-	object_event  4,  3, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster5B2, -1
+	object_event  4,  4, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster5B2, -1
 	object_event  3,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, B2Item1, EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
 	object_event  6,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, B2Item2, EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1

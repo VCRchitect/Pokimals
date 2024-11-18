@@ -32,7 +32,7 @@ BossC:
 	
 UnlockDoorsCBoss:
 	opentext
-	writetext ButtonText
+	writetext CButtonText
 	promptbutton
 	closetext
 	refreshscreen
