@@ -281,7 +281,7 @@ UnlockDoorsJ:
 	refreshscreen
 	playsound SFX_ENTER_DOOR
 	changeblock 2, 0, $0B
-	changeblock 10, 0, $71
+	changeblock 10, 0, $0B
 	reloadmappart
 	closetext
 	readmem wRoomDefeatedCount
@@ -301,8 +301,8 @@ A11_MapEvents:
 	def_coord_events
 	coord_event  2,  0, SCENE_RANDOMSTAIRS, RandomStairWarp11
 	coord_event  3,  0, SCENE_RANDOMSTAIRS, RandomStairWarp11
-	coord_event 10,  0, SCENE_RANDOMSTAIRS, RandomStairWarpEscape
-	coord_event 11,  0, SCENE_RANDOMSTAIRS, RandomStairWarpEscape
+	coord_event 10,  0, SCENE_RANDOMSTAIRS, RandomStairWarp11
+	coord_event 11,  0, SCENE_RANDOMSTAIRS, RandomStairWarp11
 
 
 

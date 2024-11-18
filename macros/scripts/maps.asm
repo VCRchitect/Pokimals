@@ -178,7 +178,7 @@ ENDM
 
 warper: MACRO
 .loop
-	random 9
+	random 11
 	ifequal 0, .1
 	ifequal 1, .2
 	ifequal 2, .3
@@ -189,47 +189,345 @@ warper: MACRO
 	ifequal 7, .8
 	ifequal 8, .9
 	ifequal 9, .10
-
+	ifequal 10, .11
+	
 .1
 	warp A2, 4, 8
 	end
 	
 .2
-	warp A3, 6, 12
+	warp A3, 4, 8
 	end
 .3
 	warp A4, 8, 8
 	end
 .4
-	warp A5, 6, 12
+	warp A5, 4, 8
 	end
 .5
-	warp A6, 4, 4
+	warp A6, 4, 8
 	end
 .6
-	warp A7, 4, 4
+	warp A7, 10, 1
 	end
 .7
-	warp A8, 4, 4
+	warp A8, 4, 8
 	end
 .8
-	warp A9, 4, 4
+	warp A9, 6, 8
 	end
 .9
-	warp A11, 4, 4
-	end
-
-.10
 	warp A12, 4, 4
 	end
 
+.10
+	warp A13, 4, 8
+	end
+
+.11
+	warp A14, 4, 8
+	end
 ENDM
 
-changedoor: MACRO
-	refreshscreen
-	playsound SFX_ENTER_DOOR
-	waitsfx
-	changeblock \1, \2, \3
-	reloadmappart
+warperB: MACRO
+.loop
+	random 11
+	ifequal 0, .1
+	ifequal 1, .2
+	ifequal 2, .3
+	ifequal 3, .4
+	ifequal 4, .5
+	ifequal 5, .6
+	ifequal 6, .7
+	ifequal 7, .8
+	ifequal 8, .9
+	ifequal 9, .10
+	ifequal 10, .11
+	ifequal 11, .12
+
+.1
+	warp B2, 4, 6
+	end
+
+.2
+	warp B3, 6, 8
+	end
+
+.3
+	warp B4, 4, 8
+	end
+
+.4
+	warp B5, 4, 8
+	end
+
+.5
+	warp B6, 4, 8
+	end
+
+.6
+	warp B7, 4, 6
+	end
+
+.7
+	warp B8, 4, 8
+	end
+
+.8
+	warp B9, 4, 8
+	end
+
+.9
+	warp B11, 4, 8
+	end
+
+.10
+	warp B12, 4, 8
+	end
+
+.11
+	warp B13, 4, 8
+	end
+	
+.12
+	warp B14, 4, 8
 ENDM
+
+warperC: MACRO
+.loop
+	random 11
+	ifequal 0, .1
+	ifequal 1, .2
+	ifequal 2, .3
+	ifequal 3, .4
+	ifequal 4, .5
+	ifequal 5, .6
+	ifequal 6, .7
+	ifequal 7, .8
+	ifequal 8, .9
+	ifequal 9, .10
+	ifequal 10, .11
+	
+.1
+	warp C2, 4, 8
+	end
+	
+.2
+	warp C3, 4, 8
+	end
+.3
+	warp C4, 8, 8
+	end
+.4
+	warp C5, 4, 8
+	end
+.5
+	warp C6, 4, 8
+	end
+.6
+	warp C7, 10, 1
+	end
+.7
+	warp C8, 4, 8
+	end
+.8
+	warp C9, 6, 8
+	end
+.9
+	warp C12, 4, 4
+	end
+
+.10
+	warp C13, 4, 8
+	end
+
+.11
+	warp C14, 4, 8
+	end
+ENDM
+
+warperD: MACRO
+.loop
+	random 11
+	ifequal 0, .1
+	ifequal 1, .2
+	ifequal 2, .3
+	ifequal 3, .4
+	ifequal 4, .5
+	ifequal 5, .6
+	ifequal 6, .7
+	ifequal 7, .8
+	ifequal 8, .9
+	ifequal 9, .10
+	ifequal 10, .11
+	ifequal 11, .12
+
+.1
+	warp D2, 4, 6
+	end
+
+.2
+	warp D3, 6, 8
+	end
+
+.3
+	warp D4, 4, 8
+	end
+
+.4
+	warp D5, 4, 8
+	end
+
+.5
+	warp D6, 4, 8
+	end
+
+.6
+	warp D7, 4, 6
+	end
+
+.7
+	warp D8, 4, 8
+	end
+
+.8
+	warp D9, 4, 8
+	end
+
+.9
+	warp D11, 4, 8
+	end
+
+.10
+	warp D12, 4, 8
+	end
+
+.11
+	warp D13, 4, 8
+	end
+	
+.12
+	warp D14, 4, 8
+	end
+ENDM
+
+warperE: MACRO
+.loop
+	random 11
+	ifequal 0, .1
+	ifequal 1, .2
+	ifequal 2, .3
+	ifequal 3, .4
+	ifequal 4, .5
+	ifequal 5, .6
+	ifequal 6, .7
+	ifequal 7, .8
+	ifequal 8, .9
+	ifequal 9, .10
+	ifequal 10, .11
+	
+.1
+	warp E2, 4, 8
+	end
+	
+.2
+	warp E3, 4, 8
+	end
+.3
+	warp E4, 8, 8
+	end
+.4
+	warp E5, 4, 8
+	end
+.5
+	warp E6, 4, 8
+	end
+.6
+	warp E7, 10, 1
+	end
+.7
+	warp E8, 4, 8
+	end
+.8
+	warp E9, 6, 8
+	end
+.9
+	warp E12, 4, 4
+	end
+
+.10
+	warp E13, 4, 8
+	end
+
+.11
+	warp E14, 4, 8
+	end
+ENDM
+
+warperF: MACRO
+.loop
+	random 11
+	ifequal 0, .1
+	ifequal 1, .2
+	ifequal 2, .3
+	ifequal 3, .4
+	ifequal 4, .5
+	ifequal 5, .6
+	ifequal 6, .7
+	ifequal 7, .8
+	ifequal 8, .9
+	ifequal 9, .10
+	ifequal 10, .11
+	ifequal 11, .12
+
+.1
+	warp F2, 4, 6
+	end
+
+.2
+	warp F3, 6, 8
+	end
+
+.3
+	warp F4, 4, 8
+	end
+
+.4
+	warp F5, 4, 8
+	end
+
+.5
+	warp F6, 4, 8
+	end
+
+.6
+	warp F7, 4, 6
+	end
+
+.7
+	warp F8, 4, 8
+	end
+
+.8
+	warp F9, 4, 8
+	end
+
+.9
+	warp F11, 4, 8
+	end
+
+.10
+	warp F12, 4, 8
+	end
+
+.11
+	warp F13, 4, 8
+	end
+	
+.12
+	warp F14, 4, 8
+	end
+ENDM
+
+
 

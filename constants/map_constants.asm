@@ -80,7 +80,7 @@ ENDM
 	endgroup
 
 	newgroup INDIGO                                               ;  4
-	map_const INDIGO_PLATEAU_POKECENTER_1F,                 9,  7 ;  1
+	map_const INDIGO_PLATEAU_POKECENTER_1F,                 9,  7 ;  1	
 	map_const WILLS_ROOM,                                   5,  9 ;  2
 	map_const KOGAS_ROOM,                                   5,  9 ;  3
 	map_const BRUNOS_ROOM,                                  5,  9 ;  4
@@ -102,15 +102,117 @@ ENDM
 	map_const A10, 7, 5 ; 10
 	map_const A11, 7, 3 ; 11
 	map_const A12, 5, 3 ; 12
-	map_const AMART, 5, 3 ; 13	
-	map_const AHEAL, 5, 3 ; 14
-	map_const APREBOSS, 5, 3 ; 15
-	map_const ABOSS, 5, 5 ; 16
+	map_const A13, 5, 5 ; 13
+	map_const A14, 5, 5 ; 14
+	map_const AMART, 5, 3 ; 15	
+	map_const AHEAL, 5, 3 ; 16
+	map_const APREBOSS, 5, 3 ; 17
+	map_const ABOSS, 5, 5 ; 18
+	endgroup
+	
+	newgroup RUINSB					; 6
+	map_const B1, 5, 3 ; 1
+	map_const B2, 5, 5 ; 2
+	map_const B3, 5, 5 ; 3
+	map_const B4, 5, 5 ; 4
+	map_const B5, 5, 5 ; 5
+	map_const B6, 5, 5 ; 6
+	map_const B7, 5, 5 ; 7
+	map_const B8, 5, 5 ; 8
+	map_const B9, 5, 5 ; 9
+	map_const B10, 7, 5 ; 10	
+	map_const B11, 5, 5 ; 11
+	map_const B12, 5, 5 ; 12	
+	map_const B13, 5, 5 ; 13	
+	map_const B14, 5, 5 ; 14
+	map_const BMART, 5, 3 ; 16	
+	map_const BHEAL, 5, 3 ; 17
+	map_const BPREBOSS, 5, 3 ; 18
+	map_const BBOSS, 5, 5 ; 19
 	endgroup
 
+	newgroup RUINSC											; 7
+	map_const C1, 5, 3 ; 1
+	map_const C2, 5, 5 ; 2
+	map_const C3, 9, 7 ; 3
+	map_const C4, 9, 5 ; 4
+	map_const C5, 5, 5 ; 5
+	map_const C6, 5, 5 ; 6
+	map_const C7, 7, 3 ; 7
+	map_const C8, 5, 5 ; 8
+	map_const C9, 7, 5 ; 9
+	map_const C10, 7, 5 ; 10
+	map_const C11, 7, 3 ; 11
+	map_const C12, 5, 3 ; 12
+	map_const C13, 5, 5 ; 13
+	map_const C14, 5, 5 ; 14
+	map_const CMART, 5, 3 ; 15	
+	map_const CHEAL, 5, 3 ; 16
+	map_const CPREBOSS, 5, 3 ; 17
+	map_const CBOSS, 5, 5 ; 18
+	endgroup
+	
+	newgroup RUINSD								; 8
+	map_const D1, 5, 3 ; 1
+	map_const D2, 5, 5 ; 2
+	map_const D3, 5, 5 ; 3
+	map_const D4, 5, 5 ; 4
+	map_const D5, 5, 5 ; 5
+	map_const D6, 5, 5 ; 6
+	map_const D7, 5, 5 ; 7
+	map_const D8, 5, 5 ; 8
+	map_const D9, 5, 5 ; 9
+	map_const D10, 7, 5 ; 10	
+	map_const D11, 5, 5 ; 11
+	map_const D12, 5, 5 ; 12	
+	map_const D13, 5, 5 ; 13	
+	map_const D14, 5, 5 ; 14
+	map_const DMART, 5, 3 ; 16	
+	map_const DHEAL, 5, 3 ; 17
+	map_const DPREBOSS, 5, 3 ; 18
+	map_const DBOSS, 5, 5 ; 19
+	endgroup
 
-
-
-
-
+	newgroup RUINSE											; 9
+	map_const E1, 5, 3 ; 1
+	map_const E2, 5, 5 ; 2
+	map_const E3, 9, 7 ; 3
+	map_const E4, 9, 5 ; 4
+	map_const E5, 5, 5 ; 5
+	map_const E6, 5, 5 ; 6
+	map_const E7, 7, 3 ; 7
+	map_const E8, 5, 5 ; 8
+	map_const E9, 7, 5 ; 9
+	map_const E10, 7, 5 ; 10
+	map_const E11, 7, 3 ; 11
+	map_const E12, 5, 3 ; 12
+	map_const E13, 5, 5 ; 13
+	map_const E14, 5, 5 ; 14
+	map_const EMART, 5, 3 ; 15	
+	map_const EHEAL, 5, 3 ; 16
+	map_const EPREBOSS, 5, 3 ; 17
+	map_const EBOSS, 5, 5 ; 18
+	endgroup
+	
+	newgroup RUINSF											; 10
+	map_const F1, 5, 3 ; 1
+	map_const F2, 5, 5 ; 2
+	map_const F3, 5, 5 ; 3
+	map_const F4, 5, 5 ; 4
+	map_const F5, 5, 5 ; 5
+	map_const F6, 5, 5 ; 6
+	map_const F7, 5, 5 ; 7
+	map_const F8, 5, 5 ; 8
+	map_const F9, 5, 5 ; 9
+	map_const F10, 7, 5 ; 10	
+	map_const F11, 5, 5 ; 11
+	map_const F12, 5, 5 ; 12	
+	map_const F13, 5, 5 ; 13	
+	map_const F14, 5, 5 ; 14
+	map_const FMART, 5, 3 ; 16	
+	map_const FHEAL, 5, 3 ; 17
+	map_const FPREBOSS, 5, 3 ; 18
+	map_const FBOSS, 5, 5 ; 19
+	endgroup
+	
 DEF NUM_MAP_GROUPS EQU const_value ; 5

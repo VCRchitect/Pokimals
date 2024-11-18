@@ -293,8 +293,8 @@ A6_MapEvents:
 	def_warp_events
 
 	def_coord_events
-	coord_event  2,  0, SCENE_RANDOMSTAIRS, RandomStairWarp6
-	coord_event  3,  0, SCENE_RANDOMSTAIRS, RandomStairWarp6
+	coord_event  4,  0, SCENE_RANDOMSTAIRS, RandomStairWarp6
+	coord_event  5,  0, SCENE_RANDOMSTAIRS, RandomStairWarp6
 
 
 

@@ -11,12 +11,17 @@ MapGroupRoofs:
 ; entries correspond to MAPGROUP_* constants
 ; values are indexes for Roofs (see below)
 	table_width 1, MapGroupRoofs
-	db -1             ;  0
-	db -1             ;  1
+	db ROOF_OLIVINE              ;  0
+	db ROOF_OLIVINE              ;  1
 	db ROOF_OLIVINE   ;  2 (Battle Tower)
 	db ROOF_NEW_BARK  ;  3 (New Bark)
-	db -1				; 4
-	db -1				; 5
+	db ROOF_OLIVINE 				; 4
+	db ROOF_OLIVINE 				; 5
+	db ROOF_OLIVINE 
+	db ROOF_OLIVINE 
+	db ROOF_OLIVINE 
+	db ROOF_OLIVINE 
+	db ROOF_OLIVINE 
 	assert_table_length NUM_MAP_GROUPS + 1
 
 Roofs:

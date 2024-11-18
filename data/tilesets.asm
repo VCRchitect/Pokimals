@@ -13,7 +13,7 @@ ENDM
 Tilesets::
 ; entries correspond to TILESET_* constants (see constants/tileset_constants.asm)
 	table_width TILESET_LENGTH, Tilesets
-	tileset Tileset0
+	tileset Tileset0	
 	tileset TilesetJohto
 	tileset TilesetJohtoModern
 	tileset TilesetBattleTowerOutside	
@@ -39,6 +39,7 @@ Tilesets::
 	tileset TilesetFireRuin
 	tileset TilesetIceRuin
 	tileset TilesetElectricRuin
+	tileset TilesetRuinGold
 	tileset TilesetTheSite
 	assert_table_length NUM_TILESETS + 1
 	

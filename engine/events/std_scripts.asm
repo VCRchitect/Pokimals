@@ -213,7 +213,9 @@ PokecenterNurseScript:
 	
 KidnappingScript:
 	special FadeBlackQuickly
+	special ReloadSpritesNoPalettes	
 	pause 20
+	special FadeInQuickly	
 	warp BADSHED, 2, 2
 	end	
 

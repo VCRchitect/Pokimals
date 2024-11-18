@@ -1,4 +1,4 @@
-; DO A CTRL+F AND REPLACE ALL OF THE ` WITH THE ROOM NUMBER AND THE X WITH THE RUIN LETTER
+; DO A CTRL+F AND REPLACE ALL OF THE ` WITH THE ROOM NUMBER AND THE } WITH THE RUIN LETTER
 	
 	object_const_def
 	const `RUINS_MONSTER1`
@@ -44,19 +44,19 @@ RandomStairWarp`:
 	addval 1
 	writemem wSplitRoomCount
 	ifequal 3, .Split
-	warper
+	warper}
 .Split
 	readmem wBossRoomCount
 	addval 1
 	writemem wBossRoomCount
 	ifequal 2, .Boss
-	warp A10, 6, 8
+	warp }10, 6, 8
 	readmem wSplitRoomCount
 	setval 0
 	writemem wSplitRoomCount
 	end
 .Boss
-	warp APREBOSS, 4, 4
+	warp }PREBOSS, 4, 4
 	readmem wBossRoomCount
 	setval 0
 	writemem wBossRoomCount
@@ -139,102 +139,102 @@ Monster5`:
 
 
 nobadge`:
-	RuinRandomXBase
+	RuinRandom}Base
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINX_TARGET_DEFEATS, UnlockDoors`
+	ifequal RUIN}_TARGET_DEFEATS, UnlockDoors`
 	end
 
 onebadge`:
-	RuinRandomX1
+	RuinRandom}1
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINX_TARGET_DEFEATS, UnlockDoors`
+	ifequal RUIN}_TARGET_DEFEATS, UnlockDoors`
 	end
 
 twobadge`:
-	RuinRandomX2
+	RuinRandom}2
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINX_TARGET_DEFEATS, UnlockDoors`
+	ifequal RUIN}_TARGET_DEFEATS, UnlockDoors`
 	end
 
 threebadge`:
-	RuinRandomX3
+	RuinRandom}3
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINX_TARGET_DEFEATS, UnlockDoors`
+	ifequal RUIN}_TARGET_DEFEATS, UnlockDoors`
 	end
 
 fourbadge`:
-	RuinRandomX4
+	RuinRandom}4
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINX_TARGET_DEFEATS, UnlockDoors`
+	ifequal RUIN}_TARGET_DEFEATS, UnlockDoors`
 	end
 
 fivebadge`:
-	RuinRandomX5
+	RuinRandom}5
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINX_TARGET_DEFEATS, UnlockDoors`
+	ifequal RUIN}_TARGET_DEFEATS, UnlockDoors`
 	end
 
 sixbadge`:
-	RuinRandomX6
+	RuinRandom}6
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINX_TARGET_DEFEATS, UnlockDoors`
+	ifequal RUIN}_TARGET_DEFEATS, UnlockDoors`
 	end
 
 sevenbadge`:
-	RuinRandomX7
+	RuinRandom}7
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINX_TARGET_DEFEATS, UnlockDoors`
+	ifequal RUIN}_TARGET_DEFEATS, UnlockDoors`
 	end
 
 eightbadge`:
-	RuinRandomX8
+	RuinRandom}8
 	startbattle
 	reloadmapafterbattle	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
 	writemem wRoomDefeatedCount
-	ifequal RUINX_TARGET_DEFEATS, UnlockDoors`
+	ifequal RUIN}_TARGET_DEFEATS, UnlockDoors`
 	end
 	
 `Item1:
@@ -275,25 +275,32 @@ eightbadge`:
 
 UnlockDoors`:
 	opentext
-	writetext ButtonText
+	writetext }ButtonText
 	promptbutton
 	closetext
 	appear `RUINS_POKE_BALL1`
 	appear `RUINS_POKE_BALL2`	
-	changedoor 2, 0, $0B
+	refreshscreen
+	playsound SFX_ENTER_DOOR
+	changeblock 6, 0, $0B
+	reloadmappart
+	closetext
 	readmem wRoomDefeatedCount
 	setval 0
 	writemem wRoomDefeatedCount
 	end
 
+}ButtonText:
+	text "Room Clear!"
+	done
 
 `_MapEvents:
 	db 0, 0 ; filler
 	def_warp_events
 
 	def_coord_events
-	coord_event  2,  0, SCENE_RANDOMSTAIRS, RandomStairWarp8
-	coord_event  3,  0, SCENE_RANDOMSTAIRS, RandomStairWarp8
+	coord_event  2,  0, SCENE_RANDOMSTAIRS, RandomStairWarp`
+	coord_event  3,  0, SCENE_RANDOMSTAIRS, RandomStairWarp`
 
 
 	def_bg_events

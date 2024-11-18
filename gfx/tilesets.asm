@@ -261,6 +261,16 @@ INCBIN "gfx/tilesets/ruin_cave.2bpp.lz"
 TilesetRuinCaveColl::
 INCLUDE "data/tilesets/ruin_cave_collision.asm"
 
+TilesetRuinGoldMeta::
+INCBIN "data/tilesets/ruin_gold_metatiles.bin"
+
+TilesetRuinGoldGFX::
+INCBIN "gfx/tilesets/ruin_gold.2bpp.lz"
+
+TilesetRuinGoldColl::
+INCLUDE "data/tilesets/ruin_gold_collision.asm"
+
+
 TilesetFireRuinColl::
 INCLUDE "data/tilesets/fireruin_collision.asm"
 

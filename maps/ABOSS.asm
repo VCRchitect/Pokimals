@@ -45,6 +45,10 @@ UnlockDoorsABoss:
 	writemem wRoomDefeatedCount		
 	end
 
+RandomStairWarpABOSS:
+	warp B1, 4, 4
+	end
+
 GhostIntroText:
 	text "LET... THE..."
 	line "PAST... SLUMBER..."
@@ -61,6 +65,10 @@ ABOSS_MapEvents:
 	def_warp_events
 
 	def_coord_events
+	coord_event  4,  0, SCENE_RANDOMSTAIRS, RandomStairWarpABOSS
+	coord_event  5,  0, SCENE_RANDOMSTAIRS, RandomStairWarpABOSS
+	
+	
 	
 	def_bg_events
 

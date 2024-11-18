@@ -162,7 +162,105 @@ ENDM
 	map_attributes A10, A10, $00, 0
 	map_attributes A11, A11, $00, 0
 	map_attributes A12, A12, $00, 0
+	map_attributes A13, A13, $00, 0
+	map_attributes A14, A14, $00, 0
 	map_attributes AHEAL, AHEAL, $00, 0
 	map_attributes AMART, AMART, $00, 0
 	map_attributes ABOSS, ABOSS, $00, 0
 	map_attributes APREBOSS, APREBOSS, $00, 0
+
+	map_attributes B1, B1, $00, 0
+	map_attributes B2, B2, $00, 0
+	map_attributes B3, B3, $00, 0
+	map_attributes B4, B4, $00, 0
+	map_attributes B5, B5, $00, 0
+	map_attributes B6, B6, $00, 0
+	map_attributes B7, B7, $00, 0
+	map_attributes B8, B8, $00, 0
+	map_attributes B9, B9, $00, 0
+	map_attributes B10, B10, $00, 0
+	map_attributes B11, B11, $00, 0
+	map_attributes B12, B12, $00, 0
+	map_attributes B13, B13, $00, 0
+	map_attributes B14, B14, $00, 0
+	map_attributes BHEAL, BHEAL, $00, 0
+	map_attributes BMART, BMART, $00, 0
+	map_attributes BBOSS, BBOSS, $00, 0
+	map_attributes BPREBOSS, BPREBOSS, $00, 0
+	
+	map_attributes C1, C1, $00, 0
+	map_attributes C2, C2, $00, 0
+	map_attributes C3, C3, $00, 0
+	map_attributes C4, C4, $00, 0
+	map_attributes C5, C5, $00, 0
+	map_attributes C6, C6, $00, 0
+	map_attributes C7, C7, $00, 0
+	map_attributes C8, C8, $00, 0
+	map_attributes C9, C9, $00, 0
+	map_attributes C10, C10, $00, 0
+	map_attributes C11, C11, $00, 0
+	map_attributes C12, C12, $00, 0
+	map_attributes C13, C13, $00, 0
+	map_attributes C14, C14, $00, 0
+	map_attributes CHEAL, CHEAL, $00, 0
+	map_attributes CMART, CMART, $00, 0
+	map_attributes CBOSS, CBOSS, $00, 0
+	map_attributes CPREBOSS, CPREBOSS, $00, 0
+
+	map_attributes D1, D1, $00, 0
+	map_attributes D2, D2, $00, 0
+	map_attributes D3, D3, $00, 0
+	map_attributes D4, D4, $00, 0
+	map_attributes D5, D5, $00, 0
+	map_attributes D6, D6, $00, 0
+	map_attributes D7, D7, $00, 0
+	map_attributes D8, D8, $00, 0
+	map_attributes D9, D9, $00, 0
+	map_attributes D10, D10, $00, 0
+	map_attributes D11, D11, $00, 0
+	map_attributes D12, D12, $00, 0
+	map_attributes D13, D13, $00, 0
+	map_attributes D14, D14, $00, 0
+	map_attributes DHEAL, DHEAL, $00, 0
+	map_attributes DMART, DMART, $00, 0
+	map_attributes DBOSS, DBOSS, $00, 0
+	map_attributes DPREBOSS, DPREBOSS, $00, 0
+	
+	map_attributes E1, E1, $00, 0
+	map_attributes E2, E2, $00, 0
+	map_attributes E3, E3, $00, 0
+	map_attributes E4, E4, $00, 0
+	map_attributes E5, E5, $00, 0
+	map_attributes E6, E6, $00, 0
+	map_attributes E7, E7, $00, 0
+	map_attributes E8, E8, $00, 0
+	map_attributes E9, E9, $00, 0
+	map_attributes E10, E10, $00, 0
+	map_attributes E11, E11, $00, 0
+	map_attributes E12, E12, $00, 0
+	map_attributes E13, E13, $00, 0
+	map_attributes E14, E14, $00, 0
+	map_attributes EHEAL, EHEAL, $00, 0
+	map_attributes EMART, EMART, $00, 0
+	map_attributes EBOSS, EBOSS, $00, 0
+	map_attributes EPREBOSS, EPREBOSS, $00, 0
+
+	map_attributes F1, F1, $00, 0
+	map_attributes F2, F2, $00, 0
+	map_attributes F3, F3, $00, 0
+	map_attributes F4, F4, $00, 0
+	map_attributes F5, F5, $00, 0
+	map_attributes F6, F6, $00, 0
+	map_attributes F7, F7, $00, 0
+	map_attributes F8, F8, $00, 0
+	map_attributes F9, F9, $00, 0
+	map_attributes F10, F10, $00, 0
+	map_attributes F11, F11, $00, 0
+	map_attributes F12, F12, $00, 0
+	map_attributes F13, F13, $00, 0
+	map_attributes F14, F14, $00, 0
+	map_attributes FHEAL, FHEAL, $00, 0
+	map_attributes FMART, FMART, $00, 0
+	map_attributes FBOSS, FBOSS, $00, 0
+	map_attributes FPREBOSS, FPREBOSS, $00, 0
+		

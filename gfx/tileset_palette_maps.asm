@@ -15,6 +15,9 @@ INCLUDE "gfx/tilesets/johto_palette_map.asm"
 TilesetJohtoModernPalMap:
 INCLUDE "gfx/tilesets/johto_modern_palette_map.asm"
 
+TilesetBattleTowerOutsidePalMap:
+INCLUDE "gfx/tilesets/battle_tower_outside_palette_map.asm"
+
 TilesetHousePalMap:
 INCLUDE "gfx/tilesets/house_palette_map.asm"
 
@@ -81,11 +84,12 @@ INCLUDE "gfx/tilesets/iceruin_palette_map.asm"
 TilesetElectricRuinPalMap:
 INCLUDE "gfx/tilesets/electricruin_palette_map.asm"
 
+TilesetRuinGoldPalMap:
+INCLUDE "gfx/tilesets/ruin_gold_palette_map.asm"
+
 TilesetTheSitePalMap:
 INCLUDE "gfx/tilesets/thesite_palette_map.asm"
 
-TilesetBattleTowerOutsidePalMap:
-INCLUDE "gfx/tilesets/battle_tower_outside_palette_map.asm"
 
 MapGroupPalettes: ; unreferenced
 ; entries correspond to MAPGROUP_* constants

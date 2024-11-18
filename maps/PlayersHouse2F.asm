@@ -51,7 +51,8 @@ PlayersHousePosterScript:
 	waitbutton
 	closetrainpic
 	closetext
-	warp ABOSS, 4, 5
+	refreshscreen
+	warp ABOSS, 4, 4
 	end
 
 PlayersHouseRadioScript:

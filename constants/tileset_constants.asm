@@ -20,12 +20,13 @@
 	const TILESET_TOWER                ; 17
 	const TILESET_CAVE                 ; 18
 	const TILESET_FOREST               ; 1f
-	const TILESET_RUIN_CAVE ; 25
+	const TILESET_RUIN_CAVE
 	const TILESET_FORESTRUIN
 	const TILESET_FIRERUIN
 	const TILESET_ICERUIN
 	const TILESET_ELECTRICRUIN	
-	const TILESET_THESITE ; 26
+	const TILESET_RUIN_GOLD
+	const TILESET_THESITE
 NUM_TILESETS EQU const_value - 1
 
 ; wTileset struct size

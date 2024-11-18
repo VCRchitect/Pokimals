@@ -280,6 +280,7 @@ TilesetForestRuinAnim:
 TilesetIceRuinAnim:
 TilesetElectricRuinAnim:
 TilesetRuinCaveAnim:
+TilesetRuinGoldAnim:
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
@@ -761,7 +762,7 @@ AnimateLavaBubbleTile2:
 
 ; Write the tile graphic from hl (now sp) to tile $38 (now hl)
 	ld sp, hl
-	ld hl, vTiles2 tile $38
+	ld hl, vTiles2 tile $30
 	jp WriteTile
 
 LavaBubbleTileFrames:
