@@ -44,3 +44,13 @@ Pick from one of 13 starters and make your way into the depths of The Ruins. Def
   - No trade evolutions (they evolve usually at Lv. 36 now)
   - Can get all ANIMALs in the same game (including legendaries!)
   - Battle auto prompts
+
+## Special Thanks and Credits
+- Jaime for keeping on me about finishing (only 29 years late!)
+- My wife for putting up with the rambling about this whole thing and being my favorite person ever
+- Willis for being so supportive of such an odd endeavor and being an all-around wonderful dude
+- Jose for letting me make fun of him in the game and for all the laughs
+- ax6 for the randomized dialogue scripting
+- Grate Oracle Lewot for helping me realize there was an easier way to handle the scripts
+- Damien for helping me with the trainer pic scripting and being a generally friendly dude
+- The entire Pret Discord for all of their incredible work in ROM hacking
