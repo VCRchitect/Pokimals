@@ -274,6 +274,8 @@ E3Item2:
 	end	
 
 UnlockDoorsE3:
+	playsound SFX_FANFARE
+
 	opentext
 	writetext EButtonText
 	promptbutton

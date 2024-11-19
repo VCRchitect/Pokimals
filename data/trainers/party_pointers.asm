@@ -20,7 +20,7 @@ TrainerGroups:
 	dba KogaGroup
 	dba ChampionGroup
 	dba BrockGroup
-	dba MistyGroup
+	dba JoseGroup
 	dba LtSurgeGroup
 	dba ScientistGroup
 	dba ErikaGroup

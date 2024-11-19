@@ -274,6 +274,8 @@ A4Item2:
 
 
 UnlockDoorsC:
+	playsound SFX_FANFARE
+
 	opentext
 	writetext ButtonText
 	promptbutton

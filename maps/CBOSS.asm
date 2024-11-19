@@ -31,6 +31,8 @@ BossC:
 	end	
 	
 UnlockDoorsCBoss:
+	playsound SFX_FANFARE
+
 	opentext
 	writetext CButtonText
 	promptbutton

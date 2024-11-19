@@ -20,7 +20,7 @@ TrainerPicPointers::
 	dba_pic KogaPic
 	dba_pic ChampionPic
 	dba_pic JosePic
-	dba_pic MistyPic
+	dba_pic JosePic
 	dba_pic DianaPic
 	dba_pic ScientistPic	
 	dba_pic ErikaPic

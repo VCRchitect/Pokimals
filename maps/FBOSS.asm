@@ -33,6 +33,7 @@ BossF:
 UnlockDoorsFBoss:
 	checkevent EVENT_BEAT_ELITE_FOUR
 	iffalse .DoNotPass
+	playsound SFX_FANFARE	
 	opentext
 	writetext FButtonText
 	promptbutton

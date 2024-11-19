@@ -19,7 +19,7 @@ TrainerClassDVs:
 	dn 13, 12, 13, 13 ; KOGA
 	dn 13, 12, 13, 13 ; CHAMPION
 	dn  9,  8,  8,  8 ; BROCK
-	dn  7,  8,  8,  8 ; MISTY
+	dn  7,  8,  8,  8 ; JOSE
 	dn  9,  8,  8,  8 ; LT_SURGE
 	dn  9,  8,  8,  8 ; SCIENTIST
 	dn  7,  8,  8,  8 ; ERIKA

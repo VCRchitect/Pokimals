@@ -130,6 +130,13 @@ PlayersHouse1FFridgeScript:
 Greeting:
 	text "Hey, Dipshit."
 	line "How's it going?"
+	
+	para "You having a good"
+	line "day? I know I am."
+	
+	para "By the way. I have"
+	line "some questions for"
+	cont "you to answer."
 	done
 
 IsItDSTText:

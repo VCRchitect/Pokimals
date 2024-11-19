@@ -31,6 +31,8 @@ BossD:
 	end	
 	
 UnlockDoorsDBoss:
+	playsound SFX_FANFARE
+
 	opentext
 	writetext DButtonText
 	promptbutton

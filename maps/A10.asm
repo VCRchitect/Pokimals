@@ -250,6 +250,8 @@ A10Item2:
 
 
 UnlockDoorsI:
+	playsound SFX_FANFARE
+
 	opentext
 	writetext ButtonText
 	promptbutton

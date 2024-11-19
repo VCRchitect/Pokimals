@@ -122,6 +122,8 @@ Teacher8_Blocks:
 BadShed_Blocks:
 	INCBIN "maps/BadShed.blk"
 
+Apt102_Blocks:
+	INCBIN "maps/Apt102.blk"
 
 SECTION "Map Blocks 3", ROMX
 

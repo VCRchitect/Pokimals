@@ -51,8 +51,6 @@ PlayersHousePosterScript:
 	waitbutton
 	closetrainpic
 	closetext
-	refreshscreen
-	warp EBOSS, 4, 4
 	end
 
 PlayersHouseRadioScript:
@@ -86,19 +84,7 @@ PlayersHouseRadioScript:
 	end
 
 PlayersHouseBookshelfScript:
-	refreshscreen
-	pokepic BRAIN
-	cry BRAIN
-	waitbutton
-	closepokepic
-	refreshscreen
-	getmonname STRING_BUFFER_3, BRAIN
-	playsound SFX_CAUGHT_MON
-	waitsfx
-	promptbutton
-	givepoke BRAIN, 100, BERRY
-	closetext
-	end
+	jumpstd PictureBookshelfScript
 	
 PlayersHousePCScript:
 	opentext

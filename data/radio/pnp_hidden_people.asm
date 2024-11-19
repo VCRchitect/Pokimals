@@ -9,7 +9,7 @@ PnP_HiddenPeople:
 	; fallthrough
 PnP_HiddenPeople_BeatE4:
 	db BROCK
-	db MISTY
+	db JOSE
 	db LT_SURGE
 	db ERIKA
 	db JANINE

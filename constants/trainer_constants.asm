@@ -93,8 +93,8 @@ NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	trainerclass BROCK ; 11
 	const BROCK1
 
-	trainerclass MISTY ; 12
-	const MISTY1
+	trainerclass JOSE ; 12
+	const JOSE1
 
 	trainerclass LT_SURGE ; 13
 	const LT_SURGE1

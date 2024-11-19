@@ -31,6 +31,8 @@ BossE:
 	end	
 	
 UnlockDoorsEBoss:
+	playsound SFX_FANFARE
+
 	opentext
 	writetext EButtonText
 	promptbutton

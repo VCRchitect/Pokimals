@@ -77,6 +77,7 @@ ENDM
 	map_const TEACHER7, 											3, 3; 29
 	map_const TEACHER8, 											3, 3; 30
 	map_const BADSHED,												3, 3; 31
+	map_const APT102,												5, 3; 32
 	endgroup
 
 	newgroup INDIGO                                               ;  4

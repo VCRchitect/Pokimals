@@ -142,7 +142,7 @@ ApartmentHall_MapEvents:
 
 	def_warp_events
 	warp_event  2,  2, APARTMENTS123, 1
-	warp_event  6,  2, APARTMENTS123, 3
+	warp_event  6,  2, APT102, 1
 	warp_event 22,  2, APARTMENTS123, 5
 	warp_event 18,  2, APARTMENTS789, 1
 	warp_event 10,  2, APARTMENTS789, 3

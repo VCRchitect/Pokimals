@@ -274,6 +274,8 @@ E8Item2:
 	end	
 
 UnlockDoorsE8:
+	playsound SFX_FANFARE
+
 	opentext
 	writetext EButtonText
 	promptbutton

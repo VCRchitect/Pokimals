@@ -271,6 +271,8 @@ A6Item2:
 	end	
 
 UnlockDoorsE:
+	playsound SFX_FANFARE
+
 	opentext
 	writetext ButtonText
 	promptbutton

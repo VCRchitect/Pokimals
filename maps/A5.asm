@@ -272,6 +272,8 @@ A5Item2:
 	end	
 
 UnlockDoorsD:
+	playsound SFX_FANFARE
+
 	opentext
 	writetext ButtonText
 	promptbutton

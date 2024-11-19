@@ -272,6 +272,8 @@ A9Item2:
 
 
 UnlockDoorsH:
+	playsound SFX_FANFARE
+
 	opentext
 	writetext ButtonText
 	promptbutton

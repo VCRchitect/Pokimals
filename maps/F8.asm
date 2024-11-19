@@ -274,6 +274,8 @@ F8Item2:
 	end	
 
 UnlockDoorsF8:
+	playsound SFX_FANFARE
+
 	opentext
 	writetext FButtonText
 	promptbutton

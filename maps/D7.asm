@@ -274,6 +274,8 @@ D7Item2:
 	end	
 
 UnlockDoorsD7:
+	playsound SFX_FANFARE
+
 	opentext
 	writetext DButtonText
 	promptbutton

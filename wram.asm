@@ -3090,7 +3090,8 @@ wMountMoonSquareSceneID::                         db
 wMobileTradeRoomSceneID::                         db
 wMobileBattleRoomSceneID::                        db
 wBadShedSceneID::									db
-	ds 48
+wApt102SceneID::									db
+	ds 47
 
 ; fight counts
 wJackFightCount::    db

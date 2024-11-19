@@ -272,6 +272,8 @@ A8Item2:
 	end	
 
 UnlockDoorsG:
+	playsound SFX_FANFARE
+
 	opentext
 	writetext ButtonText
 	promptbutton

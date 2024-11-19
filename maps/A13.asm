@@ -274,6 +274,8 @@ A13Item2:
 	end	
 
 UnlockDoorsA13:
+	playsound SFX_FANFARE
+
 	opentext
 	writetext ButtonText
 	promptbutton

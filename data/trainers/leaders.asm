@@ -22,7 +22,7 @@ GymLeaders:
 ; fallthrough
 KantoGymLeaders:
 	db BROCK
-	db MISTY
+	db JOSE
 	db LT_SURGE
 	db ERIKA
 	db JANINE

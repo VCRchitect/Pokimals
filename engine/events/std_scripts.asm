@@ -186,9 +186,12 @@ PokecenterNurseScript:
 	waitbutton
 	closetrainpic			  
 	closetext
+	checkevent EVENT_WRONGEDJOSE
+	iffalse NoKidnapping
 	random 9
 	ifequal 1, KidnappingScript	
 	end
+
 
 .pokerus
 	; already cleared earlier in the script
@@ -211,12 +214,26 @@ PokecenterNurseScript:
 	specialphonecall SPECIALCALL_POKERUS
 	end
 	
+NoKidnapping:
+	end
+	
 KidnappingScript:
 	special FadeBlackQuickly
 	special ReloadSpritesNoPalettes	
+	special FadeOutMusic
+	playsound SFX_TACKLE
+	playsound SFX_ELEVATOR
 	pause 20
-	special FadeInQuickly	
+	playsound SFX_TACKLE
+	pause 20
+	playsound SFX_DOUBLESLAP
+	pause 15
+	playsound SFX_DOUBLESLAP
+	pause 15
+	playsound SFX_BEAT_UP
+	pause 15		
 	warp BADSHED, 2, 2
+	special FadeInQuickly	
 	end	
 
 DifficultBookshelfScript:

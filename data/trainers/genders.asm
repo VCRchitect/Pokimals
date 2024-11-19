@@ -20,7 +20,7 @@ BTTrainerClassGenders:
 	db MALE   ; KOGA
 	db MALE   ; CHAMPION
 	db MALE   ; BROCK
-	db FEMALE ; MISTY
+	db MALE 	; JOSE
 	db MALE   ; LT_SURGE
 	db MALE   ; SCIENTIST
 	db FEMALE ; ERIKA
