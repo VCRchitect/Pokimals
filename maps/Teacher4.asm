@@ -162,22 +162,22 @@ LaraScript:
 	end
 	
 LaraBeforeText:
-	text "Hi! I'm LARA!"
+	text "LARA: Hello..."
+	line "Lovely weather,"
 
-	para "Everyone was into"
-	line "ANIMALs, so I got"
-	cont "into it too!"
+	para "isn't it, dear?"
+	line "It's so pleasant."
 
-	para "ANIMALs are"
-	line "super-cute!"
+	para "I'm afraid I may"
+	line "doze off..."
 
-	para "You want to bat-"
-	line "tle? I'm warning"
-	cont "you--I'm good!"
+	para "My name is LARA."
+
+	para "I was hoping that"
+	line "my comment would"
 	
-	para "Like, I have an"
-	line "insane kill rate."
-	
+	para "show you that"
+	line "you're boring me."
 	done
 
 LaraPoorText:
@@ -188,27 +188,25 @@ LaraPoorText:
 	done
 
 LaraNoLearnText:
-	text "That's okay! Lots"
-	line "of uneducated"
+	text "That's okay, love!" 
+	line "Lots of uneducated"
 	cont "people succeed!"
 	done
 
 LaraShouldntBeSoSeriousText:
-	text "You shouldn't be"
-	line "so serious! You..."
-	cont "you child, you!"
-	
-	para "I'll hit you with"
-	line "a brick!"
+	text "Cor blimey!"
+	line "I just got me shit"
+	cont "kicked."	
 	done
 
 LaraWhatDoYouWantText:
-	para "What? What do you"
-	line "want? A BADGE?"
+	para "What? Ya done"
+	line "hooked the piss"
+	cont "and posh outta me."
 
 	para "Oh, right."
 	line "I forgot. Here's"
-	cont "PLAINBADGE."
+	cont "PLAINBADGE, fucka."
 	done
 
 PlayerReceivedPlainBadgeText:
@@ -217,18 +215,12 @@ PlayerReceivedPlainBadgeText:
 	done
 
 LaraPlainBadgeText:
-	text "PLAINBADGE lets"
-	line "your ANIMALs use"
-
-	para "STRENGTH outside"
-	line "of battle."
-
-	para "It also boosts"
-	line "your ANIMAL's"
+	text "PLAINBADGE boosts"
+	line "your ANIMALs'"
 	cont "SPEED."
 
 	para "Oh, you can have"
-	line "this too!"
+	line "this too, mate!"
 	done
 
 LaraAttractText:
@@ -238,23 +230,20 @@ LaraAttractText:
 	para "of a ANIMAL's"
 	line "charm."
 
-	para "Isn't it just per-"
-	line "fect for a cutie"
-	cont "like me?"
+	para "Use it to lure"
+	line "cunts into a trap"
 	
-	para "It's okay. I said"
-	line "it first. It's not"
-	
-	para "weird if you"
-	line "agree with me."
+	para "then hook 'em"
+	line "roight in the"
+	cont "gabber!"
 	done
 
 LaraGoodCryText:
 	text "Come for a visit"
-	line "again! Bye-bye!"
+	line "again! We can have"
+	cont "bangers 'n' mash!"
 	done
 	
-
 Teacher4_MapEvents:
 	db 0, 0 ; filler
 

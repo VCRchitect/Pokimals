@@ -154,13 +154,13 @@ ArnoldScript:
 	end
 	
 ArnoldNoLearnText:
-	text "It is dishonorable"
-	line "to deny wisdom."
+	text "It is foolish to"
+	line "deny education."
 	done
 
 ArnoldPoorText:
 	text "It is unforgivable"
-	line "to be poor."
+	line "to be poor. AUGH!"
 	done
 	
 Arnold_SteelTypeIntro:
@@ -174,22 +174,20 @@ Arnold_SteelTypeIntro:
 	para "It's a type that"
 	line "was only recently"
 	cont "discovered."
-
-	para "Let's begin."
 	done
 
 Arnold_BetterTrainer:
 	text "You are a better"
 	line "trainer than me,"
 
-	para "in both skill and"
-	line "kindness."
+	para "but I can bench"
+	line "way more than you."
 
-	para "In accordance with"
+	para "In agreement with"
 	line "academy rules, I"
 
-	para "confer upon you"
-	line "this BADGE."
+	para "give you"
+	line "this BADGE. AUGH!"
 	done
 
 Text_ReceivedMineralBadge:
@@ -203,7 +201,7 @@ Arnold_BadgeSpeech:
 	cont "DEFENSE."
 
 	para "Please take this"
-	line "as well."
+	line "too."
 	done
 
 Arnold_IronTailSpeech:
@@ -213,8 +211,8 @@ Arnold_IronTailSpeech:
 	done
 
 Arnold_GoodLuck:
-	text "You won't need it,"
-	line "but good luck..."
+	text "Hasta la vista,"
+	line "baby..."
 	done
 
 
