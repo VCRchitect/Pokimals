@@ -1,31 +1,45 @@
-# Pokémon Animal Version
+# Pokimals!
 
-They said I was crazy for attempting, but here's my WIP ROM Hack to turn Crystal into a Roguelite!
-So far I've finished:
+They said I was crazy for attempting, but here's my ROM Hack to turn Crystal into a Roguelite!
 
-1. Building the script for random "monsters" to appear in the ruins
-2. Built the randomizer macro for the rooms
-3. Made it so that, when you beat all the monsters, the doors open
-4. When you beat the monsters, you also get two items to appear that choose from a random table of goodies
-5. Replaced all 252 Pokemon, including art and 'Dex entries
-6. Rewrote every song in the game with all original tunes
-7. Made the script that sends you to a heal or mart hub to choose from after so many rooms beaten
-8. Made the script that sends you to a pre-boss area after so many rooms beaten
-9. Made the boss table for semi-random bosses to fight
-10. Implemented the level cap for scaling gym fights
-11. Made it so that more badges unlock more goodies
-12. Picked and set up the starters
-13. Built The Island, Silver Row, and The Site in their entirety
-14. Made you pay a scaling amount to challenge the leaders
-15. Leaders can be fought in any order
-16. Leaders have randomized Pokemon from a pool of Mons in their type
+Deal with the strange and kooky inhabitants of The Island as you explore a series of ruins that were discovered beneath the surface.
 
-Things to Do:
-Build The Biomes and their Maps:
-    1. Ruins
-    2. Forest
-    3. Fire
-    4. Ice
-    5. Cave
-    6. Factory
-2. Make a secret tower of legendaries for after you defeat the last Ruin 
+It's your 13th birthday, so the government says you're old enough to die in a hole!
+
+Pick from one of 13 starters and make your way into the depths of The Ruins. Defeat 5 critters and the door will open, and the ruins may give up some of their loot. As you defeat your instructors at The Site, you'll unlock more ANIMALs in The Ruins as well as more resources for your excursions!
+
+Features:
+-251 ANIMALs with brand new pics and Dex entries
+-A completely original soundtrack
+-Randomized dungeon runs so that you'll never have the same trip twice
+-Multiple bosses to defeat
+-Leaders (Teachers) can be fought in any order and scale accordingly (but you have to pay a scaling fee; Education ain't free, you know!)
+-Teachers can now have any ANIMALs from their type specialty
+-Scaling enemies and level cap so there's always a challenge
+-NPCs with randomized dialogue that pull from hundreds sayings, quotes, and one-liners
+-Character pics with their dialogue like most modern 2D RPGs
+-A goofy, sarcastic tone to everything (I'm sorry if you're not a fan.)
+-Appearances by various celebrities
+-A real, working cigarette item! (Your animals will look so cool!)
+-Redone UNOWNs as actual letters
+-An easter egg that explains what happened to your dear ol' dad
+-Unique Animal Ball colors
+-Muted Pokedex color
+
+Quality of Life Improvements:
+-Running Shoes! (Hold B)
+-Physical/Special Split
+-Infinite TMs and HMs
+-TMs and HMs tell you their name when you grab them
+-Can forget HMs without a delete
+-Instant text scrolling speed
+-Running Shoes (Hold B)
+-Toggleable EXP Share for all
+-Gain EXP when you catch Pokémon
+-Comfy evening color palette
+-Short beeps for low HP
+-No save delay
+-Apricorns finish instantly
+-No trade evolutions (they evolve usually at Lv. 36 now)
+-Can get all ANIMALs in the same game (including legendaries!)
+-Battle auto prompts
