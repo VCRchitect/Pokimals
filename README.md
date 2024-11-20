@@ -24,6 +24,7 @@ Pick from one of 13 starters and make your way into the depths of The Ruins. Def
   - An easter egg that explains what happened to your dear ol' dad
   - Unique Animal Ball colors
   - Muted Pokedex color
+  - A third gender option (Dinosaur, the third gender is dinosaur)
 
 ## Quality of Life Improvements:
   - Running Shoes! (Hold B)
