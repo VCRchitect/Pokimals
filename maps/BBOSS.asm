@@ -31,7 +31,7 @@ BossB:
 	end	
 	
 UnlockDoorsBBoss:
-	playsound SFX_FANFARE
+	playsound SFX_1ST_PLACE 
 
 	opentext
 	writetext BButtonText
@@ -58,8 +58,25 @@ GhostBWinLossText:
 	done
 
 RandomStairWarpBBOSS:
+	refreshscreen
+	opentext
+	writetext WanttoEscapeB
+	yesorno
+	iftrue .EscapeB
 	warp C1, 4, 4
 	end
+
+.EscapeB
+	playsound SFX_EXIT_BUILDING
+	warp THESITEINSIDERUINENTRANCE, 8, 1
+	end
+
+WanttoEscapeB:
+	text "Looks like you can"
+	line "go on or escape."
+	cont "You wanna go home?"
+	done
+	
 
 
 

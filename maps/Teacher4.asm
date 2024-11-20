@@ -8,6 +8,8 @@ Teacher4_MapScripts:
 	def_callbacks
 
 LaraScript:
+	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+	iffalse .GoAwayLara
 	checkevent EVENT_BEAT_LARA
 	iftrue .FightDone
 	faceplayer
@@ -28,6 +30,18 @@ LaraScript:
 	ifequal 7, .Seven
 	ifequal 8, .Eight
 	end
+
+.GoAwayLara:
+	faceplayer
+	refreshscreen
+	opentext
+	trainerpic LARA
+	writetext NoAnimalsLara
+	waitbutton
+	closetrainpic
+	closetext
+	end
+
 
 .Zero:
 	checkmoney YOUR_MONEY, NOBADGETUITION
@@ -160,6 +174,12 @@ LaraScript:
 	closetrainpic
 	closetext
 	end
+	
+NoAnimalsLara:
+	text "Oh dear, it seems"
+	line "you don't have an"
+	cont "ANIMAL."
+	done
 	
 LaraBeforeText:
 	text "LARA: Hello..."

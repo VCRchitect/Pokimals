@@ -9,6 +9,8 @@ Teacher7_MapScripts:
 	def_callbacks
 
 Big_BirdScript:
+	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+	iffalse .GoAwayBigBird
 	checkevent EVENT_BEAT_BIG_BIRD
 	iftrue .FightDone
 	faceplayer
@@ -28,6 +30,17 @@ Big_BirdScript:
 	ifequal 6, .Six
 	ifequal 7, .Seven
 	ifequal 8, .Eight
+	end
+
+.GoAwayBigBird
+	faceplayer
+	refreshscreen
+	opentext
+	trainerpic BIG_BIRD
+	writetext NoAnimalsBigBird
+	waitbutton
+	closetrainpic
+	closetext
 	end
 
 .Zero:
@@ -152,6 +165,13 @@ Big_BirdScript:
 .NoRoomForMudSlap:
 	closetext
 	end
+	
+NoAnimalsBigBird:
+	text "You wanna learn"
+	line "with BIG BIRD?"
+	
+	para "Get an ANIMAL!"
+	done
 	
 BigBirdPoorText:
 	text "Just because it's"

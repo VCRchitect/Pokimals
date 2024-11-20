@@ -177,9 +177,12 @@ InitPartyMenuBGPal0:
 
 _CGB_PokegearPals:
 	ld a, [wPlayerGender]
-	bit PLAYERGENDER_FEMALE_F, a
+	and a ; MALE
 	jr z, .male
 	ld hl, FemalePokegearPals
+	dec a ; FEMALE
+	jr z, .got_pals
+	ld hl, DrakePokegearPals
 	jr .got_pals
 
 .male
@@ -658,9 +661,16 @@ _CGB_TrainerCard:
 	ld bc, SCREEN_WIDTH * SCREEN_HEIGHT
 	ld a, [wPlayerGender]
 	and a
-	ld a, $1 ; kris
-	jr z, .got_gender
-	ld a, $0 ; chris
+	jr z, .male
+	dec a
+	jr z, .female
+	ld a, $2 ; green for enby
+	jr .got_gender
+.male
+	ld a, $1 ; blue for chris
+	jr .got_gender
+.female
+	ld a, $0 ; red for kris
 .got_gender
 	call ByteFill
 	; fill trainer sprite area with same-gender palette
@@ -668,14 +678,18 @@ _CGB_TrainerCard:
 	lb bc, 7, 5
 	ld a, [wPlayerGender]
 	and a
+	jr z, .male2
+	dec a
+	jr z, .female2
+	ld a, $2 ; enby
+	jr .got_gender2
+.male2	
 	ld a, $0 ; chris
-	jr z, .got_gender2
+	jr .got_gender2
+.female2
 	ld a, $1 ; kris
 .got_gender2
 	call FillBoxCGB
-	; top-right corner still uses the border's palette
-	hlcoord 18, 1, wAttrmap
-	ld [hl], $1
 	hlcoord 2, 11, wAttrmap
 	lb bc, 2, 4
 	ld a, $1 ; big_bird
@@ -705,21 +719,24 @@ _CGB_TrainerCard:
 	ld a, $7 ; lincoln
 	call FillBoxCGB
 	; peely uses kris's palette
-	ld a, [wPlayerGender]
-	and a
-	push af
-	jr z, .got_gender3
 	hlcoord 14, 14, wAttrmap
 	lb bc, 2, 4
-	ld a, $1
+	ld a, $1 ; peely
 	call FillBoxCGB
+	; top-right corner still uses the border's palette
+	ld a, [wPlayerGender]
+	and a
+	jr z, .male3
+	dec a
+	jr z, .female3
+	ld a, $2 ; green for enby
+	jr .got_gender3
+.male3
+	ld a, $1 ; blue for chris
+	jr .got_gender3
+.female3
+	ld a, $0 ; red for kris	
 .got_gender3
-	pop af
-	ld c, $0
-	jr nz, .got_gender4
-	inc c
-.got_gender4
-	ld a, c
 	hlcoord 18, 1, wAttrmap
 	ld [hl], a
 	call ApplyAttrmap
@@ -781,9 +798,14 @@ _CGB_PackPals:
 	jr z, .tutorial_male
 
 	ld a, [wPlayerGender]
-	bit PLAYERGENDER_FEMALE_F, a
+	and a ; MALE
 	jr z, .tutorial_male
+	dec a ; FEMALE
+	jr z, .tutorial_female
 
+	ld hl, .DrakePackPals
+	jr .got_gender
+.tutorial_female
 	ld hl, .KrisPackPals
 	jr .got_gender
 
@@ -827,6 +849,9 @@ INCLUDE "gfx/pack/pack.pal"
 
 .KrisPackPals:
 INCLUDE "gfx/pack/pack_f.pal"
+
+.DrakePackPals:
+INCLUDE "gfx/pack/pack_nb.pal"
 
 _CGB_Pokepic:
 	call _CGB_MapPals

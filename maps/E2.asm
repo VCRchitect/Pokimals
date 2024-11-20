@@ -274,7 +274,7 @@ E2Item2:
 	end	
 
 UnlockDoorsE2:
-	playsound SFX_FANFARE
+	playsound SFX_2ND_PLACE 
 	opentext
 	writetext EButtonText
 	promptbutton

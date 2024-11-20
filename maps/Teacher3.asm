@@ -8,6 +8,8 @@ Teacher3_MapScripts:
 	def_callbacks
 
 JasonScript:
+	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+	iffalse .GoAwayJason
 	checkevent EVENT_BEAT_JASON
 	iftrue .FightDone
 	faceplayer
@@ -28,6 +30,18 @@ JasonScript:
 	ifequal 7, .Seven
 	ifequal 8, .Eight
 	end
+
+.GoAwayJason:
+	faceplayer
+	refreshscreen
+	opentext
+	trainerpic JASON
+	writetext NoAnimalsJason
+	waitbutton
+	closetrainpic
+	closetext
+	end
+
 
 .Zero:
 	checkmoney YOUR_MONEY, NOBADGETUITION
@@ -152,6 +166,15 @@ JasonScript:
 	closetrainpic
 	closetext
 	end
+
+NoAnimalsJason:
+	text "GRAH! GRAH!"
+	line "-JASON points at"
+	
+	para "a picture of an"
+	line "ANIMAL and shakes"
+	cont "his head-"
+	done
 
 
 JasonIntroText:

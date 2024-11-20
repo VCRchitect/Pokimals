@@ -7,6 +7,8 @@ Teacher2_MapScripts:
 	def_callbacks
 
 PeelyScript:
+	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+	iffalse .GoAwayPeely
 	checkevent EVENT_BEAT_PEELY
 	iftrue .FightDone
 	faceplayer
@@ -26,6 +28,17 @@ PeelyScript:
 	ifequal 6, .Six
 	ifequal 7, .Seven
 	ifequal 8, .Eight
+	end
+
+.GoAwayPeely:
+	faceplayer
+	refreshscreen
+	opentext
+	trainerpic PEELY
+	writetext NoAnimalsPeely
+	waitbutton
+	closetrainpic
+	closetext
 	end
 
 .Zero:
@@ -156,6 +169,11 @@ PeelyScript:
 	closetrainpic
 	closetext
 	end
+	
+NoAnimalsPeely:
+	text "-PEELY points at"
+	line "the door-"
+	done
 	
 PeelyIntroText:
 	text "PEELY: ..."

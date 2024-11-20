@@ -10,7 +10,21 @@ TheSitePokecenter1F_MapScripts:
 	def_callbacks
 
 TheSitePokecenter1FNurseScript:
+	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+	iffalse .GoAwayNurse
 	jumpstd PokecenterNurseScript
+
+.GoAwayNurse:
+	faceplayer
+	refreshscreen
+	opentext
+	trainerpic NURSELADY
+	writetext NeedAnimals
+	waitbutton
+	closetrainpic
+	closetext
+	end
+
 
 TheSitePokecenter1FGentlemanScript:
 	faceplayer
@@ -45,6 +59,13 @@ TheSitePokecenter1FCooltrainerMScript:
 	closetrainpic
 	closetext
 	end
+	
+
+NeedAnimals:
+	text "Ummm... You don't"
+	line "have any ANIMALs"
+	cont "with you..."
+	done
 	
 TheSitePokecenter1FGentlemanText:
 	text "Sometimes I feel"

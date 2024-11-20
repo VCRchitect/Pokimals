@@ -7,6 +7,8 @@ Teacher6_MapScripts:
 	def_callbacks
 
 ArnoldScript:
+	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+	iffalse .GoAwayArnold
 	checkevent EVENT_BEAT_ARNOLD
 	iftrue .FightDone
 	faceplayer
@@ -26,6 +28,17 @@ ArnoldScript:
 	ifequal 6, .Six
 	ifequal 7, .Seven
 	ifequal 8, .Eight
+	end
+
+.GoAwayArnold
+	faceplayer
+	refreshscreen
+	opentext
+	trainerpic ARNOLD
+	writetext NoAnimalsArnold
+	waitbutton
+	closetrainpic
+	closetext
 	end
 
 .Zero:
@@ -152,6 +165,13 @@ ArnoldScript:
 	closetrainpic
 	closetext
 	end
+	
+NoAnimalsArnold:
+	text "I'm going to need"
+	line "your clothes, your"
+	para "bike, and for you"
+	line "to get an ANIMAL."
+	done
 	
 ArnoldNoLearnText:
 	text "It is foolish to"

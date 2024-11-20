@@ -5,6 +5,7 @@ TRUE  EQU 1
 ; genders
 MALE   EQU 0
 FEMALE EQU 1
+DRUGON EQU 2
 
 ; FlagAction arguments (see home/flag.asm)
 	const_def

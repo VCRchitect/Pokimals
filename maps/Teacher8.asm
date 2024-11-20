@@ -7,6 +7,8 @@ Teacher8_MapScripts:
 	def_callbacks
 
 Kid_RockScript:
+	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+	iffalse .GoAwayKidRock
 	checkflag ENGINE_STORMBADGE
 	iftrue .FightDone
 	faceplayer
@@ -26,6 +28,17 @@ Kid_RockScript:
 	ifequal 6, .Six
 	ifequal 7, .Seven
 	ifequal 8, .Eight
+	end
+
+.GoAwayKidRock:
+	faceplayer
+	refreshscreen
+	opentext
+	trainerpic KID_ROCK
+	writetext NoAnimalsKidRock
+	waitbutton
+	closetrainpic
+	closetext
 	end
 
 .Zero:
@@ -152,6 +165,12 @@ Kid_RockScript:
 	closetext
 	end
 	
+NoAnimalsKidRock:
+	text "You should go get"
+	line "an ANIMAL so we"
+	cont "can hang out."
+	done
+	
 KidRockNoLearnText:
 	text "You turning down"
 	line "an education?"
@@ -232,8 +251,8 @@ Teacher8_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  0,  5, THESITEINSIDETEACHERHALL, 9
-	warp_event  1,  5, THESITEINSIDETEACHERHALL, 9
+	warp_event  0,  5, THESITEINSIDETEACHERHALL, 10
+	warp_event  1,  5, THESITEINSIDETEACHERHALL, 10
 
 	def_coord_events
 

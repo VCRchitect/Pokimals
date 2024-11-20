@@ -111,4 +111,6 @@ OverworldSprites:
 	overworld_sprite StandingYoungsterSpriteGFX, 12, STANDING_SPRITE, PAL_OW_BLUE
 	overworld_sprite PapaSpriteGFX, 12, STANDING_SPRITE, PAL_OW_BLUE
 	overworld_sprite MerchantSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
+	overworld_sprite DrakeSpriteGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
+	overworld_sprite DrakeBikeSpriteGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
 	assert_table_length NUM_OVERWORLD_SPRITES

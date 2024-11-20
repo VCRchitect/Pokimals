@@ -783,10 +783,14 @@ NamePlayer:
 	ld hl, wPlayerName
 	ld de, .Chris
 	ld a, [wPlayerGender]
-	bit PLAYERGENDER_FEMALE_F, a
-	jr z, .Male
+	and a ; MALE
+	jr z, .GotName
 	ld de, .Kris
-.Male:
+	dec a ; FEMALE
+	jr z, .GotName
+	ld de, .Drake
+
+.GotName:
 	call InitName
 	ret
 
@@ -794,6 +798,9 @@ NamePlayer:
 	db "CODY@@@@@@@"
 .Kris:
 	db "MARY@@@@@@@"
+.Drake:
+	db "DRAGON@@@@"
+	
 
 GSShowPlayerNamingChoices: ; unreferenced
 	call LoadMenuHeader
@@ -948,10 +955,14 @@ Intro_PlacePlayerSprite:
 
 	ld b, PAL_OW_RED
 	ld a, [wPlayerGender]
-	bit PLAYERGENDER_FEMALE_F, a
-	jr z, .male
+	and a ; MALE
+	jr z, .okay
 	ld b, PAL_OW_BLUE
-.male
+	dec a ; FEMALE
+	jr z, .okay
+	ld b, PAL_OW_GREEN
+
+.okay
 	ld a, b
 
 	ld [hli], a ; attributes

@@ -259,7 +259,7 @@ F10Item2:
 	end	
 
 UnlockDoorsF10:
-	playsound SFX_FANFARE
+	playsound SFX_2ND_PLACE 
 
 	opentext
 	writetext FButtonText

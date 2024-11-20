@@ -34,9 +34,9 @@ INCLUDE "maps/TheSiteInsideTeacherHall.asm"
 INCLUDE "maps/ApartmentHall.asm"
 INCLUDE "maps/Apartments123.asm"
 INCLUDE "maps/Apartments789.asm"
-INCLUDE "maps/WeirdCloset.asm"
 
 SECTION "Map Scripts 4", ROMX
+INCLUDE "maps/WeirdCloset.asm"
 INCLUDE "maps/DiggingAcademy.asm"
 INCLUDE "maps/IndigoPlateauPokecenter1F.asm"
 INCLUDE "maps/WillsRoom.asm"

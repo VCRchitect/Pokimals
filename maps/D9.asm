@@ -274,7 +274,7 @@ D9Item2:
 	end	
 
 UnlockDoorsD9:
-	playsound SFX_FANFARE
+	playsound SFX_2ND_PLACE 
 
 	opentext
 	writetext DButtonText

@@ -274,7 +274,7 @@ A12Item2:
 	end	
 	
 UnlockDoorsK:
-	playsound SFX_FANFARE
+	playsound SFX_2ND_PLACE 
 
 	opentext
 	writetext ButtonText

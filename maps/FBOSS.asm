@@ -33,7 +33,7 @@ BossF:
 UnlockDoorsFBoss:
 	checkevent EVENT_BEAT_ELITE_FOUR
 	iffalse .DoNotPass
-	playsound SFX_FANFARE	
+	playsound SFX_1ST_PLACE 	
 	opentext
 	writetext FButtonText
 	promptbutton
@@ -58,8 +58,24 @@ UnlockDoorsFBoss:
 
 
 RandomStairWarpFBOSS:
+	refreshscreen
+	opentext
+	writetext WanttoEscapeF
+	yesorno
+	iftrue .EscapeF
 	warp LEGENDTOWER1F, 10, 13
 	end
+
+.EscapeF
+	playsound SFX_EXIT_BUILDING
+	warp THESITEINSIDERUINENTRANCE, 8, 1
+	end
+
+WanttoEscapeF:
+	text "Looks like you can"
+	line "go on or escape."
+	cont "You wanna go home?"
+	done
 
 GhostIntroFText:
 	text "OUR... TREASURE..."
@@ -68,7 +84,7 @@ GhostIntroFText:
 
 GhostFWinLossText:
 	text "WE... WILL..."
-	line "BE... BACK..."
+	line "NEVER... DIE..."
 	done
 
 OnlyElites:

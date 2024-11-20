@@ -274,7 +274,7 @@ B7Item2:
 	end	
 
 UnlockDoorsB7:
-	playsound SFX_FANFARE
+	playsound SFX_2ND_PLACE 
 
 	opentext
 	writetext BButtonText

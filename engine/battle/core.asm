@@ -2207,6 +2207,7 @@ ApplyExperienceAfterEnemyCaught:
 	push de
 	call GiveExperiencePoints
 	pop de
+	ld a, [wExpShareToggle]
 	and a
 	ret z
 	ld hl, wEnemyMonBaseExp
@@ -8983,9 +8984,15 @@ GetTrainerBackpic:
 	bit PLAYERSPRITESETUP_FEMALE_TO_MALE_F, a
 	jr nz, .Chris
 	ld a, [wPlayerGender]
-	bit PLAYERGENDER_FEMALE_F, a
+	and a ; MALE	
 	jr z, .Chris
+	dec a ; FEMALE
+	jr z, .Kris
 
+	farcall GetDrakeBackpic
+	ret
+	
+.Kris:
 ; It's a girl.
 	farcall GetKrisBackpic
 	ret

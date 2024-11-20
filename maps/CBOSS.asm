@@ -31,7 +31,7 @@ BossC:
 	end	
 	
 UnlockDoorsCBoss:
-	playsound SFX_FANFARE
+	playsound SFX_1ST_PLACE
 
 	opentext
 	writetext CButtonText
@@ -48,8 +48,24 @@ UnlockDoorsCBoss:
 	end
 
 RandomStairWarpCBOSS:
+	refreshscreen
+	opentext
+	writetext WanttoEscapeC
+	yesorno
+	iftrue .EscapeC
 	warp D1, 4, 4
 	end
+
+.EscapeC
+	playsound SFX_EXIT_BUILDING
+	warp THESITEINSIDERUINENTRANCE, 8, 1
+	end
+
+WanttoEscapeC:
+	text "Looks like you can"
+	line "go on or escape."
+	cont "You wanna go home?"
+	done
 
 GhostIntroCText:
 	text "AWAKEN... US..."

@@ -110,3 +110,5 @@ SECTION "Sprites 3", ROMX
 OldmanSpriteGFX::              INCBIN "gfx/sprites/oldman.2bpp"
 PapaSpriteGFX::					INCBIN "gfx/sprites/papa.2bpp"
 MerchantSpriteGFX::				INCBIN "gfx/sprites/merchant.2bpp"
+DrakeSpriteGFX::                INCBIN "gfx/sprites/drake.2bpp"
+DrakeBikeSpriteGFX::            INCBIN "gfx/sprites/drake_bike.2bpp"

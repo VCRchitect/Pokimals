@@ -274,7 +274,7 @@ F11Item2:
 	end	
 
 UnlockDoorsF11:
-	playsound SFX_FANFARE
+	playsound SFX_2ND_PLACE 
 
 	opentext
 	writetext FButtonText

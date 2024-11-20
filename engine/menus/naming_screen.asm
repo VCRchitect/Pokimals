@@ -216,7 +216,16 @@ NamingScreen:
 	cp LOW(KrisSpriteGFX)
 	jr nz, .not_kris
 	ld b, SPRITE_ANIM_INDEX_BLUE_WALK
+	jr .not_drake
 .not_kris
+	ld a, d
+	cp HIGH(DrakeSpriteGFX)
+	jr nz, .not_drake
+	ld a, e
+	cp LOW(DrakeSpriteGFX)
+	jr nz, .not_drake
+	ld b, SPRITE_ANIM_INDEX_DRAKE_WALK
+.not_drake
 	ld a, b
 	depixel 4, 4, 4, 0
 	call InitSpriteAnimStruct

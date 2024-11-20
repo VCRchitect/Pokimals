@@ -57,7 +57,7 @@ MoveDeletersHouse_MapEvents:
 
 	def_warp_events
 	warp_event  2,  7, ISLANDSOUTH, 1
-
+	warp_event  3,  7, ISLANDSOUTH, 1
 
 	def_coord_events
 

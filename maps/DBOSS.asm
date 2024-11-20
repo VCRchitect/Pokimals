@@ -31,7 +31,7 @@ BossD:
 	end	
 	
 UnlockDoorsDBoss:
-	playsound SFX_FANFARE
+	playsound SFX_1ST_PLACE
 
 	opentext
 	writetext DButtonText
@@ -48,8 +48,24 @@ UnlockDoorsDBoss:
 	end
 
 RandomStairWarpDBOSS:
+	refreshscreen
+	opentext
+	writetext WanttoEscapeD
+	yesorno
+	iftrue .EscapeD
 	warp E1, 4, 4
 	end
+
+.EscapeD
+	playsound SFX_EXIT_BUILDING
+	warp THESITEINSIDERUINENTRANCE, 8, 1
+	end
+
+WanttoEscapeD:
+	text "Looks like you can"
+	line "go on or escape."
+	cont "You wanna go home?"
+	done
 
 GhostIntroDText:
 	text "THESE... RUINS..."

@@ -554,6 +554,7 @@ NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const JARED
 	const RODNEY
 
+DRAKE EQU __trainer_class__
 	trainerclass PICNICKER ; 35
 	const LIZ1
 	const GINA1

@@ -274,7 +274,7 @@ C8Item2:
 	end	
 
 UnlockDoorsC8:
-	playsound SFX_FANFARE
+	playsound SFX_2ND_PLACE 
 
 	opentext
 	writetext CButtonText

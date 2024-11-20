@@ -387,7 +387,7 @@ PlaceGenderedPlayerName::
 	ld h, b
 	ld l, c
 	ld a, [wPlayerGender]
-	bit PLAYERGENDER_FEMALE_F, a
+	and a ; MALE
 	ld de, KunSuffixText
 	jr z, PlaceCommandCharacter
 	ld de, ChanSuffixText

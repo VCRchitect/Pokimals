@@ -272,7 +272,7 @@ A8Item2:
 	end	
 
 UnlockDoorsG:
-	playsound SFX_FANFARE
+	playsound SFX_2ND_PLACE 
 
 	opentext
 	writetext ButtonText

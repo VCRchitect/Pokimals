@@ -7,6 +7,8 @@ Teacher1_MapScripts:
 	def_callbacks
 
 Teacher1TPainScript:
+	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+	iffalse .GoAwayTPain
 	checkevent EVENT_BEAT_TPAIN
 	iftrue .FightDone
 	faceplayer
@@ -27,6 +29,18 @@ Teacher1TPainScript:
 	ifequal 7, .Seven
 	ifequal 8, .Eight
 	end
+
+.GoAwayTPain:
+	faceplayer
+	refreshscreen
+	opentext
+	trainerpic TPAIN
+	writetext NoAnimalsTPain
+	waitbutton
+	closetrainpic
+	closetext
+	end
+
 
 .Zero:
 	checkmoney YOUR_MONEY, NOBADGETUITION
@@ -153,6 +167,12 @@ Teacher1TPainScript:
 	closetrainpic
 	closetext
 	end
+
+NoAnimalsTPain:
+	text "HOOOOOWWWOWOWO"
+	line "YOU GONNA LEARN"
+	cont "WITHOUT AN ANIMAL?"
+	done
 
 GottaPayToPlayText:
 	text "I WAS TRYING TO"

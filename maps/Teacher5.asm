@@ -7,6 +7,8 @@ Teacher5_MapScripts:
 	def_callbacks
 
 LincolnScript:
+	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+	iffalse .GoAwayLincoln
 	checkevent EVENT_BEAT_LINCOLN
 	iftrue .FightDone
 	faceplayer
@@ -26,6 +28,17 @@ LincolnScript:
 	ifequal 6, .Six
 	ifequal 7, .Seven
 	ifequal 8, .Eight
+	end
+
+.GoAwayLincoln:
+	faceplayer
+	refreshscreen
+	opentext
+	trainerpic LINCOLN
+	writetext NoAnimalsLincoln
+	waitbutton
+	closetrainpic
+	closetext
 	end
 
 .Zero:
@@ -148,6 +161,16 @@ MahoganyGym_NoRoomForIcyWind:
 	closetrainpic
 	closetext
 	end
+	
+NoAnimalsLincoln:
+	text "We live in the"
+	line "land of the free,"
+	
+	para "but that doesn't"
+	line "apply to ANIMALs."
+	
+	para "Go get one, son!"
+	done
 	
 LincolnNoLearnText:
 	text "You serious?"

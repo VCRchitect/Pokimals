@@ -274,7 +274,7 @@ D11Item2:
 	end	
 
 UnlockDoorsD11:
-	playsound SFX_FANFARE
+	playsound SFX_2ND_PLACE 
 
 	opentext
 	writetext DButtonText

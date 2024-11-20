@@ -67,6 +67,8 @@ SpriteAnimFrameData:
 	dw .Frameset_IntroLettahF
 	dw .Frameset_CelebiLeft
 	dw .Frameset_CelebiRight
+	dw .Frameset_DrakeWalk
+	dw .Frameset_MagnetTrainDrake	
 	assert_table_length NUM_SPRITE_ANIM_FRAMESETS
 
 .Frameset_00:
@@ -497,3 +499,17 @@ SpriteAnimFrameData:
 	frame SPRITE_ANIM_OAMSET_CELEBI_1,  8, OAM_X_FLIP
 	frame SPRITE_ANIM_OAMSET_CELEBI_2,  8, OAM_X_FLIP
 	endanim
+
+.Frameset_DrakeWalk:
+	frame SPRITE_ANIM_OAMSET_DRAKE_WALK_1,  8
+	frame SPRITE_ANIM_OAMSET_DRAKE_WALK_2,  8
+	frame SPRITE_ANIM_OAMSET_DRAKE_WALK_1,  8
+	frame SPRITE_ANIM_OAMSET_DRAKE_WALK_2,  8, OAM_X_FLIP
+	dorestart
+	
+.Frameset_MagnetTrainDrake:
+	frame SPRITE_ANIM_OAMSET_MAGNET_TRAIN_DRAKE_1,  8
+	frame SPRITE_ANIM_OAMSET_MAGNET_TRAIN_DRAKE_2,  8
+	frame SPRITE_ANIM_OAMSET_MAGNET_TRAIN_DRAKE_1,  8
+	frame SPRITE_ANIM_OAMSET_MAGNET_TRAIN_DRAKE_2,  8, OAM_X_FLIP
+	dorestart

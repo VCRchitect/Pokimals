@@ -142,6 +142,11 @@ SpriteAnimOAMData:
 	dbw $08, .OAMData_GameFreakLogo4_11        ; SPRITE_ANIM_OAMSET_GAMEFREAK_LOGO_9
 	dbw $04, .OAMData_GameFreakLogo4_11        ; SPRITE_ANIM_OAMSET_GAMEFREAK_LOGO_10
 	dbw $00, .OAMData_GameFreakLogo4_11        ; SPRITE_ANIM_OAMSET_GAMEFREAK_LOGO_11
+	dbw $00, .OAMData_DrakeWalk                ; SPRITE_ANIM_OAMSET_DRAKE_WALK_1
+	dbw $04, .OAMData_DrakeWalk                ; SPRITE_ANIM_OAMSET_DRAKE_WALK_2
+	dbw $00, .OAMData_MagnetTrainDrake         ; SPRITE_ANIM_OAMSET_MAGNET_TRAIN_DRAKE_1
+	dbw $04, .OAMData_MagnetTrainDrake         ; SPRITE_ANIM_OAMSET_MAGNET_TRAIN_DRAKE_2
+
 	assert_table_length NUM_SPRITE_ANIM_OAMSETS
 
 .OAMData_1x1_Palette0:
@@ -1128,3 +1133,16 @@ SpriteAnimOAMData:
 	dbsprite -1,  0,  4,  0, $51, 1
 	dbsprite  0,  0,  4,  0, $52, 1
 	dbsprite  1,  0,  4,  0, $53, 1
+
+.OAMData_DrakeWalk:
+	db 4
+	dsprite -1,  0, -1,  0, $00, PAL_OW_GREEN
+	dsprite -1,  0,  0,  0, $01, PAL_OW_GREEN
+	dsprite  0,  0, -1,  0, $02, PAL_OW_GREEN
+	dsprite  0,  0,  0,  0, $03, PAL_OW_GREEN
+.OAMData_MagnetTrainDrake:
+	db 4
+	dsprite -1,  0, -1,  0, $00, PAL_OW_GREEN
+	dsprite -1,  0,  0,  0, $01, PAL_OW_GREEN
+	dsprite  0,  0, -1,  0, $02, PAL_OW_GREEN
+	dsprite  0,  0,  0,  0, $03, PAL_OW_GREEN
