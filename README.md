@@ -1,5 +1,4 @@
 # Pokimals! - A Crystal Roguelite ROM Hack
-
 They said I was crazy for attempting, but here's my ROM Hack to turn Crystal into a Roguelite!
 
 Deal with the strange and kooky inhabitants of The Island as you explore a series of ruins that were discovered beneath the surface.
@@ -7,7 +6,6 @@ Deal with the strange and kooky inhabitants of The Island as you explore a serie
 It's your 13th birthday, so the government says you're old enough to die in a hole!
 
 Pick from one of 13 starters and make your way into the depths of The Ruins. Defeat 5 critters and the door will open, and the ruins may give up some of their loot. As you defeat your instructors at The Site, you'll unlock more ANIMALs in The Ruins as well as more resources for your excursions!
-
 
 ## Features:
   - 251 ANIMALs with brand new pics and Dex entries
@@ -54,3 +52,9 @@ Pick from one of 13 starters and make your way into the depths of The Ruins. Def
 - Grate Oracle Lewot for helping me realize there was an easier way to handle the scripts
 - Damien for helping me with the trainer pic scripting and being a generally friendly dude
 - The entire Pret Discord for all of their incredible work in ROM hacking
+
+## Screenshots
+![bgb00019](https://github.com/user-attachments/assets/e68b8818-43be-4ec8-9a4c-e286e9d402fd) ![bgb00017](https://github.com/user-attachments/assets/a0ea1322-18c7-46a3-85b3-1992fa265da2) ![bgb00015](https://github.com/user-attachments/assets/4007d4de-ed7a-458c-b32e-6778ee1f6f8f)
+
+![bgb00022](https://github.com/user-attachments/assets/973a0850-34f5-467c-bced-96791ceb7a32) ![bgb00021](https://github.com/user-attachments/assets/1a6fbbc6-5404-401a-bbb9-a02b2fc54014) ![bgb00020](https://github.com/user-attachments/assets/77f2410a-6a0a-4bfc-a375-1e1ae7006a1f)
+
