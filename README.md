@@ -15,7 +15,7 @@ Pick from one of 13 starters and make your way into the depths of The Ruins. Def
   - Leaders (Teachers) can be fought in any order and scale accordingly (but you have to pay a scaling fee; Education ain't free, you know!)
   - Teachers can now have any ANIMALs from their type specialty
   - Scaling enemies and level cap so there's always a challenge
-  - NPCs with randomized dialogue that pull from hundreds sayings, quotes, and one-liners
+  - NPCs with randomized dialogue that pull from hundreds of sayings, quotes, and one-liners
   - Character pics with their dialogue like most modern 2D RPGs
   - A goofy, sarcastic tone to everything (I'm sorry if you're not a fan.)
   - Appearances by various celebrities
@@ -33,7 +33,6 @@ Pick from one of 13 starters and make your way into the depths of The Ruins. Def
   - TMs and HMs tell you their name when you grab them
   - Can forget HMs without a delete
   - Instant text scrolling speed
-  - Running Shoes (Hold B)
   - Toggleable EXP Share for all
   - Gain EXP when you catch Pokémon
   - Comfy evening color palette
