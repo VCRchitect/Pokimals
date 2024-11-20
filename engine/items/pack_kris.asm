@@ -36,5 +36,7 @@ PackNBGFXPointers:
 	dw PackNBGFX + (15 tiles) * 3 ; BALL_POCKET
 	dw PackNBGFX + (15 tiles) * 0 ; KEY_ITEM_POCKET
 	dw PackNBGFX + (15 tiles) * 2 ; TM_HM_POCKET
+	dw PackNBGFX + (15 tiles) * 4 ; HELDTIEMS_POCKET
+
 PackNBGFX:
 INCBIN "gfx/pack/pack_nb.2bpp"

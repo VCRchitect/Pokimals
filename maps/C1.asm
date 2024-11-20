@@ -9,6 +9,9 @@ C1_MapScripts:
 	end
 
 RandomStairWarpC1:
+	readmem wRoomDefeatedCount
+	setval 0
+	writemem wRoomDefeatedCount
 	readmem wSplitRoomCount
 	setval 0
 	writemem wSplitRoomCount

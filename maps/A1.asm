@@ -9,6 +9,9 @@ A1_MapScripts:
 	end
 
 RandomStairWarp1:
+	readmem wRoomDefeatedCount
+	setval 0
+	writemem wRoomDefeatedCount	
 	readmem wSplitRoomCount
 	setval 0
 	writemem wSplitRoomCount

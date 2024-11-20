@@ -198,6 +198,9 @@ LaraBeforeText:
 	
 	para "show you that"
 	line "you're boring me."
+	
+	para "Did you come here"
+	line "to learn?"
 	done
 
 LaraPoorText:
