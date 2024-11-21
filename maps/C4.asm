@@ -285,7 +285,7 @@ UnlockDoorsC4:
 	refreshscreen
 	playsound SFX_ENTER_DOOR
 	changeblock 2, 0, $0B
-	changeblock 6, 0, $0B
+	changeblock 14, 0, $0B
 	reloadmappart
 	closetext
 	readmem wRoomDefeatedCount

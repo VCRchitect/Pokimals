@@ -19,6 +19,7 @@ DiggingAcademy_MapScripts:
 	
 .MeetProfOak:
 	applymovement PLAYER, DiggingAcademy_PlayerWalksToOak
+	turnobject PLAYER, UP
 	playmusic MUSIC_PROF_OAK
 	refreshscreen
 	opentext
@@ -39,7 +40,6 @@ DiggingAcademy_MapScripts:
 	closetext
 	special RestartMapMusic
 	pause 15
-	
 	setscene SCENE_FINISHED
 	end
 
@@ -205,7 +205,6 @@ DiggingAcademy_PlayerWalksToOak:
 	step RIGHT
 	step RIGHT
 	step RIGHT
-	turn_head UP
 	step_end
 
 
@@ -461,7 +460,7 @@ DiggingAcademy_MapEvents:
 	bg_event  4,  0, BGEVENT_READ, AcademyBlackboard
 
 	def_object_events
-	object_event  4,  2, SPRITE_OAK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AcademyOak, -1	
+	object_event  3,  1, SPRITE_OAK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AcademyOak, -1	
 	object_event  2,  5, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, DiggingAcademyYoungster1Script, -1
 	object_event  3, 11, SPRITE_GAMEBOY_KID, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DiggingAcademyGameboyKid1Script, -1
 	object_event  4, 11, SPRITE_GAMEBOY_KID, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, DiggingAcademyGameboyKid2Script, -1

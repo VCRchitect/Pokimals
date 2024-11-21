@@ -281,7 +281,7 @@ UnlockDoorsE:
 	appear ARUINS_POKE_BALL2e
 	refreshscreen
 	playsound SFX_ENTER_DOOR
-	changeblock 2, 0, $0B
+	changeblock 4, 0, $0B
 	reloadmappart
 	closetext
 	readmem wRoomDefeatedCount

@@ -271,15 +271,6 @@ _CGB_Pokedex:
 
 .is_pokemon
 	call GetMonPalettePointer
-	ld a, [wPokedexShinyToggle]
-	and a
-	jr z, .not_shiny
-	; Get shiny palette pointer
-	inc hl
-	inc hl
-	inc hl
-	inc hl
-.not_shiny
 	call LoadPalette_White_Col1_Col2_Black ; mon palette
 .got_palette
 	call WipeAttrmap
@@ -664,7 +655,7 @@ _CGB_TrainerCard:
 	jr z, .male
 	dec a
 	jr z, .female
-	ld a, $2 ; green for enby
+	ld a, $2 ; green for drake
 	jr .got_gender
 .male
 	ld a, $1 ; blue for chris
@@ -681,7 +672,7 @@ _CGB_TrainerCard:
 	jr z, .male2
 	dec a
 	jr z, .female2
-	ld a, $2 ; enby
+	ld a, $2 ; drake
 	jr .got_gender2
 .male2	
 	ld a, $0 ; chris
@@ -729,7 +720,7 @@ _CGB_TrainerCard:
 	jr z, .male3
 	dec a
 	jr z, .female3
-	ld a, $2 ; green for enby
+	ld a, $2 ; green for drake
 	jr .got_gender3
 .male3
 	ld a, $1 ; blue for chris

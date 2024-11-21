@@ -1136,10 +1136,11 @@ SpriteAnimOAMData:
 
 .OAMData_DrakeWalk:
 	db 4
-	dsprite -1,  0, -1,  0, $00, PAL_OW_GREEN
-	dsprite -1,  0,  0,  0, $01, PAL_OW_GREEN
-	dsprite  0,  0, -1,  0, $02, PAL_OW_GREEN
-	dsprite  0,  0,  0,  0, $03, PAL_OW_GREEN
+	dbsprite -1, -1,  0,  0, $00, PAL_OW_GREEN
+	dbsprite  0, -1,  0,  0, $01, PAL_OW_GREEN
+	dbsprite -1,  0,  0,  0, $02, PAL_OW_GREEN
+	dbsprite  0,  0,  0,  0, $03, PAL_OW_GREEN
+	
 .OAMData_MagnetTrainDrake:
 	db 4
 	dsprite -1,  0, -1,  0, $00, PAL_OW_GREEN
