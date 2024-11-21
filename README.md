@@ -53,6 +53,9 @@ Pick from one of 13 starters and make your way into the depths of The Ruins. Def
 - Damien for helping me with the trainer pic scripting and being a generally friendly dude
 - The entire Pret Discord for all of their incredible work in ROM hacking
 
+## WARNINGS
+This game features foul language, tobacco use by underage animals, sexual themes, animal violence, and frightening images of pixelated ghosts. This game should not be played by people who are pregnant, nursing, or may become pregnant nurses. Viewer discretion is advised.
+
 ## Screenshots
 ![bgb00019](https://github.com/user-attachments/assets/e68b8818-43be-4ec8-9a4c-e286e9d402fd) ![bgb00017](https://github.com/user-attachments/assets/a0ea1322-18c7-46a3-85b3-1992fa265da2) ![bgb00015](https://github.com/user-attachments/assets/4007d4de-ed7a-458c-b32e-6778ee1f6f8f)
 
