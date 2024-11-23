@@ -153,6 +153,7 @@ JasonScript:
 	end
 
 .GotShadowBall:
+	faceplayer
 	refreshscreen
 	opentext
 	trainerpic JASON

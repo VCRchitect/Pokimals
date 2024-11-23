@@ -161,6 +161,7 @@ LaraScript:
 	end
 
 .GotAttract:
+	faceplayer
 	refreshscreen
 	opentext
 	trainerpic LARA

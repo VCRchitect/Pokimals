@@ -154,6 +154,7 @@ Teacher1TPainScript:
 	end
 
 .GotFuryCutter:
+	faceplayer
 	refreshscreen
 	opentext
 	trainerpic TPAIN

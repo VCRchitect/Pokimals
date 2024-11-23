@@ -14,7 +14,7 @@
 	const LANDMARK_UNION_CAVE        ; 0a
 	const LANDMARK_ROUTE_33          ; 0b
 	const LANDMARK_AZALEA_TOWN       ; 0c
-	const LANDMARK_BEAVER_WELL     ; 0d
+	const LANDMARK_SLOWPOKE_WELL     ; 0d
 	const LANDMARK_ILEX_FOREST       ; 0e
 	const LANDMARK_ROUTE_34          ; 0f
 	const LANDMARK_GOLDENROD_CITY    ; 10
@@ -47,7 +47,18 @@
 	const LANDMARK_ROUTE_45          ; 2b
 	const LANDMARK_DARK_CAVE         ; 2c
 	const LANDMARK_ROUTE_46          ; 2d
-	const LANDMARK_SILVER_CAVE       ; 2e
+	const LANDMARK_SILVER_CAVE       ; 2e	
+	const LANDMARK_PLAYERS_YARD
+	const LANDMARK_SILVER_ROW
+	const LANDMARK_THE_SITE
+	const LANDMARK_STONE_RUIN
+	const LANDMARK_FOREST_RUIN
+	const LANDMARK_FLAME_RUIN
+	const LANDMARK_ICE_RUIN
+	const LANDMARK_TECH_RUIN
+	const LANDMARK_GOLD_RUIN
+	const LANDMARK_THE_TOWER
+
 KANTO_LANDMARK EQU const_value
 	const LANDMARK_PALLET_TOWN       ; 2f
 	const LANDMARK_ROUTE_1           ; 30
@@ -64,7 +75,7 @@ KANTO_LANDMARK EQU const_value
 	const LANDMARK_UNDERGROUND_PATH  ; 3b
 	const LANDMARK_ROUTE_6           ; 3c
 	const LANDMARK_VERMILION_CITY    ; 3d
-	const LANDMARK_MOLES_CAVE     ; 3e
+	const LANDMARK_DIGLETTS_CAVE     ; 3e
 	const LANDMARK_ROUTE_7           ; 3f
 	const LANDMARK_ROUTE_8           ; 40
 	const LANDMARK_ROUTE_9           ; 41
@@ -98,7 +109,6 @@ KANTO_LANDMARK EQU const_value
 	const LANDMARK_TOHJO_FALLS       ; 5d
 	const LANDMARK_ROUTE_28          ; 5e
 	const LANDMARK_FAST_SHIP         ; 5f
-	const LANDMARK_THE_RUINS		  ; 5g
 NUM_LANDMARKS EQU const_value
 
 ; used in CaughtData

@@ -151,6 +151,7 @@ Kid_RockScript:
 	end
 
 .AlreadyGotTM:
+	faceplayer
 	refreshscreen
 	opentext
 	trainerpic KID_ROCK

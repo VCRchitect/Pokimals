@@ -148,6 +148,7 @@ LincolnScript:
 	end
 
 LincolnScript_Defeat:
+	faceplayer
 	refreshscreen
 	opentext
 	trainerpic LINCOLN

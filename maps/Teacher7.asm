@@ -153,6 +153,7 @@ Big_BirdScript:
 	end
 
 .SpeechAfterTM:
+	faceplayer
 	refreshscreen
 	opentext
 	trainerpic BIG_BIRD

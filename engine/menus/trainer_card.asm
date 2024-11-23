@@ -606,7 +606,7 @@ TrainerCard_JohtoBadgesOAM:
 	; Risingbadge
 	; X-flips on alternate cycles.
 	db $80, $78, 0
-	db $1c,            $20, $24, $20 | (1 << 7)
+	db $1c, $20, $24, $20 | (1 << 7)
 	db $1c | (1 << 7), $20, $24, $20 | (1 << 7)
 
 CardStatusGFX: INCBIN "gfx/trainer_card/card_status.2bpp"

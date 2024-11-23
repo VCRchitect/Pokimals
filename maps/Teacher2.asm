@@ -161,6 +161,7 @@ PeelyScript:
 	end
 
 .GotTM24:
+	faceplayer
 	refreshscreen
 	opentext
 	trainerpic PEELY

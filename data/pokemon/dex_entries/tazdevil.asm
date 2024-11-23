@@ -7,4 +7,6 @@
 
 	page "know just for even"
 	next "thinking about its"
-	next "general direction.@"
+	next "general direction."
+	
+	page "Evolves at Lv. 36.@"

@@ -152,6 +152,7 @@ ArnoldScript:
 	end
 
 .GotIronTail:
+	faceplayer
 	refreshscreen
 	opentext
 	trainerpic ARNOLD
