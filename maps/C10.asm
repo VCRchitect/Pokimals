@@ -46,6 +46,10 @@ RandomStairWarpC10a:
 RandomStairWarpC10b:
 	warp CMART, 4,  4
 	end
+
+RandomStairWarpC10c:
+	warp CSHINY, 4,  4
+	end
 	
 Monster1C10:	
 	faceplayer
@@ -270,6 +274,7 @@ UnlockDoorsC10:
 	refreshscreen
 	playsound SFX_ENTER_DOOR
 	changeblock 2, 0, $0B
+	changeblock 6, 2, $0B	
 	changeblock 10, 0, $0B
 	reloadmappart
 	closetext
@@ -286,6 +291,8 @@ C10_MapEvents:
 	def_coord_events
 	coord_event  2,  0, SCENE_RANDOMSTAIRS, RandomStairWarpC10a
 	coord_event  3,  0, SCENE_RANDOMSTAIRS, RandomStairWarpC10a
+	coord_event  6,  2, SCENE_RANDOMSTAIRS, RandomStairWarpC10c
+	coord_event  7,  2, SCENE_RANDOMSTAIRS, RandomStairWarpC10c		
 	coord_event  10,  0, SCENE_RANDOMSTAIRS, RandomStairWarpC10b
 	coord_event  11,  0, SCENE_RANDOMSTAIRS, RandomStairWarpC10b
 

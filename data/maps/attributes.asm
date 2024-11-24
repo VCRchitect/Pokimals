@@ -169,6 +169,7 @@ ENDM
 	map_attributes AMART, AMART, $00, 0
 	map_attributes ABOSS, ABOSS, $00, 0
 	map_attributes APREBOSS, APREBOSS, $00, 0
+	map_attributes AShiny, ASHINY, $00, 0
 
 	map_attributes B1, B1, $00, 0
 	map_attributes B2, B2, $00, 0
@@ -188,6 +189,7 @@ ENDM
 	map_attributes BMART, BMART, $00, 0
 	map_attributes BBOSS, BBOSS, $00, 0
 	map_attributes BPREBOSS, BPREBOSS, $00, 0
+	map_attributes BShiny, BSHINY, $00, 0	
 	
 	map_attributes C1, C1, $00, 0
 	map_attributes C2, C2, $00, 0
@@ -207,6 +209,7 @@ ENDM
 	map_attributes CMART, CMART, $00, 0
 	map_attributes CBOSS, CBOSS, $00, 0
 	map_attributes CPREBOSS, CPREBOSS, $00, 0
+	map_attributes CShiny, CSHINY, $00, 0	
 
 	map_attributes D1, D1, $00, 0
 	map_attributes D2, D2, $00, 0
@@ -226,6 +229,7 @@ ENDM
 	map_attributes DMART, DMART, $00, 0
 	map_attributes DBOSS, DBOSS, $00, 0
 	map_attributes DPREBOSS, DPREBOSS, $00, 0
+	map_attributes DShiny, DSHINY, $00, 0	
 	
 	map_attributes E1, E1, $00, 0
 	map_attributes E2, E2, $00, 0
@@ -245,6 +249,7 @@ ENDM
 	map_attributes EMART, EMART, $00, 0
 	map_attributes EBOSS, EBOSS, $00, 0
 	map_attributes EPREBOSS, EPREBOSS, $00, 0
+	map_attributes EShiny, ESHINY, $00, 0	
 
 	map_attributes F1, F1, $00, 0
 	map_attributes F2, F2, $00, 0
@@ -264,6 +269,7 @@ ENDM
 	map_attributes FMART, FMART, $00, 0
 	map_attributes FBOSS, FBOSS, $00, 0
 	map_attributes FPREBOSS, FPREBOSS, $00, 0
+	map_attributes FShiny, FSHINY, $00, 0	
 	
 	map_attributes LegendTower1F, LEGENDTOWER1F, $00, 0
 	map_attributes LegendTower2F, LEGENDTOWER2F, $00, 0

@@ -42,6 +42,10 @@ BallDisappearB10:
 RandomStairWarpB10a:
 	warp BHEAL, 4,  4
 	end
+	
+RandomStairWarpB10c:
+	warp BSHINY, 4,  4
+	end	
 
 RandomStairWarpB10b:
 	warp BMART, 4,  4
@@ -270,6 +274,7 @@ UnlockDoorsB10:
 	refreshscreen
 	playsound SFX_ENTER_DOOR
 	changeblock 2, 0, $0B
+	changeblock 6, 2, $0B
 	changeblock 10, 0, $0B
 	reloadmappart
 	closetext	readmem wRoomDefeatedCount
@@ -285,6 +290,8 @@ B10_MapEvents:
 	def_coord_events
 	coord_event  2,  0, SCENE_RANDOMSTAIRS, RandomStairWarpB10a
 	coord_event  3,  0, SCENE_RANDOMSTAIRS, RandomStairWarpB10a
+	coord_event  6,  2, SCENE_RANDOMSTAIRS, RandomStairWarpB10c
+	coord_event  7,  2, SCENE_RANDOMSTAIRS, RandomStairWarpB10c		
 	coord_event  10,  0, SCENE_RANDOMSTAIRS, RandomStairWarpB10b
 	coord_event  11,  0, SCENE_RANDOMSTAIRS, RandomStairWarpB10b
 

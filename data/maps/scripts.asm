@@ -78,6 +78,7 @@ INCLUDE "maps/AHEAL.asm"
 INCLUDE "maps/AMART.asm"
 INCLUDE "maps/APREBOSS.asm"
 INCLUDE "maps/ABOSS.asm"
+INCLUDE "maps/AShiny.asm"
 
 SECTION "Map Scripts 7", ROMX
 INCLUDE "maps/B1.asm"
@@ -98,7 +99,7 @@ INCLUDE "maps/BHEAL.asm"
 INCLUDE "maps/BMART.asm"
 INCLUDE "maps/BPREBOSS.asm"
 INCLUDE "maps/BBOSS.asm"
-
+INCLUDE "maps/BShiny.asm"
 
 SECTION "Map Scripts 8", ROMX
 INCLUDE "maps/C1.asm"
@@ -119,7 +120,7 @@ INCLUDE "maps/CHEAL.asm"
 INCLUDE "maps/CMART.asm"
 INCLUDE "maps/CPREBOSS.asm"
 INCLUDE "maps/CBOSS.asm"
-
+INCLUDE "maps/CShiny.asm"
 
 SECTION "Map Scripts 9", ROMX
 INCLUDE "maps/D1.asm"
@@ -140,6 +141,7 @@ INCLUDE "maps/DHEAL.asm"
 INCLUDE "maps/DMART.asm"
 INCLUDE "maps/DPREBOSS.asm"
 INCLUDE "maps/DBOSS.asm"
+INCLUDE "maps/DShiny.asm"
 
 SECTION "Map Scripts 10", ROMX
 INCLUDE "maps/E1.asm"
@@ -160,7 +162,7 @@ INCLUDE "maps/EHEAL.asm"
 INCLUDE "maps/EMART.asm"
 INCLUDE "maps/EPREBOSS.asm"
 INCLUDE "maps/EBOSS.asm"
-
+INCLUDE "maps/EShiny.asm"
 
 SECTION "Map Scripts 11", ROMX
 INCLUDE "maps/F1.asm"
@@ -181,6 +183,8 @@ INCLUDE "maps/FHEAL.asm"
 INCLUDE "maps/FMART.asm"
 INCLUDE "maps/FPREBOSS.asm"
 INCLUDE "maps/FBOSS.asm"
+INCLUDE "maps/FShiny.asm"
+
 
 SECTION "Map Scripts 12", ROMX
 

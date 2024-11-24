@@ -261,7 +261,8 @@ UnlockDoorsI:
 	refreshscreen
 	playsound SFX_ENTER_DOOR
 	changeblock 2, 0, $78
-	changeblock 10, 0, $0B
+	changeblock 6, 2, $0B
+	changeblock 10, 0, $79
 	reloadmappart
 	closetext
 	readmem wRoomDefeatedCount
@@ -276,6 +277,10 @@ RandomStairWarpA10a:
 RandomStairWarpA10b:
 	warp AMART, 4,  4
 	end
+
+RandomStairWarpA10c:
+	warp ASHINY, 4,  4
+	end
 	
 A10_MapEvents:
 	db 0, 0 ; filler
@@ -284,6 +289,8 @@ A10_MapEvents:
 	def_coord_events
 	coord_event  2,  0, SCENE_RANDOMSTAIRS, RandomStairWarpA10a
 	coord_event  3,  0, SCENE_RANDOMSTAIRS, RandomStairWarpA10a
+	coord_event  6,  2, SCENE_RANDOMSTAIRS, RandomStairWarpA10c
+	coord_event  7,  2, SCENE_RANDOMSTAIRS, RandomStairWarpA10c	
 	coord_event  10,  0, SCENE_RANDOMSTAIRS, RandomStairWarpA10b
 	coord_event  11,  0, SCENE_RANDOMSTAIRS, RandomStairWarpA10b
 
@@ -297,5 +304,5 @@ A10_MapEvents:
 	object_event 11,  3, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster3i, -1
 	object_event  7,  6, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster4i, -1
 	object_event  2,  3, SPRITE_MONSTER, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Monster5i, -1
-	object_event  6,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, A10Item1, EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
-	object_event  7,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, A10Item2, EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
+	object_event  4,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, A10Item1, EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
+	object_event  9,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, A10Item2, EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1

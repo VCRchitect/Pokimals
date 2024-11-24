@@ -202,6 +202,9 @@ APREBOSS_Blocks:
 
 ABOSS_Blocks:
 	INCBIN "maps/ABOSS.blk"
+	
+AShiny_Blocks:
+	INCBIN "maps/AShiny.blk"
 
 B1_Blocks:
 	INCBIN "maps/B1.blk"
@@ -256,6 +259,9 @@ BPREBOSS_Blocks:
 
 BBOSS_Blocks:
 	INCBIN "maps/BBOSS.blk"
+	
+BShiny_Blocks:
+	INCBIN "maps/BShiny.blk"	
 
 C1_Blocks:
 	INCBIN "maps/C1.blk"
@@ -310,6 +316,9 @@ CPREBOSS_Blocks:
 
 CBOSS_Blocks:
 	INCBIN "maps/CBOSS.blk"
+	
+CShiny_Blocks:
+	INCBIN "maps/CShiny.blk"	
 
 D1_Blocks:
 	INCBIN "maps/D1.blk"
@@ -364,6 +373,9 @@ DPREBOSS_Blocks:
 
 DBOSS_Blocks:
 	INCBIN "maps/DBOSS.blk"
+	
+DShiny_Blocks:
+	INCBIN "maps/DShiny.blk"	
 
 E1_Blocks:
 	INCBIN "maps/E1.blk"
@@ -418,6 +430,9 @@ EPREBOSS_Blocks:
 
 EBOSS_Blocks:
 	INCBIN "maps/EBOSS.blk"
+	
+EShiny_Blocks:
+	INCBIN "maps/EShiny.blk"	
 
 F1_Blocks:
 	INCBIN "maps/F1.blk"
@@ -472,4 +487,7 @@ FPREBOSS_Blocks:
 
 FBOSS_Blocks:
 	INCBIN "maps/FBOSS.blk"
+	
+FShiny_Blocks:
+	INCBIN "maps/FShiny.blk"	
 

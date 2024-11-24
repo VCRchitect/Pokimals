@@ -109,6 +109,7 @@ ENDM
 	map_const AHEAL, 5, 3 ; 16
 	map_const APREBOSS, 5, 3 ; 17
 	map_const ABOSS, 5, 5 ; 18
+	map_const ASHINY, 5, 3
 	endgroup
 	
 	newgroup RUINSB					; 6
@@ -130,6 +131,7 @@ ENDM
 	map_const BHEAL, 5, 3 ; 17
 	map_const BPREBOSS, 5, 3 ; 18
 	map_const BBOSS, 5, 5 ; 19
+	map_const BSHINY, 5, 3	
 	endgroup
 
 	newgroup RUINSC											; 7
@@ -151,6 +153,7 @@ ENDM
 	map_const CHEAL, 5, 3 ; 16
 	map_const CPREBOSS, 5, 3 ; 17
 	map_const CBOSS, 5, 5 ; 18
+	map_const CSHINY, 5, 3	
 	endgroup
 	
 	newgroup RUINSD								; 8
@@ -172,6 +175,7 @@ ENDM
 	map_const DHEAL, 5, 3 ; 17
 	map_const DPREBOSS, 5, 3 ; 18
 	map_const DBOSS, 5, 5 ; 19
+	map_const DSHINY, 5, 3	
 	endgroup
 
 	newgroup RUINSE											; 9
@@ -193,6 +197,7 @@ ENDM
 	map_const EHEAL, 5, 3 ; 16
 	map_const EPREBOSS, 5, 3 ; 17
 	map_const EBOSS, 5, 5 ; 18
+	map_const ESHINY, 5, 3	
 	endgroup
 	
 	newgroup RUINSF											; 10
@@ -214,6 +219,7 @@ ENDM
 	map_const FHEAL, 5, 3 ; 17
 	map_const FPREBOSS, 5, 3 ; 18
 	map_const FBOSS, 5, 5 ; 19
+	map_const FSHINY, 5, 3	
 	endgroup
 	
 	newgroup LEGENDTOWER
