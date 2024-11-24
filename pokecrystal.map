@@ -35872,7 +35872,7 @@ ROMX bank #114:
     SLACK: $0f49 bytes
 
 ROMX bank #115:
-  SECTION: $4000-$5c39 ($1c3a bytes) ["Pokedex Entries 129-192"]
+  SECTION: $4000-$5c26 ($1c27 bytes) ["Pokedex Entries 129-192"]
            $4000 = CarpPokedexEntry
            $406e = InkanyambaPokedexEntry
            $40db = PlesiosaurPokedexEntry
@@ -35901,43 +35901,43 @@ ROMX bank #115:
            $4b13 = SlothPokedexEntry
            $4b86 = SkunkPokedexEntry
            $4c00 = TazdevilPokedexEntry
-           $4c8d = BadgerPokedexEntry
-           $4cfd = CaimanPokedexEntry
-           $4d69 = MonitorPokedexEntry
-           $4dda = CrocodilePokedexEntry
-           $4e4c = RaccoonPokedexEntry
-           $4ebc = FerretPokedexEntry
-           $4f2c = OwlPokedexEntry
-           $4f9a = HornedowlPokedexEntry
-           $5005 = LadybugPokedexEntry
-           $507f = FireflyPokedexEntry
-           $50f4 = SpiderPokedexEntry
-           $516e = WaspPokedexEntry
-           $51e1 = Big_BatPokedexEntry
-           $524e = ChinchouPokedexEntry
-           $52bb = LanturnPokedexEntry
-           $531d = GerbilPokedexEntry
-           $5392 = CleffaPokedexEntry
-           $53f8 = BalloonPokedexEntry
-           $5466 = Hobo_ClownPokedexEntry
-           $54d8 = BadClownPokedexEntry
-           $5541 = KakapoPokedexEntry
-           $55b4 = QuetzalPokedexEntry
-           $5622 = LambPokedexEntry
-           $5693 = SheepPokedexEntry
-           $5703 = RamPokedexEntry
-           $576e = Hula_GirlPokedexEntry
-           $57dd = Water_RatPokedexEntry
-           $5853 = RabbitPokedexEntry
-           $58c4 = Fake_BushPokedexEntry
-           $5931 = FrogPokedexEntry
-           $59a4 = CottonPokedexEntry
-           $5a14 = DaisyPokedexEntry
-           $5a7e = DandelionPokedexEntry
-           $5af2 = ChimpanzeePokedexEntry
-           $5b61 = SeedPokedexEntry
-           $5bc7 = SunflowerPokedexEntry
-    SLACK: $23c6 bytes
+           $4c7a = BadgerPokedexEntry
+           $4cea = CaimanPokedexEntry
+           $4d56 = MonitorPokedexEntry
+           $4dc7 = CrocodilePokedexEntry
+           $4e39 = RaccoonPokedexEntry
+           $4ea9 = FerretPokedexEntry
+           $4f19 = OwlPokedexEntry
+           $4f87 = HornedowlPokedexEntry
+           $4ff2 = LadybugPokedexEntry
+           $506c = FireflyPokedexEntry
+           $50e1 = SpiderPokedexEntry
+           $515b = WaspPokedexEntry
+           $51ce = Big_BatPokedexEntry
+           $523b = ChinchouPokedexEntry
+           $52a8 = LanturnPokedexEntry
+           $530a = GerbilPokedexEntry
+           $537f = CleffaPokedexEntry
+           $53e5 = BalloonPokedexEntry
+           $5453 = Hobo_ClownPokedexEntry
+           $54c5 = BadClownPokedexEntry
+           $552e = KakapoPokedexEntry
+           $55a1 = QuetzalPokedexEntry
+           $560f = LambPokedexEntry
+           $5680 = SheepPokedexEntry
+           $56f0 = RamPokedexEntry
+           $575b = Hula_GirlPokedexEntry
+           $57ca = Water_RatPokedexEntry
+           $5840 = RabbitPokedexEntry
+           $58b1 = Fake_BushPokedexEntry
+           $591e = FrogPokedexEntry
+           $5991 = CottonPokedexEntry
+           $5a01 = DaisyPokedexEntry
+           $5a6b = DandelionPokedexEntry
+           $5adf = ChimpanzeePokedexEntry
+           $5b4e = SeedPokedexEntry
+           $5bb4 = SunflowerPokedexEntry
+    SLACK: $23d9 bytes
 
 ROMX bank #116:
   SECTION: $4000-$59d6 ($19d7 bytes) ["Pokedex Entries 193-251"]
@@ -51704,7 +51704,7 @@ HRAM bank #0:
 
 USED:
     ROM0: $3f08 bytes in 1 bank
-    ROMX: $1289c4 bytes in 127 banks
+    ROMX: $1289b1 bytes in 127 banks
     SRAM: $ac3a bytes in 8 banks
     WRAM0: $0fcc bytes in 1 bank
     WRAMX: $499d bytes in 7 banks

@@ -169,9 +169,9 @@ TheSiteGameCornerTMVendorMenuHeader:
 .MenuData:
 	db STATICMENU_CURSOR ; flags
 	db 4 ; items
-	db "MOON STONE   5500@"
-	db "FIRE STONE   5500@"
-	db "THUNDERSTONE 5500@"
+	db "MOON STONE   1500@"
+	db "FIRE STONE   1500@"
+	db "THUNDERSTONE 1500@"
 	db "CANCEL@"
 
 TheSiteGameCornerPrizeMonVendorScript:
@@ -246,9 +246,9 @@ TheSiteGameCornerPrizeMonVendorScript:
 .MenuData:
 	db STATICMENU_CURSOR ; flags
 	db 4 ; items
-	db "WATER STONE 5500@"
-	db "LEAF STONE  5500@"
-	db "SUN STONE   5500@"
+	db "WATER STONE 1500@"
+	db "LEAF STONE  1500@"
+	db "SUN STONE   1500@"
 	db "MASTER BALL 9999@"
 	db "CANCEL@"
 
