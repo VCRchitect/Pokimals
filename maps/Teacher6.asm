@@ -118,7 +118,8 @@ ArnoldScript:
 	winlosstext Arnold_BetterTrainer, 0
 	loadtrainer ARNOLD, ARNOLD1
 	startbattle
-	reloadmapafterbattle
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500
 	setevent EVENT_BEAT_ARNOLD
 	refreshscreen
 	opentext

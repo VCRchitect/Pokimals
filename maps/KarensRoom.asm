@@ -54,7 +54,8 @@ KarenScript_Battle:
 	winlosstext KarenScript_KarenBeatenText, 0
 	loadtrainer KAREN, KAREN1
 	startbattle
-	reloadmapafterbattle
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500
 	setevent EVENT_BEAT_ELITE_4_KAREN
 	refreshscreen
 	opentext

@@ -141,7 +141,8 @@ Monster5F13:
 nobadgeF13:
 	RuinRandomZBase
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -152,7 +153,8 @@ nobadgeF13:
 onebadgeF13:
 	RuinRandomZ1
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -163,7 +165,8 @@ onebadgeF13:
 twobadgeF13:
 	RuinRandomZ2
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -174,7 +177,8 @@ twobadgeF13:
 threebadgeF13:
 	RuinRandomZ3
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -185,7 +189,8 @@ threebadgeF13:
 fourbadgeF13:
 	RuinRandomZ4
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -196,7 +201,8 @@ fourbadgeF13:
 fivebadgeF13:
 	RuinRandomZ5
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -207,7 +213,8 @@ fivebadgeF13:
 sixbadgeF13:
 	RuinRandomZ6
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -218,7 +225,8 @@ sixbadgeF13:
 sevenbadgeF13:
 	RuinRandomZ7
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -229,7 +237,8 @@ sevenbadgeF13:
 eightbadgeF13:
 	RuinRandomZ8
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1

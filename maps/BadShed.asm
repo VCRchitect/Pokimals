@@ -28,7 +28,8 @@ BadShed_MapScripts:
 	winlosstext GruntWinLossText1, 0
 	loadtrainer GRUNTM, GRUNTM_1
 	startbattle
-	reloadmapafterbattle
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500
 	refreshscreen
 	applymovement BADSHED_GRUNT_1, CherrygroveAbuseMovement
 	playsound SFX_TACKLE
@@ -44,7 +45,8 @@ BadShed_MapScripts:
 	winlosstext GruntWinLossText2, 0
 	loadtrainer GRUNTM, GRUNTM_1
 	startbattle
-	reloadmapafterbattle
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500
 	refreshscreen
 	applymovement BADSHED_GRUNT_2, CherrygroveAbuseMovement2
 	playsound SFX_TACKLE

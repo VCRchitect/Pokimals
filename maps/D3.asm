@@ -141,7 +141,8 @@ Monster5D3:
 nobadgeD3:
 	RuinRandomDBase
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -152,7 +153,8 @@ nobadgeD3:
 onebadgeD3:
 	RuinRandomD1
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -163,7 +165,8 @@ onebadgeD3:
 twobadgeD3:
 	RuinRandomD2
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -174,7 +177,8 @@ twobadgeD3:
 threebadgeD3:
 	RuinRandomD3
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -185,7 +189,8 @@ threebadgeD3:
 fourbadgeD3:
 	RuinRandomD4
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -196,7 +201,8 @@ fourbadgeD3:
 fivebadgeD3:
 	RuinRandomD5
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -207,7 +213,8 @@ fivebadgeD3:
 sixbadgeD3:
 	RuinRandomD6
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -218,7 +225,8 @@ sixbadgeD3:
 sevenbadgeD3:
 	RuinRandomD7
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -229,7 +237,8 @@ sevenbadgeD3:
 eightbadgeD3:
 	RuinRandomD8
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1

@@ -130,7 +130,8 @@ Monster5E10:
 nobadgeE10:
 	RuinRandomEBase
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -141,7 +142,8 @@ nobadgeE10:
 onebadgeE10:
 	RuinRandomE1
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -152,7 +154,8 @@ onebadgeE10:
 twobadgeE10:
 	RuinRandomE2
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -163,7 +166,8 @@ twobadgeE10:
 threebadgeE10:
 	RuinRandomE3
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -174,7 +178,8 @@ threebadgeE10:
 fourbadgeE10:
 	RuinRandomE4
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -185,7 +190,8 @@ fourbadgeE10:
 fivebadgeE10:
 	RuinRandomE5
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -196,7 +202,8 @@ fivebadgeE10:
 sixbadgeE10:
 	RuinRandomE6
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -207,7 +214,8 @@ sixbadgeE10:
 sevenbadgeE10:
 	RuinRandomE7
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -218,7 +226,8 @@ sevenbadgeE10:
 eightbadgeE10:
 	RuinRandomE8
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1

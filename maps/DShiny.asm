@@ -32,7 +32,8 @@ Monster1DShiny:
 nobadgeDSHIN:
 	RuinRandomDBase
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -43,7 +44,8 @@ nobadgeDSHIN:
 onebadgeDSHIN:
 	RuinRandomD1
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -54,7 +56,8 @@ onebadgeDSHIN:
 twobadgeDSHIN:
 	RuinRandomD2
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -65,7 +68,8 @@ twobadgeDSHIN:
 threebadgeDSHIN:
 	RuinRandomD3
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -76,7 +80,8 @@ threebadgeDSHIN:
 fourbadgeDSHIN:
 	RuinRandomD4
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -87,7 +92,8 @@ fourbadgeDSHIN:
 fivebadgeDSHIN:
 	RuinRandomD5
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -98,7 +104,8 @@ fivebadgeDSHIN:
 sixbadgeDSHIN:
 	RuinRandomD6
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -109,7 +116,8 @@ sixbadgeDSHIN:
 sevenbadgeDSHIN:
 	RuinRandomD7
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -120,7 +128,8 @@ sevenbadgeDSHIN:
 eightbadgeDSHIN:
 	RuinRandomD8
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1

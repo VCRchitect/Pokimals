@@ -63,7 +63,8 @@ LancesRoomLanceScript:
 	loadtrainer CHAMPION, LANCE
 	startbattle
 	dontrestartmapmusic
-	reloadmapafterbattle
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500
 	setevent EVENT_BEAT_CHAMPION_LANCE
 	refreshscreen
 	opentext

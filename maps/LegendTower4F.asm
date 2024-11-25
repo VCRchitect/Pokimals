@@ -23,7 +23,8 @@ Barghest:
 	loadwildmon YETI, 90
 	startbattle
 	disappear TOWERBARGHEST
-	reloadmapafterbattle
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500
 	end
 
 Cerberus:
@@ -38,7 +39,8 @@ Cerberus:
 	loadwildmon CERBERUS, 90
 	startbattle
 	disappear TOWERCERBERUS
-	reloadmapafterbattle
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500
 	end
 	
 Fenrir:
@@ -53,7 +55,8 @@ Fenrir:
 	loadwildmon FENRIR, 90
 	startbattle
 	disappear TOWERFENRIR
-	reloadmapafterbattle
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500
 	end
 	
 Monster1TF4:	
@@ -61,7 +64,8 @@ Monster1TF4:
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
 	RuinRandomDBoss8
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	end
 
@@ -70,7 +74,8 @@ Monster2TF4:
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
 	RuinRandomEBoss8
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	end
 
@@ -79,7 +84,8 @@ Monster3TF4:
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
 	RuinRandomZBoss8
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	end		
 	

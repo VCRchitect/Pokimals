@@ -137,7 +137,8 @@ Monster5h:
 nobadgeh:
 	RuinRandomABase
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -148,7 +149,8 @@ nobadgeh:
 onebadgeh:
 	RuinRandomA1
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -159,7 +161,8 @@ onebadgeh:
 twobadgeh:
 	RuinRandomA2
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -170,7 +173,8 @@ twobadgeh:
 threebadgeh:
 	RuinRandomA3
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -181,7 +185,8 @@ threebadgeh:
 fourbadgeh:
 	RuinRandomA4
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -192,7 +197,8 @@ fourbadgeh:
 fivebadgeh:
 	RuinRandomA5
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -203,7 +209,8 @@ fivebadgeh:
 sixbadgeh:
 	RuinRandomA6
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -214,7 +221,8 @@ sixbadgeh:
 sevenbadgeh:
 	RuinRandomA7
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1
@@ -225,7 +233,8 @@ sevenbadgeh:
 eightbadgeh:
 	RuinRandomA8
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	addval 1

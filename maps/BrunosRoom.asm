@@ -54,7 +54,8 @@ BrunoScript_Battle:
 	winlosstext BrunoScript_BrunoBeatenText, 0
 	loadtrainer BRUNO, BRUNO1
 	startbattle
-	reloadmapafterbattle
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500
 	setevent EVENT_BEAT_ELITE_4_BRUNO
 	refreshscreen
 	opentext

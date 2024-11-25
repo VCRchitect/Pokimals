@@ -54,7 +54,8 @@ KogaScript_Battle:
 	winlosstext KogaScript_KogaBeatenText, 0
 	loadtrainer KOGA, KOGA1
 	startbattle
-	reloadmapafterbattle
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500
 	setevent EVENT_BEAT_ELITE_4_KOGA
 	refreshscreen
 	opentext

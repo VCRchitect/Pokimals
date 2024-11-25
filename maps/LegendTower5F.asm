@@ -18,7 +18,8 @@ JerzyDevil:
 	loadwildmon JERZYDEVIL, 99
 	startbattle
 	disappear TOWERDEVIL
-	reloadmapafterbattle
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500
 	refreshscreen
 	playsound SFX_STRENGTH
 	earthquake 80

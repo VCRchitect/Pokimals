@@ -118,7 +118,8 @@ PeelyScript:
 	winlosstext PeelyWinText, 0
 	loadtrainer PEELY, PEELY1
 	startbattle
-	reloadmapafterbattle
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500
 	setevent EVENT_BEAT_PEELY
 	refreshscreen
 	writetext DragonShrinePlayerReceivedRisingBadgeText

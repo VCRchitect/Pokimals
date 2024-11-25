@@ -120,7 +120,8 @@ JasonScript:
 	winlosstext JasonWinLossText, 0
 	loadtrainer JASON, JASON1
 	startbattle
-	reloadmapafterbattle
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500
 	setevent EVENT_BEAT_JASON
 	opentext
 	writetext Text_ReceivedFogBadge

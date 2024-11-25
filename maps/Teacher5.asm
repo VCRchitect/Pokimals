@@ -115,7 +115,8 @@ LincolnScript:
 	winlosstext LincolnText_Impressed, 0
 	loadtrainer LINCOLN, LINCOLN1
 	startbattle
-	reloadmapafterbattle
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500
 	setevent EVENT_BEAT_LINCOLN
 	opentext
 	writetext Text_ReceivedGlacierBadge

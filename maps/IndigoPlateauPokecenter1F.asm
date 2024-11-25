@@ -101,7 +101,8 @@ PlateauRivalBattleCommon:
 	loadtrainer RIVAL2, RIVAL2_2_TOTODILE
 	startbattle
 	dontrestartmapmusic
-	reloadmapafterbattle
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500
 	sjump PlateauRivalPostBattle
 
 .Caiman:
@@ -110,7 +111,8 @@ PlateauRivalBattleCommon:
 	loadtrainer RIVAL2, RIVAL2_2_SQUIRREL
 	startbattle
 	dontrestartmapmusic
-	reloadmapafterbattle
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500
 	sjump PlateauRivalPostBattle
 
 .Squirrel:
@@ -119,7 +121,8 @@ PlateauRivalBattleCommon:
 	loadtrainer RIVAL2, RIVAL2_2_CYNDAQUIL
 	startbattle
 	dontrestartmapmusic
-	reloadmapafterbattle
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500
 	sjump PlateauRivalPostBattle
 
 PlateauRivalPostBattle:

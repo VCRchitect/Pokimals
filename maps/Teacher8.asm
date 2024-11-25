@@ -118,7 +118,8 @@ Kid_RockScript:
 	winlosstext Kid_RockWinLossText, 0
 	loadtrainer KID_ROCK, KID_ROCK1
 	startbattle
-	reloadmapafterbattle
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500
 	setevent EVENT_BEAT_KID_ROCK
 	opentext
 	writetext GetStormBadgeText

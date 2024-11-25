@@ -22,7 +22,8 @@ BossE:
 	winlosstext GhostEWinLossText, 0
 	loadtrainer GEIST, GEIST5
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	setval 5

@@ -2522,16 +2522,12 @@ Script_RuinItems:
 	ret
 	
 .RuinItems:
-	db 1, RARE_CANDY
-	db 2, NUGGET
-	db 4, BEAVERTAIL
-	db 6, STAR_PIECE
-	db 12, BIG_PEARL
-	db 18, BIG_MUSHROOM
-	db 24, MAX_ELIXER
-	db 24, ELIXER
-	db 48, STARDUST
-	db 64, PEARL
+	db 42, HP_UP
+	db 84, PP_UP
+	db 126, PROTEIN
+	db 168, IRON
+	db 210, CALCIUM
+	db 252, CARBOS
 	db -1	
 	
 Script_RuinRandomABase:

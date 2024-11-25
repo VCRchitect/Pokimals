@@ -24,7 +24,8 @@ Brain:
 	loadwildmon BRAIN, 70
 	startbattle
 	disappear TOWERBRAIN
-	reloadmapafterbattle
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500
 	end
 
 Wendigo:
@@ -39,7 +40,8 @@ Wendigo:
 	loadwildmon WENDIGO, 70
 	startbattle
 	disappear TOWERWENDIGO
-	reloadmapafterbattle
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500
 	end
 
 Monster1TF1:	
@@ -47,7 +49,8 @@ Monster1TF1:
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
 	RuinRandomABoss8
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	end
 
@@ -56,7 +59,8 @@ Monster2TF1:
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
 	RuinRandomBBoss8
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	end
 
@@ -65,7 +69,8 @@ Monster3TF1:
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
 	RuinRandomCBoss8
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	end
 

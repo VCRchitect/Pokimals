@@ -151,6 +151,11 @@ BattleText_TheSandstormRages:
 	line "rages."
 	autodone
 
+BattleText_HailContinuesToFall:
+	text "Hail continues to"
+	line "fall."
+	autodone
+
 BattleText_TheRainStopped:
 	text "The rain stopped."
 	autodone
@@ -164,6 +169,10 @@ BattleText_TheSandstormSubsided:
 	text "The SANDSTORM"
 	line "subsided."
 	autodone
+	
+BattleText_TheHailStopped:
+	text "The hail stopped."
+	autodone	
 
 BattleText_EnemyMonFainted:
 	text "Enemy @"
@@ -1112,3 +1121,13 @@ BattleText_NoTimeLeftToday: ; unreferenced
 	text "There is no time"
 	line "left today!"
 	autodone
+	
+ItStartedToHailText:
+	text "It started"
+	line "to hail!"
+	autodone
+
+PeltedByHailText:
+	text "<USER>"
+	line "is pelted by HAIL!"
+	autodone	

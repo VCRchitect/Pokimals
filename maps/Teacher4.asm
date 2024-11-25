@@ -120,7 +120,8 @@ LaraScript:
 	winlosstext LaraShouldntBeSoSeriousText, 0
 	loadtrainer LARA, LARA1
 	startbattle
-	reloadmapafterbattle
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500
 .FightDone:
 	refreshscreen
 	opentext

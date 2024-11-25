@@ -23,7 +23,8 @@ Yeti:
 	loadwildmon YETI, 85
 	startbattle
 	disappear TOWERYETI
-	reloadmapafterbattle
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500
 	end
 
 Firebird:
@@ -38,7 +39,8 @@ Firebird:
 	loadwildmon FIREBIRD, 85
 	startbattle
 	disappear TOWERFIREBIRD
-	reloadmapafterbattle
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500
 	end
 	
 Thundabird:
@@ -53,7 +55,8 @@ Thundabird:
 	loadwildmon THUNDABIRD, 85
 	startbattle
 	disappear TOWERTHUNDABIRD
-	reloadmapafterbattle
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500
 	end
 	
 Monster1TF3:	
@@ -61,7 +64,8 @@ Monster1TF3:
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
 	RuinRandomABoss8
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	end
 
@@ -70,7 +74,8 @@ Monster2TF3:
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
 	RuinRandomBBoss8
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	end
 
@@ -79,7 +84,8 @@ Monster3TF3:
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
 	RuinRandomCBoss8
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	end	
 		

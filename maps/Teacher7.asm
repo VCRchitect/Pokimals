@@ -120,7 +120,8 @@ Big_BirdScript:
 	winlosstext Big_BirdWinLossText, 0
 	loadtrainer BIG_BIRD, BIG_BIRD1
 	startbattle
-	reloadmapafterbattle
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500
 	setevent EVENT_BEAT_BIG_BIRD
 	opentext
 	writetext ReceivedZephyrBadgeText

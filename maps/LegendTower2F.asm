@@ -23,7 +23,8 @@ Ryujin:
 	loadwildmon RYUJIN, 80
 	startbattle
 	disappear WHIRLISLANDRYUJINCHAMBER_RYUJIN
-	reloadmapafterbattle
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500
 	end
 
 Phoenix:
@@ -38,7 +39,8 @@ Phoenix:
 	loadwildmon PHOENIX, 80
 	startbattle
 	disappear TINTOWERROOF_PHOENIX
-	reloadmapafterbattle
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500
 	end
 	
 Monster1TF2:	
@@ -46,7 +48,8 @@ Monster1TF2:
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
 	RuinRandomDBoss8
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	end
 
@@ -55,7 +58,8 @@ Monster2TF2:
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
 	RuinRandomEBoss8
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	end
 
@@ -64,7 +68,8 @@ Monster3TF2:
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
 	RuinRandomZBoss8
 	startbattle
-	reloadmapafterbattle	
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500	
 	disappear -2
 	end	
 	

@@ -120,7 +120,8 @@ Teacher1TPainScript:
 	winlosstext TPainText_ResearchIncomplete, 0
 	loadtrainer TPAIN, TPAIN1
 	startbattle
-	reloadmapafterbattle
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500
 	setevent EVENT_BEAT_TPAIN
 	refreshscreen
 	writetext Text_ReceivedHiveBadge

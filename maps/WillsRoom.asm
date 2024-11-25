@@ -54,7 +54,8 @@ WillScript_Battle:
 	winlosstext WillScript_WillBeatenText, 0
 	loadtrainer WILL, WILL1
 	startbattle
-	reloadmapafterbattle
+	reloadmapafterbattle 
+ givemoney YOUR_MONEY, 500
 	setevent EVENT_BEAT_ELITE_4_WILL
 	refreshscreen
 	opentext
