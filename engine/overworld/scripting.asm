@@ -2522,12 +2522,12 @@ Script_RuinItems:
 	ret
 	
 .RuinItems:
-	db 42, HP_UP
-	db 84, PP_UP
-	db 126, PROTEIN
-	db 168, IRON
-	db 210, CALCIUM
-	db 252, CARBOS
+	db 32, HP_UP
+	db 32, PP_UP
+	db 32, PROTEIN
+	db 32, IRON
+	db 32, CALCIUM
+	db 32, CARBOS
 	db -1	
 	
 Script_RuinRandomABase:

@@ -57,12 +57,12 @@ Landmarks:
 	landmark 92,   84, PlayerYardName
 	landmark 76,   84, SilverRowName
 	landmark 76,   68, TheSiteName
-	landmark 20,   20, StoneRuinName
-	landmark 36,   20, ForestRuinName
-	landmark 20,   36, FlameRuinName
-	landmark 36,   36, IceRuinName
-	landmark 20,   52, TechRuinName
-	landmark 36,   52, GoldRuinName
+	landmark 20,   52, StoneRuinName
+	landmark 36,   52, ForestRuinName
+	landmark 20,   76, FlameRuinName
+	landmark 36,   76, IceRuinName
+	landmark 20,   100, TechRuinName
+	landmark 36,   100, GoldRuinName
 	landmark 140,  20, TheTowerName
 	
 	assert_table_length KANTO_LANDMARK
