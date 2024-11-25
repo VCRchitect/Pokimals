@@ -19,6 +19,19 @@ RandomStairWarpD1:
 	setval 0
 	writemem wBossRoomCount
 	warperD
+	
+RandomStairWarpD1b:
+	refreshscreen
+	opentext
+	writetext RuinD1Text
+	waitbutton
+	closetext
+	end
+	
+RuinD1Text:
+	text "LET THE ICE CHILL"
+	line "OUR BURNING RAGE."
+	done		
 
 D1_MapEvents:
 	db 0, 0 ; filler
@@ -27,7 +40,8 @@ D1_MapEvents:
 	def_coord_events
 	coord_event  4,  0, SCENE_RANDOMSTAIRS, RandomStairWarpD1
 	coord_event  5,  0, SCENE_RANDOMSTAIRS, RandomStairWarpD1
-
+	coord_event  4,  1, SCENE_RANDOMSTAIRS, RandomStairWarpD1b
+	coord_event  5,  1, SCENE_RANDOMSTAIRS, RandomStairWarpD1b
 
 
 	def_bg_events

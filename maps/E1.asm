@@ -20,6 +20,19 @@ RandomStairWarpE1:
 	writemem wBossRoomCount
 	warperE
 
+RandomStairWarpE1b:
+	refreshscreen
+	opentext
+	writetext RuinE1Text
+	waitbutton
+	closetext
+	end
+	
+RuinE1Text:
+	text "LET US INVERT THE"
+	line "LOWS OF THE PAST."
+	done	
+
 E1_MapEvents:
 	db 0, 0 ; filler
 	def_warp_events
@@ -27,8 +40,8 @@ E1_MapEvents:
 	def_coord_events
 	coord_event  4,  0, SCENE_RANDOMSTAIRS, RandomStairWarpE1
 	coord_event  5,  0, SCENE_RANDOMSTAIRS, RandomStairWarpE1
-
-
+	coord_event  4,  1, SCENE_RANDOMSTAIRS, RandomStairWarpE1b
+	coord_event  5,  1, SCENE_RANDOMSTAIRS, RandomStairWarpE1b
 
 	def_bg_events
 

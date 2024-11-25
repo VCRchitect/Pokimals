@@ -11,7 +11,7 @@
 	tilepal 0, ROOF, ROOF, ROOF, ROOF, ROOF, ROOF, ROOF, ROOF
 	tilepal 0, ROOF, ROOF, ROOF, ROOF, ROOF, ROOF, ROOF, ROOF
 
-rept 32
+rept 16
 	db $ff
 endr
 

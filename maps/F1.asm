@@ -20,6 +20,19 @@ RandomStairWarpF1:
 	writemem wBossRoomCount
 	warperF
 
+RandomStairWarpF1b:
+	refreshscreen
+	opentext
+	writetext RuinF1Text
+	waitbutton
+	closetext
+	end
+	
+RuinF1Text:
+	text "LET OUR FORTUNES"
+	line "REWARD THE BOLD."
+	done	
+
 F1_MapEvents:
 	db 0, 0 ; filler
 	def_warp_events
@@ -27,7 +40,8 @@ F1_MapEvents:
 	def_coord_events
 	coord_event  4,  0, SCENE_RANDOMSTAIRS, RandomStairWarpF1
 	coord_event  5,  0, SCENE_RANDOMSTAIRS, RandomStairWarpF1
-
+	coord_event  4,  1, SCENE_RANDOMSTAIRS, RandomStairWarpF1b
+	coord_event  5,  1, SCENE_RANDOMSTAIRS, RandomStairWarpF1b
 
 	def_bg_events
 

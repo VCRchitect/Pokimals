@@ -64,7 +64,7 @@ RandomStairWarpE4:
 	
 Monster1E4:	
 	faceplayer
-	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
+	loadvar VAR_BATTLETYPE, BATTLETYPE_INVERSE
 	readvar VAR_BADGES
 	ifequal 0, nobadgeE4
 	ifequal 1, onebadgeE4
@@ -79,7 +79,7 @@ Monster1E4:
 	
 Monster2E4:	
 	faceplayer
-	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
+	loadvar VAR_BATTLETYPE, BATTLETYPE_INVERSE
 	readvar VAR_BADGES
 	ifequal 0, nobadgeE4
 	ifequal 1, onebadgeE4
@@ -94,7 +94,7 @@ Monster2E4:
 
 Monster3E4:	
 	faceplayer
-	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
+	loadvar VAR_BATTLETYPE, BATTLETYPE_INVERSE
 	readvar VAR_BADGES
 	ifequal 0, nobadgeE4
 	ifequal 1, onebadgeE4
@@ -109,7 +109,7 @@ Monster3E4:
 
 Monster4E4:	
 	faceplayer
-	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
+	loadvar VAR_BATTLETYPE, BATTLETYPE_INVERSE
 	readvar VAR_BADGES
 	ifequal 0, nobadgeE4
 	ifequal 1, onebadgeE4
@@ -124,7 +124,7 @@ Monster4E4:
 
 Monster5E4:	
 	faceplayer
-	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
+	loadvar VAR_BATTLETYPE, BATTLETYPE_INVERSE
 	readvar VAR_BADGES
 	ifequal 0, nobadgeE4
 	ifequal 1, onebadgeE4

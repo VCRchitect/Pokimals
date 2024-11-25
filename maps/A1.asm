@@ -20,6 +20,19 @@ RandomStairWarp1:
 	writemem wBossRoomCount
 	warper
 
+RandomStairWarp1b:
+	refreshscreen
+	opentext
+	writetext RuinA1Text
+	waitbutton
+	closetext
+	end
+	
+RuinA1Text:
+	text "THE WINDS ERODE"
+	line "THE PAST..."
+	done
+
 A1_MapEvents:
 	db 0, 0 ; filler
 	def_warp_events
@@ -27,6 +40,9 @@ A1_MapEvents:
 	def_coord_events
 	coord_event  4,  0, SCENE_RANDOMSTAIRS, RandomStairWarp1
 	coord_event  5,  0, SCENE_RANDOMSTAIRS, RandomStairWarp1
+
+	coord_event  4,  1, SCENE_RANDOMSTAIRS, RandomStairWarp1b
+	coord_event  5,  1, SCENE_RANDOMSTAIRS, RandomStairWarp1b
 
 
 

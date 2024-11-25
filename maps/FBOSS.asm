@@ -23,7 +23,7 @@ BossF:
 	loadtrainer GEIST, GEIST6
 	startbattle
 	reloadmapafterbattle 
- givemoney YOUR_MONEY, 500	
+ givemoney YOUR_MONEY, 1500	
 	disappear -2
 	readmem wRoomDefeatedCount
 	setval 5

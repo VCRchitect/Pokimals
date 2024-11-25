@@ -20,6 +20,19 @@ RandomStairWarpC1:
 	writemem wBossRoomCount
 	warperC
 
+RandomStairWarpC1b:
+	refreshscreen
+	opentext
+	writetext RuinC1Text
+	waitbutton
+	closetext
+	end
+	
+RuinC1Text:
+	text "LET THE SUN BURN"
+	line "AWAY OUR SINS."
+	done	
+
 C1_MapEvents:
 	db 0, 0 ; filler
 	def_warp_events
@@ -27,7 +40,8 @@ C1_MapEvents:
 	def_coord_events
 	coord_event  4,  0, SCENE_RANDOMSTAIRS, RandomStairWarpC1
 	coord_event  5,  0, SCENE_RANDOMSTAIRS, RandomStairWarpC1
-
+	coord_event  4,  1, SCENE_RANDOMSTAIRS, RandomStairWarpC1b
+	coord_event  5,  1, SCENE_RANDOMSTAIRS, RandomStairWarpC1b
 
 
 	def_bg_events
