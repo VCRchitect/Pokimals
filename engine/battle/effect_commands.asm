@@ -1303,11 +1303,11 @@ BattleCommand_Stab:
 .SkipStab:
 	ld a, BATTLE_VARS_MOVE_TYPE
 	call GetBattleVar
+	and TYPE_MASK
+	ld b, a
 	ld a, [wBattleType]
 	cp BATTLETYPE_INVERSE
 	jr z, .inverse	
-	and TYPE_MASK
-	ld b, a
 	ld hl, TypeMatchups
    jr .TypesLoop
 .inverse
@@ -1315,6 +1315,7 @@ BattleCommand_Stab:
 .TypesLoop:
 	call GetNextTypeMatchupsByte
 	inc hl
+	
 	cp -1
 	jr z, .end
 

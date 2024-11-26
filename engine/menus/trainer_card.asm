@@ -117,10 +117,6 @@ TrainerCard_Page1_LoadGFX:
 
 TrainerCard_Page1_Joypad:
 	call TrainerCard_Page1_PrintGameTime
-	ld hl, hJoyLast
-	ld a, [hl]
-	and D_RIGHT | A_BUTTON
-	jr nz, .pressed_right_a
 	ret
 
 .pressed_right_a
@@ -300,7 +296,7 @@ TrainerCard_Page1_PrintDexCaught_GameTime:
 	db "@"
 
 .Badges:
-	db "  BADGES▶@"
+	db ""
 
 .StatusTilemap:
 	db $29, $2a, $2b, $2c, $2d, -1
