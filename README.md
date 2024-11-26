@@ -1,7 +1,10 @@
 # Pokimals! - A Crystal Roguelite ROM Hack
+![PokimalsBoxArt](https://github.com/user-attachments/assets/d08214df-13d3-42ea-a62a-a61e6353c6c7)
+
+
 They said I was crazy for attempting, but here's my ROM Hack to turn Crystal into a Roguelite!
 
-Deal with the strange and kooky inhabitants of The Island as you explore a series of ruins that were discovered beneath the surface.
+Deal with the strange and insane inhabitants of The Island as you explore a series of ruins that were discovered beneath the surface.
 
 It's your 13th birthday, so the government says you're old enough to die in a hole!
 
@@ -59,5 +62,6 @@ This game features foul language, tobacco use by underage animals, sexual themes
 ## Screenshots
 ![bgb00019](https://github.com/user-attachments/assets/e68b8818-43be-4ec8-9a4c-e286e9d402fd) ![bgb00017](https://github.com/user-attachments/assets/a0ea1322-18c7-46a3-85b3-1992fa265da2) ![bgb00015](https://github.com/user-attachments/assets/4007d4de-ed7a-458c-b32e-6778ee1f6f8f)
 
-![bgb00022](https://github.com/user-attachments/assets/973a0850-34f5-467c-bced-96791ceb7a32) ![bgb00021](https://github.com/user-attachments/assets/1a6fbbc6-5404-401a-bbb9-a02b2fc54014) ![bgb00020](https://github.com/user-attachments/assets/77f2410a-6a0a-4bfc-a375-1e1ae7006a1f)
+![bgb00022](https://github.com/user-attachments/assets/973a0850-34f5-467c-bced-96791ceb7a32) ![bgb00021](https://github.com/user-attachments/assets/1a6fbbc6-5404-401a-bbb9-a02b2fc54014) ![bgb00020](https://github.com/user-attachments/assets/77f2410a-6a0a-4bfc-a375-1e1ae7006a1f)![pokecrystal_1730934048011](https://github.com/user-attachments/assets/5dfd5577-1851-4479-a553-44c347b26378) ![pokerogue_1730793779581](https://github.com/user-attachments/assets/2e5cc925-a8fc-4766-830f-59d573b248fc) ![1732583657205988](https://github.com/user-attachments/assets/04cc13f7-aa8c-4823-8ae7-079819292962)
+
 
