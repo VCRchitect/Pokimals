@@ -69,8 +69,8 @@ EngineFlags:
 	engine_flag wVisitedSpawns, SPAWN_HOME
 	engine_flag wVisitedSpawns, SPAWN_INDIGO
 	engine_flag wVisitedSpawns, SPAWN_NEW_BARK
-	engine_flag wVisitedSpawns, SPAWN_THESITEINSIDE1F ; unused
-
+	engine_flag wVisitedSpawns, SPAWN_THESITEINSIDE1F 
+	
 	engine_flag wLuckyNumberShowFlag, LUCKYNUMBERSHOW_GAME_OVER_F
 
 	engine_flag wStatusFlags2, STATUSFLAGS2_UNUSED_3_F

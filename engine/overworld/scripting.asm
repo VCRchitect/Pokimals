@@ -324,6 +324,7 @@ ScriptCommandTable:
 	dw Script_RuinRandomZ7
 	dw Script_RuinRandomZ8
 	dw Script_RuinRandomZBoss8
+	dw Script_RuinTrap
 	assert_table_length NUM_EVENT_COMMANDS
 
 StartScript:
@@ -2522,12 +2523,21 @@ Script_RuinItems:
 	ret
 	
 .RuinItems:
-	db 32, HP_UP
-	db 32, PP_UP
-	db 32, PROTEIN
-	db 32, IRON
-	db 32, CALCIUM
-	db 32, CARBOS
+	db 2, RARE_CANDY
+	db 4, HP_UP
+	db 4, PP_UP
+	db 8, PROTEIN
+	db 8, IRON
+	db 8, CALCIUM
+	db 8, CARBOS
+	db 16, X_ATTACK
+	db 16, X_DEFEND
+	db 16, X_SPEED
+	db 16, X_SPECIAL
+	db 16, ETHER
+	db 32, SUPER_POTION
+	db 32, GREAT_BALL
+	db 64, POKE_BALL
 	db -1	
 	
 Script_RuinRandomABase:
@@ -2770,8 +2780,11 @@ Script_RuinRandomZ8:
 Script_RuinRandomZBoss8:
 	farcall RuinSummonerZBoss8
 	ret
-	
-	
+		
+Script_RuinTrap:
+	farcall SpookyRuinTrap
+	ret
+		
 Script_checkver_duplicate: ; unreferenced
 	ld a, [.gs_version]
 	ld [wScriptVar], a

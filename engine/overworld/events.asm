@@ -2367,3 +2367,17 @@ GotLevel:
 	ret
 	
 INCLUDE "data/wild/ruinmons.asm"	
+
+SpookyRuinTrap:
+	special FadeOutPalettes
+	cry BOMB
+	opentext
+	farwritetext UhOhText
+	waitbutton
+	closetext
+	special FadeInPalettes
+	setlasttalked -1
+	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
+	loadwildmon BOMB, 10
+	startbattle
+	end

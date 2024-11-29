@@ -23,10 +23,55 @@ JerzyDevil:
 	refreshscreen
 	playsound SFX_STRENGTH
 	earthquake 80
-	closetext	
+	closetext
+	setflag ENGINE_LETTAH_DEX	
 	warp PLAYERS_HOUSE_2F, 3, 3
+	pause 15
+	opentext
+	writetext AllADream
+	waitbutton
+	closetext
+	special FadeBlackQuickly
+	special ReloadSpritesNoPalettes
+	pause 60
+	special FadeInQuickly	
 	end
 
+AllADream:
+	text "My god... Was it"
+	line "just a dream? Was"
+	cont "it all in my head?"
+
+	para "Was I a liar the"
+	line "whole time?"
+	
+	para "An unreliable"
+	line "narrator?"
+	
+	para "No... It can't be."
+	
+	para "That's always a"
+	line "terrible ending."
+
+	para "..."
+
+	para "Huh? What's in my"
+	line "pocket? Some kind"
+	cont "of book?"
+	
+	para "The LETTAHDEX?"
+	line "Oh great. Now I"
+	cont "have to go catch"
+	
+	para "everything, even"
+	line "the alphabet."
+	
+	para "Welp, no sense in"
+	line "waiting. Let's go!"
+
+	para "-CUE INSPIRATIONAL"
+	line "MUSIC HERE-"
+	done
 	
 LegendTower5F_MapEvents:
 	db 0, 0 ; filler

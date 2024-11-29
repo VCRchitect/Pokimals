@@ -63,16 +63,20 @@ MeetGrampsScript:
 	refreshscreen
 	trainerpic OLDMAN
 	writetext InheritanceText
-	setevent EVENT_MADE_LETTAH_APPEAR_IN_RUINS
-	setflag ENGINE_UNLOCKED_LETTAHS_A_TO_K
-	setflag ENGINE_UNLOCKED_LETTAHS_L_TO_R
-	setflag ENGINE_UNLOCKED_LETTAHS_S_TO_W
-	setflag ENGINE_UNLOCKED_LETTAHS_X_TO_Z
 	waitbutton
 	closetrainpic
 	closetext
 	special RestartMapMusic
 	turnobject PLAYERSHOUSE1F_GRAMPS1, LEFT
+	setflag wUnlockedLettahs, 0 ; A-K
+	setflag wUnlockedLettahs, 1 ; L-R
+	setflag wUnlockedLettahs, 2 ; S-W
+	setflag wUnlockedLettahs, 3 ; X-Z
+	setflag ENGINE_UNLOCKED_LETTAHS_A_TO_K
+	setflag ENGINE_UNLOCKED_LETTAHS_L_TO_R
+	setflag ENGINE_UNLOCKED_LETTAHS_S_TO_W
+	setflag ENGINE_UNLOCKED_LETTAHS_X_TO_Z
+	setevent EVENT_MADE_LETTAH_APPEAR_IN_RUINS	
 	end
 
 

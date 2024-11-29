@@ -255,6 +255,7 @@ E10Item1:
 
 	
 E10Item2:
+
 	RuinItems
 	iffalse .no_item
 	opentext
@@ -273,7 +274,6 @@ E10Item2:
 
 UnlockDoorsE10:
 	playsound SFX_2ND_PLACE 
-
 	opentext
 	writetext EButtonText
 	promptbutton

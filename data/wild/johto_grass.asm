@@ -2,7 +2,7 @@
 
 JohtoGrassWildMons:
 
-	def_grass_wildmons A1
+	def_grass_wildmons AWILD
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn	
 	db 25, SEAL
@@ -31,7 +31,7 @@ JohtoGrassWildMons:
 
 	end_grass_wildmons
 
-	def_grass_wildmons B1
+	def_grass_wildmons BWILD
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite	
 	; morn
 	db 25, BAG_LADY
@@ -60,7 +60,7 @@ JohtoGrassWildMons:
 
 	end_grass_wildmons
 
-	def_grass_wildmons C1
+	def_grass_wildmons CWILD
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite	
 	; morn
 	db 25, NYMPH
@@ -89,7 +89,7 @@ JohtoGrassWildMons:
 	db 5, GOLDFISH	
 	end_grass_wildmons
 
-	def_grass_wildmons D1
+	def_grass_wildmons DWILD
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite	
 	; morn
 	db 25, CAT
@@ -118,7 +118,7 @@ JohtoGrassWildMons:
 	db 5, MAGNET
 	end_grass_wildmons
 
-	def_grass_wildmons E1
+	def_grass_wildmons EWILD
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite	
 	; morn
 	db 25, CHIVES
@@ -147,7 +147,7 @@ JohtoGrassWildMons:
 	db 5, SERPENT
 	end_grass_wildmons
 
-	def_grass_wildmons F1
+	def_grass_wildmons FWILD
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite	
 	; morn
 	db 25, GNAT
@@ -177,7 +177,7 @@ JohtoGrassWildMons:
 	end_grass_wildmons
 	
 
-	def_grass_wildmons LEGENDTOWER1F
+	def_grass_wildmons LEGENDTOWERWILD1
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite	
 	; morn
 	db 18, SANTA
@@ -207,7 +207,7 @@ JohtoGrassWildMons:
 	end_grass_wildmons
 
 
-	def_grass_wildmons LEGENDTOWER2F
+	def_grass_wildmons LEGENDTOWERWILD2
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn	
 	db 16, CHIMPANZEE
@@ -217,24 +217,130 @@ JohtoGrassWildMons:
 	db 18, CRACKHEAD
 	db 18, STAGBEETLE
 	db 16, BULL
-	; day
+
 	db 16, PLESIOSAUR
 	db 16, SLIME
 	db 16, PTERANODON
 	db 18, DUCK
 	db 18, BRUCE_LEE
 	db 16, JACKIECHAN
-	db 16, PERVERT
-	; nite
 	db 16, MEDUSA
+	
 	db 16, KANGAROO
-	db 16, MEDUSA
-	db 16, KANGAROO
-	db 16, MEDUSA
-	db 16, KANGAROO
-	db 16, KANGAROO
+	db 16, LETTAH
+	db 16, LETTAH
+	db 16, LETTAH
+	db 16, LETTAH
+	db 16, LETTAH
+	db 16, LETTAH
+	end_grass_wildmons
+
+	def_grass_wildmons LEGENDTOWER1F
+	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	end_grass_wildmons
+
+	def_grass_wildmons LEGENDTOWER2F
+	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	end_grass_wildmons
+
+	def_grass_wildmons LEGENDTOWER3F
+	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	end_grass_wildmons
+
+	def_grass_wildmons LEGENDTOWER4F
+	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
+	db 5, LETTAH
 	end_grass_wildmons
 
 	db -1 ; end
-
-

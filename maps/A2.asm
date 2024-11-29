@@ -288,7 +288,7 @@ A2Item2:
 	closetext
 	disappear ARUINS_POKE_BALL2a
 	end	
-	
+		
 UnlockDoorsA:
 	playsound SFX_2ND_PLACE 
 	opentext
@@ -306,7 +306,7 @@ UnlockDoorsA:
 	setval 0
 	writemem wRoomDefeatedCount		
 	end
-	
+		
 ButtonText:
 	text "Room Clear!"
 	done

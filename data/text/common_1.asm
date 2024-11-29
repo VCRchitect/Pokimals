@@ -1882,3 +1882,7 @@ _PrestoAllDoneText::
 	text "Presto! All done."
 	line "Come again, OK?"
 	done
+
+UhOhText::
+	text "Uh-oh!"
+	done

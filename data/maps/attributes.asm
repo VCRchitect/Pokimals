@@ -170,6 +170,8 @@ ENDM
 	map_attributes ABOSS, ABOSS, $00, 0
 	map_attributes APREBOSS, APREBOSS, $00, 0
 	map_attributes AShiny, ASHINY, $00, 0
+	map_attributes AWILD, AWILD, $00, 0
+
 
 	map_attributes B1, B1, $00, 0
 	map_attributes B2, B2, $00, 0
@@ -190,6 +192,8 @@ ENDM
 	map_attributes BBOSS, BBOSS, $00, 0
 	map_attributes BPREBOSS, BPREBOSS, $00, 0
 	map_attributes BShiny, BSHINY, $00, 0	
+	map_attributes BWILD, BWILD, $00, 0
+
 	
 	map_attributes C1, C1, $00, 0
 	map_attributes C2, C2, $00, 0
@@ -210,6 +214,8 @@ ENDM
 	map_attributes CBOSS, CBOSS, $00, 0
 	map_attributes CPREBOSS, CPREBOSS, $00, 0
 	map_attributes CShiny, CSHINY, $00, 0	
+	map_attributes CWILD, CWILD, $00, 0
+
 
 	map_attributes D1, D1, $00, 0
 	map_attributes D2, D2, $00, 0
@@ -230,6 +236,8 @@ ENDM
 	map_attributes DBOSS, DBOSS, $00, 0
 	map_attributes DPREBOSS, DPREBOSS, $00, 0
 	map_attributes DShiny, DSHINY, $00, 0	
+	map_attributes DWILD, DWILD, $00, 0
+	
 	
 	map_attributes E1, E1, $00, 0
 	map_attributes E2, E2, $00, 0
@@ -250,6 +258,8 @@ ENDM
 	map_attributes EBOSS, EBOSS, $00, 0
 	map_attributes EPREBOSS, EPREBOSS, $00, 0
 	map_attributes EShiny, ESHINY, $00, 0	
+	map_attributes EWILD, EWILD, $00, 0
+
 
 	map_attributes F1, F1, $00, 0
 	map_attributes F2, F2, $00, 0
@@ -270,10 +280,14 @@ ENDM
 	map_attributes FBOSS, FBOSS, $00, 0
 	map_attributes FPREBOSS, FPREBOSS, $00, 0
 	map_attributes FShiny, FSHINY, $00, 0	
+	map_attributes FWILD, FWILD, $00, 0
+	
 	
 	map_attributes LegendTower1F, LEGENDTOWER1F, $00, 0
 	map_attributes LegendTower2F, LEGENDTOWER2F, $00, 0
 	map_attributes LegendTower3F, LEGENDTOWER3F, $00, 0
 	map_attributes LegendTower4F, LEGENDTOWER4F, $00, 0
 	map_attributes LegendTower5F, LEGENDTOWER5F, $00, 0
+	map_attributes LegendTowerWild1, LEGENDTOWERWILD1, $00, 0
+	map_attributes LegendTowerWild2, LEGENDTOWERWILD2, $00, 0
 	

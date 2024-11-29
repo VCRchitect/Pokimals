@@ -406,6 +406,7 @@ ElmDirectionsScript:
 	waitbutton
 	closetrainpic
 	setevent EVENT_GOT_A_POKEMON_FROM_ELM
+	setflag wVisitedSpawns, SPAWN_THESITEINSIDE1F
 	setscene SCENE_FINISHED
 	end
 

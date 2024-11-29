@@ -404,7 +404,7 @@ PrintMoveRelearnerText:
 	line "moves that can be"
 
 	para "learned for each"
-	line "ANIMAL."
+	line "#MON."
 
 	para "For just ¥1000, I"
 	line "can share that"
@@ -414,7 +414,7 @@ PrintMoveRelearnerText:
 	done
 .WhichMon
 	text "Excellent! Which"
-	line "ANIMAL should"
+	line "#MON should"
 	cont "remember a move?"
 	done
 .WhichMove
@@ -423,7 +423,7 @@ PrintMoveRelearnerText:
 	done
 .ComeAgain
 	text "If you want your"
-	line "ANIMAL to remem-"
+	line "#MON to remem-"
 	cont "ber moves, come"
 	cont "back to me."
 	done
@@ -433,14 +433,15 @@ PrintMoveRelearnerText:
 	done
 .NotMon
 	text "What?! That's not"
-	line "an ANIMAL!"
+	line "a #MON!"
 	done
 .NotEnoughMoney
 	text "You don't have"
 	line "enough money."
 	done
 .NoMovesToLearn
-	text "This ANIMAL can't"
+	text "This #MON can't"
 	line "learn any moves"
 	cont "from me."
 	done
+	

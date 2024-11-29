@@ -1387,5 +1387,9 @@ RuinRandomZBoss8: MACRO
 	db RuinRandomZBoss8_command
 ENDM
 
+	const RuinTrap_command
+RuinTrap: MACRO
+	db RuinTrap_command
+ENDM	
 
 NUM_EVENT_COMMANDS EQU const_value

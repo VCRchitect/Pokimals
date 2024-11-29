@@ -6582,50 +6582,6 @@ CheckSleepingTreeMon:
 INCLUDE "data/wild/treemons_asleep.asm"
 
 CheckLettahLetter:
-; Return carry if the Lettah letter hasn't been unlocked yet
-
-	ld a, [wUnlockedLettahs]
-	ld c, a
-	ld de, 0
-
-.loop
-
-; Don't check this set unless it's been unlocked
-	srl c
-	jr nc, .next
-
-; Is our letter in the set?
-	ld hl, UnlockedLettahLetterSets
-	add hl, de
-	ld a, [hli]
-	ld h, [hl]
-	ld l, a
-
-	push de
-	ld a, [wLettahLetter]
-	ld de, 1
-	push bc
-	call IsInArray
-	pop bc
-	pop de
-
-	jr c, .match
-
-.next
-; Make sure we haven't gone past the end of the table
-	inc e
-	inc e
-	ld a, e
-	cp UnlockedLettahLetterSets.End - UnlockedLettahLetterSets
-	jr c, .loop
-
-; Hasn't been unlocked, or the letter is invalid
-	scf
-	ret
-
-.match
-; Valid letter
-	and a
 	ret
 
 INCLUDE "data/wild/unlocked_lettahs.asm"

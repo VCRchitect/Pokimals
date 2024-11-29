@@ -110,6 +110,7 @@ ENDM
 	map_const APREBOSS, 5, 3 ; 17
 	map_const ABOSS, 5, 5 ; 18
 	map_const ASHINY, 5, 3
+	map_const AWILD, 5, 3
 	endgroup
 	
 	newgroup RUINSB					; 6
@@ -132,6 +133,7 @@ ENDM
 	map_const BPREBOSS, 5, 3 ; 18
 	map_const BBOSS, 5, 5 ; 19
 	map_const BSHINY, 5, 3	
+	map_const BWILD, 5, 3
 	endgroup
 
 	newgroup RUINSC											; 7
@@ -154,6 +156,7 @@ ENDM
 	map_const CPREBOSS, 5, 3 ; 17
 	map_const CBOSS, 5, 5 ; 18
 	map_const CSHINY, 5, 3	
+	map_const CWILD, 5, 3
 	endgroup
 	
 	newgroup RUINSD								; 8
@@ -176,6 +179,7 @@ ENDM
 	map_const DPREBOSS, 5, 3 ; 18
 	map_const DBOSS, 5, 5 ; 19
 	map_const DSHINY, 5, 3	
+	map_const DWILD, 5, 3
 	endgroup
 
 	newgroup RUINSE											; 9
@@ -198,6 +202,7 @@ ENDM
 	map_const EPREBOSS, 5, 3 ; 17
 	map_const EBOSS, 5, 5 ; 18
 	map_const ESHINY, 5, 3	
+	map_const EWILD, 5, 3
 	endgroup
 	
 	newgroup RUINSF											; 10
@@ -220,6 +225,8 @@ ENDM
 	map_const FPREBOSS, 5, 3 ; 18
 	map_const FBOSS, 5, 5 ; 19
 	map_const FSHINY, 5, 3	
+	map_const FWILD, 5, 3
+	
 	endgroup
 	
 	newgroup LEGENDTOWER
@@ -228,6 +235,8 @@ ENDM
 	map_const LEGENDTOWER3F, 11, 7 ; 3
 	map_const LEGENDTOWER4F, 11, 7 ; 4
 	map_const LEGENDTOWER5F, 7, 7 ; 5
+	map_const LEGENDTOWERWILD1, 5, 3
+	map_const LEGENDTOWERWILD2, 5, 3
 	endgroup
 	
 DEF NUM_MAP_GROUPS EQU const_value ; 5

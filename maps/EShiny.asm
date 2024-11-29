@@ -35,10 +35,7 @@ nobadgeESHIN:
 	reloadmapafterbattle 
  givemoney YOUR_MONEY, 500	
 	disappear -2
-	readmem wRoomDefeatedCount
-	addval 1
-	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsESHIN
+
 	end
 
 onebadgeESHIN:
@@ -47,10 +44,7 @@ onebadgeESHIN:
 	reloadmapafterbattle 
  givemoney YOUR_MONEY, 500	
 	disappear -2
-	readmem wRoomDefeatedCount
-	addval 1
-	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsESHIN
+
 	end
 
 twobadgeESHIN:
@@ -59,10 +53,7 @@ twobadgeESHIN:
 	reloadmapafterbattle 
  givemoney YOUR_MONEY, 500	
 	disappear -2
-	readmem wRoomDefeatedCount
-	addval 1
-	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsESHIN
+
 	end
 
 threebadgeESHIN:
@@ -71,10 +62,7 @@ threebadgeESHIN:
 	reloadmapafterbattle 
  givemoney YOUR_MONEY, 500	
 	disappear -2
-	readmem wRoomDefeatedCount
-	addval 1
-	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsESHIN
+
 	end
 
 fourbadgeESHIN:
@@ -83,10 +71,7 @@ fourbadgeESHIN:
 	reloadmapafterbattle 
  givemoney YOUR_MONEY, 500	
 	disappear -2
-	readmem wRoomDefeatedCount
-	addval 1
-	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsESHIN
+
 	end
 
 fivebadgeESHIN:
@@ -95,10 +80,7 @@ fivebadgeESHIN:
 	reloadmapafterbattle 
  givemoney YOUR_MONEY, 500	
 	disappear -2
-	readmem wRoomDefeatedCount
-	addval 1
-	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsESHIN
+
 	end
 
 sixbadgeESHIN:
@@ -107,10 +89,7 @@ sixbadgeESHIN:
 	reloadmapafterbattle 
  givemoney YOUR_MONEY, 500	
 	disappear -2
-	readmem wRoomDefeatedCount
-	addval 1
-	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsESHIN
+
 	end
 
 sevenbadgeESHIN:
@@ -119,10 +98,7 @@ sevenbadgeESHIN:
 	reloadmapafterbattle 
  givemoney YOUR_MONEY, 500	
 	disappear -2
-	readmem wRoomDefeatedCount
-	addval 1
-	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsESHIN
+
 	end
 
 eightbadgeESHIN:
@@ -131,10 +107,7 @@ eightbadgeESHIN:
 	reloadmapafterbattle 
  givemoney YOUR_MONEY, 500	
 	disappear -2
-	readmem wRoomDefeatedCount
-	addval 1
-	writemem wRoomDefeatedCount
-	ifequal RUINA_TARGET_DEFEATS, UnlockDoorsESHIN
+
 	end	
 	
 UnlockDoorsESHIN:

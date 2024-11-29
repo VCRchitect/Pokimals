@@ -25,6 +25,12 @@ LegendTower4F_Blocks:
 
 LegendTower5F_Blocks:
 	INCBIN "maps/LegendTower5F.blk"
+	
+LegendTowerWild1_Blocks:
+	INCBIN "maps/LegendTowerWild1.blk"
+		
+LegendTowerWild2_Blocks:
+	INCBIN "maps/LegendTowerWild2.blk"
 
 
 SECTION "Map Blocks 2", ROMX
@@ -205,6 +211,10 @@ ABOSS_Blocks:
 	
 AShiny_Blocks:
 	INCBIN "maps/AShiny.blk"
+	
+AWILD_Blocks:
+	INCBIN "maps/AWILD.blk"
+	
 
 B1_Blocks:
 	INCBIN "maps/B1.blk"
@@ -263,6 +273,10 @@ BBOSS_Blocks:
 BShiny_Blocks:
 	INCBIN "maps/BShiny.blk"	
 
+BWILD_Blocks:
+	INCBIN "maps/BWILD.blk"
+
+
 C1_Blocks:
 	INCBIN "maps/C1.blk"
 
@@ -319,6 +333,9 @@ CBOSS_Blocks:
 	
 CShiny_Blocks:
 	INCBIN "maps/CShiny.blk"	
+
+CWILD_Blocks:
+	INCBIN "maps/CWILD.blk"
 
 D1_Blocks:
 	INCBIN "maps/D1.blk"
@@ -377,6 +394,10 @@ DBOSS_Blocks:
 DShiny_Blocks:
 	INCBIN "maps/DShiny.blk"	
 
+DWILD_Blocks:
+	INCBIN "maps/DWILD.blk"
+
+
 E1_Blocks:
 	INCBIN "maps/E1.blk"
 
@@ -434,6 +455,10 @@ EBOSS_Blocks:
 EShiny_Blocks:
 	INCBIN "maps/EShiny.blk"	
 
+EWILD_Blocks:
+	INCBIN "maps/EWILD.blk"
+
+
 F1_Blocks:
 	INCBIN "maps/F1.blk"
 
@@ -490,4 +515,7 @@ FBOSS_Blocks:
 	
 FShiny_Blocks:
 	INCBIN "maps/FShiny.blk"	
+	
+FWILD_Blocks:
+	INCBIN "maps/FWILD.blk"
 
