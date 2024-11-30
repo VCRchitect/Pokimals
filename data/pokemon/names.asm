@@ -251,8 +251,8 @@ PokemonNames::
 	db "RYUJIN@@@@"
 	db "PHOENIX@@@"
 	db "JERZYDEVIL"
+	db "CAPYBARA@@"
 	assert_table_length NUM_POKEMON
-	db "?????@@@@@"
 	db "EGG@@@@@@@"
 	assert_table_length EGG
 	db "?????@@@@@"

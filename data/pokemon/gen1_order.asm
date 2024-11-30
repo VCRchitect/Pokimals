@@ -253,4 +253,5 @@ Pokered_MonIndices:
 	db BLOWFISH
 	db ROLYPOLY
 	db ROLYPOLY
+	db CAPYBARA
 	assert_table_length NUM_POKEMON + 1

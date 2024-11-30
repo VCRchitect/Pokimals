@@ -271,8 +271,8 @@ JOHTO_POKEMON EQU const_value
 	const RYUJIN      ; f9
 	const PHOENIX      ; fa
 	const JERZYDEVIL     ; fb
+	const CAPYBARA			;fc
 NUM_POKEMON EQU const_value - 1
-	const_skip       ; fc
 	const EGG        ; fd
 
 ; Lettah forms

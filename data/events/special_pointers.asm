@@ -176,4 +176,4 @@ SpecialsPointers::
 
 	add_special InitialSetDSTFlag
 	add_special InitialClearDSTFlag
-	add_special MoveRelearner
+	add_special MoveReminder

@@ -808,7 +808,7 @@ TadpoleEvosAttacks:
 
 LegtadpoleEvosAttacks:
 	db EVOLVE_ITEM, WATER_STONE, TOAD
-	db EVOLVE_LEVEL, 38, FROG
+	db EVOLVE_ITEM, LEAF_STONE, FROG
 	db 0 ; no more evolutions
 	db 1, BUBBLE
 	db 1, HYPNOSIS
@@ -883,7 +883,7 @@ ScrawnyEvosAttacks:
 	db 0 ; no more level-up moves
 
 HunkEvosAttacks:
-	db EVOLVE_LEVEL, 40, BEEFCAKE
+	db EVOLVE_LEVEL, 36, BEEFCAKE
 	db 0 ; no more evolutions
 	db 1, LOW_KICK
 	db 1, LEER
@@ -983,7 +983,7 @@ ManowarEvosAttacks:
 	db 0 ; no more level-up moves
 
 RockEvosAttacks:
-	db EVOLVE_LEVEL, 25, HARD_ROCK
+	db EVOLVE_LEVEL, 16, HARD_ROCK
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 6, DEFENSE_CURL
@@ -997,7 +997,7 @@ RockEvosAttacks:
 	db 0 ; no more level-up moves
 
 Hard_RockEvosAttacks:
-	db EVOLVE_LEVEL, 40, RUBBLE
+	db EVOLVE_LEVEL, 36, RUBBLE
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, DEFENSE_CURL
@@ -1251,7 +1251,7 @@ DrifterEvosAttacks:
 	db 0 ; no more level-up moves
 
 SpookyEvosAttacks:
-	db EVOLVE_LEVEL, 38, PHANTOM
+	db EVOLVE_LEVEL, 36, PHANTOM
 	db 0 ; no more evolutions
 	db 1, HYPNOSIS
 	db 1, LICK
@@ -3360,3 +3360,20 @@ CelebiEvosAttacks:
 	db 40, BATON_PASS
 	db 50, PERISH_SONG
 	db 0 ; no more level-up moves
+
+
+CapybaraEvosAttacks:
+	db 0 ; no more evolutions
+	db 1, TACKLE
+	db 1, METRONOME
+	db 8, AMNESIA
+	db 15, DEFENSE_CURL
+	db 22, BELLY_DRUM
+	db 29, HEADBUTT
+	db 36, SCREECH
+	db 36, REST
+	db 43, BODY_SLAM
+	db 50, ROLLOUT
+	db 57, HYPER_BEAM
+	db 0 ; no more level-up moves
+

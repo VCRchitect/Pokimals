@@ -253,4 +253,5 @@ EvosAttacksPointers::
 	dw RyujinEvosAttacks
 	dw PhoenixEvosAttacks
 	dw CelebiEvosAttacks
+	dw CapybaraEvosAttacks
 	assert_table_length NUM_POKEMON

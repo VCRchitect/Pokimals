@@ -253,4 +253,5 @@ MonMenuIcons:
 	db ICON_RYUJIN       ; RYUJIN
 	db ICON_PHOENIX       ; PHOENIX
 	db ICON_HUMANSHAPE  ; JERZYDEVIL
+	db ICON_BEAVER 		; CAPYBARA
 	assert_table_length NUM_POKEMON

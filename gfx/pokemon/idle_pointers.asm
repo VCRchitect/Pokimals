@@ -250,3 +250,5 @@ AnimationIdlePointers:
 	dw RyujinAnimationIdle
 	dw PhoenixAnimationIdle
 	dw CelebiAnimationIdle
+	dw CapybaraAnimationIdle
+	

@@ -250,3 +250,5 @@ AnimationPointers:
 	dw RyujinAnimation
 	dw PhoenixAnimation
 	dw CelebiAnimation
+	dw CapybaraAnimation
+	assert_table_length NUM_POKEMON

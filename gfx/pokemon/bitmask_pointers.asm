@@ -250,3 +250,6 @@ BitmasksPointers:
 	dw RyujinBitmasks
 	dw PhoenixBitmasks
 	dw CelebiBitmasks
+	dw CapybaraBitmasks
+	
+	

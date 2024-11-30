@@ -573,7 +573,7 @@ INCBIN "gfx/footprints/trex.1bpp",  footprint_bottom
 INCBIN "gfx/footprints/ryujin.1bpp",      footprint_top
 INCBIN "gfx/footprints/phoenix.1bpp",      footprint_top
 INCBIN "gfx/footprints/jerzydevil.1bpp",     footprint_top
-INCBIN "gfx/footprints/252.1bpp",        footprint_top
+INCBIN "gfx/footprints/capybara.1bpp",        footprint_top
 INCBIN "gfx/footprints/253.1bpp",        footprint_top
 INCBIN "gfx/footprints/254.1bpp",        footprint_top
 INCBIN "gfx/footprints/255.1bpp",        footprint_top
@@ -582,7 +582,7 @@ INCBIN "gfx/footprints/256.1bpp",        footprint_top
 INCBIN "gfx/footprints/ryujin.1bpp",      footprint_bottom
 INCBIN "gfx/footprints/phoenix.1bpp",      footprint_bottom
 INCBIN "gfx/footprints/jerzydevil.1bpp",     footprint_bottom
-INCBIN "gfx/footprints/252.1bpp",        footprint_bottom
+INCBIN "gfx/footprints/capybara.1bpp",        footprint_bottom
 INCBIN "gfx/footprints/253.1bpp",        footprint_bottom
 INCBIN "gfx/footprints/254.1bpp",        footprint_bottom
 INCBIN "gfx/footprints/255.1bpp",        footprint_bottom

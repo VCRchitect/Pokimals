@@ -50,7 +50,7 @@ JohtoGrassWildMons:
 	db 5, SHOE_CRAB
 	db 5, FOX
 	; nite
-	db 5, FOX
+	db 5, CAPYBARA
 	db 5, FOX
 	db 5, FOX
 	db 5, FOX

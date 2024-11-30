@@ -208,37 +208,40 @@ RuinABoss8:
 
 
 RuinBMonsBase:
-	db 25, BOOBY, 5, 15
+	db 20, BOOBY, 5, 15
 	db 20, DOZEN_EGGS, 5, 15
-	db 20, MONKEY, 5, 15
-	db 15, AXOLOTL, 5, 15
+	db 15, MONKEY, 5, 15
+	db 15, CAPYBARA, 5, 15
+	db 10, AXOLOTL, 5, 15
 	db 10, SHOE_CRAB, 5, 15
 	db 10, FOX, 5, 15
 	db -1
 
 RuinBMons1:
-	db 25, SPARROW, 15, 25 
-	db 20, BOOBY, 15, 25 
+	db 20, SPARROW, 15, 25 
+	db 15, BOOBY, 15, 25 
 	db 15, DOZEN_EGGS, 15, 25
 	db 10, MONKEY, 15, 25
 	db 10, AXOLOTL, 15, 25
 	db 10, SHOE_CRAB, 15, 25
 	db 10, FOX, 15, 25
+	db 10, CAPYBARA, 15, 25
 	db -1
 	
 RuinBMons2:
-	db 25, SKUNK, 25, 35
-	db 15, SPARROW, 25, 35
+	db 20, SKUNK, 25, 35
+	db 10, SPARROW, 25, 35
 	db 10, BOOBY, 25, 35
  	db 10, DOZEN_EGGS, 25, 35
 	db 10, MONKEY, 25, 35
 	db 10, AXOLOTL, 25, 35
 	db 10, SHOE_CRAB, 25, 35
 	db 10, FOX, 25, 35
+	db 10, CAPYBARA, 25, 35
 	db -1
 
 RuinBMons3:
-	db 25, WYRM, 35, 45
+	db 20, WYRM, 35, 45
 	db 10, SKUNK, 35, 45 
  	db 10, SPARROW, 35, 45
 	db 10, BOOBY, 35, 45
@@ -247,10 +250,11 @@ RuinBMons3:
 	db 10, AXOLOTL, 35, 45
 	db 10, SHOE_CRAB, 35, 45
 	db 5, FOX, 35, 45
+	db 5, CAPYBARA, 35, 45	
 	db -1
 	
 RuinBMons4:
-	db 25, BEAVER, 45, 55
+	db 20, BEAVER, 45, 55
 	db 10, WYRM, 45, 55 
  	db 10, SKUNK, 45, 55
 	db 10, SPARROW, 45, 55
@@ -260,10 +264,11 @@ RuinBMons4:
 	db 5, AXOLOTL, 45, 55
 	db 5, SHOE_CRAB, 45, 55
 	db 5, FOX, 45, 55
+	db 5, CAPYBARA, 45, 55		
 	db -1	
 	
 RuinBMons5:
-	db 25, RHINO, 55, 65
+	db 20, RHINO, 55, 65
 	db 10, BEAVER, 55, 65
 	db 10, WYRM, 55, 65
 	db 10, SKUNK, 55, 65
@@ -274,10 +279,11 @@ RuinBMons5:
 	db 5, AXOLOTL, 55, 65
 	db 5, SHOE_CRAB, 55, 65
 	db 5, FOX, 55, 65
+	db 5, CAPYBARA, 55, 65	
 	db -1
 	
 RuinBMons6:
-	db 25, CAIMAN, 65, 75
+	db 20, CAIMAN, 65, 75
 	db 10, RHINO, 65, 75 
  	db 10, BEAVER, 65, 75
 	db 10, WYRM, 65, 75
@@ -289,10 +295,11 @@ RuinBMons6:
 	db 5, AXOLOTL, 65, 75
 	db 5, SHOE_CRAB, 65, 75
 	db 5, FOX, 65, 75
+	db 5, CAPYBARA, 65, 75	
 	db -1	
 	
 RuinBMons7:
-	db 25, GRIME, 75, 85
+	db 20, GRIME, 75, 85
 	db 10, CAIMAN, 75, 85
  	db 10, RHINO, 75, 85
 	db 10, BEAVER, 75, 85
@@ -305,10 +312,11 @@ RuinBMons7:
 	db 5, AXOLOTL, 75, 85
 	db 5, SHOE_CRAB, 75, 85
 	db 5, FOX, 75, 85
+	db 5, CAPYBARA, 75, 85	
 	db -1	
 	
 RuinBMons8:
-	db 25, BAG_LADY, 85, 95
+	db 20, BAG_LADY, 85, 95
 	db 10, GRIME, 85, 95
  	db 10, CAIMAN, 85, 95
 	db 5, RHINO, 85, 95
@@ -322,6 +330,7 @@ RuinBMons8:
 	db 5, AXOLOTL, 85, 95
 	db 5, SHOE_CRAB, 85, 95
 	db 5, FOX, 85, 95
+	db 5, CAPYBARA, 85, 95
 	db -1	
 	
 RuinBBossBase:

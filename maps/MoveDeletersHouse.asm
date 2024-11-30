@@ -32,7 +32,7 @@ MoveRelearnerScript:
 	iffalse .MoveRelearnerRambles
 	faceplayer
 	opentext
-	special MoveRelearner
+	special MoveReminder
 	waitbutton
 	closetext
 	end

@@ -253,3 +253,6 @@ NewPokedexOrder:
 	db WENDIGO
 	db BRAIN
 	db JERZYDEVIL
+	db CAPYBARA
+	assert_table_length NUM_POKEMON
+	

@@ -274,4 +274,5 @@ INCLUDE "data/pokemon/base_stats/trex.asm"
 INCLUDE "data/pokemon/base_stats/ryujin.asm"
 INCLUDE "data/pokemon/base_stats/phoenix.asm"
 INCLUDE "data/pokemon/base_stats/jerzydevil.asm"
+INCLUDE "data/pokemon/base_stats/capybara.asm"
 	assert_table_length NUM_POKEMON

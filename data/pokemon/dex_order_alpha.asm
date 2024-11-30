@@ -37,6 +37,7 @@ AlphabeticalPokedexOrder:
 	db  BULLDOG
 	db  BUTTERFLY
 	db  CAIMAN
+	db  CAPYBARA
 	db  CARP
 	db  CAT
 	db  CATERPILLA
@@ -253,3 +254,4 @@ AlphabeticalPokedexOrder:
 	db  WYRM
 	db  XOLO_DOG
 	db  YETI
+	assert_table_length NUM_POKEMON

@@ -654,6 +654,9 @@ KurtPic::              INCBIN "gfx/trainers/kurt.2bpp.lz"
 GuidePic::              INCBIN "gfx/trainers/guide.2bpp.lz"
 PapaPic::              INCBIN "gfx/trainers/papa.2bpp.lz"
 CuttlefishBackpic:		 INCBIN "gfx/pokemon/cuttlefish/back.2bpp.lz"
+CapybaraFrontpic:		 INCBIN "gfx/pokemon/capybara/front.animated.2bpp.lz"
+CapybaraBackpic:		 INCBIN "gfx/pokemon/capybara/back.2bpp.lz"
+
 
 
 ; Sections "Pics 20" to "Pics 24" are not used for any graphics,

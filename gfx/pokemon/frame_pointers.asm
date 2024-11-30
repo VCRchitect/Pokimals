@@ -250,3 +250,4 @@ FramesPointers:
 	dw RyujinFrames
 	dw PhoenixFrames
 	dw CelebiFrames
+	dw CapybaraFrames

@@ -252,4 +252,5 @@ PokedexDataPointerTable:
 	dw RyujinPokedexEntry
 	dw PhoenixPokedexEntry
 	dw CelebiPokedexEntry
+	dw CapybaraPokedexEntry
 	assert_table_length NUM_POKEMON

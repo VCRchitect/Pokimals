@@ -257,8 +257,9 @@ PokemonCries::
 	mon_cry CRY_BADGER,    0,  256 ; RYUJIN
 	mon_cry CRY_CHIMPANZEE,         0,  384 ; PHOENIX
 	mon_cry CRY_CERBERUS,       330,  273 ; JERZYDEVIL
+	mon_cry CRY_BOYHYRAX,     -252,    252 ; CAPYBARA
+	
 	assert_table_length NUM_POKEMON
-	mon_cry CRY_BOYHYRAX,     0,    0 ; 252
 	mon_cry CRY_BOYHYRAX,     0,    0 ; 253
 	mon_cry CRY_BOYHYRAX,     0,    0 ; 254
 	mon_cry CRY_BOYHYRAX,     0,    0 ; 255
