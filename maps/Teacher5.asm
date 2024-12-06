@@ -116,7 +116,6 @@ LincolnScript:
 	loadtrainer LINCOLN, LINCOLN1
 	startbattle
 	reloadmapafterbattle 
- givemoney YOUR_MONEY, 500
 	setevent EVENT_BEAT_LINCOLN
 	opentext
 	writetext Text_ReceivedGlacierBadge

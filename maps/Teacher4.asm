@@ -113,7 +113,8 @@ LaraScript:
 	closetext
 	end
 	
-.FightTime	
+.FightTime
+	writetext ForSportText
 	waitbutton
 	closetrainpic
 	closetext
@@ -121,11 +122,13 @@ LaraScript:
 	loadtrainer LARA, LARA1
 	startbattle
 	reloadmapafterbattle 
- givemoney YOUR_MONEY, 500
-.FightDone:
+	setevent EVENT_BEAT_LARA
 	refreshscreen
-	opentext
-	trainerpic LARA
+	writetext PlayerReceivedPlainBadgeText
+	playsound SFX_GET_BADGE
+	waitsfx
+	setflag ENGINE_PLAINBADGE
+.FightDone:
 	checkevent EVENT_GOT_TM45_ATTRACT
 	iftrue .GotAttract
 	readmem wLevelCap
@@ -134,18 +137,8 @@ LaraScript:
 	readmem wBaseLevel
 	addval 10
 	writemem wBaseLevel	
-	checkflag ENGINE_PLAINBADGE
-	iftrue .GotPlainBadge
-	writetext LaraWhatDoYouWantText
-	promptbutton
-	closetrainpic
-	waitsfx
-	writetext PlayerReceivedPlainBadgeText
-	playsound SFX_GET_BADGE
-	waitsfx
-	setflag ENGINE_PLAINBADGE
-.GotPlainBadge:
 	refreshscreen
+	opentext
 	trainerpic LARA
 	writetext LaraPlainBadgeText
 	promptbutton
@@ -216,6 +209,13 @@ LaraNoLearnText:
 	text "That's okay, love!" 
 	line "Lots of uneducated"
 	cont "people succeed!"
+	done
+
+ForSportText:
+	text "I hope you're"
+	line "ready. I usually"
+	para "only do this for"
+	line "sport."
 	done
 
 LaraShouldntBeSoSeriousText:

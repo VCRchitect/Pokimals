@@ -54,7 +54,7 @@ RandomStairWarpEBOSS:
 	writetext WanttoEscapeE
 	yesorno
 	iftrue .EscapeE
-	warp C1, 4, 4
+	warp F1, 4, 4
 	end
 
 .EscapeE

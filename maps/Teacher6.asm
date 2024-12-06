@@ -119,7 +119,6 @@ ArnoldScript:
 	loadtrainer ARNOLD, ARNOLD1
 	startbattle
 	reloadmapafterbattle 
- givemoney YOUR_MONEY, 500
 	setevent EVENT_BEAT_ARNOLD
 	refreshscreen
 	opentext

@@ -12,7 +12,7 @@ RuinCHealNurseScript:
 	jumpstd RuinHealScript
 
 RandomStairWarpCHEAL:
-	warper
+	warperC
 	
 
 CHEAL_MapEvents:

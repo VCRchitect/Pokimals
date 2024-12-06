@@ -119,7 +119,6 @@ Kid_RockScript:
 	loadtrainer KID_ROCK, KID_ROCK1
 	startbattle
 	reloadmapafterbattle 
- givemoney YOUR_MONEY, 500
 	setevent EVENT_BEAT_KID_ROCK
 	opentext
 	writetext GetStormBadgeText

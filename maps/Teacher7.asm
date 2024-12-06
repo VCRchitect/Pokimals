@@ -121,7 +121,6 @@ Big_BirdScript:
 	loadtrainer BIG_BIRD, BIG_BIRD1
 	startbattle
 	reloadmapafterbattle 
- givemoney YOUR_MONEY, 500
 	setevent EVENT_BEAT_BIG_BIRD
 	opentext
 	writetext ReceivedZephyrBadgeText

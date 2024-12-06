@@ -121,7 +121,6 @@ JasonScript:
 	loadtrainer JASON, JASON1
 	startbattle
 	reloadmapafterbattle 
- givemoney YOUR_MONEY, 500
 	setevent EVENT_BEAT_JASON
 	opentext
 	writetext Text_ReceivedFogBadge

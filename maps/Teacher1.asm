@@ -121,7 +121,6 @@ Teacher1TPainScript:
 	loadtrainer TPAIN, TPAIN1
 	startbattle
 	reloadmapafterbattle 
- givemoney YOUR_MONEY, 500
 	setevent EVENT_BEAT_TPAIN
 	refreshscreen
 	writetext Text_ReceivedHiveBadge
