@@ -54,15 +54,6 @@ Marts:
 	dw MartSiteTM6
 	dw MartSiteTM7
 	dw MartSiteTM8
-	dw MartSiteTMBase2
-	dw MartSiteTM12
-	dw MartSiteTM22
-	dw MartSiteTM32
-	dw MartSiteTM42
-	dw MartSiteTM52
-	dw MartSiteTM62
-	dw MartSiteTM72
-	dw MartSiteTM82
 	assert_table_length NUM_MARTS
 
 MartCherrygrove:
@@ -497,7 +488,7 @@ MartSiteHold3:
 	db -1 ; end
 	
 MartSiteHold4:
-	db 12
+	db 10
 	db TWISTEDSPOON
 	db BLACKBELT_I
 	db BLACKGLASSES
@@ -508,12 +499,10 @@ MartSiteHold4:
 	db SHARP_BEAK
 	db QUICK_CLAW
 	db SOFT_SAND
-	db CIGARETTE
-	db BRIGHTPOWDER
 	db -1 ; end
 
 MartSiteHold5:	
-	db 15
+	db 10
 	db PINK_BOW
 	db NEVERMELTICE
 	db POLEMAGNET
@@ -524,15 +513,10 @@ MartSiteHold5:
 	db MYSTIC_WATER
 	db POISON_BARB
 	db KINGS_ROCK
-	db SHARP_BEAK
-	db QUICK_CLAW
-	db SOFT_SAND
-	db CIGARETTE
-	db BRIGHTPOWDER
 	db -1 ; end
 
 MartSiteHold6:	
-	db 18
+	db 10
 	db SPELL_TAG
 	db MIRACLE_SEED
 	db FOCUS_BAND
@@ -543,18 +527,10 @@ MartSiteHold6:
 	db BLACKBELT_I
 	db BLACKGLASSES
 	db SILVERPOWDER
-	db MYSTIC_WATER
-	db POISON_BARB
-	db KINGS_ROCK
-	db SHARP_BEAK
-	db QUICK_CLAW
-	db SOFT_SAND
-	db CIGARETTE
-	db BRIGHTPOWDER
 	db -1 ; end
 
 MartSiteHold7:
-	db 21
+	db 10
 	db HARD_STONE
 	db CHARCOAL
 	db SCOPE_LENS
@@ -565,21 +541,10 @@ MartSiteHold7:
 	db NEVERMELTICE
 	db POLEMAGNET
 	db TWISTEDSPOON
-	db BLACKBELT_I
-	db BLACKGLASSES
-	db SILVERPOWDER
-	db MYSTIC_WATER
-	db POISON_BARB
-	db KINGS_ROCK
-	db SHARP_BEAK
-	db QUICK_CLAW
-	db SOFT_SAND
-	db CIGARETTE
-	db BRIGHTPOWDER
 	db -1 ; end
 
 MartSiteHold8:	
-	db 26
+	db 10
 	db METAL_COAT
 	db DRAGON_SCALE
 	db LEFTOVERS
@@ -590,24 +555,7 @@ MartSiteHold8:
 	db SPELL_TAG
 	db MIRACLE_SEED
 	db FOCUS_BAND
-	db PINK_BOW
-	db NEVERMELTICE
-	db POLEMAGNET
-	db TWISTEDSPOON
-	db BLACKBELT_I
-	db BLACKGLASSES
-	db SILVERPOWDER
-	db MYSTIC_WATER
-	db POISON_BARB
-	db KINGS_ROCK
-	db SHARP_BEAK
-	db QUICK_CLAW
-	db PSNCUREBERRY
-	db SOFT_SAND
-	db CIGARETTE
-	db BRIGHTPOWDER
 	db -1 ; end
-
 
 MartSiteTMBase:
 	db 2
@@ -615,255 +563,114 @@ MartSiteTMBase:
 	db TM_CURSE
 	db -1
 
-MartSiteTMBase2:
-	db 2
-	db TM_ROLLOUT
-	db TM_ROAR
-	db -1
-
 MartSiteTM1:
-	db 4
+	db 7
 	db TM_HEADBUTT
-	db TM_CURSE
+	db TM_CURSE	
 	db TM_ROLLOUT
 	db TM_ROAR
-	db -1
-	
-MartSiteTM12:
-	db 4
 	db TM_TOXIC
 	db TM_ZAP_CANNON
 	db TM_ROCK_SMASH
-	db TM_PSYCH_UP
 	db -1
-
+	
 MartSiteTM2:
-	db 6
-	db TM_HEADBUTT
-	db TM_CURSE
+	db 10
 	db TM_ROLLOUT
 	db TM_ROAR
 	db TM_TOXIC
 	db TM_ZAP_CANNON
-	db -1
-	
-MartSiteTM22:
-	db 6
-	db TM_ROCK_SMASH
+	db TM_ROCK_SMASH	
 	db TM_PSYCH_UP
 	db TM_HIDDEN_POWER
 	db TM_SUNNY_DAY
 	db TM_SWEET_SCENT
-	db TM_SNORE
+	db TM_SNORE	
 	db -1
-	
+		
 MartSiteTM3:	
-	db 8
-	db TM_HEADBUTT
-	db TM_CURSE
-	db TM_ROLLOUT
-	db TM_ROAR
-	db TM_TOXIC
-	db TM_ZAP_CANNON
-	db TM_ROCK_SMASH
+	db 10
 	db TM_PSYCH_UP
-	db -1
-	
-MartSiteTM32:	
-	db 8
 	db TM_HIDDEN_POWER
 	db TM_SUNNY_DAY
 	db TM_SWEET_SCENT
-	db TM_SNORE
+	db TM_SNORE		
 	db TM_BLIZZARD
 	db TM_HYPER_BEAM
 	db TM_PROTECT
 	db TM_RAIN_DANCE
+	db TM_GIGA_DRAIN	
 	db -1
-	
+		
 MartSiteTM4:
 	db 10
-	db TM_HEADBUTT
-	db TM_CURSE
-	db TM_ROLLOUT
-	db TM_ROAR
-	db TM_TOXIC
-	db TM_ZAP_CANNON
-	db TM_ROCK_SMASH
-	db TM_PSYCH_UP
-	db TM_HIDDEN_POWER
-	db TM_SUNNY_DAY
-	db -1
-	
-MartSiteTM42:
-	db TM_SWEET_SCENT
-	db TM_SNORE
 	db TM_BLIZZARD
 	db TM_HYPER_BEAM
 	db TM_PROTECT
 	db TM_RAIN_DANCE
-	db TM_GIGA_DRAIN
+	db TM_GIGA_DRAIN		
 	db TM_ENDURE
 	db TM_FRUSTRATION
 	db TM_SOLARBEAM
+	db TM_THUNDER
+	db TM_EARTHQUAKE	
 	db -1
-	
+		
 MartSiteTM5:	
-	db 12
-	db TM_HEADBUTT
-	db TM_CURSE
-	db TM_ROLLOUT
-	db TM_ROAR
-	db TM_TOXIC
-	db TM_ZAP_CANNON
-	db TM_ROCK_SMASH
-	db TM_PSYCH_UP
-	db TM_HIDDEN_POWER
-	db TM_SUNNY_DAY
-	db TM_SWEET_SCENT
-	db TM_SNORE
-	db -1
-
-
-MartSiteTM52:	
-	db 12
-	db TM_BLIZZARD
-	db TM_HYPER_BEAM
-	db TM_PROTECT
-	db TM_RAIN_DANCE
-	db TM_GIGA_DRAIN
+	db 10
 	db TM_ENDURE
 	db TM_FRUSTRATION
-	db TM_SOLARBEAM	
+	db TM_SOLARBEAM
 	db TM_THUNDER
-	db TM_EARTHQUAKE
+	db TM_EARTHQUAKE		
 	db TM_RETURN
 	db TM_DIG
+	db TM_PSYCHIC_M
+	db TM_DOUBLE_TEAM
+	db TM_SWAGGER	
 	db -1
 
 MartSiteTM6:
-	db 14
-	db TM_HEADBUTT
-	db TM_CURSE
-	db TM_ROLLOUT
-	db TM_ROAR
-	db TM_TOXIC
-	db TM_ZAP_CANNON
-	db TM_ROCK_SMASH
-	db TM_PSYCH_UP
-	db TM_HIDDEN_POWER
-	db TM_SUNNY_DAY
-	db TM_SWEET_SCENT
-	db TM_SNORE
-	db TM_BLIZZARD
-	db TM_HYPER_BEAM
-	db -1
-	
-MartSiteTM62:
-	db 14
-	db TM_PROTECT
-	db TM_RAIN_DANCE
-	db TM_GIGA_DRAIN
-	db TM_ENDURE
-	db TM_FRUSTRATION
-	db TM_SOLARBEAM	
-	db TM_THUNDER
-	db TM_EARTHQUAKE
+	db 10
 	db TM_RETURN
 	db TM_DIG
 	db TM_PSYCHIC_M
 	db TM_DOUBLE_TEAM
-	db TM_SWAGGER
+	db TM_SWAGGER		
 	db TM_SLEEP_TALK
+	db TM_SLUDGE_BOMB
+	db TM_SANDSTORM
+	db TM_FIRE_BLAST
+	db TM_SWIFT		
 	db -1
 
 MartSiteTM7:
-	db 16
-	db TM_HEADBUTT
-	db TM_CURSE
-	db TM_ROLLOUT
-	db TM_ROAR
-	db TM_TOXIC
-	db TM_ZAP_CANNON
-	db TM_ROCK_SMASH
-	db TM_PSYCH_UP
-	db TM_HIDDEN_POWER
-	db TM_SUNNY_DAY
-	db TM_SWEET_SCENT
-	db TM_SNORE
-	db TM_BLIZZARD
-	db TM_HYPER_BEAM
-	db TM_PROTECT
-	db TM_RAIN_DANCE
-	db -1	
-
-MartSiteTM72:
-	db 16
-	db TM_GIGA_DRAIN
-	db TM_ENDURE
-	db TM_FRUSTRATION
-	db TM_SOLARBEAM	
-	db TM_THUNDER
-	db TM_EARTHQUAKE
-	db TM_RETURN
-	db TM_DIG
-	db TM_PSYCHIC_M
-	db TM_DOUBLE_TEAM
-	db TM_SWAGGER
+	db 10
 	db TM_SLEEP_TALK
 	db TM_SLUDGE_BOMB
 	db TM_SANDSTORM
 	db TM_FIRE_BLAST
-	db TM_SWIFT
-	db -1
-
-MartSiteTM8:	
-	db 20
-	db TM_HEADBUTT
-	db TM_CURSE
-	db TM_ROLLOUT
-	db TM_ROAR
-	db TM_TOXIC
-	db TM_ZAP_CANNON
-	db TM_ROCK_SMASH
-	db TM_PSYCH_UP
-	db TM_HIDDEN_POWER
-	db TM_SUNNY_DAY
-	db TM_SWEET_SCENT
-	db TM_SNORE
-	db TM_BLIZZARD
-	db TM_HYPER_BEAM
-	db TM_PROTECT
-	db TM_RAIN_DANCE
-	db TM_GIGA_DRAIN
-	db TM_ENDURE
-	db TM_FRUSTRATION
-	db TM_SOLARBEAM	
-	db -1
-
-MartSiteTM82:	
-	db 20
-	db TM_THUNDER
-	db TM_EARTHQUAKE
-	db TM_RETURN
-	db TM_DIG
-	db TM_PSYCHIC_M
-	db TM_DOUBLE_TEAM
-	db TM_SWAGGER
-	db TM_SLEEP_TALK
-	db TM_SLUDGE_BOMB
-	db TM_SANDSTORM
-	db TM_FIRE_BLAST
-	db TM_SWIFT	
+	db TM_SWIFT		
 	db TM_DEFENSE_CURL
 	db TM_THUNDERPUNCH
 	db TM_DREAM_EATER
 	db TM_DETECT	
-	db TM_THIEF
+	db TM_THIEF	
+	db -1	
+
+MartSiteTM8:	
+	db 10
+	db TM_DEFENSE_CURL
+	db TM_THUNDERPUNCH
+	db TM_DREAM_EATER
+	db TM_DETECT	
+	db TM_THIEF	
+	db TM_REST
+	db TM_ICE_PUNCH
 	db TM_STEEL_WING
 	db TM_FIRE_PUNCH
-	db TM_SUBSTITUTE
-	db -1	
+	db TM_SUBSTITUTE	
+	db -1
 
 DefaultMart:
 	db 2 ; # items

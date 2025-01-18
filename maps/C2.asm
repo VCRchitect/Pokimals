@@ -309,8 +309,8 @@ C2_MapEvents:
 	def_warp_events
 
 	def_coord_events
-	coord_event  4,  0, SCENE_RANDOMSTAIRS, RandomStairWarp8
-	coord_event  5,  0, SCENE_RANDOMSTAIRS, RandomStairWarp8
+	coord_event  4,  0, SCENE_RANDOMSTAIRS, RandomStairWarpC2
+	coord_event  5,  0, SCENE_RANDOMSTAIRS, RandomStairWarpC2
 
 
 	def_bg_events

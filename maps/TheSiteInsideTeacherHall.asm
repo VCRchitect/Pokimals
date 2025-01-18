@@ -5,26 +5,25 @@
 
 TheSiteInsideTeacherHall_MapScripts:
 	def_scene_scripts
-	callback MAPCALLBACK_OBJECTS, .Guards
-
 
 	def_callbacks
+	callback MAPCALLBACK_OBJECTS, .GuardsGone
+
 
 .DummyScene: ; unreferenced
 	end
 
-
-.Guards
+.GuardsGone:
 	readvar VAR_BADGES
 	ifequal 8, .noguards
 	appear TEACHER_GUARD1
-	appear TEACHER_GUARD2
+	appear TEACHER_GUARD2	
 	endcallback
-
+	
 .noguards:
 	disappear TEACHER_GUARD1
-	disappear TEACHER_GUARD2
-	end
+	disappear TEACHER_GUARD2	
+	endcallback
 
 TeacherOfficerScript1:
 	faceplayer
@@ -90,7 +89,7 @@ Sign7Script:
 	end
 
 Sign8Script:
-	jumptext Sign8Text
+	jumptext Sign8Text	
 	end
 
 SignE4Script:

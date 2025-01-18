@@ -202,7 +202,7 @@ TheSiteGameCornerPrizeMonVendorScript:
 	giveitem WATER_STONE
 	iffalse TheSiteGameCornerPrizeMonVendor_NoRoomForPrizeScript
 	takecoins THESITEGAMECORNER_WATER_STONE_COINS
-	sjump TheSiteGameCornerTMVendor_FinishScript
+	sjump .loop
 
 .LeafStone:
 	checkcoins THESITEGAMECORNER_LEAF_STONE_COINS
@@ -213,7 +213,7 @@ TheSiteGameCornerPrizeMonVendorScript:
 	giveitem LEAF_STONE
 	iffalse TheSiteGameCornerPrizeMonVendor_NoRoomForPrizeScript
 	takecoins THESITEGAMECORNER_LEAF_STONE_COINS
-	sjump TheSiteGameCornerTMVendor_FinishScript
+	sjump .loop
 
 .SunStone:
 	checkcoins THESITEGAMECORNER_SUN_STONE_COINS
@@ -224,7 +224,7 @@ TheSiteGameCornerPrizeMonVendorScript:
 	giveitem SUN_STONE
 	iffalse TheSiteGameCornerPrizeMonVendor_NoRoomForPrizeScript
 	takecoins THESITEGAMECORNER_SUN_STONE_COINS
-	sjump TheSiteGameCornerTMVendor_FinishScript
+	sjump .loop
 
 .MasterBall:
 	checkcoins THESITEGAMECORNER_MASTER_BALL_COINS
@@ -235,7 +235,7 @@ TheSiteGameCornerPrizeMonVendorScript:
 	giveitem MASTER_BALL
 	iffalse TheSiteGameCornerPrizeMonVendor_NoRoomForPrizeScript
 	takecoins THESITEGAMECORNER_MASTER_BALL_COINS
-	sjump TheSiteGameCornerTMVendor_FinishScript
+	sjump .loop
 
 .MenuHeader:
 	db MENU_BACKUP_TILES ; flags

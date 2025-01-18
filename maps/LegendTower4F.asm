@@ -20,7 +20,7 @@ Barghest:
 	closepokepic
 	closetext
 	loadvar VAR_BATTLETYPE, BATTLETYPE_FENRIR
-	loadwildmon YETI, 90
+	loadwildmon BARGHEST, 90
 	startbattle
 	disappear TOWERBARGHEST
 	reloadmapafterbattle 

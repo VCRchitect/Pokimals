@@ -73,9 +73,9 @@ DayCareManScript_Inside:
 	end				   
 
 .AlreadyHaveOddEgg:
+	refreshscreen
 	special DayCareMan
 	waitbutton
-	closetrainpic
 	closetext
 	end		   
 
