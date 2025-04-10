@@ -17,7 +17,6 @@ JerzyDevil:
 	loadvar VAR_BATTLETYPE, BATTLETYPE_FENRIR
 	loadwildmon JERZYDEVIL, 99
 	startbattle
-	disappear TOWERDEVIL
 	reloadmapafterbattle 
  givemoney YOUR_MONEY, 500
 	refreshscreen
